@@ -1,10 +1,9 @@
 # Computed-style comparison: develop vs use-lightningcss
 
-Supplements the static CSS diff in `lightningcss-migration-artifacts/` by
-rendering every USWDS component in chromium and comparing what
-`getComputedStyle()` returns for every element in the DOM under each
-build's `uswds.min.css`. This is an authoritative rendering-equivalence
-check.
+Supplements the static CSS diff in `vrt/static-diff/` by rendering every
+USWDS component in chromium and comparing what `getComputedStyle()`
+returns for every element in the DOM under each build's `uswds.min.css`.
+Catches resolved-value differences a CSS text diff can't see.
 
 ## Bottom line
 
@@ -33,23 +32,26 @@ users.
 
 ## What's committed vs derived
 
-Committed (under `lightningcss-render-test/`):
+Committed (under this directory):
 
-- `extract-dom.mjs` — Playwright script that enumerates Storybook
-  stories and captures the rendered `#storybook-root` DOM
-- `build-harness.mjs` — wraps each snapshot in a standalone HTML file
-- `collect-styles.mjs` — Playwright driver that opens each harness
-  against one of the two CSS variants and dumps computed styles to JSON
-- `diff-styles.mjs` — pairwise diff + classification + report generation
-- `property-whitelist.mjs` — helper that extracts the set of CSS
-  properties USWDS actually uses from a min file
+- `scripts/extract-dom.mjs` — Playwright script that enumerates
+  Storybook stories and captures the rendered `#storybook-root` DOM
+- `scripts/build-harness.mjs` — wraps each snapshot in a standalone HTML
+  file
+- `scripts/collect-styles.mjs` — Playwright driver that opens each
+  harness against one of the two CSS variants and dumps computed styles
+  to JSON
+- `scripts/diff-styles.mjs` — pairwise diff + classification + report
+  generation
+- `scripts/property-whitelist.mjs` — helper that extracts the set of
+  CSS properties USWDS actually uses from a min file
 - `whitelist.txt` — the property whitelist output (144 properties)
 - `report/` — 1 markdown file per story with mismatches, plus
   `_summary.md`
 
 Derived / gitignored (regenerate with steps below):
 
-- `_site/` — Storybook static build
+- `_site/` — Storybook static build (at the repo root)
 - `snapshots/` — raw DOM extracts
 - `harness/` — wrapped HTML files
 - `serve-develop/`, `serve-lightningcss/` — symlinked web roots per
@@ -60,9 +62,8 @@ Derived / gitignored (regenerate with steps below):
 ## How to reproduce
 
 Prerequisites: the static CSS artifacts at
-`lightningcss-migration-artifacts/{develop,lightningcss}/uswds.min.css`
-must exist. If they don't, rebuild them first per
-`lightningcss-migration-notes.md`.
+`vrt/static-diff/artifacts/{develop,lightningcss}/uswds.min.css` must
+exist. If they don't, rebuild them first per `vrt/static-diff/README.md`.
 
 ```bash
 # 1. Install tooling (one-time)
@@ -73,21 +74,21 @@ npx playwright install chromium
 npm run build:storybook   # outputs to _site/
 
 # 3. Extract rendered DOM for every story × 3 viewports
-node lightningcss-render-test/extract-dom.mjs
-# → lightningcss-render-test/snapshots/<storyId>-<viewport>.html
+node vrt/computed-style/scripts/extract-dom.mjs
+# → vrt/computed-style/snapshots/<storyId>-<viewport>.html
 
 # 4. Wrap each snapshot in a minimal HTML harness
-node lightningcss-render-test/build-harness.mjs
-# → lightningcss-render-test/harness/<storyId>-<viewport>.html
+node vrt/computed-style/scripts/build-harness.mjs
+# → vrt/computed-style/harness/<storyId>-<viewport>.html
 
 # 5. Generate the property whitelist from one of the min files
-node lightningcss-render-test/property-whitelist.mjs \
-  lightningcss-migration-artifacts/develop/uswds.min.css \
-  > lightningcss-render-test/whitelist.txt
+node vrt/computed-style/scripts/property-whitelist.mjs \
+  vrt/static-diff/artifacts/develop/uswds.min.css \
+  > vrt/computed-style/whitelist.txt
 
 # 6. Set up the serve overlays (symlinks, ~0 bytes)
-ART=lightningcss-migration-artifacts
-BASE=lightningcss-render-test
+ART=vrt/static-diff/artifacts
+BASE=vrt/computed-style
 for variant in develop lightningcss; do
   root="$BASE/serve-$variant"
   rm -rf "$root"
@@ -99,13 +100,13 @@ for variant in develop lightningcss; do
 done
 
 # 7. Collect computed styles for each variant
-node lightningcss-render-test/collect-styles.mjs develop
-node lightningcss-render-test/collect-styles.mjs lightningcss
-# → lightningcss-render-test/results/{develop,lightningcss}/*.json
+node vrt/computed-style/scripts/collect-styles.mjs develop
+node vrt/computed-style/scripts/collect-styles.mjs lightningcss
+# → vrt/computed-style/results/{develop,lightningcss}/*.json
 
 # 8. Diff and generate report
-node lightningcss-render-test/diff-styles.mjs
-# → lightningcss-render-test/report/_summary.md + per-story files
+node vrt/computed-style/scripts/diff-styles.mjs
+# → vrt/computed-style/report/_summary.md + per-story files
 ```
 
 Total runtime: ~5 minutes on a laptop (Storybook build ~60s, DOM
@@ -138,22 +139,7 @@ few lines of the report.
 
 ## Gotchas
 
-- **Storybook builds its own CSS.** `.storybook/main.js` compiles SCSS
-  via sass-loader + postcss-csso with `forceMediaMerge: false,
-  comments: false`. It does *not* load `dist/css/uswds.min.css`. That's
-  why this pipeline extracts DOM only and rebuilds a test harness with
-  a fresh `<link>` tag.
-- **Font-loading is non-deterministic** without an explicit wait. The
-  collector calls `document.fonts.load(...)` for every `@font-face`
-  before measuring so that `ex`-unit-based widths (like
-  `.usa-prose > li { max-width: 68ex }`) resolve against the web font,
-  not the system fallback. Without this, repeated runs of the same
-  harness produce different widths depending on whether the font
-  fetched in time.
-- **SVG sprite 404s are expected.** The extracted DOM references
-  `img/sprite.svg` with a relative path that doesn't resolve through
-  the harness's root. This only affects SVG content, not computed
-  styles, so the collector ignores these errors.
-- **`components-card--default` shows 47 sub-pixel mismatches** — these
-  are all from `.tablet\:grid-col-4 { width: 33.3333% }` computing to
-  `431.984px` instead of develop's `432px`. Invisible.
+- Storybook builds its own CSS via sass-loader + postcss-csso (with `forceMediaMerge: false, comments: false`); it does not load `dist/css/uswds.min.css`. That's why this pipeline extracts DOM only and rebuilds a test harness with a fresh `<link>` tag pointing at the CSS variant under test.
+- Font loading is non-deterministic without an explicit wait, so the collector calls `document.fonts.load(...)` for every `@font-face` before measuring. That way `ex`-unit-based widths (like `.usa-prose > li { max-width: 68ex }`) resolve against the web font, not the system fallback. Without this step, repeated runs of the same harness produce different widths depending on whether the font fetched in time.
+- SVG sprite 404s are expected: the extracted DOM references `img/sprite.svg` with a relative path that doesn't resolve through the harness's root. Only affects SVG content, not computed styles, so the collector ignores these errors.
+- `components-card--default` shows 47 sub-pixel mismatches, all from `.tablet\:grid-col-4 { width: 33.3333% }` computing to `431.984px` instead of develop's `432px`. Invisible.

@@ -29,7 +29,14 @@ src/stylesheets/lib
 sassdoc/
 
 # ignore visual regression test artifacts
-vrt/__screenshots__/
-vrt/fixtures/
-vrt/.baseline/
-vrt/.vitest-attachments/
+vrt/pixel-regression/__screenshots__/
+vrt/pixel-regression/fixtures/
+vrt/pixel-regression/.baseline/
+vrt/pixel-regression/.vitest-attachments/
+
+# ignore computed-style derived dirs (regenerable from scripts)
+vrt/computed-style/snapshots/
+vrt/computed-style/harness/
+vrt/computed-style/serve-develop/
+vrt/computed-style/serve-lightningcss/
+vrt/computed-style/results/

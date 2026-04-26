@@ -16,7 +16,7 @@ import { spawn } from "node:child_process";
 // Spawn vitest as a child process, piping stdio and setting VRT_PHASE.
 const runVitest = (phase, extraArgs = []) =>
   new Promise((resolve) => {
-    const args = ["vitest", "run", "--config", "vrt/vitest.config.js", ...extraArgs];
+    const args = ["vitest", "run", "--config", "vrt/pixel-regression/vitest.config.js", ...extraArgs];
     const child = spawn("npx", args, {
       stdio: "inherit",
       env: { ...process.env, VRT_PHASE: phase },

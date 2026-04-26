@@ -58,7 +58,7 @@ function staticServer(root) {
 
 const REPO = "/Users/jbhutch/Sites/uswds";
 const SITE = path.join(REPO, "_site");
-const OUT = path.join(REPO, "lightningcss-render-test", "snapshots");
+const OUT = path.join(REPO, "vrt", "computed-style", "snapshots");
 fs.mkdirSync(OUT, { recursive: true });
 
 const VIEWPORTS = [

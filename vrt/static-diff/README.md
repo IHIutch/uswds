@@ -8,16 +8,15 @@ This change replaces the CSS post-processing pipeline in `tasks/sass.js`:
 - **after:**  Sass → `lightningcss` (single pass, both expanded and minified)
 
 **A companion computed-style comparison** is committed under
-`lightningcss-render-test/` — it renders every USWDS component in
-chromium under each build and diffs `getComputedStyle()` for every
-element. That pipeline confirms **197 / 255 Storybook stories are
+`vrt/computed-style/` — it renders every USWDS component in chromium
+under each build and diffs `getComputedStyle()` for every element. That pipeline confirms **197 / 255 Storybook stories are
 byte-identical**, 58 / 255 have only classified-cosmetic mismatches,
 and there is **one real visible regression** the static diff didn't
 catch: lightningcss collapses the `font-family: monospace, monospace`
 hack from Normalize.css, which makes every `<code>`, `<pre>`, `<kbd>`,
 `<samp>` element render at 13px / 14.95px line-height instead of
-16px / 18.4px. See `lightningcss-render-test/README.md` for details
-and fix options.
+16px / 18.4px. See `vrt/computed-style/README.md` for details and fix
+options.
 
 ## Overall change
 
@@ -43,7 +42,7 @@ class in each rule's selector) and diffed them. Summary:
   `usa-input-suffix`, `usa-js-loading`, `usa-js-modal`, `usa-sr-only`,
   `usa-table-container`, `usa-time-picker`.
 - **86 components produce non-trivial diffs.** Full list with line
-  counts at `lightningcss-migration-artifacts/min-diffs/_summary.txt`.
+  counts at `vrt/static-diff/artifacts/min-diffs/_summary.txt`.
   The 10 largest diffs by *line count*:
 
   | Lines | Bucket |
@@ -108,7 +107,7 @@ Notes on the buckets:
   a single-glance proportion of where the total diff volume lives.
 
 Reproduce with
-`node lightningcss-migration-artifacts/classify-diff.mjs lightningcss-migration-artifacts/min-diffs`.
+`node vrt/static-diff/scripts/classify-diff.mjs vrt/static-diff/artifacts/min-diffs`.
 
 ## Selector reordering (cascade safety)
 
@@ -336,7 +335,8 @@ pass, configure lightningcss to preserve it explicitly.
 
 ## Reproducing / scrutinizing this report
 
-All data committed under `lightningcss-migration-artifacts/`:
+All data committed under `vrt/static-diff/artifacts/` (with scripts at
+`vrt/static-diff/scripts/`):
 
 - `develop/uswds.min.css`, `lightningcss/uswds.min.css` — raw shipped
   files from each branch

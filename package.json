@@ -74,7 +74,7 @@
     "test:a11y": "build-storybook && axe-storybook",
     "test:sass": "gulp sassTests",
     "test:unit": "gulp unitTests",
-    "test:visual": "node vrt/setup/run.js",
+    "test:visual": "node vrt/pixel-regression/setup/run.js",
     "version": "gulp release",
     "watch": "gulp watch",
     "fix:icons": "npx svgo --folder ./packages/usa-icon/src/img/uswds-icons -q && npx svgo --folder ./packages/usa-icon/src/img/usa-icons-bg -q",

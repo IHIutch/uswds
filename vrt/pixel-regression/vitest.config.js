@@ -55,9 +55,9 @@ const serveSite = () => ({
 export default defineConfig({
   plugins: [serveSite()],
   test: {
-    include: ["vrt/**/*.test.js"],
-    globalSetup: ["vrt/setup/global-setup.js"],
-    attachmentsDir: "vrt/.vitest-attachments",
+    include: ["vrt/pixel-regression/**/*.test.js"],
+    globalSetup: ["vrt/pixel-regression/setup/global-setup.js"],
+    attachmentsDir: "vrt/pixel-regression/.vitest-attachments",
     testTimeout: 60_000,
     hookTimeout: 120_000,
     browser: {

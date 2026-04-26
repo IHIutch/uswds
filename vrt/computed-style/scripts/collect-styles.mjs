@@ -12,7 +12,7 @@ import http from "node:http";
 import { chromium } from "playwright";
 
 const REPO = "/Users/jbhutch/Sites/uswds";
-const BASE = path.join(REPO, "lightningcss-render-test");
+const BASE = path.join(REPO, "vrt", "computed-style");
 
 const variant = process.argv[2];
 if (!["develop", "lightningcss"].includes(variant)) {

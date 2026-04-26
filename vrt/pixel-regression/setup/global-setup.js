@@ -3,7 +3,7 @@ import { existsSync, mkdirSync, copyFileSync, readFileSync, symlinkSync, rmSync 
 import { resolve, join } from "node:path";
 
 const repoRoot = resolve(process.cwd());
-const vrtRoot = join(repoRoot, "vrt");
+const vrtRoot = join(repoRoot, "vrt", "pixel-regression");
 const fixturesDir = join(vrtRoot, "fixtures");
 const worktreeDir = join(vrtRoot, ".baseline");
 const siteDir = join(repoRoot, "_site");

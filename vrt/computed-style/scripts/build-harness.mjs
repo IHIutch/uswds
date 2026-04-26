@@ -7,7 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const REPO = "/Users/jbhutch/Sites/uswds";
-const BASE = path.join(REPO, "lightningcss-render-test");
+const BASE = path.join(REPO, "vrt", "computed-style");
 const SNAP = path.join(BASE, "snapshots");
 const HARN = path.join(BASE, "harness");
 fs.mkdirSync(HARN, { recursive: true });

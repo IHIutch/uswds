@@ -6,7 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const REPO = "/Users/jbhutch/Sites/uswds";
-const BASE = path.join(REPO, "lightningcss-render-test");
+const BASE = path.join(REPO, "vrt", "computed-style");
 const DEV = path.join(BASE, "results", "develop");
 const LC = path.join(BASE, "results", "lightningcss");
 const REPORT = path.join(BASE, "report");
