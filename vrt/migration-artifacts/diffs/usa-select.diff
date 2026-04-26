@@ -1,0 +1,91 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-select.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-select.css	2026-04-14 11:33:47
+@@ -1,12 +1,10 @@
+ .usa-select {
+-  background-image: url("../img/usa-icons/unfold_more.svg"),
+-    linear-gradient(transparent, transparent);
+-  background-repeat: no-repeat;
+-  -webkit-appearance: none;
+-  -moz-appearance: none;
+   appearance: none;
+-  background-color: white;
++  background-color: #fff;
++  background-image: url("../img/usa-icons/unfold_more.svg"),
++    linear-gradient(#0000, #0000);
+   background-position: right 0.5rem center;
++  background-repeat: no-repeat;
+   background-size: 1.25rem;
+   padding-right: 2rem;
+ }
+@@ -16,32 +14,31 @@
+ }
+ 
+ .usa-select:-webkit-autofill {
+-  -webkit-appearance: menulist;
+   appearance: menulist;
+ }
+ 
+ .usa-select:-moz-focusring {
+-  color: transparent;
+-  text-shadow: 0 0 0 black;
++  color: #0000;
++  text-shadow: 0 0 #000;
+ }
+ 
+ .usa-select[multiple] {
+-  height: auto;
+   background-image: none;
++  height: auto;
+   padding-right: 0;
+ }
+ 
+ .usa-select option {
+-  overflow: hidden;
+   text-overflow: ellipsis;
++  overflow: hidden;
+ }
+ 
+ .usa-select:disabled,
+ .usa-select[aria-disabled="true"] {
+   color: #454545;
+-  background-color: #c9c9c9;
+   cursor: not-allowed;
+   opacity: 1;
++  background-color: #c9c9c9;
+ }
+ 
+ .usa-select:disabled:hover,
+@@ -59,8 +56,8 @@
+ @media (forced-colors: active) {
+   .usa-select:disabled,
+   .usa-select[aria-disabled="true"] {
++    color: graytext;
+     border: 0;
+-    color: GrayText;
+   }
+ 
+   .usa-select:disabled:hover,
+@@ -70,21 +68,15 @@
+   .usa-select[aria-disabled="true"]:active,
+   .usa-select[aria-disabled="true"]:focus,
+   .usa-select[aria-disabled="true"].usa-focus {
+-    color: GrayText;
++    color: graytext;
+   }
+-}
+ 
+-@media (forced-colors: active) {
+   .usa-select:disabled,
+   .usa-select[aria-disabled="true"] {
+-    border: 2px solid GrayText;
++    border: 2px solid graytext;
+   }
+-}
+ 
+-@media (forced-colors: active) {
+   .usa-select {
+-    -webkit-appearance: listbox;
+-    -moz-appearance: listbox;
+     appearance: listbox;
+     background-image: none;
+     padding-right: 0;

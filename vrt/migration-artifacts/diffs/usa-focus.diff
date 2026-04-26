@@ -1,0 +1,8 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-focus.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-focus.css	2026-04-14 11:33:47
+@@ -1,4 +1,4 @@
+ .usa-focus {
+-  outline: 0.25rem solid #2491ff;
+   outline-offset: 0rem;
++  outline: 0.25rem solid #2491ff;
+ }

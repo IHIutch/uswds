@@ -1,0 +1,11 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-layout-docs.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-layout-docs.css	2026-04-14 11:33:47
+@@ -2,7 +2,7 @@
+   padding-top: 2rem;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-layout-docs__sidenav {
+     padding-top: 0;
+   }

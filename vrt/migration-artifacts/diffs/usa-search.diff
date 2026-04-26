@@ -1,0 +1,177 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-search.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-search.css	2026-04-14 11:33:47
+@@ -11,7 +11,7 @@
+   position: relative;
+ }
+ 
+-.usa-search::after {
++.usa-search:after {
+   clear: both;
+   content: "";
+   display: block;
+@@ -24,49 +24,49 @@
+ }
+ 
+ .usa-search [type="submit"] {
+-  border-bottom-left-radius: 0;
+   border-top-left-radius: 0;
++  border-bottom-left-radius: 0;
++  width: 3rem;
+   height: 2rem;
+   margin: 0;
+   padding: 0;
+-  width: 3rem;
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width >= 30em) {
+   .usa-search [type="submit"] {
++    width: auto;
+     padding-left: 1rem;
+     padding-right: 1rem;
+-    width: auto;
+   }
+ }
+ 
+ @media (forced-colors: active) {
+-  .usa-search [type="submit"]::before {
++  .usa-search [type="submit"]:before {
++    content: "";
++    vertical-align: middle;
+     background-image: url("../img/usa-icons/search.svg");
++    background-position: center;
+     background-repeat: no-repeat;
+-    background-position: center center;
+     background-size: 1.5rem 1.5rem;
+-    display: inline-block;
+-    height: 1.5rem;
+     width: 1.5rem;
+-    content: "";
+-    vertical-align: middle;
++    height: 1.5rem;
+     margin-right: auto;
++    display: inline-block;
+   }
+   @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-    .usa-search [type="submit"]::before {
+-      background: none;
+-      background-color: ButtonText;
++    .usa-search [type="submit"]:before {
++      background: buttontext;
+       -webkit-mask-image: url("../img/usa-icons/search.svg"),
+-        linear-gradient(transparent, transparent);
++        linear-gradient(#0000, #0000);
+       mask-image: url("../img/usa-icons/search.svg"),
+-        linear-gradient(transparent, transparent);
+-      -webkit-mask-position: center center;
+-      mask-position: center center;
+-      -webkit-mask-repeat: no-repeat;
+-      mask-repeat: no-repeat;
++        linear-gradient(#0000, #0000);
++      -webkit-mask-position: center;
++      mask-position: center;
+       -webkit-mask-size: 1.5rem 1.5rem;
+       mask-size: 1.5rem 1.5rem;
++      -webkit-mask-repeat: no-repeat;
++      mask-repeat: no-repeat;
+     }
+   }
+ 
+@@ -74,13 +75,13 @@
+   }
+ }
+ 
+-@media (forced-colors: active) and (min-width: 30em) {
+-  .usa-search [type="submit"]::before {
++@media (forced-colors: active) and (width >= 30em) {
++  .usa-search [type="submit"]:before {
+     content: none;
+   }
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width >= 30em) {
+   .usa-search__submit-icon {
+     display: none;
+   }
+@@ -92,41 +93,39 @@
+   }
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width >= 30em) {
+   .usa-search--big [type="search"],
+   .usa-search--big .usa-search__input {
+-    font-size: 1.06rem;
+     height: 3rem;
++    font-size: 1.06rem;
+   }
+-}
+ 
+-@media all and (min-width: 30em) {
+   .usa-search--big [type="submit"],
+   .usa-search--big .usa-search__submit {
++    width: auto;
++    height: 3rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+     font-size: 1.46rem;
+-    height: 3rem;
+-    width: auto;
+   }
+ }
+ 
+ .usa-search--small [type="submit"],
+ .usa-search--small .usa-search__submit {
++  min-width: 3rem;
+   padding-left: 0.75rem;
+   padding-right: 0.75rem;
+-  min-width: 3rem;
+ }
+ 
+-@media (forced-colors: active) and (min-width: 30em) {
+-  .usa-search--small [type="submit"]::before {
++@media (forced-colors: active) and (width >= 30em) {
++  .usa-search--small [type="submit"]:before {
+     content: "";
+   }
+ }
+ 
+ .usa-search--small .usa-search__submit-icon {
+-  height: 1.5rem;
+   width: 1.5rem;
++  height: 1.5rem;
+   display: block;
+ }
+ 
+@@ -138,23 +137,23 @@
+ 
+ [type="search"],
+ .usa-search__input {
+-  padding-bottom: 0;
+-  padding-top: 0;
+-  border-bottom-right-radius: 0;
+-  border-right: none;
+-  border-top-right-radius: 0;
+   box-sizing: border-box;
+   float: left;
+-  font-size: 1rem;
++  border-right: none;
++  border-top-right-radius: 0;
++  border-bottom-right-radius: 0;
+   height: 2rem;
+   margin: 0;
++  padding-top: 0;
++  padding-bottom: 0;
++  font-size: 1rem;
+ }
+ 
+ .usa-search__submit-text {
+   display: none;
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width >= 30em) {
+   .usa-search__submit-text {
+     display: block;
+   }

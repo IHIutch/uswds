@@ -1,0 +1,49 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-checklist.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-checklist.css	2026-04-14 11:33:47
+@@ -1,7 +1,6 @@
+ .usa-checklist {
+-  margin-bottom: 0;
+   margin-top: 0;
+-  list-style-type: none;
++  margin-bottom: 0;
+   padding-left: 0;
+   font-family:
+     Source Sans Pro Web,
+@@ -12,29 +11,28 @@
+     sans-serif;
+   font-size: 1.06rem;
+   line-height: 1.5;
++  list-style-type: none;
+ }
+ 
+ .usa-checklist__item {
+   text-indent: -2.5rem;
+-  margin-bottom: 0;
+-  margin-top: 0;
+-  margin-bottom: 0;
+   margin-top: 0.5rem;
++  margin-bottom: 0;
+ }
+ 
+-.usa-checklist__item::before {
++.usa-checklist__item:before {
+   content: " ";
+-  display: inline-block;
++  width: 2rem;
+   height: 1rem;
+   margin-left: -0.25rem;
+   margin-right: 0.75rem;
+-  width: 2rem;
++  display: inline-block;
+ }
+ 
+-.usa-checklist__item.usa-checklist__item--checked::before {
++.usa-checklist__item.usa-checklist__item--checked:before {
+   background-image: url("../img/usa-icons-bg/check--blue-60v.svg"),
+-    linear-gradient(transparent, transparent);
+-  background-repeat: no-repeat;
++    linear-gradient(#0000, #0000);
+   background-position: center;
++  background-repeat: no-repeat;
+   background-size: 1.5rem;
+ }

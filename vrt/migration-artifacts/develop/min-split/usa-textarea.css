@@ -1,0 +1,51 @@
+.usa-textarea {
+  border-width: 1px;
+  border-color: #565c65;
+  border-style: solid;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+}
+
+.usa-textarea:disabled,
+.usa-textarea[aria-disabled="true"] {
+  color: #454545;
+  background-color: #c9c9c9;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.usa-textarea:disabled.usa-focus,
+.usa-textarea:disabled:active,
+.usa-textarea:disabled:focus,
+.usa-textarea:disabled:hover,
+.usa-textarea[aria-disabled="true"].usa-focus,
+.usa-textarea[aria-disabled="true"]:active,
+.usa-textarea[aria-disabled="true"]:focus,
+.usa-textarea[aria-disabled="true"]:hover {
+  color: #454545;
+  background-color: #c9c9c9;
+}
+
+@media (forced-colors: active) {
+  .usa-textarea:disabled,
+  .usa-textarea[aria-disabled="true"] {
+    color: GrayText;
+    border: 2px solid GrayText;
+  }
+  .usa-textarea:disabled.usa-focus,
+  .usa-textarea:disabled:active,
+  .usa-textarea:disabled:focus,
+  .usa-textarea:disabled:hover,
+  .usa-textarea[aria-disabled="true"].usa-focus,
+  .usa-textarea[aria-disabled="true"]:active,
+  .usa-textarea[aria-disabled="true"]:focus,
+  .usa-textarea[aria-disabled="true"]:hover {
+    color: GrayText;
+  }
+}
+
+.usa-textarea {
+  height: 10rem;
+}

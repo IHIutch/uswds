@@ -1,0 +1,107 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-input-group.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-input-group.css	2026-04-14 11:33:47
+@@ -1,7 +1,7 @@
+ .usa-input-group {
+   align-items: center;
+-  display: flex;
+   padding: 0;
++  display: flex;
+   position: relative;
+ }
+ 
+@@ -11,32 +11,28 @@
+ }
+ 
+ .usa-input-group--error {
+-  border-width: 0.25rem;
+-  border-color: #b50909;
+-  border-style: solid;
++  border: 0.25rem solid #b50909;
+ }
+ 
+ .usa-input-group--success {
+-  border-width: 0.25rem;
+-  border-color: #00a91c;
+-  border-style: solid;
++  border: 0.25rem solid #00a91c;
+ }
+ 
+ .usa-input-group input {
+-  padding-right: 2.5rem;
+   border: 0;
++  width: 100%;
++  min-width: 0;
+   height: 100%;
+   margin-top: 0;
+-  min-width: 0;
+-  width: 100%;
++  padding-right: 2.5rem;
+ }
+ 
+ .usa-input-group input:disabled + .usa-input-suffix,
+ .usa-input-group input[aria-disabled="true"] + .usa-input-suffix {
+   color: #454545;
+-  background-color: #c9c9c9;
+   cursor: not-allowed;
+   opacity: 1;
++  background-color: #c9c9c9;
+ }
+ 
+ .usa-input-group input:disabled + .usa-input-suffix:hover,
+@@ -54,8 +50,8 @@
+ @media (forced-colors: active) {
+   .usa-input-group input:disabled + .usa-input-suffix,
+   .usa-input-group input[aria-disabled="true"] + .usa-input-suffix {
++    color: graytext;
+     border: 0;
+-    color: GrayText;
+   }
+ 
+   .usa-input-group input:disabled + .usa-input-suffix:hover,
+@@ -65,21 +62,17 @@
+   .usa-input-group input[aria-disabled="true"] + .usa-input-suffix:active,
+   .usa-input-group input[aria-disabled="true"] + .usa-input-suffix:focus,
+   .usa-input-group input[aria-disabled="true"] + .usa-input-suffix.usa-focus {
+-    color: GrayText;
++    color: graytext;
+   }
+-}
+ 
+-@media (forced-colors: active) {
+   .usa-input-group input:disabled,
+   .usa-input-group input[aria-disabled="true"] {
+     border: 0;
+   }
+-}
+ 
+-@media (forced-colors: active) {
+   .usa-input-group:has(input:disabled),
+   .usa-input-group:has(input[aria-disabled="true"]) {
+-    border: 2px solid GrayText;
++    border: 2px solid graytext;
+   }
+ }
+ 
+@@ -94,20 +87,14 @@
+ }
+ 
+ .usa-input-group--sm,
+-.usa-form .usa-input-group--sm {
+-  max-width: 13ex;
+-}
+-
++.usa-form .usa-input-group--sm,
+ .usa-input-group--small,
+ .usa-form .usa-input-group--small {
+   max-width: 13ex;
+ }
+ 
+ .usa-input-group--md,
+-.usa-form .usa-input-group--md {
+-  max-width: 20ex;
+-}
+-
++.usa-form .usa-input-group--md,
+ .usa-input-group--medium,
+ .usa-form .usa-input-group--medium {
+   max-width: 20ex;

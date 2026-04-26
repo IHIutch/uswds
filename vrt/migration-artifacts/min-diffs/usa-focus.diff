@@ -1,0 +1,8 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-focus.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-focus.css	2026-04-14 12:35:23
+@@ -1,4 +1,4 @@
+ .usa-focus {
++  outline-offset: 0rem;
+   outline: 0.25rem solid #2491ff;
+-  outline-offset: 0;
+ }

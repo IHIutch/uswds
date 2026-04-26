@@ -1,0 +1,20 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-modal-wrapper.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-modal-wrapper.css	2026-04-14 12:35:23
+@@ -1,6 +1,6 @@
+ .usa-modal-wrapper {
+-  transition: opacity 0.15s ease-in-out;
+   text-align: center;
++  transition: opacity 0.15s ease-in-out;
+ }
+ 
+ @media (prefers-reduced-motion) {
+@@ -18,8 +18,8 @@
+ .usa-modal-wrapper.is-visible {
+   visibility: visible;
+   opacity: 1;
+-  position: fixed;
+   z-index: 99999;
++  position: fixed;
+ }
+ 
+ .usa-modal-wrapper [data-close-modal] > .usa-icon,

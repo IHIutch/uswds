@@ -1,0 +1,148 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-link.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-link.css	2026-04-14 11:33:47
+@@ -16,58 +16,56 @@
+ }
+ 
+ .usa-link:focus {
+-  outline: 0.25rem solid #2491ff;
+   outline-offset: 0rem;
++  outline: 0.25rem solid #2491ff;
+ }
+ 
+ .usa-link--external {
+   display: inline;
+ }
+ 
+-.usa-link--external::before {
++.usa-link--external:before {
++  content: "External.";
+   position: absolute;
+   left: -999em;
+   right: auto;
+-  content: "External.";
+ }
+ 
+-.usa-link--external[target="_blank"]::before {
++.usa-link--external[target="_blank"]:before {
++  content: "External, opens in a new tab.";
+   position: absolute;
+   left: -999em;
+   right: auto;
+-  content: "External, opens in a new tab.";
+ }
+ 
+-.usa-link--external::after {
++.usa-link--external:after {
++  content: "";
++  vertical-align: middle;
+   background-image: url("../img/usa-icons/launch.svg");
++  background-position: center;
+   background-repeat: no-repeat;
+-  background-position: center center;
+   background-size: 1.75ex 1.75ex;
+-  display: inline-block;
+-  height: 1.75ex;
+   width: 1.75ex;
+-  content: "";
+-  display: inline;
++  height: 1.75ex;
+   margin-top: 0.7ex;
+   margin-left: 2px;
+   padding-left: 1.75ex;
+-  vertical-align: middle;
++  display: inline;
+ }
+ 
+ @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-  .usa-link--external::after {
+-    background: none;
+-    background-color: currentColor;
++  .usa-link--external:after {
++    background: currentColor;
+     -webkit-mask-image: url("../img/usa-icons/launch.svg"),
+-      linear-gradient(transparent, transparent);
++      linear-gradient(#0000, #0000);
+     mask-image: url("../img/usa-icons/launch.svg"),
+-      linear-gradient(transparent, transparent);
+-    -webkit-mask-position: center center;
+-    mask-position: center center;
+-    -webkit-mask-repeat: no-repeat;
+-    mask-repeat: no-repeat;
++      linear-gradient(#0000, #0000);
++    -webkit-mask-position: center;
++    mask-position: center;
+     -webkit-mask-size: 1.75ex 1.75ex;
+     mask-size: 1.75ex 1.75ex;
++    -webkit-mask-repeat: no-repeat;
++    mask-repeat: no-repeat;
+   }
+ }
+ 
+@@ -75,49 +73,47 @@
+   display: inline;
+ }
+ 
+-.usa-link--external.usa-link--alt::before {
++.usa-link--external.usa-link--alt:before {
++  content: "External.";
+   position: absolute;
+   left: -999em;
+   right: auto;
+-  content: "External.";
+ }
+ 
+-.usa-link--external.usa-link--alt[target="_blank"]::before {
++.usa-link--external.usa-link--alt[target="_blank"]:before {
++  content: "External, opens in a new tab.";
+   position: absolute;
+   left: -999em;
+   right: auto;
+-  content: "External, opens in a new tab.";
+ }
+ 
+-.usa-link--external.usa-link--alt::after {
++.usa-link--external.usa-link--alt:after {
++  content: "";
++  vertical-align: middle;
+   background-image: url("../img/usa-icons-bg/launch--white.svg");
++  background-position: center;
+   background-repeat: no-repeat;
+-  background-position: center center;
+   background-size: 1.75ex 1.75ex;
+-  display: inline-block;
+-  height: 1.75ex;
+   width: 1.75ex;
+-  content: "";
+-  display: inline;
++  height: 1.75ex;
+   margin-top: 0.7ex;
+   margin-left: 2px;
+   padding-left: 1.75ex;
+-  vertical-align: middle;
++  display: inline;
+ }
+ 
+ @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-  .usa-link--external.usa-link--alt::after {
+-    background: none;
+-    background-color: currentColor;
++  .usa-link--external.usa-link--alt:after {
++    background: currentColor;
+     -webkit-mask-image: url("../img/usa-icons/launch.svg"),
+-      linear-gradient(transparent, transparent);
++      linear-gradient(#0000, #0000);
+     mask-image: url("../img/usa-icons/launch.svg"),
+-      linear-gradient(transparent, transparent);
+-    -webkit-mask-position: center center;
+-    mask-position: center center;
+-    -webkit-mask-repeat: no-repeat;
+-    mask-repeat: no-repeat;
++      linear-gradient(#0000, #0000);
++    -webkit-mask-position: center;
++    mask-position: center;
+     -webkit-mask-size: 1.75ex 1.75ex;
+     mask-size: 1.75ex 1.75ex;
++    -webkit-mask-repeat: no-repeat;
++    mask-repeat: no-repeat;
+   }
+ }

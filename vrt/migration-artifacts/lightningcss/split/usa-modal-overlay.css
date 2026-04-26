@@ -1,0 +1,27 @@
+.usa-modal-overlay {
+  scroll-behavior: smooth;
+  background: #000000b3;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden scroll;
+}
+
+.usa-modal-overlay:before {
+  content: "";
+  vertical-align: middle;
+  height: 100%;
+  display: inline-block;
+}
+
+.usa-modal-overlay[data-force-action="true"] {
+  pointer-events: none;
+}
+
+.usa-modal-overlay[data-force-action="true"] * {
+  pointer-events: auto;
+}

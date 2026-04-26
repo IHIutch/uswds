@@ -1,0 +1,125 @@
+.usa-tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.usa-tooltip__trigger {
+  cursor: pointer;
+}
+
+.usa-tooltip__trigger > svg {
+  pointer-events: none;
+  display: block;
+}
+
+.usa-tooltip__body,
+.usa-tooltip__body--top {
+  color: #f0f0f0;
+  opacity: 0;
+  white-space: pre;
+  z-index: 100000;
+  background-color: #1b1b1b;
+  border-radius: 0.25rem;
+  width: auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: opacity 80ms ease-in-out;
+  display: none;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion) {
+  .usa-tooltip__body,
+  .usa-tooltip__body--top {
+    transition: none;
+  }
+}
+
+.usa-tooltip__body:after,
+.usa-tooltip__body--top:after {
+  content: "";
+  border-top: 5px solid #1b1b1b;
+  border-left: 5px solid #0000;
+  border-right: 5px solid #0000;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+}
+
+.usa-tooltip__body:before,
+.usa-tooltip__body--top:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.usa-tooltip__body--wrap {
+  white-space: normal;
+  text-align: center;
+  width: 100%;
+  min-width: 50vw;
+}
+
+.usa-tooltip__body.is-set {
+  display: block;
+}
+
+.usa-tooltip__body.is-visible {
+  opacity: 1;
+}
+
+.usa-tooltip__body--top:before {
+  height: 5px;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.usa-tooltip__body--bottom:before {
+  height: 5px;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+}
+
+.usa-tooltip__body--bottom:after {
+  border: 5px solid #0000;
+  border-top: 0;
+  border-bottom-color: #1b1b1b;
+  top: -5px;
+  bottom: auto;
+}
+
+.usa-tooltip__body--right:before {
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+}
+
+.usa-tooltip__body--right:after {
+  border: 5px solid #0000;
+  border-left: 0;
+  border-right-color: #1b1b1b;
+  margin: -5px 0 0;
+  inset: 50% auto 0 -5px;
+}
+
+.usa-tooltip__body--left:before {
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+}
+
+.usa-tooltip__body--left:after {
+  border: 5px solid #0000;
+  border-left-color: #1b1b1b;
+  border-right: 0;
+  margin: -5px 0 0;
+  inset: 50% -5px 0 auto;
+}

@@ -1,0 +1,97 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-menu-btn.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-menu-btn.css	2026-04-14 11:33:47
+@@ -1,26 +1,21 @@
+ .usa-menu-btn {
+-  color: #005ea2;
+-  text-decoration: underline;
+-  background-color: transparent;
++  color: #fff;
++  box-shadow: none;
++  text-align: left;
++  text-align: center;
++  text-transform: uppercase;
++  background-color: #005ea2;
+   border: 0;
+   border-radius: 0;
+-  box-shadow: none;
+-  font-weight: normal;
++  flex: 0 auto;
+   justify-content: normal;
+-  text-align: left;
+-  margin: 0;
+-  padding: 0;
+   width: auto;
+-  flex: 0 1 auto;
+-  padding-left: 0.75rem;
+-  padding-right: 0.75rem;
+-  background-color: #005ea2;
+-  color: white;
+-  font-size: 0.87rem;
+   height: 3rem;
+-  text-align: center;
++  margin: 0;
++  padding: 0 0.75rem;
++  font-size: 0.87rem;
++  font-weight: normal;
+   text-decoration: none;
+-  text-transform: uppercase;
+ }
+ 
+ .usa-menu-btn:visited {
+@@ -31,13 +26,9 @@
+   color: #1a4480;
+ }
+ 
+-.usa-menu-btn:active {
+-  color: #162e51;
+-}
+-
+ .usa-menu-btn:focus {
+-  outline: 0.25rem solid #2491ff;
+   outline-offset: 0rem;
++  outline: 0.25rem solid #2491ff;
+ }
+ 
+ .usa-menu-btn:hover,
+@@ -59,8 +50,8 @@
+ .usa-menu-btn:disabled,
+ .usa-menu-btn[aria-disabled="true"],
+ .usa-menu-btn.usa-button--disabled {
+-  background-color: transparent;
+   box-shadow: none;
++  background-color: #0000;
+   text-decoration: underline;
+ }
+ 
+@@ -86,26 +77,23 @@
+   .usa-menu-btn:disabled:hover,
+   .usa-menu-btn[aria-disabled="true"]:hover,
+   .usa-menu-btn[aria-disabled="true"]:focus {
+-    color: GrayText;
++    color: graytext;
+   }
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-menu-btn {
+     display: none;
+   }
+ }
+ 
+ .usa-menu-btn:hover {
++  color: #fff;
+   background-color: #1a4480;
+-  color: white;
+   text-decoration: none;
+ }
+ 
+-.usa-menu-btn:active {
+-  color: white;
+-}
+-
++.usa-menu-btn:active,
+ .usa-menu-btn:visited {
+-  color: white;
++  color: #fff;
+ }

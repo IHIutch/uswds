@@ -1,0 +1,130 @@
+.usa-language {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  padding: 0 0 0.25rem 0.5rem;
+  width: 100%;
+}
+
+.usa-language--small .usa-button {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  font-size: 0.87rem;
+  height: 2rem;
+  margin-top: 0.3rem;
+  min-width: 3rem;
+}
+
+.usa-language__link {
+  margin-right: 0rem;
+}
+
+.usa-language__primary {
+  width: auto;
+}
+
+.usa-language__primary-item:last-of-type {
+  position: relative;
+}
+
+.usa-language__primary-item:last-of-type .usa-language__submenu {
+  position: absolute;
+  right: 0;
+}
+
+.usa-language__submenu {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  background-color: #162e51;
+  position: absolute;
+  width: 15rem;
+  z-index: 400;
+}
+
+.usa-language__submenu > li {
+  margin-bottom: 0;
+  max-width: unset;
+}
+
+.usa-language__submenu-item {
+  border-top: 1px solid #dfe1e2;
+  font-size: 0.93rem;
+}
+
+.usa-language__submenu .usa-current::after {
+  display: none;
+}
+
+@media all and (min-width: 40em) {
+  .usa-language__submenu .usa-current::after {
+    display: none;
+  }
+}
+
+.usa-language__submenu a:not(.usa-button) {
+  padding-left: 2rem;
+}
+
+.usa-language__submenu .usa-language__submenu a:not(.usa-button) {
+  padding-left: 3rem;
+}
+
+.usa-language__submenu
+  .usa-language__submenu
+  .usa-language__submenu
+  a:not(.usa-button) {
+  padding-left: 4rem;
+}
+
+.usa-language__submenu[aria-hidden="true"] {
+  display: none;
+}
+
+.usa-language__submenu .usa-language__submenu-item a {
+  color: white;
+  display: block;
+  line-height: 1.3;
+  padding: 0;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.usa-language__submenu .usa-language__submenu-item a:focus {
+  outline-offset: -0.25rem;
+}
+
+.usa-language__submenu .usa-language__submenu-item a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.usa-language__submenu-list {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.usa-language__submenu-list > li {
+  margin-bottom: 0;
+  max-width: unset;
+}
+
+.usa-language__submenu-list .usa-language__submenu-list-item {
+  margin: 0;
+  font-size: 0.93rem;
+}
+
+.usa-language__submenu-list .usa-language__submenu-list-item a {
+  line-height: 1.3;
+}

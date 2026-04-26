@@ -1,0 +1,153 @@
+.usa-pagination {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  color: #1b1b1b;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.usa-pagination .usa-icon {
+  height: 1.13rem;
+  width: 1.13rem;
+}
+
+.usa-pagination__list {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: auto;
+}
+
+.usa-pagination__item {
+  display: inline-flex;
+  height: 2.5rem;
+  justify-content: center;
+  line-height: 1;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  min-width: 2.5rem;
+}
+
+@media all and (min-width: 40em) {
+  .usa-pagination__item {
+    flex: 1 0 auto;
+  }
+}
+
+.usa-pagination__arrow {
+  display: none;
+}
+
+@media all and (min-width: 40em) {
+  .usa-pagination__arrow {
+    display: inherit;
+  }
+  .usa-pagination__previous-page {
+    margin-right: 1.25rem;
+  }
+  .usa-pagination__next-page {
+    margin-left: 1.25rem;
+  }
+}
+
+.usa-pagination__link {
+  align-items: center;
+  color: #005ea2;
+  display: inline-flex;
+}
+
+.usa-pagination__link[disabled] {
+  opacity: 0.4 !important;
+  pointer-events: none;
+}
+
+.usa-pagination__link:active,
+.usa-pagination__link:focus,
+.usa-pagination__link:hover {
+  color: #1a4480;
+}
+
+.usa-pagination__link:visited {
+  color: #005ea2;
+}
+
+.usa-pagination__button {
+  align-items: center;
+  border-color: rgba(27, 27, 27, 0.2);
+  border-radius: 0.25rem;
+  border-style: solid;
+  border-width: 1px;
+  color: #005ea2;
+  display: inline-flex;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.usa-pagination__button:active,
+.usa-pagination__button:focus,
+.usa-pagination__button:hover {
+  color: #1a4480;
+  border-color: #1a4480;
+}
+
+@media (forced-colors: active) {
+  .usa-pagination__button:active,
+  .usa-pagination__button:focus,
+  .usa-pagination__button:hover {
+    border: 2px solid transparent;
+  }
+}
+
+.usa-pagination .usa-current {
+  background-color: #1b1b1b;
+  border-color: transparent;
+  color: #fff;
+}
+
+@media (forced-colors: active) {
+  .usa-pagination .usa-current {
+    border: 2px solid transparent;
+    color: buttonText;
+  }
+}
+
+.usa-pagination .usa-current:active,
+.usa-pagination .usa-current:focus,
+.usa-pagination .usa-current:hover {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+@media (forced-colors: active) {
+  .usa-pagination .usa-current:active,
+  .usa-pagination .usa-current:focus,
+  .usa-pagination .usa-current:hover {
+    color: buttontext;
+  }
+}
+
+.usa-pagination__overflow {
+  align-items: center;
+  align-self: stretch;
+  display: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0.5rem;
+}

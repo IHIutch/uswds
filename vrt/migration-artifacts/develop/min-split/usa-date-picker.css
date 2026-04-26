@@ -1,0 +1,868 @@
+.usa-date-picker__wrapper {
+  display: none;
+  position: relative;
+  max-width: 30rem;
+}
+
+.usa-date-picker__wrapper:focus {
+  outline: 0;
+}
+
+.usa-date-picker__button:disabled,
+.usa-date-picker__calendar__date:disabled,
+.usa-date-picker__calendar__month-selection:disabled,
+.usa-date-picker__calendar__month:disabled,
+.usa-date-picker__calendar__next-month:disabled,
+.usa-date-picker__calendar__next-year-chunk:disabled,
+.usa-date-picker__calendar__next-year:disabled,
+.usa-date-picker__calendar__previous-month:disabled,
+.usa-date-picker__calendar__previous-year-chunk:disabled,
+.usa-date-picker__calendar__previous-year:disabled,
+.usa-date-picker__calendar__year-selection:disabled,
+.usa-date-picker__calendar__year:disabled,
+.usa-date-picker__external-input[aria-disabled="true"]
+  + .usa-date-picker__button,
+[aria-disabled="true"].usa-date-picker__button,
+[aria-disabled="true"].usa-date-picker__calendar__date,
+[aria-disabled="true"].usa-date-picker__calendar__month,
+[aria-disabled="true"].usa-date-picker__calendar__month-selection,
+[aria-disabled="true"].usa-date-picker__calendar__next-month,
+[aria-disabled="true"].usa-date-picker__calendar__next-year,
+[aria-disabled="true"].usa-date-picker__calendar__next-year-chunk,
+[aria-disabled="true"].usa-date-picker__calendar__previous-month,
+[aria-disabled="true"].usa-date-picker__calendar__previous-year,
+[aria-disabled="true"].usa-date-picker__calendar__previous-year-chunk,
+[aria-disabled="true"].usa-date-picker__calendar__year,
+[aria-disabled="true"].usa-date-picker__calendar__year-selection {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.usa-date-picker__button:hover:disabled,
+.usa-date-picker__calendar__date:hover:disabled,
+.usa-date-picker__calendar__month-selection:hover:disabled,
+.usa-date-picker__calendar__month:hover:disabled,
+.usa-date-picker__calendar__next-month:hover:disabled,
+.usa-date-picker__calendar__next-year-chunk:hover:disabled,
+.usa-date-picker__calendar__next-year:hover:disabled,
+.usa-date-picker__calendar__previous-month:hover:disabled,
+.usa-date-picker__calendar__previous-year-chunk:hover:disabled,
+.usa-date-picker__calendar__previous-year:hover:disabled,
+.usa-date-picker__calendar__year-selection:hover:disabled,
+.usa-date-picker__calendar__year:hover:disabled,
+.usa-date-picker__external-input[aria-disabled="true"]
+  + .usa-date-picker__button:hover,
+[aria-disabled="true"].usa-date-picker__button:hover,
+[aria-disabled="true"].usa-date-picker__calendar__date:hover,
+[aria-disabled="true"].usa-date-picker__calendar__month-selection:hover,
+[aria-disabled="true"].usa-date-picker__calendar__month:hover,
+[aria-disabled="true"].usa-date-picker__calendar__next-month:hover,
+[aria-disabled="true"].usa-date-picker__calendar__next-year-chunk:hover,
+[aria-disabled="true"].usa-date-picker__calendar__next-year:hover,
+[aria-disabled="true"].usa-date-picker__calendar__previous-month:hover,
+[aria-disabled="true"].usa-date-picker__calendar__previous-year-chunk:hover,
+[aria-disabled="true"].usa-date-picker__calendar__previous-year:hover,
+[aria-disabled="true"].usa-date-picker__calendar__year-selection:hover,
+[aria-disabled="true"].usa-date-picker__calendar__year:hover {
+  background-color: initial;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__button:disabled,
+  .usa-date-picker__button:hover:disabled,
+  .usa-date-picker__calendar__date:disabled,
+  .usa-date-picker__calendar__date:hover:disabled,
+  .usa-date-picker__calendar__month-selection:disabled,
+  .usa-date-picker__calendar__month-selection:hover:disabled,
+  .usa-date-picker__calendar__month:disabled,
+  .usa-date-picker__calendar__month:hover:disabled,
+  .usa-date-picker__calendar__next-month:disabled,
+  .usa-date-picker__calendar__next-month:hover:disabled,
+  .usa-date-picker__calendar__next-year-chunk:disabled,
+  .usa-date-picker__calendar__next-year-chunk:hover:disabled,
+  .usa-date-picker__calendar__next-year:disabled,
+  .usa-date-picker__calendar__next-year:hover:disabled,
+  .usa-date-picker__calendar__previous-month:disabled,
+  .usa-date-picker__calendar__previous-month:hover:disabled,
+  .usa-date-picker__calendar__previous-year-chunk:disabled,
+  .usa-date-picker__calendar__previous-year-chunk:hover:disabled,
+  .usa-date-picker__calendar__previous-year:disabled,
+  .usa-date-picker__calendar__previous-year:hover:disabled,
+  .usa-date-picker__calendar__year-selection:disabled,
+  .usa-date-picker__calendar__year-selection:hover:disabled,
+  .usa-date-picker__calendar__year:disabled,
+  .usa-date-picker__calendar__year:hover:disabled,
+  .usa-date-picker__external-input[aria-disabled="true"]
+    + .usa-date-picker__button,
+  .usa-date-picker__external-input[aria-disabled="true"]
+    + .usa-date-picker__button:hover,
+  [aria-disabled="true"].usa-date-picker__button,
+  [aria-disabled="true"].usa-date-picker__button:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__date,
+  [aria-disabled="true"].usa-date-picker__calendar__date:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__month,
+  [aria-disabled="true"].usa-date-picker__calendar__month-selection,
+  [aria-disabled="true"].usa-date-picker__calendar__month-selection:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__month:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__next-month,
+  [aria-disabled="true"].usa-date-picker__calendar__next-month:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__next-year,
+  [aria-disabled="true"].usa-date-picker__calendar__next-year-chunk,
+  [aria-disabled="true"].usa-date-picker__calendar__next-year-chunk:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__next-year:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__previous-month,
+  [aria-disabled="true"].usa-date-picker__calendar__previous-month:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__previous-year,
+  [aria-disabled="true"].usa-date-picker__calendar__previous-year-chunk,
+  [aria-disabled="true"].usa-date-picker__calendar__previous-year-chunk:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__previous-year:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__year,
+  [aria-disabled="true"].usa-date-picker__calendar__year-selection,
+  [aria-disabled="true"].usa-date-picker__calendar__year-selection:hover,
+  [aria-disabled="true"].usa-date-picker__calendar__year:hover {
+    background-color: GrayText;
+  }
+}
+
+.usa-date-picker__calendar__month,
+.usa-date-picker__calendar__next-year-chunk,
+.usa-date-picker__calendar__previous-year-chunk,
+.usa-date-picker__calendar__year {
+  background-color: #f0f0f0;
+  border: 0;
+  width: 100%;
+}
+
+.usa-date-picker__calendar__month-selection,
+.usa-date-picker__calendar__year-selection {
+  background-color: #f0f0f0;
+  border: 0;
+}
+
+.usa-date-picker__calendar__date,
+.usa-date-picker__calendar__next-month,
+.usa-date-picker__calendar__next-year,
+.usa-date-picker__calendar__previous-month,
+.usa-date-picker__calendar__previous-year {
+  background-color: #f0f0f0;
+  border: 0;
+  width: 100%;
+}
+
+.usa-date-picker__button {
+  border: 0;
+}
+
+.usa-date-picker__button:not([disabled]),
+.usa-date-picker__calendar__date:not([disabled]),
+.usa-date-picker__calendar__month-selection:not([disabled]),
+.usa-date-picker__calendar__month:not([disabled]),
+.usa-date-picker__calendar__next-month:not([disabled]),
+.usa-date-picker__calendar__next-year-chunk:not([disabled]),
+.usa-date-picker__calendar__next-year:not([disabled]),
+.usa-date-picker__calendar__previous-month:not([disabled]),
+.usa-date-picker__calendar__previous-year-chunk:not([disabled]),
+.usa-date-picker__calendar__previous-year:not([disabled]),
+.usa-date-picker__calendar__year-selection:not([disabled]),
+.usa-date-picker__calendar__year:not([disabled]) {
+  cursor: pointer;
+}
+
+.usa-date-picker__button:not([disabled]):focus,
+.usa-date-picker__calendar__date:not([disabled]):focus,
+.usa-date-picker__calendar__month-selection:not([disabled]):focus,
+.usa-date-picker__calendar__month:not([disabled]):focus,
+.usa-date-picker__calendar__next-month:not([disabled]):focus,
+.usa-date-picker__calendar__next-year-chunk:not([disabled]):focus,
+.usa-date-picker__calendar__next-year:not([disabled]):focus,
+.usa-date-picker__calendar__previous-month:not([disabled]):focus,
+.usa-date-picker__calendar__previous-year-chunk:not([disabled]):focus,
+.usa-date-picker__calendar__previous-year:not([disabled]):focus,
+.usa-date-picker__calendar__year-selection:not([disabled]):focus,
+.usa-date-picker__calendar__year:not([disabled]):focus {
+  outline-offset: -4px;
+}
+
+.usa-date-picker__button:not([disabled]):hover,
+.usa-date-picker__calendar__date:not([disabled]):hover,
+.usa-date-picker__calendar__month-selection:not([disabled]):hover,
+.usa-date-picker__calendar__month:not([disabled]):hover,
+.usa-date-picker__calendar__next-month:not([disabled]):hover,
+.usa-date-picker__calendar__next-year-chunk:not([disabled]):hover,
+.usa-date-picker__calendar__next-year:not([disabled]):hover,
+.usa-date-picker__calendar__previous-month:not([disabled]):hover,
+.usa-date-picker__calendar__previous-year-chunk:not([disabled]):hover,
+.usa-date-picker__calendar__previous-year:not([disabled]):hover,
+.usa-date-picker__calendar__year-selection:not([disabled]):hover,
+.usa-date-picker__calendar__year:not([disabled]):hover {
+  background-color: #dfe1e2;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__button:not([disabled]):hover,
+  .usa-date-picker__calendar__date:not([disabled]):hover,
+  .usa-date-picker__calendar__month-selection:not([disabled]):hover,
+  .usa-date-picker__calendar__month:not([disabled]):hover,
+  .usa-date-picker__calendar__next-month:not([disabled]):hover,
+  .usa-date-picker__calendar__next-year-chunk:not([disabled]):hover,
+  .usa-date-picker__calendar__next-year:not([disabled]):hover,
+  .usa-date-picker__calendar__previous-month:not([disabled]):hover,
+  .usa-date-picker__calendar__previous-year-chunk:not([disabled]):hover,
+  .usa-date-picker__calendar__previous-year:not([disabled]):hover,
+  .usa-date-picker__calendar__year-selection:not([disabled]):hover,
+  .usa-date-picker__calendar__year:not([disabled]):hover {
+    background-color: buttontext;
+  }
+}
+
+.usa-date-picker__button:not([disabled]):active,
+.usa-date-picker__calendar__date:not([disabled]):active,
+.usa-date-picker__calendar__month-selection:not([disabled]):active,
+.usa-date-picker__calendar__month:not([disabled]):active,
+.usa-date-picker__calendar__next-month:not([disabled]):active,
+.usa-date-picker__calendar__next-year-chunk:not([disabled]):active,
+.usa-date-picker__calendar__next-year:not([disabled]):active,
+.usa-date-picker__calendar__previous-month:not([disabled]):active,
+.usa-date-picker__calendar__previous-year-chunk:not([disabled]):active,
+.usa-date-picker__calendar__previous-year:not([disabled]):active,
+.usa-date-picker__calendar__year-selection:not([disabled]):active,
+.usa-date-picker__calendar__year:not([disabled]):active {
+  background-color: #a9aeb1;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__button:not([disabled]):active,
+  .usa-date-picker__calendar__date:not([disabled]):active,
+  .usa-date-picker__calendar__month-selection:not([disabled]):active,
+  .usa-date-picker__calendar__month:not([disabled]):active,
+  .usa-date-picker__calendar__next-month:not([disabled]):active,
+  .usa-date-picker__calendar__next-year-chunk:not([disabled]):active,
+  .usa-date-picker__calendar__next-year:not([disabled]):active,
+  .usa-date-picker__calendar__previous-month:not([disabled]):active,
+  .usa-date-picker__calendar__previous-year-chunk:not([disabled]):active,
+  .usa-date-picker__calendar__previous-year:not([disabled]):active,
+  .usa-date-picker__calendar__year-selection:not([disabled]):active,
+  .usa-date-picker__calendar__year:not([disabled]):active {
+    background-color: buttontext;
+  }
+}
+
+.usa-date-picker--active .usa-date-picker__button {
+  background-color: #f0f0f0;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker--active .usa-date-picker__button {
+    background-color: buttontext;
+  }
+}
+
+.usa-date-picker--active .usa-date-picker__calendar {
+  z-index: 400;
+}
+
+.usa-date-picker__button {
+  background-image: url(../img/usa-icons/calendar_today.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+  align-self: stretch;
+  background-color: transparent;
+  background-position: center;
+  background-size: 1.5rem;
+  margin-top: 0.5em;
+  width: 3em;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__button {
+    background-image: url(../img/usa-icons/calendar_today.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2.5rem 2.5rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 3rem;
+    -webkit-mask-size: 1.5rem !important;
+    mask-size: 1.5rem !important;
+    position: relative;
+  }
+  @supports ((-webkit-mask: url()) or (mask: url())) {
+    .usa-date-picker__button {
+      background: 0 0;
+      background-color: ButtonText;
+      -webkit-mask-image: url(../img/usa-icons/calendar_today.svg),
+        linear-gradient(transparent, transparent);
+      mask-image: url(../img/usa-icons/calendar_today.svg),
+        linear-gradient(transparent, transparent);
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 2.5rem 2.5rem;
+      mask-size: 2.5rem 2.5rem;
+    }
+  }
+  .usa-date-picker__button:not([disabled]):focus,
+  .usa-date-picker__button:not([disabled]):hover {
+    background-color: Highlight;
+  }
+}
+
+.usa-date-picker--initialized .usa-date-picker__wrapper {
+  display: flex;
+}
+
+.usa-date-picker__calendar {
+  background-color: #f0f0f0;
+  left: auto;
+  max-width: 20rem;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.usa-date-picker__calendar__table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.usa-date-picker__calendar__table th {
+  font-weight: 400;
+}
+
+.usa-date-picker__calendar__table td {
+  padding: 0;
+}
+
+.usa-date-picker__calendar__row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}
+
+.usa-date-picker__calendar__cell {
+  background-color: #f0f0f0;
+  flex: 1;
+}
+
+.usa-date-picker__calendar__cell--center-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__cell--center-items:not([disabled]):hover {
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+  }
+}
+
+.usa-date-picker__calendar__next-month,
+.usa-date-picker__calendar__next-year,
+.usa-date-picker__calendar__previous-month,
+.usa-date-picker__calendar__previous-year {
+  background-position: center;
+  background-size: auto 1.5rem;
+  height: 1.5rem;
+  padding: 20px 10px;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__next-month,
+  .usa-date-picker__calendar__next-year,
+  .usa-date-picker__calendar__previous-month,
+  .usa-date-picker__calendar__previous-year {
+    -webkit-mask-size: 1.5rem !important;
+    mask-size: 1.5rem !important;
+  }
+}
+
+.usa-date-picker__calendar__previous-year:not([disabled]) {
+  background-image: url(../img/usa-icons/navigate_far_before.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__previous-year:not([disabled]) {
+    background-image: url(../img/usa-icons/navigate_far_before.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2.5rem 2.5rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 3rem;
+    background-color: buttonText;
+  }
+  @supports ((-webkit-mask: url()) or (mask: url())) {
+    .usa-date-picker__calendar__previous-year:not([disabled]) {
+      background: 0 0;
+      background-color: ButtonText;
+      -webkit-mask-image: url(../img/usa-icons/navigate_far_before.svg),
+        linear-gradient(transparent, transparent);
+      mask-image: url(../img/usa-icons/navigate_far_before.svg),
+        linear-gradient(transparent, transparent);
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 2.5rem 2.5rem;
+      mask-size: 2.5rem 2.5rem;
+    }
+  }
+}
+
+.usa-date-picker__calendar__previous-month:not([disabled]) {
+  background-image: url(../img/usa-icons/navigate_before.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__previous-month:not([disabled]) {
+    background-image: url(../img/usa-icons/navigate_before.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2.5rem 2.5rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 3rem;
+    background-color: buttonText;
+  }
+  @supports ((-webkit-mask: url()) or (mask: url())) {
+    .usa-date-picker__calendar__previous-month:not([disabled]) {
+      background: 0 0;
+      background-color: ButtonText;
+      -webkit-mask-image: url(../img/usa-icons/navigate_before.svg),
+        linear-gradient(transparent, transparent);
+      mask-image: url(../img/usa-icons/navigate_before.svg),
+        linear-gradient(transparent, transparent);
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 2.5rem 2.5rem;
+      mask-size: 2.5rem 2.5rem;
+    }
+  }
+}
+
+.usa-date-picker__calendar__next-year:not([disabled]) {
+  background-image: url(../img/usa-icons/navigate_far_next.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__next-year:not([disabled]) {
+    background-image: url(../img/usa-icons/navigate_far_next.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2.5rem 2.5rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 3rem;
+    background-color: buttonText;
+  }
+  @supports ((-webkit-mask: url()) or (mask: url())) {
+    .usa-date-picker__calendar__next-year:not([disabled]) {
+      background: 0 0;
+      background-color: ButtonText;
+      -webkit-mask-image: url(../img/usa-icons/navigate_far_next.svg),
+        linear-gradient(transparent, transparent);
+      mask-image: url(../img/usa-icons/navigate_far_next.svg),
+        linear-gradient(transparent, transparent);
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 2.5rem 2.5rem;
+      mask-size: 2.5rem 2.5rem;
+    }
+  }
+}
+
+.usa-date-picker__calendar__next-month:not([disabled]) {
+  background-image: url(../img/usa-icons/navigate_next.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__next-month:not([disabled]) {
+    background-image: url(../img/usa-icons/navigate_next.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2.5rem 2.5rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 3rem;
+    background-color: buttonText;
+  }
+  @supports ((-webkit-mask: url()) or (mask: url())) {
+    .usa-date-picker__calendar__next-month:not([disabled]) {
+      background: 0 0;
+      background-color: ButtonText;
+      -webkit-mask-image: url(../img/usa-icons/navigate_next.svg),
+        linear-gradient(transparent, transparent);
+      mask-image: url(../img/usa-icons/navigate_next.svg),
+        linear-gradient(transparent, transparent);
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 2.5rem 2.5rem;
+      mask-size: 2.5rem 2.5rem;
+    }
+  }
+}
+
+.usa-date-picker__calendar__day-of-week {
+  padding: 6px 0;
+}
+
+.usa-date-picker__calendar__date {
+  padding: 10px 0;
+}
+
+.usa-date-picker__calendar__date--focused {
+  outline: 2px solid #162e51;
+  outline-offset: -2px;
+  position: relative;
+  z-index: 100;
+}
+
+.usa-date-picker__calendar__date--next-month:not([disabled]),
+.usa-date-picker__calendar__date--previous-month:not([disabled]) {
+  color: #5d5d52;
+}
+
+.usa-date-picker__calendar__date--range-date,
+.usa-date-picker__calendar__date--selected {
+  background-color: #0050d8;
+  color: #f9f9f9;
+}
+
+.usa-date-picker__calendar__date--range-date:not([disabled]),
+.usa-date-picker__calendar__date--selected:not([disabled]) {
+  background-color: #0050d8;
+  color: #f9f9f9;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__date--range-date:not([disabled]),
+  .usa-date-picker__calendar__date--selected:not([disabled]) {
+    border: ActiveText 2px solid;
+  }
+}
+
+.usa-date-picker__calendar__date--range-date:not([disabled]):hover,
+.usa-date-picker__calendar__date--selected:not([disabled]):hover {
+  background-color: #0050d8;
+  color: #e6e6e6;
+}
+
+.usa-date-picker__calendar__date--range-date:not([disabled]):focus,
+.usa-date-picker__calendar__date--selected:not([disabled]):focus {
+  background-color: #0050d8;
+  color: #f9f9f9;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__date--range-date:not([disabled]):focus,
+  .usa-date-picker__calendar__date--selected:not([disabled]):focus {
+    border: ActiveText 2px solid;
+  }
+}
+
+.usa-date-picker__calendar__date--range-date:not([disabled]):active,
+.usa-date-picker__calendar__date--selected:not([disabled]):active {
+  background-color: #1a4480;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__date--range-date:not([disabled]):active,
+  .usa-date-picker__calendar__date--selected:not([disabled]):active {
+    background-color: Highlight;
+  }
+}
+
+.usa-date-picker__calendar__date--range-date-start {
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.usa-date-picker__calendar__date--range-date-end {
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.usa-date-picker__calendar__date--within-range {
+  background-color: #cfe8ff;
+}
+
+.usa-date-picker__calendar__date--within-range:not([disabled]),
+.usa-date-picker__calendar__date--within-range:not([disabled]):hover {
+  background-color: #cfe8ff;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__date--within-range:not([disabled]) {
+    border: Highlight 2px solid;
+  }
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__date--within-range:not([disabled]):hover {
+    border: Highlight 2px solid;
+  }
+}
+
+.usa-date-picker__calendar__date--within-range:not([disabled]):focus {
+  background-color: #cfe8ff;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__date--within-range:not([disabled]):focus {
+    border: Highlight 2px solid;
+  }
+}
+
+.usa-date-picker__calendar__date--within-range:not([disabled]):active {
+  background-color: #cfe8ff;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__date--within-range:not([disabled]):active {
+    background-color: Highlight;
+  }
+}
+
+@media all and (max-width: 19.99em) {
+  .usa-date-picker__calendar__month-label {
+    min-width: 100%;
+    order: -1;
+  }
+}
+
+@media all and (min-width: 20em) {
+  .usa-date-picker__calendar__month-label {
+    flex: 4;
+    text-align: center;
+  }
+}
+
+.usa-date-picker__calendar__month-selection,
+.usa-date-picker__calendar__year-selection {
+  display: inline-block;
+  height: 100%;
+  padding: 8px 4px;
+  width: auto;
+}
+
+@media all and (max-width: 19.99em) {
+  .usa-date-picker__calendar__month-selection,
+  .usa-date-picker__calendar__year-selection {
+    padding-bottom: 0;
+    padding-top: 12px;
+  }
+}
+
+.usa-date-picker__calendar__month-picker {
+  padding: 20px 5px;
+}
+
+@media all and (max-width: 19.99em) {
+  .usa-date-picker__calendar__month-picker {
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+  .usa-date-picker__calendar__month-picker tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.usa-date-picker__calendar__month {
+  padding: 10px 0;
+}
+
+.usa-date-picker__calendar__month--focused {
+  outline: 2px solid #162e51;
+  outline-offset: -2px;
+  position: relative;
+  z-index: 100;
+}
+
+.usa-date-picker__calendar__month--selected {
+  background-color: #0050d8;
+  color: #f9f9f9;
+}
+
+.usa-date-picker__calendar__month--selected:not([disabled]) {
+  background-color: #0050d8;
+  color: #f9f9f9;
+}
+
+.usa-date-picker__calendar__month--selected:not([disabled]):hover {
+  background-color: #0050d8;
+  color: #e6e6e6;
+}
+
+.usa-date-picker__calendar__month--selected:not([disabled]):focus {
+  background-color: #0050d8;
+  color: #f9f9f9;
+}
+
+.usa-date-picker__calendar__month--selected:not([disabled]):active {
+  background-color: #1a4480;
+}
+
+.usa-date-picker__calendar__year-picker {
+  padding: 20px 5px;
+}
+
+.usa-date-picker__calendar__next-year-chunk,
+.usa-date-picker__calendar__previous-year-chunk {
+  background-position: center;
+  background-size: auto 2rem;
+  margin: auto;
+  padding: 40px 0;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__next-year-chunk,
+  .usa-date-picker__calendar__previous-year-chunk {
+    -webkit-mask-size: 1.5rem !important;
+    mask-size: 1.5rem !important;
+  }
+}
+
+.usa-date-picker__calendar__previous-year-chunk:not([disabled]) {
+  background-image: url(../img/usa-icons/navigate_before.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__previous-year-chunk:not([disabled]) {
+    background-image: none;
+  }
+  .usa-date-picker__calendar__previous-year-chunk:not([disabled])::after {
+    background-image: url(../img/usa-icons/navigate_before.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2.5rem 2.5rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 3rem;
+    content: "";
+    vertical-align: middle;
+    margin-left: auto;
+  }
+  @supports ((-webkit-mask: url()) or (mask: url())) {
+    .usa-date-picker__calendar__previous-year-chunk:not([disabled])::after {
+      background: 0 0;
+      background-color: ButtonText;
+      -webkit-mask-image: url(../img/usa-icons/navigate_before.svg),
+        linear-gradient(transparent, transparent);
+      mask-image: url(../img/usa-icons/navigate_before.svg),
+        linear-gradient(transparent, transparent);
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 2.5rem 2.5rem;
+      mask-size: 2.5rem 2.5rem;
+    }
+  }
+  .usa-date-picker__calendar__previous-year-chunk:not([disabled]):hover {
+    border: 2px solid transparent;
+    background-color: transparent;
+  }
+}
+
+.usa-date-picker__calendar__next-year-chunk:not([disabled]) {
+  background-image: url(../img/usa-icons/navigate_next.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+@media (forced-colors: active) {
+  .usa-date-picker__calendar__next-year-chunk:not([disabled]) {
+    background-image: none;
+  }
+  .usa-date-picker__calendar__next-year-chunk:not([disabled])::after {
+    background-image: url(../img/usa-icons/navigate_next.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 2.5rem 2.5rem;
+    display: inline-block;
+    height: 2.5rem;
+    width: 3rem;
+    content: "";
+    vertical-align: middle;
+    margin-left: auto;
+  }
+  @supports ((-webkit-mask: url()) or (mask: url())) {
+    .usa-date-picker__calendar__next-year-chunk:not([disabled])::after {
+      background: 0 0;
+      background-color: ButtonText;
+      -webkit-mask-image: url(../img/usa-icons/navigate_next.svg),
+        linear-gradient(transparent, transparent);
+      mask-image: url(../img/usa-icons/navigate_next.svg),
+        linear-gradient(transparent, transparent);
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 2.5rem 2.5rem;
+      mask-size: 2.5rem 2.5rem;
+    }
+  }
+  .usa-date-picker__calendar__next-year-chunk:not([disabled]):hover {
+    border: 2px solid transparent;
+    background-color: transparent;
+  }
+}
+
+.usa-date-picker__calendar__year {
+  padding: 10px 0;
+}
+
+.usa-date-picker__calendar__year--focused {
+  outline: 2px solid #162e51;
+  outline-offset: -2px;
+  position: relative;
+  z-index: 100;
+}
+
+.usa-date-picker__calendar__year--selected {
+  background-color: #0050d8;
+  color: #f9f9f9;
+}
+
+.usa-date-picker__calendar__year--selected:not([disabled]) {
+  background-color: #0050d8;
+  color: #f9f9f9;
+}
+
+.usa-date-picker__calendar__year--selected:not([disabled]):hover {
+  background-color: #0050d8;
+  color: #e6e6e6;
+}
+
+.usa-date-picker__calendar__year--selected:not([disabled]):focus {
+  background-color: #0050d8;
+  color: #f9f9f9;
+}
+
+.usa-date-picker__calendar__year--selected:not([disabled]):active {
+  background-color: #1a4480;
+}

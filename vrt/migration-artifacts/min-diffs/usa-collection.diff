@@ -1,0 +1,224 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-collection.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-collection.css	2026-04-14 12:35:23
+@@ -1,4 +1,7 @@
+ .usa-collection {
++  margin-top: 1em;
++  margin-bottom: 1em;
++  padding-left: 0;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -7,62 +10,61 @@
+     Arial,
+     sans-serif;
+   font-size: 1.06rem;
+-  margin-bottom: 1em;
+-  margin-top: 1em;
+   line-height: 1.5;
+-  padding-left: 0;
+ }
+ 
+-.usa-collection:last-child,
+-.usa-collection__item:last-child,
+-.usa-graphic-list .usa-graphic-list__row:last-child .usa-media-block:last-child,
+-.usa-prose .usa-collection:last-child,
+-.usa-prose .usa-collection__item:last-child {
++.usa-collection:last-child {
+   margin-bottom: 0;
+ }
+ 
+-.usa-collection ol,
+ .usa-collection ul,
+-.usa-prose .usa-collection ol,
+-.usa-prose .usa-collection ul {
++.usa-collection ol {
+   margin-top: 0.25em;
+ }
+ 
+-.usa-collection__item,
+-.usa-prose .usa-collection__item {
+-  max-width: 68ex;
+-  margin-bottom: 0;
+-  margin-top: 0;
+-  list-style-type: none;
+-  padding-left: 0;
+-  align-items: flex-start;
+-  border-top-width: 1px;
++.usa-collection__item {
+   border-top-style: solid;
+-  display: flex;
+-  margin-bottom: 1rem;
++  border-top-width: 1px;
++  align-items: flex-start;
++  max-width: 68ex;
+   margin-top: 1rem;
++  margin-bottom: 1rem;
+   padding-top: 1rem;
++  padding-left: 0;
++  list-style-type: none;
++  display: flex;
+ }
+ 
+-.usa-collection__calendar-date,
+-.usa-collection__img {
++.usa-collection__item:last-child {
++  margin-bottom: 0;
++}
++
++.usa-collection__item > li {
++  max-width: unset;
++  margin-bottom: 0;
++}
++
++.usa-collection__img,
++.usa-collection__calendar-date {
+   flex-shrink: 0;
+   width: 4rem;
+   margin-right: 1rem;
+ }
+ 
+-@media all and (min-width: 40em) {
+-  .usa-collection__calendar-date,
+-  .usa-collection__img {
++@media (width>=40em) {
++  .usa-collection__img,
++  .usa-collection__calendar-date {
+     width: 5rem;
+   }
+ }
+ 
+ .usa-collection__body {
+-  flex: 1 1 0%;
++  flex: 1;
+ }
+ 
+ .usa-collection__heading {
++  margin-top: 0;
++  margin-bottom: 0;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -72,25 +74,28 @@
+     sans-serif;
+   font-size: 1.13rem;
+   line-height: 1.3;
+-  margin-bottom: 0;
+-  margin-top: 0;
+ }
+ 
+ .usa-collection__description {
+-  margin-bottom: 0.5rem;
+   margin-top: 0.5rem;
++  margin-bottom: 0.5rem;
+ }
+ 
+ .usa-collection__meta {
++  margin-top: 0.25rem;
+   margin-bottom: 0;
+-  margin-top: 0;
+-  list-style-type: none;
+   padding-left: 0;
+-  margin-top: 0.25rem;
++  list-style-type: none;
+ }
+ 
++.usa-collection__meta > li {
++  max-width: unset;
++  margin-bottom: 0;
++}
++
+ .usa-collection__meta-item {
+   margin-top: 0.25rem;
++  margin-right: 0.5rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -101,32 +106,31 @@
+   font-size: 0.93rem;
+   line-height: 1.3;
+   display: block;
+-  margin-right: 0.5rem;
+ }
+ 
+ .usa-collection__meta-item.usa-tag {
++  color: #1b1b1b;
+   background-color: #dfe1e2;
+-  line-height: 0.9;
+-  padding-bottom: 0.25rem;
++  margin-top: 0.25rem;
+   padding-top: 0.25rem;
+-  color: #1b1b1b;
++  padding-bottom: 0.25rem;
++  line-height: 0.9;
+   display: inline-block;
+-  margin-top: 0.25rem;
+ }
+ 
+ .usa-collection__meta-item.usa-tag--new {
+-  background-color: #c05600;
+   color: #fff;
++  background-color: #c05600;
+ }
+ 
+-.usa-collection__calendar-date,
+-.usa-footer__social-links a,
+-.usa-form abbr[title="required"] {
++.usa-collection__calendar-date {
+   text-decoration: none;
+ }
+ 
+-.usa-collection__calendar-date-day,
+-.usa-collection__calendar-date-month {
++.usa-collection__calendar-date-month,
++.usa-collection__calendar-date-day {
++  text-align: center;
++  padding: 0.25rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -135,35 +139,33 @@
+     Arial,
+     sans-serif;
+   font-size: 1.13rem;
+-  display: block;
+   font-weight: 700;
+-  padding: 0.25rem;
+-  text-align: center;
++  display: block;
+ }
+ 
+-@media all and (min-width: 40em) {
+-  .usa-collection__calendar-date-day,
+-  .usa-collection__calendar-date-month {
++@media (width>=40em) {
++  .usa-collection__calendar-date-month,
++  .usa-collection__calendar-date-day {
+     padding: 0.5rem;
+   }
+ }
+ 
+ .usa-collection__calendar-date-month {
++  color: #fff;
++  background-color: #005ea2;
+   border-top-left-radius: 2px;
+   border-top-right-radius: 2px;
+-  background-color: #005ea2;
+-  color: #fff;
+ }
+ 
+ .usa-collection__calendar-date-day {
+-  border-bottom-left-radius: 2px;
+-  border-bottom-right-radius: 2px;
+-  border: 1px solid #005ea2;
+   color: #005ea2;
++  border: 1px solid #005ea2;
++  border-bottom-right-radius: 2px;
++  border-bottom-left-radius: 2px;
+ }
+ 
+ .usa-collection--condensed .usa-collection__item {
+-  margin-bottom: 0.5rem;
+   margin-top: 0.5rem;
++  margin-bottom: 0.5rem;
+   padding-top: 0.5rem;
+ }

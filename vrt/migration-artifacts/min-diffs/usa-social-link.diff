@@ -1,0 +1,32 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-social-link.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-social-link.css	2026-04-14 12:35:23
+@@ -1,9 +1,9 @@
+ .usa-social-link {
+-  height: 3rem;
++  background-color: #0000001a;
+   width: 3rem;
+-  background-color: rgba(0, 0, 0, 0.1);
+-  display: inline-block;
++  height: 3rem;
+   padding: 0.25rem;
++  display: inline-block;
+ }
+ 
+ .usa-social-link:hover {
+@@ -12,13 +12,13 @@
+ 
+ @media (forced-colors: active) {
+   .usa-social-link {
+-    background-color: #d3d3d3;
+     forced-color-adjust: none;
++    background-color: #d3d3d3;
+   }
+ }
+ 
+ .usa-social-link__icon {
+-  display: block;
+-  height: auto;
+   width: 100%;
++  height: auto;
++  display: block;
+ }

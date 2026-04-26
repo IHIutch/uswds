@@ -1,0 +1,40 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-input-mask.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-input-mask.css	2026-04-14 12:35:23
+@@ -4,13 +4,13 @@
+ }
+ 
+ .usa-input-mask--content {
+-  border: 1px solid transparent;
+   color: #757575;
+-  display: block;
+-  left: 2px;
+   pointer-events: none;
++  border: 1px solid #0000;
++  display: block;
+   position: absolute;
+   top: 0;
++  left: 2px;
+ }
+ 
+ .usa-input-mask--content i {
+@@ -19,17 +19,11 @@
+ 
+ @media (forced-colors: active) {
+   .usa-input-mask--content i {
+-    color: ButtonText;
+-    font-style: normal;
++    color: buttontext;
+     visibility: visible;
++    font-style: normal;
+   }
+   .usa-input-mask--content {
+-    border: 0;
++    border: none;
+   }
+-}
+-
+-.usa-input-mask--content,
+-.usa-masked {
+-  background-color: transparent;
+-  padding: 0.5rem;
+ }

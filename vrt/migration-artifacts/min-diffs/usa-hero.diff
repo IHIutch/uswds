@@ -1,0 +1,67 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-hero.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-hero.css	2026-04-14 12:35:23
+@@ -1,7 +1,8 @@
+-.usa-hero,
+-.usa-icon-list__content > ol,
+-.usa-icon-list__content > p,
+-.usa-icon-list__content > ul {
++.usa-hero {
++  color: #fff;
++  background-image: url(../img/hero.jpg);
++  background-position: 50%;
++  background-size: cover;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -10,20 +11,13 @@
+     Arial,
+     sans-serif;
+   font-size: 1.06rem;
+-}
+-
+-.usa-hero {
+   line-height: 1.5;
+-  background-image: url(../img/hero.jpg);
+-  background-position: center;
+-  background-size: cover;
+-  color: #fff;
+ }
+ 
+ .usa-hero > .grid-container {
+-  position: relative;
+-  padding-bottom: 2rem;
+   padding-top: 2rem;
++  padding-bottom: 2rem;
++  position: relative;
+ }
+ 
+ .usa-hero__callout {
+@@ -31,16 +25,17 @@
+   padding: 2rem;
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width>=40em) {
+   .usa-hero__callout {
+     max-width: 20rem;
+   }
+ }
+ 
+ .usa-hero__heading {
+-  margin-bottom: 0;
+-  margin-top: 0;
+   clear: both;
++  color: #00bde3;
++  margin-top: 0;
++  margin-bottom: 0;
+   font-family:
+     Merriweather Web,
+     Georgia,
+@@ -50,7 +45,6 @@
+     serif;
+   font-size: 1.95rem;
+   font-weight: 700;
+-  color: #00bde3;
+   line-height: 1.2;
+ }
+ 

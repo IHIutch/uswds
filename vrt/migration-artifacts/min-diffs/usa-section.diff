@@ -1,0 +1,49 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-section.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-section.css	2026-04-14 12:35:23
+@@ -1,12 +1,12 @@
+ .usa-section {
+-  padding-bottom: 2rem;
+   padding-top: 2rem;
++  padding-bottom: 2rem;
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width>=40em) {
+   .usa-section {
+-    padding-bottom: 4rem;
+     padding-top: 4rem;
++    padding-bottom: 4rem;
+   }
+ }
+ 
+@@ -15,10 +15,19 @@
+ }
+ 
+ .usa-section--dark {
+-  background-color: #162e51;
+   color: #fff;
++  background-color: #162e51;
+ }
+ 
++.usa-section--dark h1,
++.usa-section--dark h2,
++.usa-section--dark h3,
++.usa-section--dark h4,
++.usa-section--dark h5,
++.usa-section--dark h6 {
++  color: #00bde3;
++}
++
+ .usa-section--dark p {
+   color: #fff;
+ }
+@@ -28,7 +37,7 @@
+   color: #dfe1e2;
+ }
+ 
+-.usa-section--dark a:active,
+-.usa-section--dark a:hover {
++.usa-section--dark a:hover,
++.usa-section--dark a:active {
+   color: #f0f0f0;
+ }

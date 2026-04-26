@@ -1,0 +1,38 @@
+.usa-checklist {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  list-style-type: none;
+}
+
+.usa-checklist__item {
+  text-indent: -2.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.usa-checklist__item:before {
+  content: " ";
+  width: 2rem;
+  height: 1rem;
+  margin-left: -0.25rem;
+  margin-right: 0.75rem;
+  display: inline-block;
+}
+
+.usa-checklist__item.usa-checklist__item--checked:before {
+  background-image: url("../img/usa-icons-bg/check--blue-60v.svg"),
+    linear-gradient(#0000, #0000);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}

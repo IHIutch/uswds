@@ -1,0 +1,40 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-form-group.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-form-group.css	2026-04-14 12:35:23
+@@ -1,6 +1,6 @@
+ .usa-form-group--error .usa-file-input__target {
+-  border-color: #b50909;
+   border-width: 2px;
++  border-color: #b50909;
+ }
+ 
+ .usa-form-group {
+@@ -12,14 +12,12 @@
+ }
+ 
+ .usa-form-group--error {
+-  border-left-width: 0.25rem;
+-  border-left-color: #b50909;
+-  border-left-style: solid;
++  border-left: 0.25rem solid #b50909;
+   padding-left: 1rem;
+   position: relative;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width>=64em) {
+   .usa-form-group--error {
+     margin-left: -1.25rem;
+   }
+@@ -28,10 +26,9 @@
+ .usa-form-group--day,
+ .usa-form-group--month,
+ .usa-form-group--year {
+-  flex: 0 1 auto;
+-  margin-right: 1rem;
+-  width: -moz-fit-content;
++  flex: 0 auto;
+   width: fit-content;
++  margin-right: 1rem;
+ }
+ 
+ .usa-form-group--day input,

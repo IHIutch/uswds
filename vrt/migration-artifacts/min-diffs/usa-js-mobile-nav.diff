@@ -1,0 +1,16 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-js-mobile-nav.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-js-mobile-nav.css	2026-04-14 12:35:23
+@@ -2,10 +2,10 @@
+   overflow: hidden;
+ }
+ 
+-@media (min-width: 63.06rem) {
++@media (width>=63.06rem) {
+   .usa-js-mobile-nav--active.is-safari {
+-    overflow-y: scroll;
+-    position: fixed;
+     top: var(--scrolltop, 0);
++    position: fixed;
++    overflow-y: scroll;
+   }
+ }

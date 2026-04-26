@@ -1,0 +1,39 @@
+.usa-list {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 1.5;
+  padding-left: 3ch;
+}
+
+.usa-list li:last-child,
+.usa-list:last-child,
+.usa-prose > ol li:last-child,
+.usa-prose > ol:last-child,
+.usa-prose > ul li:last-child,
+.usa-prose > ul:last-child {
+  margin-bottom: 0;
+}
+
+.usa-list ol,
+.usa-list ul,
+.usa-prose > ol ol,
+.usa-prose > ol ul,
+.usa-prose > ul ol,
+.usa-prose > ul ul {
+  margin-top: 0.25em;
+}
+
+.usa-list li,
+.usa-prose > ol li,
+.usa-prose > ul li {
+  margin-bottom: 0.25em;
+  max-width: 68ex;
+}
+
+.usa-list--unstyled,
+.usa-prose .usa-list--unstyled {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+}

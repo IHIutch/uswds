@@ -1,0 +1,20 @@
+.usa-overlay {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 400;
+  background: #000000b3;
+  transition: opacity 0.15s ease-in-out;
+  position: fixed;
+  inset: 0;
+}
+
+@media (prefers-reduced-motion) {
+  .usa-overlay {
+    transition: none;
+  }
+}
+
+.usa-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}

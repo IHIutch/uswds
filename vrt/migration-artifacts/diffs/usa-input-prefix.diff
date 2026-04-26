@@ -1,0 +1,55 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-input-prefix.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-input-prefix.css	2026-04-14 11:33:47
+@@ -1,9 +1,9 @@
+ .usa-input-prefix:has(+ input:disabled),
+ .usa-input-prefix:has(+ input[aria-disabled="true"]) {
+   color: #454545;
+-  background-color: #c9c9c9;
+   cursor: not-allowed;
+   opacity: 1;
++  background-color: #c9c9c9;
+ }
+ 
+ .usa-input-prefix:has(+ input:disabled):hover,
+@@ -21,8 +21,8 @@
+ @media (forced-colors: active) {
+   .usa-input-prefix:has(+ input:disabled),
+   .usa-input-prefix:has(+ input[aria-disabled="true"]) {
++    color: graytext;
+     border: 0;
+-    color: GrayText;
+   }
+ 
+   .usa-input-prefix:has(+ input:disabled):hover,
+@@ -32,26 +33,25 @@
+   .usa-input-prefix:has(+ input[aria-disabled="true"]):active,
+   .usa-input-prefix:has(+ input[aria-disabled="true"]):focus,
+   .usa-input-prefix:has(+ input[aria-disabled="true"]).usa-focus {
+-    color: GrayText;
++    color: graytext;
+   }
+ }
+ 
+ .usa-input-prefix,
+ .usa-input-suffix {
+-  position: absolute;
+   color: #71767a;
+-  line-height: 0;
+-  padding: 0 0.5rem;
+   -webkit-user-select: none;
+-  -moz-user-select: none;
+   user-select: none;
+   white-space: nowrap;
++  padding: 0 0.5rem;
++  line-height: 0;
++  position: absolute;
+ }
+ 
+ .usa-input-prefix .usa-icon,
+ .usa-input-suffix .usa-icon {
+-  height: 1.5rem;
+   width: 1.5rem;
++  height: 1.5rem;
+ }
+ 
+ .usa-input-prefix + input {

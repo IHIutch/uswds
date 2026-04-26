@@ -1,0 +1,2543 @@
++        linear-gradient(#0000, #0000);
++      -webkit-mask-position: 50%;
++      -webkit-mask-repeat: no-repeat;
++      0 0 0 0.25rem #fff;
++      background: #005ea2;
++      background: #71767a;
++      background: buttontext;
++      inset 0 0 0 0.25rem #919191,
++      linear-gradient(#0000, #0000);
++      mask-image: url(../img/usa-icons/add.svg), linear-gradient(#0000, #0000);
++      mask-image: url(../img/usa-icons/close.svg), linear-gradient(#0000, #0000);
++      mask-position: 50%;
++      mask-repeat: no-repeat;
++    -webkit-mask-position: 50%;
++    -webkit-mask-repeat: no-repeat;
++    .usa-accordion__button:before {
++    .usa-accordion__button[aria-expanded="false"]:before {
++    .usa-banner__button:after {
++    .usa-banner__button:after:hover {
++    .usa-banner__button[aria-expanded="true"]:after {
++    .usa-banner__button[aria-expanded="true"]:after:hover {
++    .usa-breadcrumb__list-item:not(:last-child):after {
++    .usa-breadcrumb__list-item:nth-last-child(2) .usa-breadcrumb__link:before {
++    .usa-date-picker__calendar__next-year-chunk:not([disabled]):after {
++    .usa-date-picker__calendar__previous-year-chunk:not([disabled]):after {
++    .usa-nav__close:before {
++    .usa-nav__primary button[aria-expanded="false"] span:after {
++    .usa-nav__primary button[aria-expanded="true"] span:after {
++    .usa-search [type="submit"]:before {
++    .usa-step-indicator__segment:first-child:after,
++    .usa-step-indicator__segment:last-child:after,
++    .usa-table__header__button:disabled:hover,
++    .usa-table__header__button[aria-disabled="true"],
++    .usa-table__header__button[aria-disabled="true"]:focus {
++    .usa-table__header__button[aria-disabled="true"]:focus,
++    .usa-table__header__button[aria-disabled="true"]:hover,
++    + .usa-date-picker__button:hover,
++    + [class*="__label"]:before {
++    + [class*="__label"]:before,
++    align-items: center;
++    align-items: flex-end;
++    animation: 0.3s ease-in-out slidein-left;
++    Arial,
++    aspect-ratio: 1.33333;
++    aspect-ratio: 1.77778;
++    background-color: #0000;
++    background-color: #162e51;
++    background-color: #d3d3d3;
++    background-color: #dfe1e2;
++    background-color: #fff;
++    background-color: buttontext !important;
++    background-color: buttontext;
++    background-color: graytext;
++    background-color: highlight;
++    background-color: selecteditem;
++    background-image: none;
++    background-position: 50%;
++    background: #005ea2;
++    background: #1b1b1b;
++    background: #fff;
++    background: buttontext;
++    background: currentColor;
++    border-bottom-left-radius: 0;
++    border-bottom-left-radius: 0.25rem;
++    border-bottom-left-radius: 0.5rem;
++    border-bottom-left-radius: 2px;
++    border-bottom-left-radius: 99rem;
++    border-bottom: 0.25rem solid #1b1b1b;
++    border-bottom: none;
++    border-color: #0000;
++    border-color: graytext;
++    border-radius: 0 0.5rem 0.5rem 0;
++    border-radius: 0;
++    border-radius: 99rem;
++    border-radius: calc(0.5rem - 2px) 0 0 calc(0.5rem - 2px);
++    border-top-width: 0;
++    border-top: 0.25rem solid #1b1b1b;
++    border: 0;
++    border: 0.25rem solid buttontext;
++    border: 2px solid #0000;
++    border: 2px solid activetext;
++    border: 2px solid graytext;
++    border: 2px solid highlight;
++    border: none;
++    bottom: -0.25rem;
++    bottom: -0.2em;
++    bottom: 0;
++    bottom: 0.25rem;
++    bottom: 4rem;
++    box-shadow:
++    Cambria,
++    color: #1b1b1b;
++    color: #fff;
++    color: buttontext;
++    color: graytext;
++    color: linktext;
++    column-gap: 2rem;
++    content: "";
++    display: block;
++    display: flex;
++    display: inline-block;
++    display: inline;
++    display: none;
++    fill: canvastext;
++    flex-flow: row;
++    flex: 0 auto;
++    flex: 1;
++    flex: 4;
++    font-size: 0.67rem;
++    font-size: 0.87rem;
++    font-size: 0.8rem;
++    font-size: 0.93rem;
++    font-size: 1.06rem;
++    font-size: 1.13rem;
++    font-size: 1.2rem;
++    font-size: 1.33rem;
++    font-size: 1.46rem;
++    font-size: 1.6rem;
++    font-size: 1.86rem;
++    font-size: 1rem;
++    font-size: 2.13rem;
++    font-size: 2.4rem;
++    font-size: 2.66rem;
++    font-size: 3.19rem;
++    font-size: 3.73rem;
++    font-size: 4.26rem;
++    font-size: 5.32rem;
++    font-size: 7.99rem;
++    font-size: 9.32rem;
++    font-style: normal;
++    font-weight: 400;
++    font-weight: 700;
++    Georgia,
++    height: 0.25rem;
++    height: 1.005rem;
++    height: 1.25rem;
++    height: 1.2rem;
++    height: 1.305rem;
++    height: 1.395rem;
++    height: 1.59rem;
++    height: 1.5rem;
++    height: 1.695rem;
++    height: 1.8rem;
++    height: 1.995rem;
++    height: 100%;
++    height: 11.985rem;
++    height: 13.98rem;
++    height: 1rem;
++    height: 2.19rem;
++    height: 2.4rem;
++    height: 2.5rem;
++    height: 2.79rem;
++    height: 2ex;
++    height: 3.195rem;
++    height: 3.6rem;
++    height: 3.99rem;
++    height: 3rem;
++    height: 4.785rem;
++    height: 5.595rem;
++    height: 6.39rem;
++    height: 7.98rem;
++    height: auto;
++    Helvetica Neue,
++    Helvetica,
++    inset: auto;
++    left: 0;
++    left: 1.58333rem;
++    line-height: 0.9;
++    line-height: 1.1;
++    line-height: 1.2;
++    linear-gradient(#0000, #0000);
++    list-style-type: none;
++    margin-bottom: 0;
++    margin-bottom: 0.25rem;
++    margin-left: -1px;
++    margin-left: 0;
++    margin-left: 0.75rem;
++    margin-left: 16.6667%;
++    margin-left: 1rem;
++    margin-left: 33.3333%;
++    margin-left: 41.6667%;
++    margin-left: 58.3333%;
++    margin-left: 66.6667%;
++    margin-left: 8.33333%;
++    margin-left: 83.3333%;
++    margin-left: 91.6667%;
++    margin-right: 0;
++    margin-top: 0;
++    margin-top: 0.5rem;
++    margin-top: 0.75rem;
++    margin-top: 1.25rem;
++    margin-top: 1.5rem;
++    margin-top: 1rem;
++    margin-top: 2rem;
++    margin: 2rem 0 1.5rem;
++    mask-image: url(../img/usa-icons/add.svg), linear-gradient(#0000, #0000);
++    mask-image: url(../img/usa-icons/error.svg), linear-gradient(#0000, #0000);
++    mask-image: url(../img/usa-icons/info.svg), linear-gradient(#0000, #0000);
++    mask-image: url(../img/usa-icons/launch.svg), linear-gradient(#0000, #0000);
++    mask-image: url(../img/usa-icons/remove.svg), linear-gradient(#0000, #0000);
++    mask-image: url(../img/usa-icons/warning.svg), linear-gradient(#0000, #0000);
++    mask-position: 50%;
++    mask-repeat: no-repeat;
++    max-width: 100%;
++    max-width: 10rem;
++    max-width: 15rem;
++    max-width: 20rem;
++    max-width: 30rem;
++    max-width: 40rem;
++    max-width: 55rem;
++    max-width: 64rem;
++    max-width: 75rem;
++    max-width: 87.5rem;
++    max-width: calc(27ch + 3rem);
++    Merriweather Web,
++    min-width: 100%;
++    outline: 2px solid #0000;
++    overflow-y: auto;
++    overflow-y: scroll;
++    overflow: hidden;
++    padding-bottom: 0;
++    padding-bottom: 0.25rem;
++    padding-bottom: 0.5rem;
++    padding-bottom: 0.75rem;
++    padding-bottom: 1.5rem;
++    padding-bottom: 12px;
++    padding-bottom: 1rem;
++    padding-bottom: 4rem;
++    padding-left: 0;
++    padding-left: 2ex;
++    padding-right: 0;
++    padding-right: 2rem;
++    padding-top: 0;
++    padding-top: 0.25rem;
++    padding-top: 0.5rem;
++    padding-top: 1rem;
++    padding: 0 0 0.5rem 0.5rem;
++    padding: 0;
++    padding: 0.75rem 0 2rem;
++    padding: 0.75rem 1rem;
++    padding: 1rem;
++    padding: 2rem 0;
++    padding: calc(1.25rem - 0.9ex);
++    position: absolute;
++    position: fixed;
++    position: relative;
++    position: static;
++    right: 0;
++    right: 0.75rem;
++    right: 1.25rem;
++    right: inherit;
++    Roboto,
++    sans-serif;
++    serif;
++    Source Sans Pro Web,
++    text-align: center;
++    text-indent: -2ex;
++    th[data-sortable]:not([aria-sort])
++    Times New Roman,
++    Times,
++    top: -0.5rem;
++    top: -1rem;
++    top: 0;
++    transform: translate(0);
++    transform: translate(15rem);
++    vertical-align: baseline;
++    vertical-align: middle;
++    width: 0.25rem;
++    width: 100%;
++    width: 15rem;
++    width: 16.6667%;
++    width: 2.5rem;
++    width: 33.3333%;
++    width: 41.6667%;
++    width: 58.3333%;
++    width: 66.6667%;
++    width: 8.33333%;
++    width: 83.3333%;
++    width: 91.6667%;
++    width: auto;
++    width: calc(50vw - 30rem);
++    width: calc(50vw - 32rem);
++    z-index: 100;
++    z-index: 400;
++    z-index: 500;
++  .add-aspect-16x9 > img {
++  .add-aspect-1x1 > img {
++  .add-aspect-2x1 > img {
++  .add-aspect-4x3 > img {
++  .add-aspect-9x16 > img {
++  .desktop\:border-ink,
++  .mobile-lg\:border-ink,
++  .tablet\:border-ink,
++  .usa-accordion__button:before {
++  .usa-accordion__button:disabled:hover,
++  .usa-accordion__button[aria-disabled="true"]:focus {
++  .usa-accordion__button[aria-disabled="true"]:hover,
++  .usa-accordion__button[aria-expanded="false"]:before {
++  .usa-alert--emergency .usa-alert__body:before {
++  .usa-alert--error .usa-alert__body:before {
++  .usa-alert--info .usa-alert__body:before {
++  .usa-alert--success .usa-alert__body:before {
++  .usa-alert--warning .usa-alert__body:before {
++  .usa-banner__button:active {
++  .usa-banner__button:after {
++  .usa-banner__button:after,
++  .usa-banner__button:disabled:hover,
++  .usa-banner__button:hover,
++  .usa-banner__button:hover:after {
++  .usa-banner__button[aria-disabled="true"]:focus {
++  .usa-banner__button[aria-disabled="true"]:hover,
++  .usa-banner__button[aria-expanded="false"]:before,
++  .usa-banner__button[aria-expanded="false"]:hover:before,
++  .usa-banner__button[aria-expanded="true"]:after {
++  .usa-banner__button[aria-expanded="true"]:after,
++  .usa-banner__button[aria-expanded="true"]:before {
++  .usa-banner__button[aria-expanded="true"]:before,
++  .usa-banner__button[aria-expanded="true"]:hover:after {
++  .usa-banner__button[aria-expanded="true"]:hover:before {
++  .usa-banner__header-action:after {
++  .usa-banner__header-action:after:hover {
++  .usa-breadcrumb__list-item:not(:last-child):after {
++  .usa-breadcrumb__list-item:nth-last-child(2) .usa-breadcrumb__link:active {
++  .usa-breadcrumb__list-item:nth-last-child(2) .usa-breadcrumb__link:before {
++  .usa-breadcrumb__list-item:nth-last-child(2) .usa-breadcrumb__link:hover,
++  .usa-button--accent-cool:before {
++  .usa-button--base:before {
++  .usa-button--outline:before {
++  .usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled:hover,
++  .usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled="true"]:focus {
++  .usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled="true"]:hover,
++  .usa-button--secondary:before {
++  .usa-button--unstyled:disabled:hover,
++  .usa-button--unstyled[aria-disabled="true"]:focus {
++  .usa-button--unstyled[aria-disabled="true"]:hover,
++  .usa-button:active:before,
++  .usa-button:before {
++  .usa-button:disabled:hover,
++  .usa-button:disabled.usa-button--active,
++  .usa-button:disabled.usa-button--active:active,
++  .usa-button:disabled.usa-button--active:focus,
++  .usa-button:disabled.usa-button--active:hover,
++  .usa-button:disabled.usa-button--active.usa-focus,
++  .usa-button:disabled.usa-button--hover:hover,
++  .usa-button:disabled.usa-button--hover.usa-focus,
++  .usa-button:disabled.usa-focus,
++  .usa-button[aria-disabled="true"]:hover,
++  .usa-button[aria-disabled="true"].usa-button--active {
++  .usa-button[aria-disabled="true"].usa-button--active:active,
++  .usa-button[aria-disabled="true"].usa-button--active:focus,
++  .usa-button[aria-disabled="true"].usa-button--active:hover,
++  .usa-button[aria-disabled="true"].usa-button--active.usa-focus {
++  .usa-button[aria-disabled="true"].usa-button--hover,
++  .usa-button[aria-disabled="true"].usa-button--hover:hover,
++  .usa-button[aria-disabled="true"].usa-button--hover.usa-focus,
++  .usa-button[aria-disabled="true"].usa-focus {
++  .usa-card--flag .usa-card__footer {
++  .usa-card--flag .usa-card__header,
++  .usa-card--flag .usa-card__media--inset .usa-card__img {
++  .usa-card--flag.usa-card--media-right .usa-card__footer {
++  .usa-card--flag.usa-card--media-right .usa-card__header,
++  .usa-card--flag.usa-card--media-right .usa-card__media--inset .usa-card__img {
++  .usa-card,
++  .usa-card:not(.usa-card--flag).usa-card__media--set-aspect > img {
++  .usa-checkbox__input:checked + [class*="__label"]:before {
++  .usa-checkbox__input:checked + [class*="__label"]:before,
++  .usa-checkbox__input:checked:disabled + [class*="__label"]:before,
++  .usa-checkbox__input:indeterminate + [class*="__label"]:before,
++  .usa-checkbox__input:indeterminate:disabled + [class*="__label"]:before,
++  .usa-checkbox__input[data-indeterminate] + [class*="__label"]:before {
++  .usa-checkbox__input[data-indeterminate]:disabled + [class*="__label"]:before,
++  .usa-checkbox__label:before {
++  .usa-collection__calendar-date {
++  .usa-collection__calendar-date-day {
++  .usa-collection__calendar-date-month,
++  .usa-collection__img,
++  .usa-combo-box__input:disabled,
++  .usa-combo-box__input:disabled:hover,
++  .usa-combo-box__input:disabled.usa-focus,
++  .usa-combo-box__input[aria-disabled="true"] {
++  .usa-combo-box__input[aria-disabled="true"]:hover,
++  .usa-combo-box__input[aria-disabled="true"].usa-focus {
++  .usa-date-picker__button:disabled,
++  .usa-date-picker__button:hover:disabled,
++  .usa-date-picker__button:not([disabled]):active {
++  .usa-date-picker__button:not([disabled]):hover {
++  .usa-date-picker__calendar__date--range-date:not([disabled]) {
++  .usa-date-picker__calendar__date--range-date:not([disabled]):active {
++  .usa-date-picker__calendar__date--range-date:not([disabled]):focus {
++  .usa-date-picker__calendar__date--selected:not([disabled]),
++  .usa-date-picker__calendar__date--selected:not([disabled]):active,
++  .usa-date-picker__calendar__date--selected:not([disabled]):focus,
++  .usa-date-picker__calendar__date:disabled,
++  .usa-date-picker__calendar__date:hover:disabled,
++  .usa-date-picker__calendar__date:not([disabled]):active,
++  .usa-date-picker__calendar__date:not([disabled]):hover,
++  .usa-date-picker__calendar__month-selection {
++  .usa-date-picker__calendar__month-selection:disabled,
++  .usa-date-picker__calendar__month-selection:hover:disabled,
++  .usa-date-picker__calendar__month-selection:not([disabled]):active,
++  .usa-date-picker__calendar__month-selection:not([disabled]):hover,
++  .usa-date-picker__calendar__month:disabled,
++  .usa-date-picker__calendar__month:hover:disabled,
++  .usa-date-picker__calendar__month:not([disabled]):active,
++  .usa-date-picker__calendar__month:not([disabled]):hover,
++  .usa-date-picker__calendar__next-month {
++  .usa-date-picker__calendar__next-month:disabled,
++  .usa-date-picker__calendar__next-month:hover:disabled,
++  .usa-date-picker__calendar__next-month:not([disabled]):active,
++  .usa-date-picker__calendar__next-month:not([disabled]):hover,
++  .usa-date-picker__calendar__next-year-chunk {
++  .usa-date-picker__calendar__next-year-chunk:disabled,
++  .usa-date-picker__calendar__next-year-chunk:hover:disabled,
++  .usa-date-picker__calendar__next-year-chunk:not([disabled]):active,
++  .usa-date-picker__calendar__next-year-chunk:not([disabled]):after {
++  .usa-date-picker__calendar__next-year-chunk:not([disabled]):hover,
++  .usa-date-picker__calendar__next-year,
++  .usa-date-picker__calendar__next-year:disabled,
++  .usa-date-picker__calendar__next-year:hover:disabled,
++  .usa-date-picker__calendar__next-year:not([disabled]):active,
++  .usa-date-picker__calendar__next-year:not([disabled]):hover,
++  .usa-date-picker__calendar__previous-month:disabled,
++  .usa-date-picker__calendar__previous-month:hover:disabled,
++  .usa-date-picker__calendar__previous-month:not([disabled]):active,
++  .usa-date-picker__calendar__previous-month:not([disabled]):hover,
++  .usa-date-picker__calendar__previous-year-chunk,
++  .usa-date-picker__calendar__previous-year-chunk:disabled,
++  .usa-date-picker__calendar__previous-year-chunk:hover:disabled,
++  .usa-date-picker__calendar__previous-year-chunk:not([disabled]):after {
++  .usa-date-picker__calendar__previous-year,
++  .usa-date-picker__calendar__previous-year:disabled,
++  .usa-date-picker__calendar__previous-year:hover:disabled,
++  .usa-date-picker__calendar__previous-year:not([disabled]):active,
++  .usa-date-picker__calendar__previous-year:not([disabled]):hover,
++  .usa-date-picker__calendar__year-selection,
++  .usa-date-picker__calendar__year-selection:disabled,
++  .usa-date-picker__calendar__year-selection:hover:disabled,
++  .usa-date-picker__calendar__year:disabled,
++  .usa-date-picker__calendar__year:hover:disabled,
++  .usa-date-picker__calendar__year:not([disabled]):active,
++  .usa-date-picker__calendar__year:not([disabled]):hover,
++  .usa-date-picker__external-input[aria-disabled="true"]
++  .usa-embed-container > img {
++  .usa-file-input--disabled .usa-file-input__choose {
++  .usa-file-input--disabled .usa-file-input__instructions,
++  .usa-footer__primary-link--button:before {
++  .usa-footer__primary-link--button[aria-expanded="false"]:before {
++  .usa-graphic-list__row:last-child
++  .usa-header--basic .usa-nav__link:hover {
++  .usa-header--basic .usa-nav__link:hover:after {
++  .usa-header--basic .usa-nav__link[aria-expanded="true"]:after,
++  .usa-header--basic .usa-nav__link[aria-expanded="true"]:hover:after {
++  .usa-header--basic .usa-nav__primary-item > .usa-current,
++  .usa-header--basic .usa-nav__primary-item > .usa-current:after,
++  .usa-header--extended .usa-megamenu.usa-nav__submenu:after {
++  .usa-header--extended .usa-megamenu.usa-nav__submenu:before,
++  .usa-header--extended .usa-nav__link[aria-expanded="true"]:after,
++  .usa-header--extended .usa-nav__link[aria-expanded="true"]:hover:after {
++  .usa-header--extended .usa-nav__primary-item > .usa-current:after,
++  .usa-header--extended .usa-nav__primary-item > .usa-nav__link:hover:after {
++  .usa-header--extended .usa-nav__primary:after {
++  .usa-icon
++  .usa-in-page-nav__list .usa-current:after {
++  .usa-input-group input:disabled + .usa-input-suffix:hover,
++  .usa-input-group input:disabled + .usa-input-suffix.usa-focus,
++  .usa-input-group input[aria-disabled="true"] + .usa-input-suffix:hover,
++  .usa-input-group input[aria-disabled="true"] + .usa-input-suffix.usa-focus {
++  .usa-input-prefix:has(+ input:disabled):hover,
++  .usa-input-prefix:has(+ input:disabled).usa-focus,
++  .usa-input-prefix:has(+ input[aria-disabled="true"]):hover,
++  .usa-input-prefix:has(+ input[aria-disabled="true"]).usa-focus {
++  .usa-input:disabled,
++  .usa-input:disabled:hover,
++  .usa-input:disabled.usa-focus,
++  .usa-input[aria-disabled="true"] {
++  .usa-input[aria-disabled="true"]:hover,
++  .usa-input[aria-disabled="true"].usa-focus {
++  .usa-language__submenu .usa-current:after {
++  .usa-link--external:after {
++  .usa-link--external.usa-link--alt:after {
++  .usa-media-block:last-child {
++  .usa-megamenu.usa-nav__submenu:after {
++  .usa-megamenu.usa-nav__submenu:before {
++  .usa-menu-btn:disabled:hover,
++  .usa-menu-btn[aria-disabled="true"]:focus {
++  .usa-menu-btn[aria-disabled="true"]:hover,
++  .usa-nav__close:before {
++  .usa-nav__close:disabled:hover,
++  .usa-nav__close[aria-disabled="true"]:focus {
++  .usa-nav__close[aria-disabled="true"]:hover,
++  .usa-nav__primary .usa-current:after {
++  .usa-nav__primary > .usa-nav__primary-item > a {
++  .usa-nav__primary > .usa-nav__primary-item > button,
++  .usa-nav__primary button:disabled:hover,
++  .usa-nav__primary button[aria-disabled="true"]:focus {
++  .usa-nav__primary button[aria-disabled="true"]:hover,
++  .usa-nav__primary button[aria-expanded]:before,
++  .usa-nav__primary button[aria-expanded]:hover:before {
++  .usa-nav__primary button[aria-expanded="false"] span:after {
++  .usa-nav__primary button[aria-expanded="false"]:hover span:after {
++  .usa-nav__primary button[aria-expanded="true"] span:after {
++  .usa-nav__submenu .usa-current:after {
++  .usa-nav-container:after {
++  .usa-pagination .usa-current:active {
++  .usa-pagination .usa-current:hover,
++  .usa-pagination__button:active {
++  .usa-pagination__button:hover,
++  .usa-prose .usa-card,
++  .usa-prose > .usa-table--stacked td {
++  .usa-prose > .usa-table--stacked td[data-label] {
++  .usa-prose > .usa-table--stacked td[data-label]:before {
++  .usa-prose > .usa-table--stacked th,
++  .usa-prose > .usa-table--stacked th[data-label]:before,
++  .usa-prose > .usa-table--stacked thead {
++  .usa-prose > .usa-table--stacked tr {
++  .usa-prose > .usa-table--stacked tr td:first-child {
++  .usa-prose > .usa-table--stacked tr th:first-child,
++  .usa-prose > .usa-table--stacked tr:first-child td:first-child {
++  .usa-prose > .usa-table--stacked-header td {
++  .usa-prose > .usa-table--stacked-header td[data-label] {
++  .usa-prose > .usa-table--stacked-header td[data-label]:before {
++  .usa-prose > .usa-table--stacked-header th,
++  .usa-prose > .usa-table--stacked-header th[data-label],
++  .usa-prose > .usa-table--stacked-header th[data-label]:before,
++  .usa-prose > .usa-table--stacked-header thead {
++  .usa-prose > .usa-table--stacked-header tr {
++  .usa-prose > .usa-table--stacked-header tr td:first-child {
++  .usa-prose > .usa-table--stacked-header tr th:first-child,
++  .usa-prose > .usa-table--stacked-header tr:first-child td:first-child {
++  .usa-prose > .usa-table--stacked-header tr:first-child th:first-child,
++  .usa-radio__input:checked + [class*="__label"]:before {
++  .usa-radio__input:checked:disabled + [class*="__label"]:before,
++  .usa-radio__input:checked[aria-disabled="true"] + [class*="__label"]:before {
++  .usa-radio__label:before {
++  .usa-range:disabled::-moz-range-thumb {
++  .usa-range:disabled::-moz-range-thumb:active {
++  .usa-range:disabled::-moz-range-thumb:focus {
++  .usa-range:disabled::-moz-range-thumb:hover {
++  .usa-range:disabled::-moz-range-thumb.usa-focus {
++  .usa-range:disabled::-moz-range-track {
++  .usa-range:disabled::-moz-range-track:active {
++  .usa-range:disabled::-moz-range-track:focus {
++  .usa-range:disabled::-moz-range-track:hover {
++  .usa-range:disabled::-moz-range-track.usa-focus {
++  .usa-range:disabled::-ms-fill-lower {
++  .usa-range:disabled::-ms-fill-lower:active {
++  .usa-range:disabled::-ms-fill-lower:focus {
++  .usa-range:disabled::-ms-fill-lower:hover {
++  .usa-range:disabled::-ms-fill-lower.usa-focus {
++  .usa-range:disabled::-ms-fill-upper {
++  .usa-range:disabled::-ms-fill-upper:active {
++  .usa-range:disabled::-ms-fill-upper:focus {
++  .usa-range:disabled::-ms-fill-upper:hover {
++  .usa-range:disabled::-ms-fill-upper.usa-focus {
++  .usa-range:disabled::-ms-thumb {
++  .usa-range:disabled::-ms-thumb:active {
++  .usa-range:disabled::-ms-thumb:focus {
++  .usa-range:disabled::-ms-thumb:hover {
++  .usa-range:disabled::-ms-thumb.usa-focus {
++  .usa-range:disabled::-ms-track {
++  .usa-range:disabled::-ms-track:active {
++  .usa-range:disabled::-ms-track:focus {
++  .usa-range:disabled::-ms-track:hover {
++  .usa-range:disabled::-ms-track.usa-focus {
++  .usa-range:disabled::-webkit-slider-runnable-track {
++  .usa-range:disabled::-webkit-slider-runnable-track:active {
++  .usa-range:disabled::-webkit-slider-runnable-track:focus {
++  .usa-range:disabled::-webkit-slider-runnable-track:hover {
++  .usa-range:disabled::-webkit-slider-runnable-track.usa-focus {
++  .usa-range:disabled::-webkit-slider-thumb {
++  .usa-range:disabled::-webkit-slider-thumb:active {
++  .usa-range:disabled::-webkit-slider-thumb:focus {
++  .usa-range:disabled::-webkit-slider-thumb:hover {
++  .usa-range:disabled::-webkit-slider-thumb.usa-focus {
++  .usa-range[aria-disabled="true"]::-moz-range-thumb:active {
++  .usa-range[aria-disabled="true"]::-moz-range-thumb:focus {
++  .usa-range[aria-disabled="true"]::-moz-range-thumb.usa-focus {
++  .usa-range[aria-disabled="true"]::-moz-range-track {
++  .usa-range[aria-disabled="true"]::-moz-range-track:active {
++  .usa-range[aria-disabled="true"]::-moz-range-track:focus {
++  .usa-range[aria-disabled="true"]::-moz-range-track.usa-focus {
++  .usa-range[aria-disabled="true"]::-ms-fill-lower:active {
++  .usa-range[aria-disabled="true"]::-ms-fill-lower:focus {
++  .usa-range[aria-disabled="true"]::-ms-fill-lower.usa-focus {
++  .usa-range[aria-disabled="true"]::-ms-fill-upper:active {
++  .usa-range[aria-disabled="true"]::-ms-fill-upper:focus {
++  .usa-range[aria-disabled="true"]::-ms-fill-upper.usa-focus {
++  .usa-range[aria-disabled="true"]::-ms-thumb:active {
++  .usa-range[aria-disabled="true"]::-ms-thumb:focus {
++  .usa-range[aria-disabled="true"]::-ms-thumb.usa-focus {
++  .usa-range[aria-disabled="true"]::-ms-track:active {
++  .usa-range[aria-disabled="true"]::-ms-track:focus {
++  .usa-range[aria-disabled="true"]::-ms-track.usa-focus {
++  .usa-range[aria-disabled="true"]::-webkit-slider-runnable-track {
++  .usa-range[aria-disabled="true"]::-webkit-slider-runnable-track:active {
++  .usa-range[aria-disabled="true"]::-webkit-slider-runnable-track:focus {
++  .usa-range[aria-disabled="true"]::-webkit-slider-runnable-track.usa-focus {
++  .usa-range[aria-disabled="true"]::-webkit-slider-thumb:active {
++  .usa-range[aria-disabled="true"]::-webkit-slider-thumb:focus {
++  .usa-range[aria-disabled="true"]::-webkit-slider-thumb.usa-focus {
++  .usa-search [type="submit"]:before {
++  .usa-search--big .usa-search__input {
++  .usa-search--big .usa-search__submit {
++  .usa-search--big [type="search"],
++  .usa-search--big [type="submit"],
++  .usa-search--small [type="submit"]:before {
++  .usa-select:disabled,
++  .usa-select:disabled:hover,
++  .usa-select:disabled.usa-focus,
++  .usa-select[aria-disabled="true"] {
++  .usa-select[aria-disabled="true"]:hover,
++  .usa-select[aria-disabled="true"].usa-focus {
++  .usa-show-password:disabled:hover,
++  .usa-show-password[aria-disabled="true"]:focus {
++  .usa-show-password[aria-disabled="true"]:hover,
++  .usa-sidenav .usa-current:after {
++  .usa-sidenav__sublist .usa-current:after {
++  .usa-site-alert .usa-alert .usa-alert__body:before {
++  .usa-site-alert--emergency .usa-alert .usa-alert__body:before {
++  .usa-site-alert--info .usa-alert .usa-alert__body:before {
++  .usa-site-alert--slim .usa-alert .usa-alert__body:before {
++  .usa-step-indicator--counters .usa-step-indicator__segment-label,
++  .usa-step-indicator--counters-sm .usa-step-indicator__segment-label {
++  .usa-step-indicator--counters-sm.usa-step-indicator--center
++  .usa-table
++  .usa-table__header__button
++  .usa-table__header__button {
++  .usa-table__header__button:active,
++  .usa-table__header__button:disabled,
++  .usa-table__header__button:disabled:active,
++  .usa-table__header__button:disabled:focus,
++  .usa-table__header__button:disabled:hover,
++  .usa-table__header__button:disabled.usa-button--active,
++  .usa-table__header__button:disabled.usa-button--hover,
++  .usa-table__header__button:disabled.usa-focus,
++  .usa-table__header__button:hover
++  .usa-table__header__button:hover {
++  .usa-table__header__button:hover,
++  .usa-table__header__button:visited {
++  .usa-table__header__button:visited,
++  .usa-table__header__button.usa-button--active,
++  .usa-table__header__button.usa-button--disabled {
++  .usa-table__header__button.usa-button--disabled,
++  .usa-table__header__button.usa-button--hover,
++  .usa-table__header__button[aria-disabled="true"],
++  .usa-table__header__button[aria-disabled="true"]:active,
++  .usa-table__header__button[aria-disabled="true"]:focus {
++  .usa-table__header__button[aria-disabled="true"]:focus,
++  .usa-table__header__button[aria-disabled="true"]:hover,
++  .usa-table__header__button[aria-disabled="true"].usa-button--active,
++  .usa-table__header__button[aria-disabled="true"].usa-button--hover,
++  .usa-table--stacked td {
++  .usa-table--stacked td[data-label] {
++  .usa-table--stacked td[data-label]:before {
++  .usa-table--stacked th,
++  .usa-table--stacked th[data-label]:before,
++  .usa-table--stacked thead {
++  .usa-table--stacked tr {
++  .usa-table--stacked tr td:first-child {
++  .usa-table--stacked tr th:first-child,
++  .usa-table--stacked tr:first-child td:first-child {
++  .usa-table--stacked-header
++  .usa-table--stacked-header td {
++  .usa-table--stacked-header td[data-label] {
++  .usa-table--stacked-header td[data-label]:before {
++  .usa-table--stacked-header th,
++  .usa-table--stacked-header th[data-label],
++  .usa-table--stacked-header th[data-label]:before,
++  .usa-table--stacked-header thead {
++  .usa-table--stacked-header tr {
++  .usa-table--stacked-header tr td:first-child {
++  .usa-table--stacked-header tr th:first-child,
++  .usa-table--stacked-header tr:first-child td:first-child {
++  .usa-table--stacked-header tr:first-child th:first-child,
++  .usa-textarea:disabled,
++  .usa-textarea:disabled:hover,
++  .usa-textarea:disabled.usa-focus,
++  .usa-textarea[aria-disabled="true"] {
++  .usa-textarea[aria-disabled="true"]:hover,
++  .usa-textarea[aria-disabled="true"].usa-focus {
++  [aria-disabled="true"].usa-date-picker__button,
++  [aria-disabled="true"].usa-date-picker__button:hover {
++  [aria-disabled="true"].usa-date-picker__calendar__date,
++  [aria-disabled="true"].usa-date-picker__calendar__date:hover,
++  [aria-disabled="true"].usa-date-picker__calendar__month-selection:hover,
++  [aria-disabled="true"].usa-date-picker__calendar__month:hover,
++  [aria-disabled="true"].usa-date-picker__calendar__next-month,
++  [aria-disabled="true"].usa-date-picker__calendar__next-month:hover,
++  [aria-disabled="true"].usa-date-picker__calendar__next-year-chunk,
++  [aria-disabled="true"].usa-date-picker__calendar__next-year-chunk:hover,
++  [aria-disabled="true"].usa-date-picker__calendar__next-year,
++  [aria-disabled="true"].usa-date-picker__calendar__next-year:hover,
++  [aria-disabled="true"].usa-date-picker__calendar__previous-month,
++  [aria-disabled="true"].usa-date-picker__calendar__previous-month:hover,
++  [aria-disabled="true"].usa-date-picker__calendar__previous-year-chunk,
++  [aria-disabled="true"].usa-date-picker__calendar__previous-year:hover,
++  [aria-disabled="true"].usa-date-picker__calendar__year-selection,
++  [aria-disabled="true"].usa-date-picker__calendar__year,
++  [aria-disabled="true"].usa-date-picker__calendar__year:hover,
++  [class*="usa-button"]:disabled:before,
++  [class*="usa-button"][aria-disabled="true"]:before {
++  }
++  @supports ((-webkit-mask: url("")) or (mask: url(""))) {
++  + [class*="__label"]:before {
++  + [class*="__label"]:before,
++  > .usa-table--borderless
++  > .width-mobile
++  > g {
++  > g,
++  > g.ascending {
++  > g.descending {
++  > g.unsorted {
++  > g.unsorted,
++  > table
++  align-items: center;
++  align-items: flex-start;
++  align-self: flex-end;
++  align-self: stretch;
++  appearance: none;
++  background-color: #0000;
++  background-color: #0000001a;
++  background-color: #0050d8;
++  background-color: #005ea2;
++  background-color: #005ea21a;
++  background-color: #162e51;
++  background-color: #1a4480;
++  background-color: #1b1b1b;
++  background-color: #454545;
++  background-color: #565c65;
++  background-color: #919191;
++  background-color: #97d4ea;
++  background-color: #c05600;
++  background-color: #c3ebfa;
++  background-color: #c9c9c9;
++  background-color: #cfe8ff;
++  background-color: #dfe1e2;
++  background-color: #e1f3f8;
++  background-color: #e7f6f8;
++  background-color: #f0f0f0;
++  background-color: #fff;
++  background-color: buttontext;
++  background-image: none;
++  background-image: url(../img/correct8.svg), linear-gradient(#0000, #0000);
++  background-image: url(../img/file-excel.svg), linear-gradient(#0000, #0000);
++  background-image: url(../img/file-pdf.svg), linear-gradient(#0000, #0000);
++  background-image: url(../img/file-video.svg), linear-gradient(#0000, #0000);
++  background-image: url(../img/file-word.svg), linear-gradient(#0000, #0000);
++  background-image: url(../img/file.svg), linear-gradient(#0000, #0000);
++  background-image: url(../img/hero.jpg);
++  background-image: url(../img/loader.svg), linear-gradient(#0000, #0000);
++  background-image: url(../img/usa-icons/add.svg), linear-gradient(#0000, #0000);
++  background-image: url(../img/usa-icons/unfold_more.svg),
++  background-position: 50%;
++  background-repeat: no-repeat;
++  background-size: 0.75rem;
++  background-size: 1.5rem;
++  background-size: auto 1.5rem;
++  background-size: contain;
++  background-size: cover;
++  background: #000000b3;
++  background: #d9e8f6;
++  background: #f0f0f0;
++  background: #fff;
++  background: 0 0;
++  border-bottom-color: #1b1b1b;
++  border-bottom-left-radius: 0;
++  border-bottom-left-radius: 0.25rem;
++  border-bottom-left-radius: 0.5rem;
++  border-bottom-left-radius: 2px;
++  border-bottom-left-radius: 99rem;
++  border-bottom-right-radius: 0;
++  border-bottom-right-radius: 2px;
++  border-bottom: 0.25rem solid #1b1b1b;
++  border-bottom: 1px solid #0000;
++  border-bottom: 1px solid #a9aeb1;
++  border-bottom: 1px solid #dfe1e2;
++  border-collapse: collapse;
++  border-color: #0000;
++  border-color: #b50909;
++  border-left-color: #1b1b1b;
++  border-left: 0.25rem solid #b50909;
++  border-left: 0.5rem solid #0000;
++  border-left: 0.5rem solid #d9e8f6;
++  border-left: 1px solid #1b1b1b40;
++  border-left: 5px solid #0000;
++  border-left: none;
++  border-radius: 0;
++  border-radius: 0.25rem;
++  border-radius: 0.5rem;
++  border-radius: 2px;
++  border-radius: 50%;
++  border-radius: 99rem;
++  border-right-color: #1b1b1b;
++  border-right: 1px solid #1a4480;
++  border-right: 5px solid #0000;
++  border-right: none;
++  border-spacing: 0;
++  border-style: none;
++  border-top-right-radius: 0;
++  border-top-style: solid;
++  border-top-width: 0;
++  border-top-width: 1px;
++  border-top: 0;
++  border-top: 0.25rem solid #1b1b1b;
++  border-top: 5px solid #1b1b1b;
++  border: 0;
++  border: 0.25rem solid #00a91c;
++  border: 0.25rem solid #1b1b1b;
++  border: 0.25rem solid #b50909;
++  border: 1px solid #0000;
++  border: 1px solid #005ea2;
++  border: 1px solid #1b1b1b;
++  border: 1px solid #1b1b1b33;
++  border: 1px solid #565c65;
++  border: 1px solid #99deea;
++  border: 2px solid #dfe1e2;
++  border: 5px solid #0000;
++  border: none;
++  bottom: 0;
++  bottom: 0.25rem;
++  bottom: 100%;
++  bottom: 1px;
++  bottom: auto;
++  box-shadow: 0 0 0 0.25rem #fff;
++  box-shadow: 0 0 0 2px #005ea2;
++  box-shadow: 0 0 0 2px #71767a;
++  box-shadow: 0 0.25rem 0.5rem #0000001a;
++  box-shadow: 0 0.5rem 1rem #0000001a;
++  box-shadow: 0 0.75rem 1.5rem #0000001a;
++  box-shadow: 0 1px 0.25rem #0000001a;
++  box-shadow: 0 1rem 2rem #0000001a;
++  box-shadow: inset 0 0 0 2px #005ea2;
++  box-shadow: inset 0 0 0 2px #162e51;
++  box-shadow: inset 0 0 0 2px #1a4480;
++  box-shadow: inset 0 0 0 2px #919191;
++  box-shadow: inset 0 0 0 2px #dfe1e2;
++  box-shadow: inset 0 0 0 2px #f0f0f0;
++  box-shadow: inset 0 0 0 2px #fff;
++  box-shadow: none;
++  box-sizing: border-box;
++  color: #0000;
++  color: #005ea2;
++  color: #00bde3;
++  color: #162e51;
++  color: #1a4480;
++  color: #1b1b1b;
++  color: #454545;
++  color: #54278f;
++  color: #565c65;
++  color: #71767a;
++  color: #dfe1e2;
++  color: #fff;
++  color: currentColor;
++  column-gap: 0.5rem;
++  content: "";
++  content: "External, opens in a new tab.";
++  content: "External.";
++  counter-reset: usa-numbered-list;
++  cursor: not-allowed;
++  cursor: pointer;
++  display: block;
++  display: flex;
++  display: inherit;
++  display: inline-block;
++  display: inline-flex;
++  display: inline;
++  display: none !important;
++  display: none;
++  fill: #000;
++  fill: #0000;
++  fill: #1b1b1b;
++  flex-direction: column;
++  flex-direction: row;
++  flex-flow: column wrap;
++  flex-flow: row;
++  flex-wrap: wrap;
++  flex: 0 auto;
++  flex: 1;
++  flex: 10;
++  flex: 11;
++  flex: 12;
++  flex: 2;
++  flex: 3;
++  flex: 4;
++  flex: 5;
++  flex: 6;
++  flex: 7;
++  flex: 8;
++  flex: 9;
++  flex: auto;
++  flex: none;
++  float: right;
++  font-family:
++  font-family: Merriweather Web;
++  font-family: monospace;
++  font-family: Roboto Mono Web;
++  font-family: Source Sans Pro Web;
++  font-feature-settings: "kern" 1;
++  font-kerning: normal;
++  font-size: 0.67rem;
++  font-size: 0.87rem;
++  font-size: 0.8rem;
++  font-size: 0.93rem;
++  font-size: 0.98rem;
++  font-size: 1.06rem;
++  font-size: 1.13rem;
++  font-size: 1.2rem;
++  font-size: 1.33rem;
++  font-size: 1.46rem;
++  font-size: 1.6rem;
++  font-size: 1.86rem;
++  font-size: 100%;
++  font-size: 1em;
++  font-size: 1rem;
++  font-size: 2.13rem;
++  font-size: 2.4rem;
++  font-size: 2.66rem;
++  font-size: 2em;
++  font-size: 3.19rem;
++  font-size: 3.73rem;
++  font-size: 4.26rem;
++  font-size: 5.32rem;
++  font-size: 7.99rem;
++  font-size: 9.32rem;
++  font-weight: 400;
++  font-weight: 700;
++  height: 0;
++  height: 0.25rem;
++  height: 0.5rem;
++  height: 0.75rem;
++  height: 1.005rem;
++  height: 1.13rem;
++  height: 1.25rem;
++  height: 1.2rem;
++  height: 1.305rem;
++  height: 1.395rem;
++  height: 1.59rem;
++  height: 1.5ex;
++  height: 1.5rem;
++  height: 1.695rem;
++  height: 1.75ex;
++  height: 1.8rem;
++  height: 1.995rem;
++  height: 100%;
++  height: 10rem;
++  height: 11.985rem;
++  height: 13.98rem;
++  height: 15rem;
++  height: 1px;
++  height: 1rem;
++  height: 2.19rem;
++  height: 2.4rem;
++  height: 2.5rem;
++  height: 2.79rem;
++  height: 20rem;
++  height: 2px;
++  height: 2rem;
++  height: 3.195rem;
++  height: 3.5rem;
++  height: 3.6rem;
++  height: 3.99rem;
++  height: 3rem;
++  height: 4.5rem;
++  height: 4.785rem;
++  height: 4rem;
++  height: 5.595rem;
++  height: 5rem;
++  height: 6.39rem;
++  height: 7.5rem;
++  height: 7.98rem;
++  height: auto;
++  img.add-aspect-16x9,
++  img.add-aspect-1x1,
++  img.add-aspect-2x1,
++  img.add-aspect-4x3,
++  img.add-aspect-9x16,
++  img.usa-card:not(.usa-card--flag).usa-card__media--set-aspect,
++  img.usa-embed-container,
++  inset: 0;
++  inset: 50% -5px 0 auto;
++  inset: 50% auto 0 -5px;
++  inset: auto;
++  justify-content: center;
++  justify-content: flex-end;
++  justify-content: flex-start;
++  justify-content: normal;
++  left: -999em;
++  left: 0;
++  left: 1.08333rem;
++  left: 100%;
++  left: 2px;
++  left: auto;
++  left: calc(50% - 0.875rem);
++  left: calc(50% - 1.375rem);
++  line-height: 0;
++  line-height: 0.9;
++  line-height: 1;
++  line-height: 1.1;
++  line-height: 1.15;
++  line-height: 1.2;
++  line-height: 1.3;
++  line-height: 1.5;
++  line-height: 1.8;
++  list-style-type: disc;
++  list-style-type: none;
++  list-style: none;
++  list-style: outside;
++  margin-bottom: 0;
++  margin-bottom: 0.25em;
++  margin-bottom: 0.5rem;
++  margin-bottom: 0.75rem;
++  margin-bottom: 1em;
++  margin-bottom: 1rem;
++  margin-bottom: 2.5rem;
++  margin-bottom: 2rem;
++  margin-left: -1px;
++  margin-left: -2px;
++  margin-left: -5px;
++  margin-left: 0.5rem;
++  margin-left: 16.6667%;
++  margin-left: 1px;
++  margin-left: 2px;
++  margin-left: 2rem;
++  margin-left: 33.3333%;
++  margin-left: 41.6667%;
++  margin-left: 58.3333%;
++  margin-left: 66.6667%;
++  margin-left: 8.33333%;
++  margin-left: 83.3333%;
++  margin-left: 91.6667%;
++  margin-left: auto;
++  margin-right: -0.25rem;
++  margin-right: -0.5rem;
++  margin-right: -0.75rem;
++  margin-right: -1.25rem;
++  margin-right: -1.5rem;
++  margin-right: -1px;
++  margin-right: -1rem;
++  margin-right: -2.5rem;
++  margin-right: -2rem;
++  margin-right: -3.5rem;
++  margin-right: -3rem;
++  margin-right: -4.5rem;
++  margin-right: -4rem;
++  margin-right: -5rem;
++  margin-right: -7.5rem;
++  margin-right: 0;
++  margin-right: 0.25rem;
++  margin-right: 0.5em;
++  margin-right: 0.5rem;
++  margin-right: 0.75rem;
++  margin-right: 1.25rem;
++  margin-right: 1.5em;
++  margin-right: 1.5rem;
++  margin-right: 10rem;
++  margin-right: 15rem;
++  margin-right: 1em;
++  margin-right: 1px;
++  margin-right: 1rem;
++  margin-right: 2.5rem;
++  margin-right: 20rem;
++  margin-right: 2em;
++  margin-right: 2px;
++  margin-right: 2rem;
++  margin-right: 3.5rem;
++  margin-right: 3rem;
++  margin-right: 4.5rem;
++  margin-right: 4rem;
++  margin-right: 5rem;
++  margin-right: 7.5rem;
++  margin-right: auto;
++  margin-top: -0.25rem;
++  margin-top: -0.4rem;
++  margin-top: -0.5rem;
++  margin-top: -0.75rem;
++  margin-top: -1.25rem;
++  margin-top: -1.5rem;
++  margin-top: -1rem;
++  margin-top: -2.5rem;
++  margin-top: -2rem;
++  margin-top: -3.5rem;
++  margin-top: -3rem;
++  margin-top: -4.5rem;
++  margin-top: -4rem;
++  margin-top: -7.5rem;
++  margin-top: 0;
++  margin-top: 0.064rem;
++  margin-top: 0.25em;
++  margin-top: 0.25rem;
++  margin-top: 0.5em;
++  margin-top: 0.5rem;
++  margin-top: 0.75rem;
++  margin-top: 1.25rem;
++  margin-top: 1.5em;
++  margin-top: 1.5rem;
++  margin-top: 1em;
++  margin-top: 1px;
++  margin-top: 1rem;
++  margin-top: 2.5rem;
++  margin-top: 2em;
++  margin-top: 2px;
++  margin-top: 2rem;
++  margin-top: 3.5rem;
++  margin-top: 3rem;
++  margin-top: 4.5rem;
++  margin-top: 4rem;
++  margin-top: 5rem;
++  margin-top: 7.5rem;
++  margin-top: auto;
++  margin: -1.5rem 0 1.5rem;
++  margin: 0 -0.25rem;
++  margin: 0;
++  margin: 0.25rem 0 1rem;
++  margin: 1.25rem 0;
++  margin: 1.25rem auto;
++  margin: 1rem 0 0;
++  max-inline-size: 5%;
++  max-width: 100%;
++  max-width: 10rem;
++  max-width: 13ex;
++  max-width: 15rem;
++  max-width: 20ex;
++  max-width: 20rem;
++  max-width: 30ex;
++  max-width: 30rem;
++  max-width: 40ex;
++  max-width: 40rem;
++  max-width: 50ex;
++  max-width: 55rem;
++  max-width: 5ex;
++  max-width: 64rem;
++  max-width: 68ex;
++  max-width: 72ex;
++  max-width: 75rem;
++  max-width: 87.5rem;
++  max-width: 88ex;
++  max-width: 9ex;
++  max-width: none;
++  max-width: unset;
++  min-height: 3.33333rem;
++  min-height: 3rem;
++  min-width: 0;
++  min-width: 2.5rem;
++  min-width: 3rem;
++  opacity: 0.4 !important;
++  opacity: 1;
++  outline-color: #0000;
++  outline-offset: 0rem;
++  outline: 0.25rem solid #2491ff;
++  outline: 1px dotted buttontext;
++  outline: 2px solid #162e51;
++  outline: none;
++  overflow-x: hidden;
++  overflow: hidden scroll;
++  overflow: hidden;
++  padding-bottom: 0;
++  padding-bottom: 0.25rem;
++  padding-bottom: 0.5rem;
++  padding-bottom: 0.75rem;
++  padding-bottom: 1.25rem;
++  padding-bottom: 1.5rem;
++  padding-bottom: 177.778%;
++  padding-bottom: 1rem;
++  padding-bottom: 2rem;
++  padding-bottom: 4rem;
++  padding-left: 0;
++  padding-left: 2rem;
++  padding-right: 0;
++  padding-right: 2.5rem;
++  padding-top: 0;
++  padding-top: 0.25rem;
++  padding-top: 0.5rem;
++  padding-top: 0.75rem;
++  padding-top: 1.25rem;
++  padding-top: 1rem;
++  padding-top: 2rem;
++  padding-top: 5px;
++  padding: 0 0 0 0;
++  padding: 0 0 0.25rem 0.5rem;
++  padding: 0 0.5rem;
++  padding: 0 0.75rem;
++  padding: 0;
++  padding: 0.25rem 1rem 1rem 0.5rem;
++  padding: 0.25rem;
++  padding: 0.5rem 1rem;
++  padding: 0.5rem;
++  padding: 0.75rem 1.25rem;
++  padding: 0.75rem 1rem 0.75rem 2.5rem;
++  padding: 0.75rem 1rem;
++  padding: 1.5rem;
++  padding: 1px 0.5rem;
++  padding: 1rem 1.25rem 0.75rem;
++  padding: 1rem;
++  padding: 20px 0 0 1rem;
++  padding: 2rem 1rem;
++  padding: calc(1.25rem - 1.1ex);
++  pointer-events: none;
++  position: absolute;
++  position: fixed;
++  position: relative;
++  right: 0;
++  right: 0.25rem;
++  right: 100%;
++  right: 1px;
++  right: 5rem;
++  right: auto;
++  scroll-behavior: smooth;
++  td:first-child {
++  text-align: center;
++  text-align: left;
++  text-decoration: none;
++  text-decoration: underline;
++  text-indent: -999em;
++  text-shadow: 0 0 #000;
++  text-transform: uppercase;
++  th:first-child,
++  th[data-sortable]:not([aria-sort])
++  th[data-sortable][aria-sort="ascending"]
++  th[data-sortable][aria-sort="descending"]
++  th[data-sortable][aria-sort="none"]
++  top: 0;
++  top: 0.666667rem;
++  top: 100%;
++  top: 1px;
++  top: 50%;
++  tr:first-child
++  transform: translateY(-50%);
++  transition: opacity 0.15s ease-in-out;
++  transition: opacity 80ms ease-in-out;
++  vertical-align: baseline;
++  vertical-align: middle;
++  width: 0.25rem;
++  width: 0.5rem;
++  width: 1.25rem;
++  width: 1.5rem;
++  width: 100%;
++  width: 15rem;
++  width: 16.6667%;
++  width: 1em;
++  width: 1px;
++  width: 1rem;
++  width: 2.5rem;
++  width: 2rem;
++  width: 3.5rem;
++  width: 33.3333%;
++  width: 3rem;
++  width: 4.5rem;
++  width: 41.6667%;
++  width: 58.3333%;
++  width: 66.6667%;
++  width: 7.5rem;
++  width: 8.33333%;
++  width: 83.3333%;
++  width: 91.6667%;
++  width: auto;
++  z-index: 1;
++  z-index: 100;
++  z-index: 2;
++  z-index: 200;
++  z-index: 3;
++  z-index: 300;
++  z-index: 400;
++::-webkit-inner-spin-button {
++:after {
++:before,
++.bg-ink,
++.border-ink,
++.circle-1 {
++.circle-15 {
++.circle-1px {
++.circle-2 {
++.circle-3 {
++.circle-5 {
++.circle-7 {
++.circle-card-lg {
++.clearfix:after {
++.grid-col-1 {
++.grid-col-11 {
++.grid-col-3 {
++.grid-col-5 {
++.grid-col-7 {
++.grid-col-auto {
++.hover\:shadow-1:hover {
++.hover\:shadow-2:hover {
++.hover\:shadow-3:hover {
++.hover\:shadow-4:hover {
++.hover\:shadow-5:hover {
++.hover\:shadow-none:hover {
++.hover\:text-accent-cool-dark:hover {
++.hover\:text-accent-cool-darker:hover {
++.hover\:text-accent-cool-light:hover {
++.hover\:text-accent-cool-lighter:hover {
++.hover\:text-accent-cool:hover {
++.hover\:text-accent-warm-dark:hover {
++.hover\:text-accent-warm-darker:hover {
++.hover\:text-accent-warm-light:hover {
++.hover\:text-accent-warm-lighter:hover {
++.hover\:text-accent-warm:hover {
++.hover\:text-base-dark:hover {
++.hover\:text-base-darker:hover {
++.hover\:text-base-darkest:hover,
++.hover\:text-base-light:hover {
++.hover\:text-base-lighter:hover {
++.hover\:text-base-lightest:hover {
++.hover\:text-base:hover {
++.hover\:text-black:hover {
++.hover\:text-blue:hover {
++.hover\:text-cyan:hover {
++.hover\:text-disabled-dark:hover {
++.hover\:text-disabled-darker:hover {
++.hover\:text-disabled-light:hover {
++.hover\:text-disabled-lighter:hover {
++.hover\:text-disabled:hover {
++.hover\:text-emergency-dark:hover {
++.hover\:text-emergency:hover {
++.hover\:text-error-dark:hover {
++.hover\:text-error-darker:hover {
++.hover\:text-error-light:hover {
++.hover\:text-error-lighter:hover {
++.hover\:text-error:hover {
++.hover\:text-gold:hover {
++.hover\:text-gray-10:hover {
++.hover\:text-gray-30:hover {
++.hover\:text-gray-5:hover {
++.hover\:text-gray-50:hover {
++.hover\:text-gray-70:hover {
++.hover\:text-gray-90:hover {
++.hover\:text-green:hover {
++.hover\:text-indigo:hover {
++.hover\:text-info-dark:hover {
++.hover\:text-info-darker:hover {
++.hover\:text-info-light:hover {
++.hover\:text-info-lighter:hover {
++.hover\:text-info:hover {
++.hover\:text-ink:hover {
++.hover\:text-magenta:hover {
++.hover\:text-mint:hover {
++.hover\:text-no-strike:hover {
++.hover\:text-orange:hover {
++.hover\:text-primary-dark:hover {
++.hover\:text-primary-darker:hover {
++.hover\:text-primary-light:hover {
++.hover\:text-primary-lighter:hover {
++.hover\:text-primary-vivid:hover {
++.hover\:text-primary:hover {
++.hover\:text-red:hover {
++.hover\:text-secondary-dark:hover {
++.hover\:text-secondary-darker:hover {
++.hover\:text-secondary-light:hover {
++.hover\:text-secondary-lighter:hover {
++.hover\:text-secondary-vivid:hover {
++.hover\:text-secondary:hover {
++.hover\:text-strike:hover {
++.hover\:text-success-dark:hover {
++.hover\:text-success-darker:hover {
++.hover\:text-success-light:hover {
++.hover\:text-success-lighter:hover {
++.hover\:text-success:hover {
++.hover\:text-transparent:hover {
++.hover\:text-underline:hover {
++.hover\:text-violet:hover {
++.hover\:text-warning-dark:hover {
++.hover\:text-warning-darker:hover {
++.hover\:text-warning-light:hover {
++.hover\:text-warning-lighter:hover {
++.hover\:text-warning:hover {
++.hover\:text-white:hover {
++.hover\:text-yellow:hover {
++.hover\:underline-accent-cool-dark:hover {
++.hover\:underline-accent-cool-darker:hover {
++.hover\:underline-accent-cool-light:hover {
++.hover\:underline-accent-cool-lighter:hover {
++.hover\:underline-accent-cool:hover {
++.hover\:underline-accent-warm-dark:hover {
++.hover\:underline-accent-warm-darker:hover {
++.hover\:underline-accent-warm-light:hover {
++.hover\:underline-accent-warm-lighter:hover {
++.hover\:underline-accent-warm:hover {
++.hover\:underline-base-dark:hover {
++.hover\:underline-base-darker:hover {
++.hover\:underline-base-darkest:hover,
++.hover\:underline-base-light:hover {
++.hover\:underline-base-lighter:hover {
++.hover\:underline-base-lightest:hover {
++.hover\:underline-base:hover {
++.hover\:underline-blue:hover {
++.hover\:underline-cyan:hover {
++.hover\:underline-disabled-dark:hover {
++.hover\:underline-disabled-darker:hover {
++.hover\:underline-disabled-light:hover {
++.hover\:underline-disabled-lighter:hover {
++.hover\:underline-disabled:hover {
++.hover\:underline-emergency-dark:hover {
++.hover\:underline-emergency:hover {
++.hover\:underline-error-dark:hover {
++.hover\:underline-error-darker:hover {
++.hover\:underline-error-light:hover {
++.hover\:underline-error-lighter:hover {
++.hover\:underline-error:hover {
++.hover\:underline-gold:hover {
++.hover\:underline-gray-10:hover {
++.hover\:underline-gray-30:hover {
++.hover\:underline-gray-5:hover {
++.hover\:underline-gray-50:hover {
++.hover\:underline-gray-70:hover {
++.hover\:underline-gray-90:hover {
++.hover\:underline-green:hover {
++.hover\:underline-indigo:hover {
++.hover\:underline-info-dark:hover {
++.hover\:underline-info-darker:hover {
++.hover\:underline-info-light:hover {
++.hover\:underline-info-lighter:hover {
++.hover\:underline-info:hover {
++.hover\:underline-ink:hover {
++.hover\:underline-magenta:hover {
++.hover\:underline-mint:hover {
++.hover\:underline-orange:hover {
++.hover\:underline-primary-dark:hover {
++.hover\:underline-primary-darker:hover {
++.hover\:underline-primary-light:hover {
++.hover\:underline-primary-lighter:hover {
++.hover\:underline-primary-vivid:hover {
++.hover\:underline-primary:hover {
++.hover\:underline-red:hover {
++.hover\:underline-secondary-dark:hover {
++.hover\:underline-secondary-darker:hover {
++.hover\:underline-secondary-light:hover {
++.hover\:underline-secondary-lighter:hover {
++.hover\:underline-secondary-vivid:hover {
++.hover\:underline-secondary:hover {
++.hover\:underline-success-dark:hover {
++.hover\:underline-success-darker:hover {
++.hover\:underline-success-light:hover {
++.hover\:underline-success-lighter:hover {
++.hover\:underline-success:hover {
++.hover\:underline-violet:hover {
++.hover\:underline-warning-dark:hover {
++.hover\:underline-warning-darker:hover {
++.hover\:underline-warning-light:hover {
++.hover\:underline-warning-lighter:hover {
++.hover\:underline-warning:hover {
++.hover\:underline-yellow:hover {
++.margin-right-0 {
++.margin-right-05 {
++.margin-right-05em {
++.margin-right-1 {
++.margin-right-10 {
++.margin-right-105 {
++.margin-right-105em {
++.margin-right-15 {
++.margin-right-1em {
++.margin-right-1px {
++.margin-right-2 {
++.margin-right-205 {
++.margin-right-2em {
++.margin-right-2px {
++.margin-right-3 {
++.margin-right-4 {
++.margin-right-5 {
++.margin-right-6 {
++.margin-right-7 {
++.margin-right-8 {
++.margin-right-9 {
++.margin-right-auto {
++.margin-right-card {
++.margin-right-card-lg {
++.margin-right-mobile {
++.margin-right-neg-05 {
++.margin-right-neg-1 {
++.margin-right-neg-10 {
++.margin-right-neg-105 {
++.margin-right-neg-15 {
++.margin-right-neg-2 {
++.margin-right-neg-205 {
++.margin-right-neg-3 {
++.margin-right-neg-4 {
++.margin-right-neg-5 {
++.margin-right-neg-6 {
++.margin-right-neg-7 {
++.margin-right-neg-8 {
++.margin-right-neg-9 {
++.margin-top-0 {
++.margin-top-05 {
++.margin-top-05em {
++.margin-top-1 {
++.margin-top-10 {
++.margin-top-105 {
++.margin-top-105em {
++.margin-top-15 {
++.margin-top-1em {
++.margin-top-1px {
++.margin-top-2 {
++.margin-top-205 {
++.margin-top-2em {
++.margin-top-2px {
++.margin-top-3 {
++.margin-top-4 {
++.margin-top-5 {
++.margin-top-6 {
++.margin-top-7 {
++.margin-top-8 {
++.margin-top-9 {
++.margin-top-auto {
++.margin-top-neg-05 {
++.margin-top-neg-1 {
++.margin-top-neg-105 {
++.margin-top-neg-15 {
++.margin-top-neg-2 {
++.margin-top-neg-205 {
++.margin-top-neg-3 {
++.margin-top-neg-4 {
++.margin-top-neg-5 {
++.margin-top-neg-6 {
++.margin-top-neg-7 {
++.margin-top-neg-8 {
++.margin-top-neg-9 {
++.pin-bottom {
++.shadow-1,
++.shadow-2,
++.shadow-3,
++.shadow-4,
++.shadow-5,
++.shadow-none,
++.text-accent-cool-dark,
++.text-accent-cool-darker,
++.text-accent-cool-light,
++.text-accent-cool-lighter,
++.text-accent-cool,
++.text-accent-warm-dark,
++.text-accent-warm-darker,
++.text-accent-warm-light,
++.text-accent-warm-lighter,
++.text-accent-warm,
++.text-base-dark,
++.text-base-darker,
++.text-base-light,
++.text-base-lighter,
++.text-base-lightest,
++.text-base,
++.text-black,
++.text-blue,
++.text-cyan,
++.text-disabled-dark,
++.text-disabled-darker,
++.text-disabled-light,
++.text-disabled-lighter,
++.text-disabled,
++.text-emergency-dark,
++.text-emergency,
++.text-error-dark,
++.text-error-darker,
++.text-error-light,
++.text-error-lighter,
++.text-error,
++.text-gold,
++.text-gray-10,
++.text-gray-30,
++.text-gray-5,
++.text-gray-50,
++.text-gray-70,
++.text-gray-90,
++.text-green,
++.text-indigo,
++.text-info-dark,
++.text-info-darker,
++.text-info-light,
++.text-info-lighter,
++.text-info,
++.text-ink,
++.text-magenta,
++.text-mint,
++.text-no-underline,
++.text-orange,
++.text-primary-dark,
++.text-primary-darker,
++.text-primary-light,
++.text-primary-lighter,
++.text-primary-vivid,
++.text-primary,
++.text-red,
++.text-secondary-dark,
++.text-secondary-darker,
++.text-secondary-light,
++.text-secondary-lighter,
++.text-secondary-vivid,
++.text-secondary,
++.text-strike,
++.text-success-dark,
++.text-success-darker,
++.text-success-light,
++.text-success-lighter,
++.text-success,
++.text-transparent,
++.text-underline,
++.text-violet,
++.text-warning-dark,
++.text-warning-darker,
++.text-warning-light,
++.text-warning-lighter,
++.text-warning,
++.text-white,
++.text-yellow,
++.underline-accent-cool-dark,
++.underline-accent-cool-darker,
++.underline-accent-cool-light,
++.underline-accent-cool-lighter,
++.underline-accent-cool,
++.underline-accent-warm-dark,
++.underline-accent-warm-darker,
++.underline-accent-warm-light,
++.underline-accent-warm-lighter,
++.underline-accent-warm,
++.underline-base-dark,
++.underline-base-darker,
++.underline-base-light,
++.underline-base-lighter,
++.underline-base-lightest,
++.underline-base,
++.underline-blue,
++.underline-cyan,
++.underline-disabled-dark,
++.underline-disabled-darker,
++.underline-disabled-light,
++.underline-disabled-lighter,
++.underline-disabled,
++.underline-emergency-dark,
++.underline-emergency,
++.underline-error-dark,
++.underline-error-darker,
++.underline-error-light,
++.underline-error-lighter,
++.underline-error,
++.underline-gold,
++.underline-gray-10,
++.underline-gray-30,
++.underline-gray-5,
++.underline-gray-50,
++.underline-gray-70,
++.underline-gray-90,
++.underline-green,
++.underline-indigo,
++.underline-info-dark,
++.underline-info-darker,
++.underline-info-light,
++.underline-info-lighter,
++.underline-info,
++.underline-ink,
++.underline-magenta,
++.underline-mint,
++.underline-orange,
++.underline-primary-dark,
++.underline-primary-darker,
++.underline-primary-light,
++.underline-primary-lighter,
++.underline-primary-vivid,
++.underline-primary,
++.underline-red,
++.underline-secondary-dark,
++.underline-secondary-darker,
++.underline-secondary-light,
++.underline-secondary-lighter,
++.underline-secondary-vivid,
++.underline-secondary,
++.underline-success-dark,
++.underline-success-darker,
++.underline-success-light,
++.underline-success-lighter,
++.underline-success,
++.underline-violet,
++.underline-warning-dark,
++.underline-warning-darker,
++.underline-warning-light,
++.underline-warning-lighter,
++.underline-warning,
++.underline-yellow,
++.usa-accordion {
++.usa-accordion > li {
++.usa-accordion__button:active,
++.usa-accordion__button:disabled,
++.usa-accordion__button:disabled:active,
++.usa-accordion__button:disabled:focus,
++.usa-accordion__button:disabled:hover,
++.usa-accordion__button:disabled.usa-button--active,
++.usa-accordion__button:disabled.usa-button--hover,
++.usa-accordion__button:disabled.usa-focus,
++.usa-accordion__button:hover {
++.usa-accordion__button:hover,
++.usa-accordion__button.usa-button--active,
++.usa-accordion__button.usa-button--disabled {
++.usa-accordion__button[aria-disabled="true"],
++.usa-accordion__button[aria-disabled="true"]:focus {
++.usa-accordion__button[aria-disabled="true"]:hover,
++.usa-accordion__button[aria-disabled="true"].usa-button--active,
++.usa-accordion__button[aria-disabled="true"].usa-focus,
++.usa-alert .usa-alert__body > .usa-list {
++.usa-alert .usa-alert__body > .usa-list:last-child {
++.usa-alert .usa-alert__body:before {
++.usa-alert > .usa-list,
++.usa-alert > .usa-list:last-child,
++.usa-alert--emergency .usa-alert__body .usa-link:active {
++.usa-alert--emergency .usa-alert__body .usa-link:hover,
++.usa-alert--emergency .usa-alert__body:before {
++.usa-alert--error .usa-alert__body .usa-link {
++.usa-alert--error .usa-alert__body .usa-link:active {
++.usa-alert--error .usa-alert__body .usa-link:hover,
++.usa-alert--error .usa-alert__body:before {
++.usa-alert--info .usa-alert__body .usa-link {
++.usa-alert--info .usa-alert__body .usa-link:active {
++.usa-alert--info .usa-alert__body .usa-link:hover,
++.usa-alert--info .usa-alert__body:before {
++.usa-alert--slim .usa-alert__body:before {
++.usa-alert--success .usa-alert__body .usa-link {
++.usa-alert--success .usa-alert__body .usa-link:active {
++.usa-alert--success .usa-alert__body .usa-link:hover,
++.usa-alert--success .usa-alert__body:before {
++.usa-alert--warning .usa-alert__body .usa-link {
++.usa-alert--warning .usa-alert__body .usa-link:active {
++.usa-alert--warning .usa-alert__body .usa-link:hover,
++.usa-alert--warning .usa-alert__body:before {
++.usa-banner__button:active {
++.usa-banner__button:active,
++.usa-banner__button:disabled,
++.usa-banner__button:disabled:active,
++.usa-banner__button:disabled:focus,
++.usa-banner__button:disabled:hover,
++.usa-banner__button:disabled.usa-button--active,
++.usa-banner__button:disabled.usa-button--hover,
++.usa-banner__button:disabled.usa-focus,
++.usa-banner__button:hover {
++.usa-banner__button:hover,
++.usa-banner__button.usa-button--active,
++.usa-banner__button.usa-button--disabled {
++.usa-banner__button[aria-disabled="true"],
++.usa-banner__button[aria-disabled="true"]:focus {
++.usa-banner__button[aria-disabled="true"]:hover,
++.usa-banner__button[aria-disabled="true"].usa-button--active,
++.usa-banner__button[aria-disabled="true"].usa-focus,
++.usa-banner__content {
++.usa-banner__header-action:active {
++.usa-banner__header-action:after {
++.usa-banner__header-action:hover,
++.usa-banner__header-action:hover:after {
++.usa-breadcrumb__link:active {
++.usa-breadcrumb__link:hover,
++.usa-breadcrumb__list > li {
++.usa-button--accent-cool:active,
++.usa-button--accent-cool:hover,
++.usa-button--accent-cool.usa-button--active {
++.usa-button--accent-cool.usa-button--hover {
++.usa-button--accent-warm:active,
++.usa-button--accent-warm:hover,
++.usa-button--accent-warm.usa-button--active {
++.usa-button--accent-warm.usa-button--hover {
++.usa-button--base:active,
++.usa-button--base:hover,
++.usa-button--base.usa-button--active {
++.usa-button--base.usa-button--hover {
++.usa-button--outline-inverse:disabled,
++.usa-button--outline-inverse:disabled:active,
++.usa-button--outline-inverse:disabled:focus,
++.usa-button--outline-inverse:disabled:hover,
++.usa-button--outline-inverse[aria-disabled="true"],
++.usa-button--outline-inverse[aria-disabled="true"]:active,
++.usa-button--outline-inverse[aria-disabled="true"]:focus {
++.usa-button--outline-inverse[aria-disabled="true"]:hover,
++.usa-button--outline:active,
++.usa-button--outline:disabled:hover,
++.usa-button--outline:hover,
++.usa-button--outline.usa-button--active {
++.usa-button--outline.usa-button--hover {
++.usa-button--outline.usa-button--inverse:active,
++.usa-button--outline.usa-button--inverse:hover,
++.usa-button--outline.usa-button--inverse.usa-button--active {
++.usa-button--outline.usa-button--inverse.usa-button--hover {
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:active {
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:active,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled:active,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled:focus,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled:hover,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled.usa-button--active,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled.usa-button--hover,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:disabled.usa-focus,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:hover {
++.usa-button--outline.usa-button--inverse.usa-button--unstyled:hover,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--active {
++.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--active,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--disabled {
++.usa-button--outline.usa-button--inverse.usa-button--unstyled.usa-button--hover {
++.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled="true"],
++.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled="true"]:focus {
++.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled="true"]:hover,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled="true"].usa-button--active,
++.usa-button--outline.usa-button--inverse.usa-button--unstyled[aria-disabled="true"].usa-focus,
++.usa-button--outline[aria-disabled="true"]:hover,
++.usa-button--secondary:active,
++.usa-button--secondary:hover,
++.usa-button--secondary.usa-button--active {
++.usa-button--secondary.usa-button--hover {
++.usa-button--unstyled:active,
++.usa-button--unstyled:disabled,
++.usa-button--unstyled:disabled:active,
++.usa-button--unstyled:disabled:focus,
++.usa-button--unstyled:disabled:hover,
++.usa-button--unstyled:disabled.usa-button--active,
++.usa-button--unstyled:disabled.usa-button--hover,
++.usa-button--unstyled:disabled.usa-focus,
++.usa-button--unstyled:hover,
++.usa-button--unstyled:visited {
++.usa-button--unstyled.usa-button--active {
++.usa-button--unstyled.usa-button--active,
++.usa-button--unstyled.usa-button--disabled {
++.usa-button--unstyled.usa-button--hover {
++.usa-button--unstyled[aria-disabled="true"],
++.usa-button--unstyled[aria-disabled="true"]:focus {
++.usa-button--unstyled[aria-disabled="true"]:hover,
++.usa-button--unstyled[aria-disabled="true"].usa-button--active,
++.usa-button--unstyled[aria-disabled="true"].usa-focus,
++.usa-button-group--segmented .usa-button:active {
++.usa-button-group--segmented .usa-button:hover,
++.usa-button:active,
++.usa-button:disabled:hover,
++.usa-button:disabled.usa-button--active,
++.usa-button:disabled.usa-button--active:active,
++.usa-button:disabled.usa-button--active:focus,
++.usa-button:disabled.usa-button--active:hover,
++.usa-button:disabled.usa-button--active.usa-focus,
++.usa-button:disabled.usa-button--hover:active,
++.usa-button:disabled.usa-button--hover:focus,
++.usa-button:disabled.usa-button--hover:hover,
++.usa-button:disabled.usa-button--hover.usa-focus,
++.usa-button:disabled.usa-focus,
++.usa-button:hover,
++.usa-button:not([disabled]):focus,
++.usa-button:not([disabled]).usa-focus {
++.usa-button.usa-button--active {
++.usa-button.usa-button--hover {
++.usa-button[aria-disabled="true"]:hover,
++.usa-button[aria-disabled="true"].usa-button--active {
++.usa-button[aria-disabled="true"].usa-button--active:active,
++.usa-button[aria-disabled="true"].usa-button--active:focus,
++.usa-button[aria-disabled="true"].usa-button--active:hover,
++.usa-button[aria-disabled="true"].usa-button--active.usa-focus {
++.usa-button[aria-disabled="true"].usa-button--hover,
++.usa-button[aria-disabled="true"].usa-button--hover:active,
++.usa-button[aria-disabled="true"].usa-button--hover:focus,
++.usa-button[aria-disabled="true"].usa-button--hover:hover,
++.usa-button[aria-disabled="true"].usa-button--hover.usa-focus,
++.usa-button[aria-disabled="true"].usa-focus {
++.usa-card__body > :first-child {
++.usa-card__body > :last-child {
++.usa-card__body > :only-child {
++.usa-card__body--exdent,
++.usa-card__footer--exdent {
++.usa-card__footer--exdent > * {
++.usa-card__header > :first-child,
++.usa-card__header > :last-child,
++.usa-card__header > :only-child,
++.usa-card__header--exdent > *,
++.usa-card__media--exdent,
++.usa-card:last-child {
++.usa-checkbox__input--tile + [class*="__label"] {
++.usa-checkbox__input--tile + [class*="__label"]:before {
++.usa-checkbox__input:checked + [class*="__label"]:before {
++.usa-checkbox__input:checked + [class*="__label"]:before,
++.usa-checkbox__input:checked:disabled + [class*="__label"]:before,
++.usa-checkbox__input:checked[aria-disabled="true"] + [class*="__label"]:before {
++.usa-checkbox__input:checked[aria-disabled="true"] + [class*="__label"]:before,
++.usa-checkbox__input:disabled + [class*="__label"]:before,
++.usa-checkbox__input:focus + [class*="__label"]:before {
++.usa-checkbox__input:indeterminate + [class*="__label"]:before,
++.usa-checkbox__input:indeterminate:disabled + [class*="__label"]:before,
++.usa-checkbox__input[aria-disabled="true"] + [class*="__label"]:before {
++.usa-checkbox__input[data-indeterminate] + [class*="__label"]:before {
++.usa-checkbox__input[data-indeterminate]:disabled + [class*="__label"]:before,
++.usa-checkbox__label,
++.usa-checkbox__label:before {
++.usa-checklist__item:before {
++.usa-checklist__item.usa-checklist__item--checked:before {
++.usa-collection ol {
++.usa-collection__calendar-date {
++.usa-collection__calendar-date-day {
++.usa-collection__calendar-date-month,
++.usa-collection__img,
++.usa-collection__item {
++.usa-collection__item > li {
++.usa-collection__item:last-child {
++.usa-collection__meta > li {
++.usa-collection:last-child {
++.usa-combo-box__clear-input {
++.usa-combo-box__clear-input__wrapper:focus {
++.usa-combo-box__input,
++.usa-combo-box__input:disabled:hover,
++.usa-combo-box__input:disabled.usa-focus,
++.usa-combo-box__input[aria-disabled="true"]:hover,
++.usa-combo-box__input[aria-disabled="true"].usa-focus {
++.usa-combo-box__list,
++.usa-combo-box__toggle-list__wrapper:focus,
++.usa-combo-box__toggle-list,
++.usa-content ol:not(.usa-accordion):not(.usa-accordion--bordered) {
++.usa-content ul:not(.usa-accordion):not(.usa-accordion--bordered),
++.usa-dark-background a:active {
++.usa-dark-background a:hover,
++.usa-date-picker__button {
++.usa-date-picker__button:disabled,
++.usa-date-picker__button:hover:disabled,
++.usa-date-picker__button:not([disabled]) {
++.usa-date-picker__button:not([disabled]):active {
++.usa-date-picker__button:not([disabled]):focus {
++.usa-date-picker__button:not([disabled]):hover {
++.usa-date-picker__calendar__date--range-date:not([disabled]) {
++.usa-date-picker__calendar__date--range-date:not([disabled]):active {
++.usa-date-picker__calendar__date--range-date:not([disabled]):focus {
++.usa-date-picker__calendar__date--range-date:not([disabled]):hover {
++.usa-date-picker__calendar__date--selected,
++.usa-date-picker__calendar__date--selected:not([disabled]),
++.usa-date-picker__calendar__date--selected:not([disabled]):active,
++.usa-date-picker__calendar__date--selected:not([disabled]):focus,
++.usa-date-picker__calendar__date--selected:not([disabled]):hover,
++.usa-date-picker__calendar__date--within-range,
++.usa-date-picker__calendar__date--within-range:not([disabled]) {
++.usa-date-picker__calendar__date--within-range:not([disabled]):hover {
++.usa-date-picker__calendar__date:disabled,
++.usa-date-picker__calendar__date:hover:disabled,
++.usa-date-picker__calendar__date:not([disabled]),
++.usa-date-picker__calendar__date:not([disabled]):active,
++.usa-date-picker__calendar__date:not([disabled]):focus,
++.usa-date-picker__calendar__date:not([disabled]):hover,
++.usa-date-picker__calendar__month--selected,
++.usa-date-picker__calendar__month-selection {
++.usa-date-picker__calendar__month-selection:disabled,
++.usa-date-picker__calendar__month-selection:hover:disabled,
++.usa-date-picker__calendar__month-selection:not([disabled]),
++.usa-date-picker__calendar__month-selection:not([disabled]):active,
++.usa-date-picker__calendar__month-selection:not([disabled]):focus,
++.usa-date-picker__calendar__month-selection:not([disabled]):hover,
++.usa-date-picker__calendar__month,
++.usa-date-picker__calendar__month:disabled,
++.usa-date-picker__calendar__month:hover:disabled,
++.usa-date-picker__calendar__month:not([disabled]),
++.usa-date-picker__calendar__month:not([disabled]):active,
++.usa-date-picker__calendar__month:not([disabled]):focus,
++.usa-date-picker__calendar__month:not([disabled]):hover,
++.usa-date-picker__calendar__next-month {
++.usa-date-picker__calendar__next-month,
++.usa-date-picker__calendar__next-month:disabled,
++.usa-date-picker__calendar__next-month:hover:disabled,
++.usa-date-picker__calendar__next-month:not([disabled]),
++.usa-date-picker__calendar__next-month:not([disabled]):active,
++.usa-date-picker__calendar__next-month:not([disabled]):focus,
++.usa-date-picker__calendar__next-month:not([disabled]):hover,
++.usa-date-picker__calendar__next-year-chunk {
++.usa-date-picker__calendar__next-year-chunk,
++.usa-date-picker__calendar__next-year-chunk:disabled,
++.usa-date-picker__calendar__next-year-chunk:hover:disabled,
++.usa-date-picker__calendar__next-year-chunk:not([disabled]),
++.usa-date-picker__calendar__next-year-chunk:not([disabled]):active,
++.usa-date-picker__calendar__next-year-chunk:not([disabled]):focus,
++.usa-date-picker__calendar__next-year-chunk:not([disabled]):hover,
++.usa-date-picker__calendar__next-year,
++.usa-date-picker__calendar__next-year:disabled,
++.usa-date-picker__calendar__next-year:hover:disabled,
++.usa-date-picker__calendar__next-year:not([disabled]),
++.usa-date-picker__calendar__next-year:not([disabled]):active,
++.usa-date-picker__calendar__next-year:not([disabled]):focus,
++.usa-date-picker__calendar__next-year:not([disabled]):hover,
++.usa-date-picker__calendar__previous-month:disabled,
++.usa-date-picker__calendar__previous-month:hover:disabled,
++.usa-date-picker__calendar__previous-month:not([disabled]),
++.usa-date-picker__calendar__previous-month:not([disabled]):active,
++.usa-date-picker__calendar__previous-month:not([disabled]):focus,
++.usa-date-picker__calendar__previous-month:not([disabled]):hover,
++.usa-date-picker__calendar__previous-year-chunk,
++.usa-date-picker__calendar__previous-year-chunk:disabled,
++.usa-date-picker__calendar__previous-year-chunk:hover:disabled,
++.usa-date-picker__calendar__previous-year,
++.usa-date-picker__calendar__previous-year:disabled,
++.usa-date-picker__calendar__previous-year:hover:disabled,
++.usa-date-picker__calendar__previous-year:not([disabled]),
++.usa-date-picker__calendar__previous-year:not([disabled]):active,
++.usa-date-picker__calendar__previous-year:not([disabled]):focus,
++.usa-date-picker__calendar__previous-year:not([disabled]):hover,
++.usa-date-picker__calendar__year--selected,
++.usa-date-picker__calendar__year-selection,
++.usa-date-picker__calendar__year-selection:disabled,
++.usa-date-picker__calendar__year-selection:hover:disabled,
++.usa-date-picker__calendar__year,
++.usa-date-picker__calendar__year:disabled,
++.usa-date-picker__calendar__year:hover:disabled,
++.usa-date-picker__calendar__year:not([disabled]),
++.usa-date-picker__calendar__year:not([disabled]):active,
++.usa-date-picker__calendar__year:not([disabled]):focus,
++.usa-date-picker__calendar__year:not([disabled]):hover,
++.usa-embed-container embed {
++.usa-embed-container object,
++.usa-fieldset,
++.usa-file-input__preview-image--excel,
++.usa-file-input__preview-image--video {
++.usa-file-input__preview-image--word,
++.usa-file-input--disabled .usa-file-input__choose {
++.usa-file-input--disabled .usa-file-input__instructions,
++.usa-footer__contact-info a {
++.usa-footer__primary-link--button:before {
++.usa-footer__primary-link--button[aria-expanded="false"]:before {
++.usa-footer__return-to-top a {
++.usa-footer__return-to-top a:active {
++.usa-footer__return-to-top a:hover {
++.usa-footer__return-to-top a:visited {
++.usa-footer__secondary-link a {
++.usa-footer__secondary-section a {
++.usa-footer__social-links a {
++.usa-form .usa-input--2xl {
++.usa-form .usa-input--2xs {
++.usa-form .usa-input--lg {
++.usa-form .usa-input--md,
++.usa-form .usa-input--medium {
++.usa-form .usa-input--sm,
++.usa-form .usa-input--small {
++.usa-form .usa-input--xl {
++.usa-form .usa-input--xs {
++.usa-form .usa-input-group--2xl {
++.usa-form .usa-input-group--2xs {
++.usa-form .usa-input-group--lg {
++.usa-form .usa-input-group--md,
++.usa-form .usa-input-group--medium {
++.usa-form .usa-input-group--sm,
++.usa-form .usa-input-group--small {
++.usa-form .usa-input-group--xl {
++.usa-form .usa-input-group--xs {
++.usa-form abbr[title="required"] {
++.usa-graphic-list
++.usa-header:after {
++.usa-hero {
++.usa-hint,
++.usa-icon-list > li {
++.usa-icon-list__content > ol {
++.usa-icon-list__content > ul,
++.usa-icon-list__content ul li {
++.usa-icon-list__item + .usa-icon-list__item {
++.usa-icon-list--base-lighter .usa-icon-list__icon {
++.usa-icon-list--info .usa-icon-list__icon {
++.usa-icon-list--size-3xl .usa-icon-list__content .usa-icon-list__title {
++.usa-identifier__identity-disclaimer {
++.usa-identifier__identity-disclaimer a,
++.usa-identifier__identity-disclaimer a:active {
++.usa-identifier__identity-disclaimer a:hover,
++.usa-identifier__identity-disclaimer a:visited {
++.usa-identifier__identity-domain,
++.usa-identifier__required-link:active,
++.usa-identifier__required-link:visited,
++.usa-identifier__required-link.usa-link:active {
++.usa-identifier__required-link.usa-link:hover,
++.usa-identifier__required-link.usa-link:visited {
++.usa-identifier__required-links-item:last-child {
++.usa-identifier__section--usagov a:active {
++.usa-identifier__section--usagov a:hover,
++.usa-identifier__section--usagov a:visited {
++.usa-in-page-nav__list .usa-current:after {
++.usa-in-page-nav__list > li {
++.usa-in-page-nav__list a:not(.usa-button):not(.usa-current) {
++.usa-in-page-nav__list a:not(.usa-button):not(.usa-current):active {
++.usa-in-page-nav__list a:not(.usa-button):not(.usa-current):hover {
++.usa-in-page-nav__list a:not(.usa-button).usa-current:after {
++.usa-input {
++.usa-input--2xl,
++.usa-input--2xs,
++.usa-input--error {
++.usa-input--lg,
++.usa-input--md,
++.usa-input--medium,
++.usa-input--sm,
++.usa-input--small,
++.usa-input--xl,
++.usa-input--xs,
++.usa-input-group input:disabled + .usa-input-suffix:active,
++.usa-input-group input:disabled + .usa-input-suffix:focus,
++.usa-input-group input:disabled + .usa-input-suffix:hover,
++.usa-input-group input:disabled + .usa-input-suffix.usa-focus,
++.usa-input-group input[aria-disabled="true"] + .usa-input-suffix:active,
++.usa-input-group input[aria-disabled="true"] + .usa-input-suffix:focus,
++.usa-input-group input[aria-disabled="true"] + .usa-input-suffix:hover,
++.usa-input-group input[aria-disabled="true"] + .usa-input-suffix.usa-focus {
++.usa-input-group--2xl,
++.usa-input-group--2xs,
++.usa-input-group--error {
++.usa-input-group--lg,
++.usa-input-group--md,
++.usa-input-group--medium,
++.usa-input-group--sm,
++.usa-input-group--small,
++.usa-input-group--xl,
++.usa-input-group--xs,
++.usa-input-group,
++.usa-input-list {
++.usa-input-list li {
++.usa-input-prefix:has(+ input:disabled):hover,
++.usa-input-prefix:has(+ input:disabled).usa-focus,
++.usa-input-prefix:has(+ input[aria-disabled="true"]):hover,
++.usa-input-prefix:has(+ input[aria-disabled="true"]).usa-focus {
++.usa-input:disabled:hover,
++.usa-input:disabled.usa-focus,
++.usa-input[aria-disabled="true"]:hover,
++.usa-input[aria-disabled="true"].usa-focus {
++.usa-language__submenu .usa-current:after {
++.usa-language__submenu > li {
++.usa-language__submenu-list > li {
++.usa-language__submenu[aria-hidden="true"] {
++.usa-link {
++.usa-link--external {
++.usa-link--external:after {
++.usa-link--external:before {
++.usa-link--external.usa-link--alt {
++.usa-link--external.usa-link--alt:after {
++.usa-link--external.usa-link--alt:before {
++.usa-link--external.usa-link--alt[target="_blank"]:before {
++.usa-link--external[target="_blank"]:before {
++.usa-list li {
++.usa-list li:last-child {
++.usa-list ol {
++.usa-list--unstyled {
++.usa-list--unstyled > li {
++.usa-list:last-child {
++.usa-menu-btn:active,
++.usa-menu-btn:disabled,
++.usa-menu-btn:disabled:active,
++.usa-menu-btn:disabled:focus,
++.usa-menu-btn:disabled:hover,
++.usa-menu-btn:disabled.usa-button--active,
++.usa-menu-btn:disabled.usa-button--hover,
++.usa-menu-btn:disabled.usa-focus,
++.usa-menu-btn:hover {
++.usa-menu-btn:hover,
++.usa-menu-btn:visited {
++.usa-menu-btn.usa-button--active,
++.usa-menu-btn.usa-button--disabled {
++.usa-menu-btn[aria-disabled="true"],
++.usa-menu-btn[aria-disabled="true"]:focus {
++.usa-menu-btn[aria-disabled="true"]:hover,
++.usa-menu-btn[aria-disabled="true"].usa-button--active,
++.usa-menu-btn[aria-disabled="true"].usa-focus,
++.usa-modal__close:active {
++.usa-modal__close:hover,
++.usa-nav__close:active,
++.usa-nav__close:disabled,
++.usa-nav__close:disabled:active,
++.usa-nav__close:disabled:focus,
++.usa-nav__close:disabled:hover,
++.usa-nav__close:disabled.usa-button--active,
++.usa-nav__close:disabled.usa-button--hover,
++.usa-nav__close:disabled.usa-focus,
++.usa-nav__close:hover {
++.usa-nav__close:hover,
++.usa-nav__close.usa-button--active,
++.usa-nav__close.usa-button--disabled {
++.usa-nav__close[aria-disabled="true"],
++.usa-nav__close[aria-disabled="true"]:focus {
++.usa-nav__close[aria-disabled="true"]:hover,
++.usa-nav__close[aria-disabled="true"].usa-button--active,
++.usa-nav__close[aria-disabled="true"].usa-focus,
++.usa-nav__primary button:active,
++.usa-nav__primary button:disabled,
++.usa-nav__primary button:disabled:active,
++.usa-nav__primary button:disabled:focus,
++.usa-nav__primary button:disabled:hover,
++.usa-nav__primary button:disabled.usa-button--active,
++.usa-nav__primary button:disabled.usa-button--hover,
++.usa-nav__primary button:disabled.usa-focus,
++.usa-nav__primary button:hover {
++.usa-nav__primary button:hover,
++.usa-nav__primary button.usa-button--active,
++.usa-nav__primary button.usa-button--disabled {
++.usa-nav__primary button[aria-disabled="true"],
++.usa-nav__primary button[aria-disabled="true"]:focus {
++.usa-nav__primary button[aria-disabled="true"]:hover,
++.usa-nav__primary button[aria-disabled="true"].usa-button--active,
++.usa-nav__primary button[aria-disabled="true"].usa-focus,
++.usa-nav__primary button[aria-expanded] span:after {
++.usa-nav__primary button[aria-expanded="false"] span:after {
++.usa-nav__primary button[aria-expanded="false"] span:after:hover {
++.usa-nav__primary button[aria-expanded="true"] span:after {
++.usa-nav__submenu-list .usa-nav__submenu-list-item a {
++.usa-nav__submenu-list > li {
++.usa-pagination .usa-current:active {
++.usa-pagination .usa-current:hover,
++.usa-pagination__button:active {
++.usa-pagination__button:hover,
++.usa-pagination__link:active {
++.usa-pagination__link:hover,
++.usa-process-list {
++.usa-process-list > .usa-process-list__item {
++.usa-process-list > li {
++.usa-process-list__item {
++.usa-process-list__item ul {
++.usa-process-list__item ul li:last-child {
++.usa-process-list__item:before {
++.usa-prose
++.usa-prose .usa-card:last-child {
++.usa-prose .usa-collection ol {
++.usa-prose .usa-collection ul,
++.usa-prose .usa-collection__item {
++.usa-prose .usa-collection__item > li {
++.usa-prose .usa-collection__item:last-child {
++.usa-prose .usa-collection:last-child {
++.usa-prose .usa-icon-list > li {
++.usa-prose .usa-icon-list__item + .usa-icon-list__item {
++.usa-prose .usa-input-list {
++.usa-prose .usa-input-list li {
++.usa-prose .usa-list--unstyled {
++.usa-prose .usa-list--unstyled > li {
++.usa-prose .usa-process-list {
++.usa-prose .usa-process-list > .usa-process-list__item {
++.usa-prose .usa-process-list > li {
++.usa-prose .usa-process-list__item {
++.usa-prose {
++.usa-prose > .usa-table--borderless tfoot td {
++.usa-prose > .usa-table--borderless th,
++.usa-prose > .usa-table--borderless thead td,
++.usa-prose > .usa-table--compact td {
++.usa-prose > .usa-table--compact th,
++.usa-prose > .usa-table--striped tbody tr:nth-child(odd) td {
++.usa-prose > .width-mobile .usa-table--stacked td[data-label] {
++.usa-prose > .width-mobile .usa-table--stacked td[data-label]:before {
++.usa-prose > .width-mobile .usa-table--stacked th,
++.usa-prose > .width-mobile .usa-table--stacked th[data-label]:before,
++.usa-prose > .width-mobile .usa-table--stacked thead {
++.usa-prose > .width-mobile .usa-table--stacked tr {
++.usa-prose > .width-mobile .usa-table--stacked tr td:first-child {
++.usa-prose > .width-mobile .usa-table--stacked tr th:first-child,
++.usa-prose > .width-mobile .usa-table--stacked tr:first-child td:first-child {
++.usa-prose > .width-mobile .usa-table--stacked-header td[data-label] {
++.usa-prose > .width-mobile .usa-table--stacked-header td[data-label]:before {
++.usa-prose > .width-mobile .usa-table--stacked-header th,
++.usa-prose > .width-mobile .usa-table--stacked-header th[data-label],
++.usa-prose > .width-mobile .usa-table--stacked-header th[data-label]:before,
++.usa-prose > .width-mobile .usa-table--stacked-header thead {
++.usa-prose > .width-mobile .usa-table--stacked-header tr {
++.usa-prose > .width-mobile .usa-table--stacked-header tr td:first-child {
++.usa-prose > .width-mobile .usa-table--stacked-header tr th:first-child,
++.usa-prose > h1 {
++.usa-prose > h2 {
++.usa-prose > h3 {
++.usa-prose > h4 {
++.usa-prose > ol {
++.usa-prose > ol li {
++.usa-prose > ol li:last-child {
++.usa-prose > ol ol {
++.usa-prose > ol ul,
++.usa-prose > ol:last-child {
++.usa-prose > table caption {
++.usa-prose > table td {
++.usa-prose > table th {
++.usa-prose > table th,
++.usa-prose > table th[data-sortable]:after {
++.usa-prose > table th[data-sortable][aria-sort="ascending"] {
++.usa-prose > table th[data-sortable][aria-sort="descending"],
++.usa-prose > table thead td,
++.usa-prose > ul li,
++.usa-prose > ul li:last-child,
++.usa-prose > ul ol,
++.usa-prose > ul ul,
++.usa-prose > ul,
++.usa-prose > ul:last-child,
++.usa-radio__input--tile + [class*="__label"] {
++.usa-radio__input--tile + [class*="__label"]:before {
++.usa-radio__input:checked + [class*="__label"]:before {
++.usa-radio__input:checked:disabled + [class*="__label"]:before,
++.usa-radio__input:checked[aria-disabled="true"] + [class*="__label"]:before {
++.usa-radio__input:disabled + [class*="__label"]:before,
++.usa-radio__input:focus + [class*="__label"]:before {
++.usa-radio__input[aria-disabled="true"] + [class*="__label"]:before {
++.usa-radio__label,
++.usa-radio__label:before {
++.usa-range__value,
++.usa-range,
++.usa-range:disabled::-moz-range-thumb {
++.usa-range:disabled::-moz-range-thumb:active {
++.usa-range:disabled::-moz-range-thumb:focus {
++.usa-range:disabled::-moz-range-thumb:hover {
++.usa-range:disabled::-moz-range-thumb.usa-focus {
++.usa-range:disabled::-moz-range-track {
++.usa-range:disabled::-moz-range-track:active {
++.usa-range:disabled::-moz-range-track:focus {
++.usa-range:disabled::-moz-range-track:hover {
++.usa-range:disabled::-moz-range-track.usa-focus {
++.usa-range:disabled::-ms-fill-lower {
++.usa-range:disabled::-ms-fill-lower:active {
++.usa-range:disabled::-ms-fill-lower:focus {
++.usa-range:disabled::-ms-fill-lower:hover {
++.usa-range:disabled::-ms-fill-lower.usa-focus {
++.usa-range:disabled::-ms-fill-upper {
++.usa-range:disabled::-ms-fill-upper:active {
++.usa-range:disabled::-ms-fill-upper:focus {
++.usa-range:disabled::-ms-fill-upper:hover {
++.usa-range:disabled::-ms-fill-upper.usa-focus {
++.usa-range:disabled::-ms-thumb {
++.usa-range:disabled::-ms-thumb:active {
++.usa-range:disabled::-ms-thumb:focus {
++.usa-range:disabled::-ms-thumb:hover {
++.usa-range:disabled::-ms-thumb.usa-focus {
++.usa-range:disabled::-ms-track {
++.usa-range:disabled::-ms-track:active {
++.usa-range:disabled::-ms-track:focus {
++.usa-range:disabled::-ms-track:hover {
++.usa-range:disabled::-ms-track.usa-focus {
++.usa-range:disabled::-webkit-slider-runnable-track {
++.usa-range:disabled::-webkit-slider-runnable-track:active {
++.usa-range:disabled::-webkit-slider-runnable-track:focus {
++.usa-range:disabled::-webkit-slider-runnable-track:hover {
++.usa-range:disabled::-webkit-slider-runnable-track.usa-focus {
++.usa-range:disabled::-webkit-slider-thumb {
++.usa-range:disabled::-webkit-slider-thumb:active {
++.usa-range:disabled::-webkit-slider-thumb:focus {
++.usa-range:disabled::-webkit-slider-thumb:hover {
++.usa-range:disabled::-webkit-slider-thumb.usa-focus {
++.usa-range[aria-disabled="true"]::-moz-range-thumb {
++.usa-range[aria-disabled="true"]::-moz-range-thumb:active {
++.usa-range[aria-disabled="true"]::-moz-range-thumb:focus {
++.usa-range[aria-disabled="true"]::-moz-range-thumb.usa-focus {
++.usa-range[aria-disabled="true"]::-moz-range-track {
++.usa-range[aria-disabled="true"]::-moz-range-track:active {
++.usa-range[aria-disabled="true"]::-moz-range-track:focus {
++.usa-range[aria-disabled="true"]::-moz-range-track.usa-focus {
++.usa-range[aria-disabled="true"]::-ms-fill-lower {
++.usa-range[aria-disabled="true"]::-ms-fill-lower:active {
++.usa-range[aria-disabled="true"]::-ms-fill-lower:focus {
++.usa-range[aria-disabled="true"]::-ms-fill-lower.usa-focus {
++.usa-range[aria-disabled="true"]::-ms-fill-upper {
++.usa-range[aria-disabled="true"]::-ms-fill-upper:active {
++.usa-range[aria-disabled="true"]::-ms-fill-upper:focus {
++.usa-range[aria-disabled="true"]::-ms-fill-upper.usa-focus {
++.usa-range[aria-disabled="true"]::-ms-thumb {
++.usa-range[aria-disabled="true"]::-ms-thumb:active {
++.usa-range[aria-disabled="true"]::-ms-thumb:focus {
++.usa-range[aria-disabled="true"]::-ms-thumb.usa-focus {
++.usa-range[aria-disabled="true"]::-ms-track {
++.usa-range[aria-disabled="true"]::-ms-track:active {
++.usa-range[aria-disabled="true"]::-ms-track:focus {
++.usa-range[aria-disabled="true"]::-ms-track.usa-focus {
++.usa-range[aria-disabled="true"]::-webkit-slider-runnable-track {
++.usa-range[aria-disabled="true"]::-webkit-slider-runnable-track:active {
++.usa-range[aria-disabled="true"]::-webkit-slider-runnable-track:focus {
++.usa-range[aria-disabled="true"]::-webkit-slider-runnable-track.usa-focus {
++.usa-range[aria-disabled="true"]::-webkit-slider-thumb {
++.usa-range[aria-disabled="true"]::-webkit-slider-thumb:active {
++.usa-range[aria-disabled="true"]::-webkit-slider-thumb:focus {
++.usa-range[aria-disabled="true"]::-webkit-slider-thumb.usa-focus {
++.usa-search [role="search"] {
++.usa-search__input {
++.usa-search--small .usa-search__submit {
++.usa-search--small [type="submit"],
++.usa-search:after {
++.usa-search[role="search"] > div,
++.usa-section--dark a:active {
++.usa-section--dark a:hover,
++.usa-section--dark h1,
++.usa-section--dark h2,
++.usa-section--dark h3,
++.usa-section--dark h4,
++.usa-section--dark h5,
++.usa-section--dark h6 {
++.usa-select,
++.usa-select:disabled:hover,
++.usa-select:disabled.usa-focus,
++.usa-select[aria-disabled="true"]:hover,
++.usa-select[aria-disabled="true"].usa-focus {
++.usa-show-password:active,
++.usa-show-password:disabled,
++.usa-show-password:disabled:active,
++.usa-show-password:disabled:focus,
++.usa-show-password:disabled:hover,
++.usa-show-password:disabled.usa-button--active,
++.usa-show-password:disabled.usa-button--hover,
++.usa-show-password:disabled.usa-focus,
++.usa-show-password:hover,
++.usa-show-password.usa-button--active,
++.usa-show-password.usa-button--disabled {
++.usa-show-password[aria-disabled="true"],
++.usa-show-password[aria-disabled="true"]:focus {
++.usa-show-password[aria-disabled="true"]:hover,
++.usa-show-password[aria-disabled="true"].usa-button--active,
++.usa-show-password[aria-disabled="true"].usa-focus,
++.usa-sidenav .usa-current:after {
++.usa-sidenav > li {
++.usa-sidenav__sublist .usa-current:after {
++.usa-sidenav__sublist > li {
++.usa-sign-up .usa-button {
++.usa-sign-up .usa-label,
++.usa-site-alert .usa-alert .usa-alert__body > .usa-list {
++.usa-site-alert .usa-alert .usa-alert__body > .usa-list:last-child {
++.usa-site-alert .usa-alert .usa-alert__body:before {
++.usa-site-alert .usa-alert > .usa-list,
++.usa-site-alert .usa-alert > .usa-list:last-child,
++.usa-site-alert--emergency .usa-alert .usa-alert__body .usa-link:active {
++.usa-site-alert--emergency .usa-alert .usa-alert__body .usa-link:hover,
++.usa-site-alert--emergency .usa-alert .usa-alert__body:before {
++.usa-site-alert--info .usa-alert .usa-alert__body .usa-link {
++.usa-site-alert--info .usa-alert .usa-alert__body .usa-link:active {
++.usa-site-alert--info .usa-alert .usa-alert__body .usa-link:hover,
++.usa-site-alert--info .usa-alert .usa-alert__body:before {
++.usa-site-alert--slim .usa-alert .usa-alert__body:before {
++.usa-skipnav:focus,
++.usa-skipnav.usa-focus {
++.usa-step-indicator__segment--complete:after {
++.usa-step-indicator__segment--current:after {
++.usa-step-indicator--center {
++.usa-step-indicator--counters .usa-step-indicator__segment--complete:before,
++.usa-step-indicator--counters .usa-step-indicator__segment--current:before,
++.usa-step-indicator--counters-sm .usa-step-indicator__segment--complete:before {
++.usa-step-indicator--counters-sm .usa-step-indicator__segment--current:before {
++.usa-step-indicator--no-labels .usa-step-indicator__segment-label {
++.usa-summary-box__link {
++.usa-summary-box__link:active {
++.usa-summary-box__link[href^="\#"]:hover {
++.usa-summary-box__link[href^="\#"]:visited {
++.usa-table
++.usa-table caption {
++.usa-table td {
++.usa-table th {
++.usa-table th,
++.usa-table th[data-sortable]:after {
++.usa-table th[data-sortable]:not([aria-sort]) .usa-table__header__button:active,
++.usa-table th[data-sortable]:not([aria-sort]) .usa-table__header__button:hover,
++.usa-table th[data-sortable][aria-sort="ascending"] .usa-table__header__button {
++.usa-table th[data-sortable][aria-sort="ascending"] {
++.usa-table th[data-sortable][aria-sort="descending"],
++.usa-table th[data-sortable][aria-sort="none"] .usa-table__header__button:hover,
++.usa-table thead td,
++.usa-table--borderless
++.usa-table--borderless td {
++.usa-table--borderless tfoot td {
++.usa-table--borderless th,
++.usa-table--borderless thead td,
++.usa-table--compact td {
++.usa-table--compact th,
++.usa-table--sticky-header.usa-table--borderless td,
++.usa-table--sticky-header.usa-table--borderless th {
++.usa-table--striped tbody tr:nth-child(odd) td {
++.usa-textarea,
++.usa-textarea:disabled:hover,
++.usa-textarea:disabled.usa-focus,
++.usa-textarea[aria-disabled="true"]:hover,
++.usa-textarea[aria-disabled="true"].usa-focus {
++.usa-tooltip__body--bottom:after {
++.usa-tooltip__body--bottom:before {
++.usa-tooltip__body--left:after {
++.usa-tooltip__body--left:before {
++.usa-tooltip__body--right:after {
++.usa-tooltip__body--right:before {
++.usa-tooltip__body--top:after {
++.usa-tooltip__body--top:before {
++.usa-tooltip__body:after,
++.usa-tooltip__body:before,
++.width-mobile .usa-table--stacked td {
++.width-mobile .usa-table--stacked td[data-label] {
++.width-mobile .usa-table--stacked td[data-label]:before {
++.width-mobile .usa-table--stacked th,
++.width-mobile .usa-table--stacked th[data-label]:before,
++.width-mobile .usa-table--stacked thead {
++.width-mobile .usa-table--stacked tr {
++.width-mobile .usa-table--stacked tr td:first-child {
++.width-mobile .usa-table--stacked tr th:first-child,
++.width-mobile .usa-table--stacked tr:first-child td:first-child {
++.width-mobile .usa-table--stacked-header td {
++.width-mobile .usa-table--stacked-header td[data-label] {
++.width-mobile .usa-table--stacked-header td[data-label]:before {
++.width-mobile .usa-table--stacked-header th,
++.width-mobile .usa-table--stacked-header th[data-label],
++.width-mobile .usa-table--stacked-header th[data-label]:before,
++.width-mobile .usa-table--stacked-header thead {
++.width-mobile .usa-table--stacked-header tr {
++.width-mobile .usa-table--stacked-header tr td:first-child {
++.width-mobile .usa-table--stacked-header tr th:first-child,
++.width-mobile .usa-table--stacked-header tr:first-child td:first-child {
++.width-mobile .usa-table--stacked-header tr:first-child th:first-child,
++[aria-disabled="true"].usa-date-picker__button {
++[aria-disabled="true"].usa-date-picker__button:hover {
++[aria-disabled="true"].usa-date-picker__calendar__date,
++[aria-disabled="true"].usa-date-picker__calendar__date:hover,
++[aria-disabled="true"].usa-date-picker__calendar__month-selection:hover,
++[aria-disabled="true"].usa-date-picker__calendar__month:hover,
++[aria-disabled="true"].usa-date-picker__calendar__next-month,
++[aria-disabled="true"].usa-date-picker__calendar__next-month:hover,
++[aria-disabled="true"].usa-date-picker__calendar__next-year-chunk,
++[aria-disabled="true"].usa-date-picker__calendar__next-year-chunk:hover,
++[aria-disabled="true"].usa-date-picker__calendar__next-year,
++[aria-disabled="true"].usa-date-picker__calendar__next-year:hover,
++[aria-disabled="true"].usa-date-picker__calendar__previous-month,
++[aria-disabled="true"].usa-date-picker__calendar__previous-month:hover,
++[aria-disabled="true"].usa-date-picker__calendar__previous-year-chunk,
++[aria-disabled="true"].usa-date-picker__calendar__previous-year:hover,
++[aria-disabled="true"].usa-date-picker__calendar__year-selection,
++[aria-disabled="true"].usa-date-picker__calendar__year,
++[aria-disabled="true"].usa-date-picker__calendar__year:hover,
++[contentEditable="true"]:focus {
++[data-open-modal] * {
++[type="button"]:-moz-focusring {
++[type="button"]::-moz-focus-inner {
++[type="reset"]:-moz-focusring {
++[type="reset"]::-moz-focus-inner {
++[type="search"],
++[type="submit"] {
++[type="submit"]:-moz-focusring {
++[type="submit"]::-moz-focus-inner {
++}
++@media (forced-colors: active) and (width>=30em) {
++@media (width<=19.99em) {
++@media (width<=29.99em) {
++@media (width<=39.99em) {
++@media (width<=63.99em) {
++@media (width<=63.99em) and (prefers-reduced-motion) {
++@media (width<=63.99em) and (width>=40em) {
++@media (width>=20em) {
++@media (width>=30em) {
++@media (width>=30em) and (width>=64em) {
++@media (width>=40em) {
++@media (width>=40em) and (forced-colors: active) {
++@media (width>=40em) and (width>=64em) {
++@media (width>=63.06rem) {
++@media (width>=64em) {
++@media (width>=64em) and (forced-colors: active) {
++@media (width>=64em) and (width>=64em) {
++@media (width>=64em) and (width>=64em) and (forced-colors: active) {
++@supports ((-webkit-mask: url("")) or (mask: url(""))) {
++address,
++body {
++button,
++button:not([disabled]):focus,
++button.usa-combo-box__clear-input:disabled,
++button.usa-combo-box__clear-input:focus {
++button.usa-combo-box__clear-input[aria-disabled="true"] {
++button.usa-combo-box__toggle-list:focus,
++button.usa-combo-box__toggle-list[aria-disabled="true"],
++code,
++dfn {
++html {
++iframe:focus,
++input:not([disabled]):focus,
++kbd,
++pre {
++samp {
++select:not([disabled]):focus,
++textarea:not([disabled]):focus,
++var,

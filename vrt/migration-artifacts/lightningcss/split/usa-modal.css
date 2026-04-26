@@ -1,0 +1,108 @@
+.usa-modal {
+  color: #1b1b1b;
+  text-align: left;
+  vertical-align: middle;
+  background: #fff;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 30rem;
+  margin: 1.25rem auto;
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  display: inline-block;
+  position: relative;
+}
+
+.usa-modal:focus {
+  outline: none;
+}
+
+.usa-modal__content {
+  flex-direction: column-reverse;
+  width: 100%;
+  padding-top: 2rem;
+  display: flex;
+}
+
+.usa-modal__main {
+  margin: 0 auto;
+  padding: 0.5rem 2rem 2rem;
+}
+
+.usa-modal__close {
+  color: #71767a;
+  background-color: #0000;
+  flex-shrink: 0;
+  align-self: flex-end;
+  align-items: center;
+  width: auto;
+  margin: -2rem 0 0 auto;
+  padding: 0.25rem;
+  font-size: 0.93rem;
+  display: flex;
+}
+
+.usa-modal__close:hover,
+.usa-modal__close:active {
+  color: #1b1b1b;
+  background-color: #0000;
+}
+
+.usa-modal__close:focus {
+  outline-offset: 0;
+}
+
+.usa-modal__close .usa-icon {
+  width: 2rem;
+  height: 2rem;
+  margin: 2px 2px 0 0;
+}
+
+.usa-modal__heading {
+  margin-top: 0;
+  font-family:
+    Merriweather Web,
+    Georgia,
+    Cambria,
+    Times New Roman,
+    Times,
+    serif;
+  font-size: 1.34rem;
+  line-height: 1.4;
+}
+
+.usa-modal__footer {
+  margin-top: 1.5rem;
+}
+
+.usa-modal--lg {
+  width: 100%;
+  max-width: 55rem;
+}
+
+.usa-modal--lg .usa-modal__main {
+  width: 100%;
+  max-width: 40rem;
+  padding-top: 1.25rem;
+  padding-bottom: 4rem;
+}
+
+@media (width >= 40em) {
+  .usa-modal--lg .usa-modal__heading {
+    font-family:
+      Merriweather Web,
+      Georgia,
+      Cambria,
+      Times New Roman,
+      Times,
+      serif;
+    font-size: 1.95rem;
+  }
+}

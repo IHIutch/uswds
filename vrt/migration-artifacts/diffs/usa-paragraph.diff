@@ -1,0 +1,20 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-paragraph.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-paragraph.css	2026-04-14 11:33:47
+@@ -1,14 +1,11 @@
+ .usa-paragraph {
+-  line-height: 1.5;
+   max-width: 68ex;
+-  margin-bottom: 0;
+   margin-top: 0;
++  margin-bottom: 0;
++  line-height: 1.5;
+ }
+ 
+-* + .usa-paragraph {
+-  margin-top: 1em;
+-}
+-
++* + .usa-paragraph,
+ .usa-paragraph + * {
+   margin-top: 1em;
+ }

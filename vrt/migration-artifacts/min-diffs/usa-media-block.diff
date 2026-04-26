@@ -1,0 +1,9 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-media-block.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-media-block.css	2026-04-14 12:35:23
+@@ -9,5 +9,5 @@
+ }
+ 
+ .usa-media-block__body {
+-  flex: 1 1 0%;
++  flex: 1;
+ }

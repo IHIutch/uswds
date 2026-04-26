@@ -1,0 +1,134 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-process-list.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-process-list.css	2026-04-14 12:35:23
+@@ -1,10 +1,8 @@
+-.usa-process-list > .usa-process-list__item,
+-.usa-prose .usa-process-list > .usa-process-list__item {
+-  max-width: 72ex;
+-}
+-
+-.usa-process-list,
+-.usa-prose .usa-process-list {
++.usa-process-list {
++  counter-reset: usa-numbered-list;
++  margin-top: 0;
++  margin-bottom: 0;
++  padding: 20px 0 0 1rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -14,40 +12,44 @@
+     sans-serif;
+   font-size: 1.06rem;
+   line-height: 1.5;
+-  margin-bottom: 0;
+-  margin-top: 0;
+   list-style-type: none;
+-  padding-left: 0;
+-  counter-reset: usa-numbered-list;
+-  padding: 20px 0 0 calc(2.5rem / 2 - 0.5rem/2);
+   position: relative;
+ }
+ 
+-.usa-process-list__item,
+-.usa-prose .usa-process-list__item {
++.usa-process-list > li {
++  max-width: unset;
++  margin-bottom: 0;
++}
++
++.usa-process-list > .usa-process-list__item {
++  max-width: 72ex;
++}
++
++.usa-process-list__item {
+   border-left: 0.5rem solid #d9e8f6;
+-  font-size: 1.06rem;
+   margin-bottom: 0;
+   padding-bottom: 2rem;
+-  padding-left: calc(calc(2.5rem / 2 - 0.25rem) * 2);
++  padding-left: 2rem;
++  font-size: 1.06rem;
+ }
+ 
+ .usa-process-list__item:last-child {
+-  border-left: 0.5rem solid transparent;
++  border-left: 0.5rem solid #0000;
+ }
+ 
+-.usa-process-list__item::before {
+-  flex-direction: row;
+-  align-items: center;
+-  justify-content: center;
+-  border-radius: 99rem;
+-  background-color: #fff;
+-  border: 0.25rem solid #1b1b1b;
+-  box-shadow: 0 0 0 0.25rem #fff;
++.usa-process-list__item:before {
+   color: #1b1b1b;
+   content: counter(usa-numbered-list, decimal);
+   counter-increment: usa-numbered-list;
+-  display: flex;
++  background-color: #fff;
++  border: 0.25rem solid #1b1b1b;
++  border-radius: 99rem;
++  flex-direction: row;
++  justify-content: center;
++  align-items: center;
++  width: 2.5rem;
++  height: 2.5rem;
++  margin-top: -0.4rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -57,18 +59,25 @@
+     sans-serif;
+   font-size: 1.46rem;
+   font-weight: 700;
+-  height: 2.5rem;
+-  left: 0;
+   line-height: 0.9;
+-  margin-top: -0.4rem;
++  display: flex;
+   position: absolute;
+-  width: 2.5rem;
++  left: 0;
++  box-shadow: 0 0 0 0.25rem #fff;
+ }
+ 
++.usa-process-list__item ul {
++  list-style-type: disc;
++}
++
+ .usa-process-list__item ul li {
+   margin-bottom: 0.25rem;
+ }
+ 
++.usa-process-list__item ul li:last-child {
++  margin-bottom: 0;
++}
++
+ .usa-process-list__item > :first-child {
+   margin-top: 0;
+ }
+@@ -78,9 +87,8 @@
+ }
+ 
+ .usa-process-list__heading {
+-  font-size: 1.46rem;
+-  line-height: 1.1;
+   color: #1b1b1b;
++  margin: 0;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -88,8 +96,9 @@
+     Roboto,
+     Arial,
+     sans-serif;
++  font-size: 1.46rem;
+   font-weight: 700;
+-  margin: 0;
++  line-height: 1.1;
+ }
+ 
+ .usa-process-list__heading + * {

@@ -1,0 +1,28 @@
+.usa-modal-wrapper {
+  text-align: center;
+  transition: opacity 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion) {
+  .usa-modal-wrapper {
+    transition: none;
+  }
+}
+
+.usa-modal-wrapper.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+}
+
+.usa-modal-wrapper.is-visible {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99999;
+  position: fixed;
+}
+
+.usa-modal-wrapper [data-close-modal] > .usa-icon,
+.usa-modal-wrapper [data-close-modal] > .usa-icon use {
+  pointer-events: none !important;
+}

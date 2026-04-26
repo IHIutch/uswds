@@ -1,0 +1,113 @@
+@supports (aspect-ratio: 1) {
+  .add-aspect-9x16 {
+    height: inherit;
+    padding: inherit;
+    aspect-ratio: 0.5625;
+    max-width: 100%;
+  }
+
+  .add-aspect-9x16 > * {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  img.add-aspect-9x16,
+  .add-aspect-9x16 > img {
+    object-fit: cover;
+  }
+}
+
+@supports (aspect-ratio: 1) {
+  .add-aspect-16x9 {
+    height: inherit;
+    padding: inherit;
+    aspect-ratio: 1.77778;
+    max-width: 100%;
+  }
+
+  .add-aspect-16x9 > * {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  img.add-aspect-16x9,
+  .add-aspect-16x9 > img {
+    object-fit: cover;
+  }
+}
+
+@supports (aspect-ratio: 1) {
+  .add-aspect-1x1 {
+    height: inherit;
+    padding: inherit;
+    aspect-ratio: 1;
+    max-width: 100%;
+  }
+
+  .add-aspect-1x1 > * {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  img.add-aspect-1x1,
+  .add-aspect-1x1 > img {
+    object-fit: cover;
+  }
+}
+
+@supports (aspect-ratio: 1) {
+  .add-aspect-4x3 {
+    height: inherit;
+    padding: inherit;
+    aspect-ratio: 1.33333;
+    max-width: 100%;
+  }
+
+  .add-aspect-4x3 > * {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  img.add-aspect-4x3,
+  .add-aspect-4x3 > img {
+    object-fit: cover;
+  }
+}
+
+@supports (aspect-ratio: 1) {
+  .add-aspect-2x1 {
+    height: inherit;
+    padding: inherit;
+    aspect-ratio: 2;
+    max-width: 100%;
+  }
+
+  .add-aspect-2x1 > * {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  img.add-aspect-2x1,
+  .add-aspect-2x1 > img {
+    object-fit: cover;
+  }
+
+  :where(img[class*="add-aspect-"]) {
+    width: min-content;
+  }
+}

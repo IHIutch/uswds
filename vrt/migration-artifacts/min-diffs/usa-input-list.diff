@@ -1,0 +1,23 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-input-list.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-input-list.css	2026-04-14 12:35:23
+@@ -1,13 +1,10 @@
+-.usa-input-list li,
+-.usa-nav__submenu-list .usa-nav__submenu-list-item a,
+-.usa-prose .usa-input-list li {
+-  line-height: 1.3;
+-}
+-
+-.usa-input-list,
+-.usa-prose .usa-input-list {
+-  margin-bottom: 0;
++.usa-input-list {
+   margin-top: 0;
+-  list-style-type: none;
++  margin-bottom: 0;
+   padding-left: 0;
++  list-style-type: none;
++}
++
++.usa-input-list li {
++  line-height: 1.3;
+ }

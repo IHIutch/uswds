@@ -1,0 +1,30 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-nav-container.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-nav-container.css	2026-04-14 12:35:23
+@@ -1,4 +1,4 @@
+-@media all and (min-width: 64em) and (min-width: 64em) {
++@media (width>=64em) and (width>=64em) {
+   .usa-nav-container {
+     padding-left: 2rem;
+     padding-right: 2rem;
+@@ -9,17 +9,17 @@
+   align-self: center;
+   margin-left: 0;
+   position: absolute;
+-  right: 5rem;
+   top: 1rem;
++  right: 5rem;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width>=64em) {
+   .usa-nav-container .usa-language-container {
++    right: inherit;
+     align-self: flex-end;
+-    margin-left: 0.75rem;
+     margin-bottom: 0.5rem;
++    margin-left: 0.75rem;
+     position: relative;
+-    right: inherit;
+     top: -2px;
+   }
+ }

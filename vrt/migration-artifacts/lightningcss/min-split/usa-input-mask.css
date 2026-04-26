@@ -1,0 +1,29 @@
+.usa-input-mask {
+  display: block;
+  position: relative;
+}
+
+.usa-input-mask--content {
+  color: #757575;
+  pointer-events: none;
+  border: 1px solid #0000;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 2px;
+}
+
+.usa-input-mask--content i {
+  visibility: hidden;
+}
+
+@media (forced-colors: active) {
+  .usa-input-mask--content i {
+    color: buttontext;
+    visibility: visible;
+    font-style: normal;
+  }
+  .usa-input-mask--content {
+    border: none;
+  }
+}

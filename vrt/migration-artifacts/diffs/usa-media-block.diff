@@ -1,0 +1,9 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-media-block.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-media-block.css	2026-04-14 11:33:47
+@@ -9,5 +9,5 @@
+ }
+ 
+ .usa-media-block__body {
+-  flex: 1 1 0%;
++  flex: 1;
+ }

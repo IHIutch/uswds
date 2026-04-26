@@ -1,0 +1,8 @@
+@keyframes slidein-left {
+  0% {
+    transform: translateX(15rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

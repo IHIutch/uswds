@@ -1,0 +1,8 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-media-link.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-media-link.css	2026-04-14 12:35:23
+@@ -1,4 +1,4 @@
+ .usa-media-link {
+-  display: inline-block;
+   line-height: 0;
++  display: inline-block;
+ }

@@ -1,0 +1,84 @@
+.usa-select {
+  appearance: none;
+  background-color: #fff;
+  background-image: url("../img/usa-icons/unfold_more.svg"),
+    linear-gradient(#0000, #0000);
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  padding-right: 2rem;
+}
+
+.usa-select::-ms-expand {
+  display: none;
+}
+
+.usa-select:-webkit-autofill {
+  appearance: menulist;
+}
+
+.usa-select:-moz-focusring {
+  color: #0000;
+  text-shadow: 0 0 #000;
+}
+
+.usa-select[multiple] {
+  background-image: none;
+  height: auto;
+  padding-right: 0;
+}
+
+.usa-select option {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.usa-select:disabled,
+.usa-select[aria-disabled="true"] {
+  color: #454545;
+  cursor: not-allowed;
+  opacity: 1;
+  background-color: #c9c9c9;
+}
+
+.usa-select:disabled:hover,
+.usa-select:disabled:active,
+.usa-select:disabled:focus,
+.usa-select:disabled.usa-focus,
+.usa-select[aria-disabled="true"]:hover,
+.usa-select[aria-disabled="true"]:active,
+.usa-select[aria-disabled="true"]:focus,
+.usa-select[aria-disabled="true"].usa-focus {
+  color: #454545;
+  background-color: #c9c9c9;
+}
+
+@media (forced-colors: active) {
+  .usa-select:disabled,
+  .usa-select[aria-disabled="true"] {
+    color: graytext;
+    border: 0;
+  }
+
+  .usa-select:disabled:hover,
+  .usa-select:disabled:active,
+  .usa-select:disabled:focus,
+  .usa-select:disabled.usa-focus,
+  .usa-select[aria-disabled="true"]:hover,
+  .usa-select[aria-disabled="true"]:active,
+  .usa-select[aria-disabled="true"]:focus,
+  .usa-select[aria-disabled="true"].usa-focus {
+    color: graytext;
+  }
+
+  .usa-select:disabled,
+  .usa-select[aria-disabled="true"] {
+    border: 2px solid graytext;
+  }
+
+  .usa-select {
+    appearance: listbox;
+    background-image: none;
+    padding-right: 0;
+  }
+}

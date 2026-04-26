@@ -1,0 +1,144 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-form.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-form.css	2026-04-14 12:35:23
+@@ -10,12 +10,16 @@
+   line-height: 1.3;
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width>=30em) {
+   .usa-form {
+     max-width: 20rem;
+   }
+ }
+ 
++.usa-form abbr[title="required"] {
++  text-decoration: none;
++}
++
+ .usa-form :where(.usa-input, .usa-textarea, .usa-select, .usa-range) {
+   max-width: none;
+ }
+@@ -24,7 +28,7 @@
+   margin-top: 0.5rem;
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width>=30em) {
+   .usa-form .usa-button {
+     margin-top: 1.5rem;
+   }
+@@ -48,19 +52,20 @@
+ }
+ 
+ .usa-form a:where(:not(.usa-button)):focus {
++  outline-offset: 0rem;
+   outline: 0.25rem solid #2491ff;
+-  outline-offset: 0;
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width>=30em) {
+   .usa-form--large {
+     max-width: 30rem;
+   }
+ }
+ 
+ .usa-form__note,
+-.usa-graphic-list,
+ .usa-show-password {
++  float: right;
++  margin: 0.25rem 0 1rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -68,90 +73,6 @@
+     Roboto,
+     Arial,
+     sans-serif;
+-}
+-
+-.usa-form__note,
+-.usa-show-password {
+   font-size: 0.93rem;
+   line-height: 1.3;
+-  float: right;
+-  margin: 0.25rem 0 1rem;
+-}
+-
+-.usa-form .usa-input--2xs,
+-.usa-input--2xs {
+-  max-width: 5ex;
+-}
+-
+-.usa-form .usa-input--xs,
+-.usa-input--xs {
+-  max-width: 9ex;
+-}
+-
+-.usa-form .usa-input--sm,
+-.usa-form .usa-input--small,
+-.usa-input--sm,
+-.usa-input--small {
+-  max-width: 13ex;
+-}
+-
+-.usa-form .usa-input--md,
+-.usa-form .usa-input--medium,
+-.usa-input--md,
+-.usa-input--medium {
+-  max-width: 20ex;
+-}
+-
+-.usa-form .usa-input--lg,
+-.usa-input--lg {
+-  max-width: 30ex;
+-}
+-
+-.usa-form .usa-input--xl,
+-.usa-input--xl {
+-  max-width: 40ex;
+-}
+-
+-.usa-form .usa-input--2xl,
+-.usa-input--2xl {
+-  max-width: 50ex;
+-}
+-
+-.usa-form .usa-input-group--2xs,
+-.usa-input-group--2xs {
+-  max-width: 5ex;
+-}
+-
+-.usa-form .usa-input-group--xs,
+-.usa-input-group--xs {
+-  max-width: 9ex;
+-}
+-
+-.usa-form .usa-input-group--sm,
+-.usa-form .usa-input-group--small,
+-.usa-input-group--sm,
+-.usa-input-group--small {
+-  max-width: 13ex;
+-}
+-
+-.usa-form .usa-input-group--md,
+-.usa-form .usa-input-group--medium,
+-.usa-input-group--md,
+-.usa-input-group--medium {
+-  max-width: 20ex;
+-}
+-
+-.usa-form .usa-input-group--lg,
+-.usa-input-group--lg {
+-  max-width: 30ex;
+-}
+-
+-.usa-form .usa-input-group--xl,
+-.usa-input-group--xl {
+-  max-width: 40ex;
+-}
+-
+-.usa-form .usa-input-group--2xl,
+-.usa-input-group--2xl {
+-  max-width: 50ex;
+ }

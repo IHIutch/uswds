@@ -1,0 +1,40 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-list.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-list.css	2026-04-14 11:33:47
+@@ -1,8 +1,8 @@
+ .usa-list {
+-  margin-bottom: 1em;
+   margin-top: 1em;
+-  line-height: 1.5;
++  margin-bottom: 1em;
+   padding-left: 3ch;
++  line-height: 1.5;
+ }
+ 
+ .usa-list:last-child {
+@@ -15,8 +15,8 @@
+ }
+ 
+ .usa-list li {
+-  margin-bottom: 0.25em;
+   max-width: 68ex;
++  margin-bottom: 0.25em;
+ }
+ 
+ .usa-list li:last-child {
+@@ -24,13 +24,13 @@
+ }
+ 
+ .usa-list--unstyled {
+-  margin-bottom: 0;
+   margin-top: 0;
+-  list-style-type: none;
++  margin-bottom: 0;
+   padding-left: 0;
++  list-style-type: none;
+ }
+ 
+ .usa-list--unstyled > li {
+-  margin-bottom: 0;
+   max-width: unset;
++  margin-bottom: 0;
+ }

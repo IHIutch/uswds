@@ -1,0 +1,158 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-link.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-link.css	2026-04-14 12:35:23
+@@ -1,3 +1,8 @@
++.usa-link {
++  color: #005ea2;
++  text-decoration: underline;
++}
++
+ .usa-link:visited {
+   color: #54278f;
+ }
+@@ -11,97 +16,102 @@
+ }
+ 
+ .usa-link:focus {
++  outline-offset: 0rem;
+   outline: 0.25rem solid #2491ff;
+-  outline-offset: 0;
+ }
+ 
+-.usa-link--external,
+-.usa-link--external.usa-link--alt {
++.usa-link--external {
+   display: inline;
+ }
+ 
+-.usa-link--external::before {
++.usa-link--external:before {
++  content: "External.";
+   position: absolute;
+   left: -999em;
+   right: auto;
+-  content: "External.";
+ }
+ 
+-.usa-link--external.usa-link--alt[target="_blank"]::before,
+-.usa-link--external[target="_blank"]::before {
++.usa-link--external[target="_blank"]:before {
++  content: "External, opens in a new tab.";
+   position: absolute;
+   left: -999em;
+   right: auto;
+-  content: "External, opens in a new tab.";
+ }
+ 
+-.usa-link--external::after {
++.usa-link--external:after {
++  content: "";
++  vertical-align: middle;
+   background-image: url(../img/usa-icons/launch.svg);
++  background-position: 50%;
+   background-repeat: no-repeat;
+-  background-position: center center;
+   background-size: 1.75ex 1.75ex;
+-  height: 1.75ex;
+   width: 1.75ex;
+-  content: "";
+-  display: inline;
++  height: 1.75ex;
+   margin-top: 0.7ex;
+   margin-left: 2px;
+   padding-left: 1.75ex;
+-  vertical-align: middle;
++  display: inline;
+ }
+ 
+-@supports ((-webkit-mask: url()) or (mask: url())) {
+-  .usa-link--external::after {
+-    background: 0 0;
+-    background-color: currentColor;
++@supports ((-webkit-mask: url("")) or (mask: url(""))) {
++  .usa-link--external:after {
++    background: currentColor;
+     -webkit-mask-image: url(../img/usa-icons/launch.svg),
+-      linear-gradient(transparent, transparent);
+-    mask-image: url(../img/usa-icons/launch.svg),
+-      linear-gradient(transparent, transparent);
+-    -webkit-mask-position: center center;
+-    mask-position: center center;
+-    -webkit-mask-repeat: no-repeat;
+-    mask-repeat: no-repeat;
++      linear-gradient(#0000, #0000);
++    mask-image: url(../img/usa-icons/launch.svg), linear-gradient(#0000, #0000);
++    -webkit-mask-position: 50%;
++    mask-position: 50%;
+     -webkit-mask-size: 1.75ex 1.75ex;
+     mask-size: 1.75ex 1.75ex;
++    -webkit-mask-repeat: no-repeat;
++    mask-repeat: no-repeat;
+   }
+ }
+ 
+-.usa-link--external.usa-link--alt::before {
++.usa-link--external.usa-link--alt {
++  display: inline;
++}
++
++.usa-link--external.usa-link--alt:before {
++  content: "External.";
+   position: absolute;
+   left: -999em;
+   right: auto;
+-  content: "External.";
+ }
+ 
+-.usa-link--external.usa-link--alt::after {
++.usa-link--external.usa-link--alt[target="_blank"]:before {
++  content: "External, opens in a new tab.";
++  position: absolute;
++  left: -999em;
++  right: auto;
++}
++
++.usa-link--external.usa-link--alt:after {
++  content: "";
++  vertical-align: middle;
+   background-image: url(../img/usa-icons-bg/launch--white.svg);
++  background-position: 50%;
+   background-repeat: no-repeat;
+-  background-position: center center;
+   background-size: 1.75ex 1.75ex;
+-  height: 1.75ex;
+   width: 1.75ex;
+-  content: "";
+-  display: inline;
++  height: 1.75ex;
+   margin-top: 0.7ex;
+   margin-left: 2px;
+   padding-left: 1.75ex;
+-  vertical-align: middle;
++  display: inline;
+ }
+ 
+-@supports ((-webkit-mask: url()) or (mask: url())) {
+-  .usa-link--external.usa-link--alt::after {
+-    background: 0 0;
+-    background-color: currentColor;
++@supports ((-webkit-mask: url("")) or (mask: url(""))) {
++  .usa-link--external.usa-link--alt:after {
++    background: currentColor;
+     -webkit-mask-image: url(../img/usa-icons/launch.svg),
+-      linear-gradient(transparent, transparent);
+-    mask-image: url(../img/usa-icons/launch.svg),
+-      linear-gradient(transparent, transparent);
+-    -webkit-mask-position: center center;
+-    mask-position: center center;
+-    -webkit-mask-repeat: no-repeat;
+-    mask-repeat: no-repeat;
++      linear-gradient(#0000, #0000);
++    mask-image: url(../img/usa-icons/launch.svg), linear-gradient(#0000, #0000);
++    -webkit-mask-position: 50%;
++    mask-position: 50%;
+     -webkit-mask-size: 1.75ex 1.75ex;
+     mask-size: 1.75ex 1.75ex;
++    -webkit-mask-repeat: no-repeat;
++    mask-repeat: no-repeat;
+   }
+ }

@@ -1,0 +1,28 @@
+.usa-modal-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1.5rem;
+  position: fixed;
+  scroll-behavior: smooth;
+  top: 0;
+  width: 100%;
+}
+
+.usa-modal-overlay:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.usa-modal-overlay[data-force-action="true"] {
+  pointer-events: none;
+}
+
+.usa-modal-overlay[data-force-action="true"] * {
+  pointer-events: auto;
+}

@@ -1,0 +1,58 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-graphic-list.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-graphic-list.css	2026-04-14 12:35:23
+@@ -1,4 +1,11 @@
+ .usa-graphic-list {
++  font-family:
++    Source Sans Pro Web,
++    Helvetica Neue,
++    Helvetica,
++    Roboto,
++    Arial,
++    sans-serif;
+   font-size: 1.06rem;
+   line-height: 1.5;
+ }
+@@ -7,7 +14,7 @@
+   margin-bottom: 2rem;
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width>=40em) {
+   .usa-graphic-list .usa-graphic-list__row .usa-media-block {
+     margin-bottom: 4rem;
+   }
+@@ -16,6 +23,12 @@
+   }
+ }
+ 
++.usa-graphic-list
++  .usa-graphic-list__row:last-child
++  .usa-media-block:last-child {
++  margin-bottom: 0;
++}
++
+ .usa-graphic-list .usa-media-block__img {
+   margin-right: 1.5rem;
+ }
+@@ -25,9 +38,9 @@
+ }
+ 
+ .usa-graphic-list__heading {
+-  margin-bottom: 0;
+-  margin-top: 0;
+   clear: both;
++  margin-top: 0;
++  margin-bottom: 0;
+   font-family:
+     Merriweather Web,
+     Georgia,
+@@ -36,8 +49,8 @@
+     Times,
+     serif;
+   font-size: 1.34rem;
+-  line-height: 1.2;
+   font-weight: 700;
++  line-height: 1.2;
+ }
+ 
+ * + .usa-graphic-list__heading {

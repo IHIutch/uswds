@@ -1,0 +1,29 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-card-group.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-card-group.css	2026-04-14 12:35:23
+@@ -1,21 +1,20 @@
+ .usa-card-group,
+ .usa-prose .usa-card-group {
+-  margin-bottom: 0;
+   margin-top: 0;
+-  list-style-type: none;
++  margin-bottom: 0;
+   padding-left: 0;
++  list-style-type: none;
+ }
+ 
+ .usa-card-group {
+-  display: flex;
+-  flex-direction: column;
+-  flex-wrap: wrap;
++  flex-flow: column wrap;
+   align-items: stretch;
+   margin-left: -0.5rem;
+   margin-right: -0.5rem;
++  display: flex;
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width>=40em) {
+   .usa-card-group {
+     flex-direction: row;
+   }

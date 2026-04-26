@@ -1,0 +1,12 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-paragraph.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-paragraph.css	2026-04-14 12:35:23
+@@ -1,7 +1,8 @@
+ .usa-paragraph {
+-  line-height: 1.5;
+   max-width: 68ex;
+   margin-top: 0;
++  margin-bottom: 0;
++  line-height: 1.5;
+ }
+ 
+ * + .usa-paragraph,

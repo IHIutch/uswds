@@ -1,0 +1,59 @@
+.usa-megamenu .usa-col {
+  flex: 1 1 auto;
+}
+
+@media all and (min-width: 64em) {
+  .usa-megamenu .usa-col {
+    flex: 4 1 0%;
+  }
+  .usa-megamenu .usa-col .usa-nav__submenu-item a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .usa-megamenu .usa-col:first-child .usa-nav__submenu-item a {
+    padding-left: 0;
+  }
+  .usa-megamenu .usa-col:last-child .usa-nav__submenu-item a {
+    padding-right: 0;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .usa-megamenu.usa-nav__submenu {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    left: -33%;
+    right: 0;
+    width: auto;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .usa-megamenu.usa-nav__submenu::before {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background-color: #162e51;
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(50vw - 32rem + 2rem);
+    right: 100%;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .usa-megamenu.usa-nav__submenu::after {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    background-color: #162e51;
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(50vw - 32rem + 2rem);
+    left: 100%;
+  }
+}

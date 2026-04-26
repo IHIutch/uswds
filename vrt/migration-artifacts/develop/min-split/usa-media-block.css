@@ -1,0 +1,13 @@
+.usa-media-block {
+  align-items: flex-start;
+  display: flex;
+}
+
+.usa-media-block__img {
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+.usa-media-block__body {
+  flex: 1 1 0%;
+}

@@ -1,0 +1,9 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-language-container.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-language-container.css	2026-04-14 11:33:47
+@@ -1,5 +1,5 @@
+ .usa-language-container {
+-  align-items: center;
+   justify-content: flex-end;
++  align-items: center;
+   display: flex;
+ }

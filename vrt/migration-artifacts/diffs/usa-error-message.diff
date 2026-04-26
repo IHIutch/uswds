@@ -1,0 +1,13 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-error-message.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-error-message.css	2026-04-14 11:33:47
+@@ -1,7 +1,7 @@
+ .usa-error-message {
+-  padding-bottom: 0.25rem;
+-  padding-top: 0.25rem;
+   color: #b50909;
+-  display: block;
++  padding-top: 0.25rem;
++  padding-bottom: 0.25rem;
+   font-weight: 700;
++  display: block;
+ }

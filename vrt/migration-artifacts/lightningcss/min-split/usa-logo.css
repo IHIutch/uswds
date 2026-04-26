@@ -1,0 +1,29 @@
+@media (width<=63.99em) {
+  .usa-logo {
+    flex: 1;
+    margin-left: 1rem;
+    font-size: 0.93rem;
+    line-height: 0.9;
+  }
+}
+
+@media (width>=64em) {
+  .usa-logo {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.46rem;
+    line-height: 1.1;
+  }
+}
+
+.usa-logo a {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+.usa-logo__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+}

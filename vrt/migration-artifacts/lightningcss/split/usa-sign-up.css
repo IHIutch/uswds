@@ -1,0 +1,23 @@
+.usa-sign-up {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.usa-sign-up .usa-label,
+.usa-sign-up .usa-button {
+  margin-top: 0.75rem;
+}
+
+.usa-sign-up__heading {
+  margin: 0;
+  font-family:
+    Merriweather Web,
+    Georgia,
+    Cambria,
+    Times New Roman,
+    Times,
+    serif;
+  font-size: 1.34rem;
+  font-weight: 700;
+  line-height: 1.2;
+}

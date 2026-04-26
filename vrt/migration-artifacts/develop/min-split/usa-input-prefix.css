@@ -1,0 +1,60 @@
+.usa-input-prefix:has(+ input:disabled),
+.usa-input-prefix:has(+ input[aria-disabled="true"]) {
+  color: #454545;
+  background-color: #c9c9c9;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.usa-input-prefix:has(+ input:disabled).usa-focus,
+.usa-input-prefix:has(+ input:disabled):active,
+.usa-input-prefix:has(+ input:disabled):focus,
+.usa-input-prefix:has(+ input:disabled):hover,
+.usa-input-prefix:has(+ input[aria-disabled="true"]).usa-focus,
+.usa-input-prefix:has(+ input[aria-disabled="true"]):active,
+.usa-input-prefix:has(+ input[aria-disabled="true"]):focus,
+.usa-input-prefix:has(+ input[aria-disabled="true"]):hover {
+  color: #454545;
+  background-color: #c9c9c9;
+}
+
+@media (forced-colors: active) {
+  .usa-input-prefix:has(+ input:disabled),
+  .usa-input-prefix:has(+ input[aria-disabled="true"]) {
+    border: 0;
+    color: GrayText;
+  }
+  .usa-input-prefix:has(+ input:disabled).usa-focus,
+  .usa-input-prefix:has(+ input:disabled):active,
+  .usa-input-prefix:has(+ input:disabled):focus,
+  .usa-input-prefix:has(+ input:disabled):hover,
+  .usa-input-prefix:has(+ input[aria-disabled="true"]).usa-focus,
+  .usa-input-prefix:has(+ input[aria-disabled="true"]):active,
+  .usa-input-prefix:has(+ input[aria-disabled="true"]):focus,
+  .usa-input-prefix:has(+ input[aria-disabled="true"]):hover {
+    color: GrayText;
+  }
+}
+
+.usa-input-prefix,
+.usa-input-suffix {
+  position: absolute;
+  color: #71767a;
+  line-height: 0;
+  padding: 0 0.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.usa-input-prefix .usa-icon,
+.usa-input-suffix .usa-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.usa-input-prefix + input {
+  padding-left: 2.5rem;
+  padding-right: 0.5rem;
+}

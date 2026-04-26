@@ -1,0 +1,44 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-section.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-section.css	2026-04-14 11:33:47
+@@ -1,12 +1,12 @@
+ .usa-section {
+-  padding-bottom: 2rem;
+   padding-top: 2rem;
++  padding-bottom: 2rem;
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width >= 40em) {
+   .usa-section {
+-    padding-bottom: 4rem;
+     padding-top: 4rem;
++    padding-bottom: 4rem;
+   }
+ }
+ 
+@@ -15,8 +15,8 @@
+ }
+ 
+ .usa-section--dark {
++  color: #fff;
+   background-color: #162e51;
+-  color: white;
+ }
+ 
+ .usa-section--dark h1,
+@@ -29,13 +29,10 @@
+ }
+ 
+ .usa-section--dark p {
+-  color: white;
++  color: #fff;
+ }
+ 
+-.usa-section--dark a {
+-  color: #dfe1e2;
+-}
+-
++.usa-section--dark a,
+ .usa-section--dark a:visited {
+   color: #dfe1e2;
+ }

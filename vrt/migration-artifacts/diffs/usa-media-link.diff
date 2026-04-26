@@ -1,0 +1,8 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-media-link.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-media-link.css	2026-04-14 11:33:47
+@@ -1,4 +1,4 @@
+ .usa-media-link {
+-  display: inline-block;
+   line-height: 0;
++  display: inline-block;
+ }

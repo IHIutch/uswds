@@ -1,0 +1,22 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-overlay.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-overlay.css	2026-04-14 11:33:47
+@@ -1,15 +1,11 @@
+ .usa-overlay {
+-  position: absolute;
+-  bottom: 0;
+-  left: 0;
+-  right: 0;
+-  top: 0;
+-  transition: opacity 0.15s ease-in-out;
+-  position: fixed;
+-  background: rgba(0, 0, 0, 0.7);
+   opacity: 0;
+   visibility: hidden;
+   z-index: 400;
++  background: #000000b3;
++  transition: opacity 0.15s ease-in-out;
++  position: fixed;
++  inset: 0;
+ }
+ 
+ @media (prefers-reduced-motion) {

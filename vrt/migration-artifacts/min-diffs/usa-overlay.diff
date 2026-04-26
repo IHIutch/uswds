@@ -1,0 +1,21 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-overlay.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-overlay.css	2026-04-14 12:35:23
+@@ -1,14 +1,11 @@
+ .usa-overlay {
+-  bottom: 0;
+-  left: 0;
+-  right: 0;
+-  top: 0;
+-  transition: opacity 0.15s ease-in-out;
+-  position: fixed;
+-  background: rgba(0, 0, 0, 0.7);
+   opacity: 0;
+   visibility: hidden;
+   z-index: 400;
++  background: #000000b3;
++  transition: opacity 0.15s ease-in-out;
++  position: fixed;
++  inset: 0;
+ }
+ 
+ @media (prefers-reduced-motion) {

@@ -1,0 +1,18 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-dark-background.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-dark-background.css	2026-04-14 11:33:47
+@@ -4,13 +4,10 @@
+ 
+ .usa-dark-background p,
+ .usa-dark-background span {
+-  color: white;
++  color: #fff;
+ }
+ 
+-.usa-dark-background a {
+-  color: #dfe1e2;
+-}
+-
++.usa-dark-background a,
+ .usa-dark-background a:visited {
+   color: #dfe1e2;
+ }

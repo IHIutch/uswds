@@ -1,0 +1,13 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-input-list.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-input-list.css	2026-04-14 11:33:47
+@@ -1,8 +1,8 @@
+ .usa-input-list {
+-  margin-bottom: 0;
+   margin-top: 0;
+-  list-style-type: none;
++  margin-bottom: 0;
+   padding-left: 0;
++  list-style-type: none;
+ }
+ 
+ .usa-input-list li {

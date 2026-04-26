@@ -1,0 +1,14 @@
+.usa-paragraph {
+  line-height: 1.5;
+  max-width: 68ex;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+* + .usa-paragraph {
+  margin-top: 1em;
+}
+
+.usa-paragraph + * {
+  margin-top: 1em;
+}

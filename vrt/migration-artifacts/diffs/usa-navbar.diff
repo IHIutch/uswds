@@ -1,0 +1,25 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-navbar.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-navbar.css	2026-04-14 11:33:47
+@@ -2,18 +2,18 @@
+   height: 3rem;
+ }
+ 
+-@media all and (max-width: 63.99em) {
++@media (width <= 63.99em) {
+   .usa-navbar {
+-    align-items: center;
+     border-bottom: 1px solid #dfe1e2;
++    align-items: center;
+     display: flex;
+   }
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-navbar {
+     border-bottom: none;
+-    display: inline-block;
+     height: auto;
++    display: inline-block;
+   }
+ }

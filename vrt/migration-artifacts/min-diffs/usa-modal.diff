@@ -1,0 +1,124 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-modal.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-modal.css	2026-04-14 12:35:23
+@@ -1,4 +1,12 @@
+ .usa-modal {
++  color: #1b1b1b;
++  text-align: left;
++  vertical-align: middle;
++  background: #fff;
++  border-radius: 0.5rem;
++  width: 100%;
++  max-width: 30rem;
++  margin: 1.25rem auto;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -8,27 +16,19 @@
+     sans-serif;
+   font-size: 1.06rem;
+   line-height: 1.5;
+-  border-radius: 0.5rem;
+-  background: #fff;
+-  color: #1b1b1b;
+   display: inline-block;
+-  margin: 1.25rem auto;
+-  max-width: 30rem;
+   position: relative;
+-  text-align: left;
+-  vertical-align: middle;
+-  width: 100%;
+ }
+ 
+ .usa-modal:focus {
+-  outline: 0;
++  outline: none;
+ }
+ 
+ .usa-modal__content {
+-  display: flex;
+   flex-direction: column-reverse;
+-  padding-top: 2rem;
+   width: 100%;
++  padding-top: 2rem;
++  display: flex;
+ }
+ 
+ .usa-modal__main {
+@@ -37,22 +37,22 @@
+ }
+ 
+ .usa-modal__close {
+-  align-items: center;
+-  align-self: flex-end;
+-  background-color: transparent;
+   color: #71767a;
+-  display: flex;
++  background-color: #0000;
+   flex-shrink: 0;
+-  font-size: 0.93rem;
++  align-self: flex-end;
++  align-items: center;
++  width: auto;
+   margin: -2rem 0 0 auto;
+   padding: 0.25rem;
+-  width: auto;
++  font-size: 0.93rem;
++  display: flex;
+ }
+ 
+-.usa-modal__close:active,
+-.usa-modal__close:hover {
+-  background-color: transparent;
++.usa-modal__close:hover,
++.usa-modal__close:active {
+   color: #1b1b1b;
++  background-color: #0000;
+ }
+ 
+ .usa-modal__close:focus {
+@@ -60,12 +60,13 @@
+ }
+ 
+ .usa-modal__close .usa-icon {
++  width: 2rem;
+   height: 2rem;
+   margin: 2px 2px 0 0;
+-  width: 2rem;
+ }
+ 
+ .usa-modal__heading {
++  margin-top: 0;
+   font-family:
+     Merriweather Web,
+     Georgia,
+@@ -75,7 +76,6 @@
+     serif;
+   font-size: 1.34rem;
+   line-height: 1.4;
+-  margin-top: 0;
+ }
+ 
+ .usa-modal__footer {
+@@ -83,18 +83,18 @@
+ }
+ 
+ .usa-modal--lg {
+-  max-width: 55rem;
+   width: 100%;
++  max-width: 55rem;
+ }
+ 
+ .usa-modal--lg .usa-modal__main {
+-  padding-bottom: 4rem;
+-  padding-top: 1.25rem;
+   width: 100%;
+   max-width: 40rem;
++  padding-top: 1.25rem;
++  padding-bottom: 4rem;
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width>=40em) {
+   .usa-modal--lg .usa-modal__heading {
+     font-family:
+       Merriweather Web,

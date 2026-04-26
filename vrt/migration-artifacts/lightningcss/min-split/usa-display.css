@@ -1,0 +1,71 @@
+.usa-display {
+  clear: both;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family:
+    Merriweather Web,
+    Georgia,
+    Cambria,
+    Times New Roman,
+    Times,
+    serif;
+  font-size: 1.34rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+* + .usa-display {
+  margin-top: 1.5em;
+}
+
+.usa-display + * {
+  margin-top: 1em;
+}
+
+@media (width>=30em) {
+  .usa-display {
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family:
+      Merriweather Web,
+      Georgia,
+      Cambria,
+      Times New Roman,
+      Times,
+      serif;
+    font-size: 2.44rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  * + .usa-display {
+    margin-top: 1.5em;
+  }
+  .usa-display + * {
+    margin-top: 1em;
+  }
+}
+
+@media (width>=40em) {
+  .usa-display {
+    clear: both;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family:
+      Merriweather Web,
+      Georgia,
+      Cambria,
+      Times New Roman,
+      Times,
+      serif;
+    font-size: 2.93rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  * + .usa-display {
+    margin-top: 1.5em;
+  }
+  .usa-display + * {
+    margin-top: 1em;
+  }
+}

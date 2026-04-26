@@ -1,0 +1,24 @@
+.usa-social-link {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  padding: 0.25rem;
+}
+
+.usa-social-link:hover {
+  background-color: #fff;
+}
+
+@media (forced-colors: active) {
+  .usa-social-link {
+    background-color: #d3d3d3;
+    forced-color-adjust: none;
+  }
+}
+
+.usa-social-link__icon {
+  display: block;
+  height: auto;
+  width: 100%;
+}

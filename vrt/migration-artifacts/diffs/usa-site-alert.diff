@@ -1,0 +1,240 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-site-alert.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-site-alert.css	2026-04-14 11:33:47
+@@ -1,10 +1,12 @@
+ .usa-site-alert .usa-alert {
++  color: #1b1b1b;
+   background-color: #f0f0f0;
+   border-left: 0.5rem solid #a9aeb1;
+-  color: #1b1b1b;
+ }
+ 
+ .usa-site-alert .usa-alert .usa-alert__body {
++  padding-top: 1rem;
++  padding-bottom: 1rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -14,22 +16,22 @@
+     sans-serif;
+   font-size: 1.06rem;
+   line-height: 1.5;
+-  padding-bottom: 1rem;
+-  padding-top: 1rem;
+   position: relative;
+ }
+ 
+ .usa-site-alert .usa-alert .usa-alert__text {
+-  margin-bottom: 0;
+   margin-top: 0;
++  margin-bottom: 0;
+ }
+ 
+ .usa-site-alert .usa-alert .usa-alert__text:only-child {
+-  padding-bottom: 0;
+   padding-top: 0;
++  padding-bottom: 0;
+ }
+ 
+ .usa-site-alert .usa-alert .usa-alert__heading {
++  margin-top: 0;
++  margin-bottom: 0.5rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -39,8 +41,6 @@
+     sans-serif;
+   font-size: 1.46rem;
+   line-height: 0.9;
+-  margin-top: 0;
+-  margin-bottom: 0.5rem;
+ }
+ 
+ .usa-site-alert .usa-alert > .usa-list,
+@@ -59,19 +59,20 @@
+   padding-right: 1.25rem;
+ }
+ 
+-.usa-site-alert .usa-alert .usa-alert__body::before {
+-  left: 1.0833333333rem;
++.usa-site-alert .usa-alert .usa-alert__body:before {
++  left: 1.08333rem;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-site-alert .usa-alert .usa-alert__body {
+     margin-left: auto;
+     margin-right: auto;
+     padding-left: 1.75rem;
+     padding-right: 1.75rem;
+   }
+-  .usa-site-alert .usa-alert .usa-alert__body::before {
+-    left: 1.5833333333rem;
++
++  .usa-site-alert .usa-alert .usa-alert__body:before {
++    left: 1.58333rem;
+   }
+ }
+ 
+@@ -83,40 +84,37 @@
+ .usa-site-alert--info .usa-alert .usa-alert__body {
+   color: #1b1b1b;
+   background-color: #e7f6f8;
+-  display: flex;
+   flex-direction: column;
+   justify-content: center;
+-  min-height: 3.3333333333rem;
++  min-height: 3.33333rem;
++  display: flex;
+ }
+ 
+-.usa-site-alert--info .usa-alert .usa-alert__body::before {
++.usa-site-alert--info .usa-alert .usa-alert__body:before {
++  content: "";
+   background-image: url("../img/usa-icons/info.svg");
++  background-position: center;
+   background-repeat: no-repeat;
+-  background-position: center center;
+   background-size: 2rem 2rem;
+-  display: inline-block;
+-  height: 2rem;
+   width: 2rem;
+-  content: "";
++  height: 2rem;
+   display: block;
+   position: absolute;
+-  top: 0.6666666667rem;
++  top: 0.666667rem;
+ }
+ 
+ @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-  .usa-site-alert--info .usa-alert .usa-alert__body::before {
+-    background: none;
+-    background-color: #1b1b1b;
++  .usa-site-alert--info .usa-alert .usa-alert__body:before {
++    background: #1b1b1b;
+     -webkit-mask-image: url("../img/usa-icons/info.svg"),
+-      linear-gradient(transparent, transparent);
+-    mask-image: url("../img/usa-icons/info.svg"),
+-      linear-gradient(transparent, transparent);
+-    -webkit-mask-position: center center;
+-    mask-position: center center;
+-    -webkit-mask-repeat: no-repeat;
+-    mask-repeat: no-repeat;
++      linear-gradient(#0000, #0000);
++    mask-image: url("../img/usa-icons/info.svg"), linear-gradient(#0000, #0000);
++    -webkit-mask-position: center;
++    mask-position: center;
+     -webkit-mask-size: 2rem 2rem;
+     mask-size: 2rem 2rem;
++    -webkit-mask-repeat: no-repeat;
++    mask-repeat: no-repeat;
+   }
+ }
+ 
+@@ -143,42 +141,39 @@
+ }
+ 
+ .usa-site-alert--emergency .usa-alert .usa-alert__body {
+-  color: white;
++  color: #fff;
+   background-color: #9c3d10;
+-  display: flex;
+   flex-direction: column;
+   justify-content: center;
+-  min-height: 3.3333333333rem;
++  min-height: 3.33333rem;
++  display: flex;
+ }
+ 
+-.usa-site-alert--emergency .usa-alert .usa-alert__body::before {
++.usa-site-alert--emergency .usa-alert .usa-alert__body:before {
++  content: "";
+   background-image: url("../img/usa-icons-bg/error--white.svg");
++  background-position: center;
+   background-repeat: no-repeat;
+-  background-position: center center;
+   background-size: 2rem 2rem;
+-  display: inline-block;
+-  height: 2rem;
+   width: 2rem;
+-  content: "";
++  height: 2rem;
+   display: block;
+   position: absolute;
+-  top: 0.6666666667rem;
++  top: 0.666667rem;
+ }
+ 
+ @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-  .usa-site-alert--emergency .usa-alert .usa-alert__body::before {
+-    background: none;
+-    background-color: white;
++  .usa-site-alert--emergency .usa-alert .usa-alert__body:before {
++    background: #fff;
+     -webkit-mask-image: url("../img/usa-icons/error.svg"),
+-      linear-gradient(transparent, transparent);
+-    mask-image: url("../img/usa-icons/error.svg"),
+-      linear-gradient(transparent, transparent);
+-    -webkit-mask-position: center center;
+-    mask-position: center center;
+-    -webkit-mask-repeat: no-repeat;
+-    mask-repeat: no-repeat;
++      linear-gradient(#0000, #0000);
++    mask-image: url("../img/usa-icons/error.svg"), linear-gradient(#0000, #0000);
++    -webkit-mask-position: center;
++    mask-position: center;
+     -webkit-mask-size: 2rem 2rem;
+     mask-size: 2rem 2rem;
++    -webkit-mask-repeat: no-repeat;
++    mask-repeat: no-repeat;
+   }
+ }
+ 
+@@ -186,10 +181,7 @@
+   margin-left: 2.5rem;
+ }
+ 
+-.usa-site-alert--emergency .usa-alert .usa-alert__body .usa-link {
+-  color: #dfe1e2;
+-}
+-
++.usa-site-alert--emergency .usa-alert .usa-alert__body .usa-link,
+ .usa-site-alert--emergency .usa-alert .usa-alert__body .usa-link:visited {
+   color: #dfe1e2;
+ }
+@@ -200,15 +192,15 @@
+ }
+ 
+ .usa-site-alert--slim .usa-alert .usa-alert__body {
+-  padding-bottom: 0.5rem;
+-  padding-top: 0.5rem;
+   min-height: 0;
++  padding-top: 0.5rem;
++  padding-bottom: 0.5rem;
+ }
+ 
+ .usa-site-alert--slim .usa-alert .usa-alert__body:before {
++  width: 1.5rem;
+   height: 1.5rem;
+   top: 0.5rem;
+-  width: 1.5rem;
+ }
+ 
+ @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+@@ -222,12 +214,12 @@
+   margin-left: 2rem;
+ }
+ 
+-.usa-site-alert--slim .usa-alert .usa-alert__body::before {
++.usa-site-alert--slim .usa-alert .usa-alert__body:before {
+   left: 1.125rem;
+ }
+ 
+-@media all and (min-width: 64em) {
+-  .usa-site-alert--slim .usa-alert .usa-alert__body::before {
++@media (width >= 64em) {
++  .usa-site-alert--slim .usa-alert .usa-alert__body:before {
+     left: 1.625rem;
+   }
+ }

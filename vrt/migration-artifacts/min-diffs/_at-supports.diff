@@ -1,0 +1,119 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/_at-supports.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/_at-supports.css	2026-04-14 12:35:23
+@@ -6,15 +6,14 @@
+     max-width: 100%;
+   }
+   .add-aspect-9x16 > * {
++    width: 100%;
++    height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+-    width: 100%;
+-    height: 100%;
+   }
+-  .add-aspect-9x16 > img,
+-  img.add-aspect-9x16 {
+-    -o-object-fit: cover;
++  img.add-aspect-9x16,
++  .add-aspect-9x16 > img {
+     object-fit: cover;
+   }
+ }
+@@ -23,19 +22,18 @@
+   .add-aspect-16x9 {
+     height: inherit;
+     padding: inherit;
+-    aspect-ratio: 1.7777777778;
++    aspect-ratio: 1.77778;
+     max-width: 100%;
+   }
+   .add-aspect-16x9 > * {
++    width: 100%;
++    height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+-    width: 100%;
+-    height: 100%;
+   }
+-  .add-aspect-16x9 > img,
+-  img.add-aspect-16x9 {
+-    -o-object-fit: cover;
++  img.add-aspect-16x9,
++  .add-aspect-16x9 > img {
+     object-fit: cover;
+   }
+ }
+@@ -48,15 +46,14 @@
+     max-width: 100%;
+   }
+   .add-aspect-1x1 > * {
++    width: 100%;
++    height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+-    width: 100%;
+-    height: 100%;
+   }
+-  .add-aspect-1x1 > img,
+-  img.add-aspect-1x1 {
+-    -o-object-fit: cover;
++  img.add-aspect-1x1,
++  .add-aspect-1x1 > img {
+     object-fit: cover;
+   }
+ }
+@@ -65,19 +62,18 @@
+   .add-aspect-4x3 {
+     height: inherit;
+     padding: inherit;
+-    aspect-ratio: 1.3333333333;
++    aspect-ratio: 1.33333;
+     max-width: 100%;
+   }
+   .add-aspect-4x3 > * {
++    width: 100%;
++    height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+-    width: 100%;
+-    height: 100%;
+   }
+-  .add-aspect-4x3 > img,
+-  img.add-aspect-4x3 {
+-    -o-object-fit: cover;
++  img.add-aspect-4x3,
++  .add-aspect-4x3 > img {
+     object-fit: cover;
+   }
+ }
+@@ -90,22 +86,17 @@
+     max-width: 100%;
+   }
+   .add-aspect-2x1 > * {
++    width: 100%;
++    height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+-    width: 100%;
+-    height: 100%;
+   }
+-  .add-aspect-2x1 > img,
+-  img.add-aspect-2x1 {
+-    -o-object-fit: cover;
++  img.add-aspect-2x1,
++  .add-aspect-2x1 > img {
+     object-fit: cover;
+   }
+-}
+-
+-@supports (aspect-ratio: 1) {
+   :where(img[class*="add-aspect-"]) {
+-    width: -moz-min-content;
+     width: min-content;
+   }
+ }

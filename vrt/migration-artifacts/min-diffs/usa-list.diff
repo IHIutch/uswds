@@ -1,0 +1,59 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-list.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-list.css	2026-04-14 12:35:23
+@@ -1,39 +1,36 @@
+ .usa-list {
+-  margin-bottom: 1em;
+   margin-top: 1em;
+-  line-height: 1.5;
++  margin-bottom: 1em;
+   padding-left: 3ch;
++  line-height: 1.5;
+ }
+ 
+-.usa-list li:last-child,
+-.usa-list:last-child,
+-.usa-prose > ol li:last-child,
+-.usa-prose > ol:last-child,
+-.usa-prose > ul li:last-child,
+-.usa-prose > ul:last-child {
++.usa-list:last-child {
+   margin-bottom: 0;
+ }
+ 
+-.usa-list ol,
+ .usa-list ul,
+-.usa-prose > ol ol,
+-.usa-prose > ol ul,
+-.usa-prose > ul ol,
+-.usa-prose > ul ul {
++.usa-list ol {
+   margin-top: 0.25em;
+ }
+ 
+-.usa-list li,
+-.usa-prose > ol li,
+-.usa-prose > ul li {
+-  margin-bottom: 0.25em;
++.usa-list li {
+   max-width: 68ex;
++  margin-bottom: 0.25em;
+ }
+ 
+-.usa-list--unstyled,
+-.usa-prose .usa-list--unstyled {
++.usa-list li:last-child {
+   margin-bottom: 0;
++}
++
++.usa-list--unstyled {
+   margin-top: 0;
+-  list-style-type: none;
++  margin-bottom: 0;
+   padding-left: 0;
++  list-style-type: none;
++}
++
++.usa-list--unstyled > li {
++  max-width: unset;
++  margin-bottom: 0;
+ }

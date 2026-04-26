@@ -1,0 +1,17 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-js-no-click.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-js-no-click.css	2026-04-14 11:33:47
+@@ -1,7 +1,6 @@
+ .usa-js-no-click {
+   pointer-events: none;
+   -webkit-user-select: none;
+-  -moz-user-select: none;
+   user-select: none;
+ }
+ 
+@@ -9,6 +8,5 @@
+ .usa-js-no-click .usa-modal * {
+   pointer-events: auto;
+   -webkit-user-select: text;
+-  -moz-user-select: text;
+   user-select: text;
+ }

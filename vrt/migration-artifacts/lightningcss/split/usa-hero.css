@@ -1,0 +1,62 @@
+.usa-hero {
+  color: #fff;
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+}
+
+.usa-hero > .grid-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.usa-hero__callout {
+  background-color: #162e51;
+  padding: 2rem;
+}
+
+@media (width >= 40em) {
+  .usa-hero__callout {
+    max-width: 20rem;
+  }
+}
+
+.usa-hero__heading {
+  clear: both;
+  color: #00bde3;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family:
+    Merriweather Web,
+    Georgia,
+    Cambria,
+    Times New Roman,
+    Times,
+    serif;
+  font-size: 1.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+* + .usa-hero__heading {
+  margin-top: 1.5em;
+}
+
+.usa-hero__heading + * {
+  margin-top: 1em;
+}
+
+.usa-hero__heading--alt {
+  color: #fff;
+  display: block;
+}

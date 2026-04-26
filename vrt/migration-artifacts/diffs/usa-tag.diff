@@ -1,0 +1,26 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-tag.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-tag.css	2026-04-14 11:33:47
+@@ -1,4 +1,10 @@
+ .usa-tag {
++  color: #fff;
++  text-transform: uppercase;
++  background-color: #565c65;
++  border-radius: 2px;
++  margin-right: 0.25rem;
++  padding: 1px 0.5rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -7,12 +13,6 @@
+     Arial,
+     sans-serif;
+   font-size: 0.93rem;
+-  color: white;
+-  text-transform: uppercase;
+-  background-color: #565c65;
+-  border-radius: 2px;
+-  margin-right: 0.25rem;
+-  padding: 1px 0.5rem;
+ }
+ 
+ .usa-tag:only-of-type {

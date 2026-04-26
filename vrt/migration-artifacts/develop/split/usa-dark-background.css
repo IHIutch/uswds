@@ -1,0 +1,21 @@
+.usa-dark-background {
+  background-color: #3d4551;
+}
+
+.usa-dark-background p,
+.usa-dark-background span {
+  color: white;
+}
+
+.usa-dark-background a {
+  color: #dfe1e2;
+}
+
+.usa-dark-background a:visited {
+  color: #dfe1e2;
+}
+
+.usa-dark-background a:hover,
+.usa-dark-background a:active {
+  color: #f0f0f0;
+}

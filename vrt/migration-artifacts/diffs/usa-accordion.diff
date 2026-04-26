@@ -1,0 +1,262 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-accordion.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-accordion.css	2026-04-14 11:33:47
+@@ -1,12 +1,8 @@
+ .usa-accordion {
+-  margin-bottom: 0;
+-  margin-top: 0;
+-  list-style-type: none;
+-  padding-left: 0;
+   color: #1b1b1b;
++  width: 100%;
+   margin: 0;
+   padding: 0;
+-  width: 100%;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -16,15 +12,16 @@
+     sans-serif;
+   font-size: 1.06rem;
+   line-height: 1.5;
++  list-style-type: none;
+ }
+ 
+ .usa-accordion > li {
+-  margin-bottom: 0;
+   max-width: unset;
++  margin-bottom: 0;
+ }
+ 
+ .usa-accordion > ul li ul {
+-  list-style: disc;
++  list-style: outside;
+ }
+ 
+ .usa-accordion > ul li ul > li > ul {
+@@ -53,6 +50,7 @@
+ 
+ .usa-accordion__heading,
+ .usa-prose .usa-accordion__heading {
++  margin: 0;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -62,7 +60,6 @@
+     sans-serif;
+   font-size: 1.06rem;
+   line-height: 0.9;
+-  margin: 0;
+ }
+ 
+ .usa-accordion__heading:not(:first-child),
+@@ -72,47 +69,40 @@
+ 
+ .usa-accordion__content {
+   color: #1b1b1b;
+-  background-color: white;
++  background-color: #fff;
+   margin-top: 0;
++  padding: 1rem 1.25rem 0.75rem;
+   overflow: auto;
+-  padding: 1rem 1.25rem calc(1rem - 0.25rem) 1.25rem;
+ }
+ 
+-.usa-accordion__content > *:first-child {
++.usa-accordion__content > :first-child {
+   margin-top: 0;
+ }
+ 
+-.usa-accordion__content > *:last-child {
++.usa-accordion__content > :last-child {
+   margin-bottom: 0;
+ }
+ 
+ .usa-accordion__button {
+-  color: #005ea2;
+-  text-decoration: underline;
+-  background-color: transparent;
+-  border: 0;
+-  border-radius: 0;
++  color: #1b1b1b;
+   box-shadow: none;
+-  font-weight: normal;
+-  justify-content: normal;
+   text-align: left;
+-  margin: 0;
+-  padding: 0;
+-  width: auto;
+-  color: #1b1b1b;
++  cursor: pointer;
+   background-color: #f0f0f0;
+   background-image: url("../img/usa-icons/remove.svg"),
+-    linear-gradient(transparent, transparent);
+-  background-repeat: no-repeat;
++    linear-gradient(#0000, #0000);
+   background-position: right 1.25rem center;
++  background-repeat: no-repeat;
+   background-size: 1.5rem;
+-  cursor: pointer;
+-  display: inline-block;
+-  font-weight: 700;
++  border: 0;
++  border-radius: 0;
++  justify-content: normal;
++  width: 100%;
+   margin: 0;
+   padding: 1rem 3.5rem 1rem 1.25rem;
++  font-weight: 700;
+   text-decoration: none;
+-  width: 100%;
++  display: inline-block;
+ }
+ 
+ .usa-accordion__button:visited {
+@@ -128,8 +118,8 @@
+ }
+ 
+ .usa-accordion__button:focus {
+-  outline: 0.25rem solid #2491ff;
+   outline-offset: 0rem;
++  outline: 0.25rem solid #2491ff;
+ }
+ 
+ .usa-accordion__button:hover,
+@@ -151,8 +141,8 @@
+ .usa-accordion__button:disabled,
+ .usa-accordion__button[aria-disabled="true"],
+ .usa-accordion__button.usa-button--disabled {
+-  background-color: transparent;
+   box-shadow: none;
++  background-color: #0000;
+   text-decoration: underline;
+ }
+ 
+@@ -178,7 +168,7 @@
+   .usa-accordion__button:disabled:hover,
+   .usa-accordion__button[aria-disabled="true"]:hover,
+   .usa-accordion__button[aria-disabled="true"]:focus {
+-    color: GrayText;
++    color: graytext;
+   }
+ }
+ 
+@@ -186,89 +176,87 @@
+   color: #1b1b1b;
+   background-color: #dfe1e2;
+   background-image: url("../img/usa-icons/remove.svg"),
+-    linear-gradient(transparent, transparent);
++    linear-gradient(#0000, #0000);
+   background-repeat: no-repeat;
+   text-decoration: none;
+ }
+ 
+ @media (forced-colors: active) {
+   .usa-accordion__button {
+-    border: 2px solid transparent;
++    border: 2px solid #0000;
+     position: relative;
+   }
+-  .usa-accordion__button::before {
++
++  .usa-accordion__button:before {
++    content: "";
+     background-image: url("../img/usa-icons/remove.svg");
++    background-position: center;
+     background-repeat: no-repeat;
+-    background-position: center center;
+     background-size: 1.5rem 1.5rem;
+-    display: inline-block;
+-    height: 1.5rem;
+     width: 1.5rem;
+     height: 100%;
++    display: inline-block;
+     position: absolute;
+-    right: 1.25rem;
+     top: 0;
+-    content: "";
++    right: 1.25rem;
+   }
+   @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-    .usa-accordion__button::before {
+-      background: none;
+-      background-color: ButtonText;
++    .usa-accordion__button:before {
++      background: buttontext;
+       -webkit-mask-image: url("../img/usa-icons/remove.svg"),
+-        linear-gradient(transparent, transparent);
++        linear-gradient(#0000, #0000);
+       mask-image: url("../img/usa-icons/remove.svg"),
+-        linear-gradient(transparent, transparent);
+-      -webkit-mask-position: center center;
+-      mask-position: center center;
+-      -webkit-mask-repeat: no-repeat;
+-      mask-repeat: no-repeat;
++        linear-gradient(#0000, #0000);
++      -webkit-mask-position: center;
++      mask-position: center;
+       -webkit-mask-size: 1.5rem 1.5rem;
+       mask-size: 1.5rem 1.5rem;
++      -webkit-mask-repeat: no-repeat;
++      mask-repeat: no-repeat;
+     }
+   }
+ }
+ 
+ .usa-accordion__button[aria-expanded="false"] {
+   background-image: url("../img/usa-icons/add.svg"),
+-    linear-gradient(transparent, transparent);
++    linear-gradient(#0000, #0000);
+   background-repeat: no-repeat;
+   background-size: 1.5rem;
+ }
+ 
+ .usa-accordion__button[aria-expanded="false"]:hover {
+   background-image: url("../img/usa-icons/add.svg"),
+-    linear-gradient(transparent, transparent);
++    linear-gradient(#0000, #0000);
+   background-repeat: no-repeat;
+ }
+ 
+ @media (forced-colors: active) {
+-  .usa-accordion__button[aria-expanded="false"]::before {
++  .usa-accordion__button[aria-expanded="false"]:before {
+     background-image: url("../img/usa-icons/add.svg");
++    background-position: center;
+     background-repeat: no-repeat;
+-    background-position: center center;
+     background-size: 1.5rem 1.5rem;
+-    display: inline-block;
+-    height: 1.5rem;
+     width: 1.5rem;
+     height: 100%;
++    display: inline-block;
+     position: absolute;
+-    right: 1.25rem;
+     top: 0;
++    right: 1.25rem;
+   }
+   @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-    .usa-accordion__button[aria-expanded="false"]::before {
+-      background: none;
+-      background-color: ButtonText;
++    .usa-accordion__button[aria-expanded="false"]:before {
++      background: buttontext;
+       -webkit-mask-image: url("../img/usa-icons/add.svg"),
+-        linear-gradient(transparent, transparent);
+-      mask-image: url("../img/usa-icons/add.svg"),
+-        linear-gradient(transparent, transparent);
+-      -webkit-mask-position: center center;
+-      mask-position: center center;
+-      -webkit-mask-repeat: no-repeat;
+-      mask-repeat: no-repeat;
++        linear-gradient(#0000, #0000);
++      mask-image: url("../img/usa-icons/add.svg"), linear-gradient(#0000, #0000);
++      -webkit-mask-position: center;
++      mask-position: center;
+       -webkit-mask-size: 1.5rem 1.5rem;
+       mask-size: 1.5rem 1.5rem;
++      -webkit-mask-repeat: no-repeat;
++      mask-repeat: no-repeat;
+     }
+   }
+ }

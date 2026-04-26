@@ -1,0 +1,223 @@
+.usa-file-input {
+  display: block;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.usa-file-input__target {
+  border: 1px dashed #a9aeb1;
+  display: block;
+  font-size: 0.93rem;
+  margin-top: 0.5rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.usa-file-input__target:hover {
+  border-color: #71767a;
+}
+
+.usa-file-input__target.has-invalid-file {
+  border-color: #fa9441;
+}
+
+.usa-file-input__accepted-files-message {
+  font-weight: 700;
+  margin: -1.5rem 0 1.5rem;
+  pointer-events: none;
+  position: relative;
+  z-index: 3;
+}
+
+.has-invalid-file .usa-file-input__accepted-files-message {
+  color: #b50909;
+}
+
+.usa-file-input__choose {
+  color: #005ea2;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.usa-file-input__choose:visited {
+  color: #54278f;
+}
+
+.usa-file-input__choose:hover {
+  color: #1a4480;
+}
+
+.usa-file-input__choose:active {
+  color: #162e51;
+}
+
+.usa-file-input__choose:focus {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0;
+}
+
+.usa-file-input__instructions {
+  padding: 2rem 1rem;
+  pointer-events: none;
+  position: relative;
+  z-index: 3;
+}
+
+.usa-file-input__box {
+  background: #fff;
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.usa-file-input .usa-file-input__input[type] {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-width: none;
+  position: absolute;
+  padding: 0.5rem;
+  text-indent: -999em;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.usa-file-input .usa-file-input__input[type]::-webkit-file-upload-button {
+  display: none;
+}
+
+.usa-file-input--drag .usa-file-input__target {
+  border-color: #005ea2;
+}
+
+.usa-file-input--drag .usa-file-input__box {
+  background-color: #d9e8f6;
+}
+
+.usa-file-input--drag .usa-file-input__preview {
+  opacity: 0.1;
+}
+
+.usa-file-input__preview,
+.usa-file-input__preview-heading {
+  align-items: center;
+  background: #d9e8f6;
+  display: flex;
+  pointer-events: none;
+  position: relative;
+  z-index: 3;
+}
+
+.usa-file-input__preview-heading {
+  font-weight: 700;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.usa-file-input__preview {
+  word-wrap: anywhere;
+  font-size: 0.87rem;
+  margin-top: 1px;
+  padding: 0.25rem 0.5rem;
+  text-align: left;
+}
+
+.usa-file-input__preview:last-child {
+  margin-bottom: -1.5rem;
+}
+
+.usa-file-input__preview-image {
+  border: 0;
+  display: block;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 2.5rem;
+}
+
+.usa-file-input__preview-image.is-loading {
+  background-image: url(../img/loader.svg),
+    linear-gradient(transparent, transparent);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+}
+
+.usa-file-input__preview-image--excel,
+.usa-file-input__preview-image--generic,
+.usa-file-input__preview-image--pdf,
+.usa-file-input__preview-image--video,
+.usa-file-input__preview-image--word {
+  background-position: center center;
+  background-size: 1.5rem;
+}
+
+.usa-file-input__preview-image--pdf {
+  background-image: url(../img/file-pdf.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+.usa-file-input__preview-image--generic {
+  background-image: url(../img/file.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+.usa-file-input__preview-image--word {
+  background-image: url(../img/file-word.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+.usa-file-input__preview-image--excel {
+  background-image: url(../img/file-excel.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+.usa-file-input__preview-image--video {
+  background-image: url(../img/file-video.svg),
+    linear-gradient(transparent, transparent);
+  background-repeat: no-repeat;
+}
+
+.usa-file-input--disabled .usa-file-input__choose,
+.usa-file-input--disabled .usa-file-input__instructions {
+  color: #454545;
+}
+
+.usa-file-input--disabled .usa-file-input__box {
+  background-color: #c9c9c9;
+}
+
+.usa-file-input--disabled .usa-file-input__input[type] {
+  cursor: not-allowed;
+}
+
+.usa-file-input--disabled .usa-file-input__target:hover {
+  border-color: #a9aeb1;
+}
+
+.usa-file-input--disabled .usa-file-input--drag .usa-file-input__box {
+  background-color: #c9c9c9;
+}
+
+@media (forced-colors: active) {
+  .usa-file-input--disabled .usa-file-input__choose,
+  .usa-file-input--disabled .usa-file-input__instructions {
+    color: GrayText;
+  }
+  .usa-file-input--disabled .usa-file-input__target,
+  .usa-file-input--disabled .usa-file-input__target:hover {
+    border-color: GrayText;
+  }
+}

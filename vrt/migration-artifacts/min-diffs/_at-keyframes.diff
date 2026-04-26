@@ -1,0 +1,13 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/_at-keyframes.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/_at-keyframes.css	2026-04-14 12:35:23
+@@ -1,8 +1,8 @@
+ @keyframes slidein-left {
+   0% {
+-    transform: translateX(15rem);
++    transform: translate(15rem);
+   }
+   to {
+-    transform: translateX(0);
++    transform: translate(0);
+   }
+ }

@@ -1,0 +1,9 @@
+.usa-layout-docs__sidenav {
+  padding-top: 2rem;
+}
+
+@media all and (min-width: 64em) {
+  .usa-layout-docs__sidenav {
+    padding-top: 0;
+  }
+}

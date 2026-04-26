@@ -1,0 +1,10 @@
+.usa-input-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.usa-input-list li {
+  line-height: 1.3;
+}

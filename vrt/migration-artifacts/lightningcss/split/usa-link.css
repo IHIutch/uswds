@@ -1,0 +1,119 @@
+.usa-link {
+  color: #005ea2;
+  text-decoration: underline;
+}
+
+.usa-link:visited {
+  color: #54278f;
+}
+
+.usa-link:hover {
+  color: #1a4480;
+}
+
+.usa-link:active {
+  color: #162e51;
+}
+
+.usa-link:focus {
+  outline-offset: 0rem;
+  outline: 0.25rem solid #2491ff;
+}
+
+.usa-link--external {
+  display: inline;
+}
+
+.usa-link--external:before {
+  content: "External.";
+  position: absolute;
+  left: -999em;
+  right: auto;
+}
+
+.usa-link--external[target="_blank"]:before {
+  content: "External, opens in a new tab.";
+  position: absolute;
+  left: -999em;
+  right: auto;
+}
+
+.usa-link--external:after {
+  content: "";
+  vertical-align: middle;
+  background-image: url("../img/usa-icons/launch.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.75ex 1.75ex;
+  width: 1.75ex;
+  height: 1.75ex;
+  margin-top: 0.7ex;
+  margin-left: 2px;
+  padding-left: 1.75ex;
+  display: inline;
+}
+
+@supports ((-webkit-mask: url("")) or (mask: url(""))) {
+  .usa-link--external:after {
+    background: currentColor;
+    -webkit-mask-image: url("../img/usa-icons/launch.svg"),
+      linear-gradient(#0000, #0000);
+    mask-image: url("../img/usa-icons/launch.svg"),
+      linear-gradient(#0000, #0000);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 1.75ex 1.75ex;
+    mask-size: 1.75ex 1.75ex;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+}
+
+.usa-link--external.usa-link--alt {
+  display: inline;
+}
+
+.usa-link--external.usa-link--alt:before {
+  content: "External.";
+  position: absolute;
+  left: -999em;
+  right: auto;
+}
+
+.usa-link--external.usa-link--alt[target="_blank"]:before {
+  content: "External, opens in a new tab.";
+  position: absolute;
+  left: -999em;
+  right: auto;
+}
+
+.usa-link--external.usa-link--alt:after {
+  content: "";
+  vertical-align: middle;
+  background-image: url("../img/usa-icons-bg/launch--white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.75ex 1.75ex;
+  width: 1.75ex;
+  height: 1.75ex;
+  margin-top: 0.7ex;
+  margin-left: 2px;
+  padding-left: 1.75ex;
+  display: inline;
+}
+
+@supports ((-webkit-mask: url("")) or (mask: url(""))) {
+  .usa-link--external.usa-link--alt:after {
+    background: currentColor;
+    -webkit-mask-image: url("../img/usa-icons/launch.svg"),
+      linear-gradient(#0000, #0000);
+    mask-image: url("../img/usa-icons/launch.svg"),
+      linear-gradient(#0000, #0000);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 1.75ex 1.75ex;
+    mask-size: 1.75ex 1.75ex;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+}

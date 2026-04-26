@@ -1,0 +1,9 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-masked.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-masked.css	2026-04-14 11:33:47
+@@ -1,5 +1,5 @@
+ .usa-masked,
+ .usa-input-mask--content {
+-  background-color: transparent;
++  background-color: #0000;
+   padding: 0.5rem;
+ }

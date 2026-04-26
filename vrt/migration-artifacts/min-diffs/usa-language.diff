@@ -1,0 +1,116 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-language.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-language.css	2026-04-14 12:35:23
+@@ -1,27 +1,20 @@
+ .usa-language {
+   flex-direction: row;
+-  padding: 0 0 0.25rem 0.5rem;
++  justify-content: flex-end;
++  align-items: center;
+   width: 100%;
++  padding: 0 0 0.25rem 0.5rem;
++  display: flex;
+ }
+ 
+ .usa-language--small .usa-button {
+-  padding-left: 0.75rem;
+-  padding-right: 0.75rem;
+-  padding-bottom: 0;
+-  padding-top: 0;
+-  font-size: 0.87rem;
++  min-width: 3rem;
+   height: 2rem;
+   margin-top: 0.3rem;
+-  min-width: 3rem;
++  padding: 0 0.75rem;
++  font-size: 0.87rem;
+ }
+ 
+-.usa-language,
+-.usa-language-container {
+-  align-items: center;
+-  justify-content: flex-end;
+-  display: flex;
+-}
+-
+ .usa-language__link {
+   margin-right: 0;
+ }
+@@ -40,27 +33,31 @@
+ }
+ 
+ .usa-language__submenu {
+-  list-style-type: none;
+-  padding-left: 0;
+-  margin: 0;
++  z-index: 400;
+   background-color: #162e51;
+-  position: absolute;
+   width: 15rem;
+-  z-index: 400;
++  margin: 0;
++  padding-left: 0;
++  list-style-type: none;
++  position: absolute;
+ }
+ 
++.usa-language__submenu > li {
++  max-width: unset;
++  margin-bottom: 0;
++}
++
+ .usa-language__submenu-item {
+   border-top: 1px solid #dfe1e2;
+   font-size: 0.93rem;
+ }
+ 
+-.usa-language__submenu .usa-current::after,
+-.usa-language__submenu[aria-hidden="true"] {
++.usa-language__submenu .usa-current:after {
+   display: none;
+ }
+ 
+-@media all and (min-width: 40em) {
+-  .usa-language__submenu .usa-current::after {
++@media (width>=40em) {
++  .usa-language__submenu .usa-current:after {
+     display: none;
+   }
+ }
+@@ -80,13 +77,16 @@
+   padding-left: 4rem;
+ }
+ 
++.usa-language__submenu[aria-hidden="true"] {
++  display: none;
++}
++
+ .usa-language__submenu .usa-language__submenu-item a {
+   color: #fff;
+-  display: block;
+-  line-height: 1.3;
+-  padding: 0;
+   padding: 0.5rem;
++  line-height: 1.3;
+   text-decoration: none;
++  display: block;
+ }
+ 
+ .usa-language__submenu .usa-language__submenu-item a:focus {
+@@ -99,10 +99,15 @@
+ }
+ 
+ .usa-language__submenu-list {
+-  margin-bottom: 0;
+   margin-top: 0;
+-  list-style-type: none;
++  margin-bottom: 0;
+   padding-left: 0;
++  list-style-type: none;
++}
++
++.usa-language__submenu-list > li {
++  max-width: unset;
++  margin-bottom: 0;
+ }
+ 
+ .usa-language__submenu-list .usa-language__submenu-list-item {

@@ -1,0 +1,25 @@
+@media all and (min-width: 64em) and (min-width: 64em) {
+  .usa-nav-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.usa-nav-container .usa-language-container {
+  align-self: center;
+  margin-left: 0;
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
+}
+
+@media all and (min-width: 64em) {
+  .usa-nav-container .usa-language-container {
+    align-self: flex-end;
+    margin-left: 0.75rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    right: inherit;
+    top: -2px;
+  }
+}

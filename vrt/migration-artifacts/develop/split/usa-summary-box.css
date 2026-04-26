@@ -1,0 +1,70 @@
+.usa-summary-box {
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  color: #1b1b1b;
+  background-color: #e7f6f8;
+  border-radius: 0.25rem;
+  border: 1px #99deea solid;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.usa-summary-box .usa-list:last-child {
+  margin-bottom: 0;
+}
+
+* + .usa-summary-box {
+  margin-top: 1rem;
+}
+
+.usa-summary-box__heading {
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.46rem;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.usa-summary-box__text {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.usa-summary-box__text:only-child {
+  margin-bottom: 1px;
+  padding-top: 0.25rem;
+}
+
+.usa-summary-box__link {
+  color: #005ea2;
+}
+
+.usa-summary-box__link:visited {
+  color: #54278f;
+}
+
+.usa-summary-box__link:hover,
+.usa-summary-box__link:active {
+  color: #1a4480;
+}
+
+.usa-summary-box__link[href^="#"]:visited {
+  color: #005ea2;
+}
+
+.usa-summary-box__link[href^="#"]:hover {
+  color: #1a4480;
+}

@@ -1,0 +1,35 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-input-mask.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-input-mask.css	2026-04-14 11:33:47
+@@ -4,13 +4,13 @@
+ }
+ 
+ .usa-input-mask--content {
+-  border: 1px solid transparent;
+   color: #757575;
+-  display: block;
+-  left: 2px;
+   pointer-events: none;
++  border: 1px solid #0000;
++  display: block;
+   position: absolute;
+   top: 0;
++  left: 2px;
+ }
+ 
+ .usa-input-mask--content i {
+@@ -19,13 +19,11 @@
+ 
+ @media (forced-colors: active) {
+   .usa-input-mask--content i {
+-    color: ButtonText;
+-    font-style: normal;
++    color: buttontext;
+     visibility: visible;
++    font-style: normal;
+   }
+-}
+ 
+-@media (forced-colors: active) {
+   .usa-input-mask--content {
+     border: none;
+   }

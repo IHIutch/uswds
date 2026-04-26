@@ -1,0 +1,10 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-in-page-nav-container.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-in-page-nav-container.css	2026-04-14 11:33:47
+@@ -4,6 +4,6 @@
+ }
+ 
+ .usa-in-page-nav-container main {
+-  max-width: 64rem;
+   width: 100%;
++  max-width: 64rem;
+ }

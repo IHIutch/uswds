@@ -1,0 +1,63 @@
+.usa-graphic-list {
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+}
+
+.usa-graphic-list .usa-graphic-list__row .usa-media-block {
+  margin-bottom: 2rem;
+}
+
+@media (width >= 40em) {
+  .usa-graphic-list .usa-graphic-list__row .usa-media-block {
+    margin-bottom: 4rem;
+  }
+
+  .usa-graphic-list .usa-graphic-list__row:last-child .usa-media-block {
+    margin-bottom: 0;
+  }
+}
+
+.usa-graphic-list
+  .usa-graphic-list__row:last-child
+  .usa-media-block:last-child {
+  margin-bottom: 0;
+}
+
+.usa-graphic-list .usa-media-block__img {
+  margin-right: 1.5rem;
+}
+
+.usa-graphic-list .usa-media-block__body > :first-child {
+  margin-top: 0;
+}
+
+.usa-graphic-list__heading {
+  clear: both;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family:
+    Merriweather Web,
+    Georgia,
+    Cambria,
+    Times New Roman,
+    Times,
+    serif;
+  font-size: 1.34rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+* + .usa-graphic-list__heading {
+  margin-top: 1.5em;
+}
+
+.usa-graphic-list__heading + * {
+  margin-top: 1em;
+}

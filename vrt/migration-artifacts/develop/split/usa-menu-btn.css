@@ -1,0 +1,111 @@
+.usa-menu-btn {
+  color: #005ea2;
+  text-decoration: underline;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: normal;
+  justify-content: normal;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  flex: 0 1 auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: #005ea2;
+  color: white;
+  font-size: 0.87rem;
+  height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.usa-menu-btn:visited {
+  color: #54278f;
+}
+
+.usa-menu-btn:hover {
+  color: #1a4480;
+}
+
+.usa-menu-btn:active {
+  color: #162e51;
+}
+
+.usa-menu-btn:focus {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0rem;
+}
+
+.usa-menu-btn:hover,
+.usa-menu-btn.usa-button--hover,
+.usa-menu-btn:disabled:hover,
+.usa-menu-btn[aria-disabled="true"]:hover,
+.usa-menu-btn:disabled.usa-button--hover,
+.usa-menu-btn[aria-disabled="true"].usa-button--hover,
+.usa-menu-btn:active,
+.usa-menu-btn.usa-button--active,
+.usa-menu-btn:disabled:active,
+.usa-menu-btn[aria-disabled="true"]:active,
+.usa-menu-btn:disabled.usa-button--active,
+.usa-menu-btn[aria-disabled="true"].usa-button--active,
+.usa-menu-btn:disabled:focus,
+.usa-menu-btn[aria-disabled="true"]:focus,
+.usa-menu-btn:disabled.usa-focus,
+.usa-menu-btn[aria-disabled="true"].usa-focus,
+.usa-menu-btn:disabled,
+.usa-menu-btn[aria-disabled="true"],
+.usa-menu-btn.usa-button--disabled {
+  background-color: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+.usa-menu-btn.usa-button--hover {
+  color: #1a4480;
+}
+
+.usa-menu-btn.usa-button--active {
+  color: #162e51;
+}
+
+.usa-menu-btn:disabled,
+.usa-menu-btn[aria-disabled="true"],
+.usa-menu-btn:disabled:hover,
+.usa-menu-btn[aria-disabled="true"]:hover,
+.usa-menu-btn[aria-disabled="true"]:focus {
+  color: #757575;
+}
+
+@media (forced-colors: active) {
+  .usa-menu-btn:disabled,
+  .usa-menu-btn[aria-disabled="true"],
+  .usa-menu-btn:disabled:hover,
+  .usa-menu-btn[aria-disabled="true"]:hover,
+  .usa-menu-btn[aria-disabled="true"]:focus {
+    color: GrayText;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .usa-menu-btn {
+    display: none;
+  }
+}
+
+.usa-menu-btn:hover {
+  background-color: #1a4480;
+  color: white;
+  text-decoration: none;
+}
+
+.usa-menu-btn:active {
+  color: white;
+}
+
+.usa-menu-btn:visited {
+  color: white;
+}

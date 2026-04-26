@@ -1,0 +1,9 @@
+.usa-character-count__status {
+  padding-top: 0.25rem;
+  display: inline-block;
+}
+
+.usa-character-count__status.usa-character-count__status--invalid {
+  color: #b50909;
+  font-weight: 700;
+}

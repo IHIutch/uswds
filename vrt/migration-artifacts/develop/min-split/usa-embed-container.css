@@ -1,0 +1,39 @@
+.usa-embed-container embed,
+.usa-embed-container iframe,
+.usa-embed-container object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.usa-embed-container {
+  box-sizing: border-box;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  max-width: 100%;
+}
+
+@supports (aspect-ratio: 1) {
+  .usa-embed-container {
+    height: inherit;
+    padding: inherit;
+    aspect-ratio: 1.7777777778;
+    max-width: 100%;
+  }
+  .usa-embed-container > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .usa-embed-container > img,
+  img.usa-embed-container {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}

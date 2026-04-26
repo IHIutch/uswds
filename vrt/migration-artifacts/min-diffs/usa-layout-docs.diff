@@ -1,0 +1,11 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-layout-docs.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-layout-docs.css	2026-04-14 12:35:23
+@@ -2,7 +2,7 @@
+   padding-top: 2rem;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width>=64em) {
+   .usa-layout-docs__sidenav {
+     padding-top: 0;
+   }

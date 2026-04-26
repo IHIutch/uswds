@@ -1,0 +1,92 @@
+.usa-menu-btn {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: 400;
+  justify-content: normal;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  flex: 0 1 auto;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: #005ea2;
+  color: #fff;
+  font-size: 0.87rem;
+  height: 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.usa-menu-btn:focus {
+  outline: 0.25rem solid #2491ff;
+  outline-offset: 0;
+}
+
+.usa-menu-btn.usa-button--active,
+.usa-menu-btn.usa-button--disabled,
+.usa-menu-btn.usa-button--hover,
+.usa-menu-btn:active,
+.usa-menu-btn:disabled,
+.usa-menu-btn:disabled.usa-button--active,
+.usa-menu-btn:disabled.usa-button--hover,
+.usa-menu-btn:disabled.usa-focus,
+.usa-menu-btn:disabled:active,
+.usa-menu-btn:disabled:focus,
+.usa-menu-btn:disabled:hover,
+.usa-menu-btn:hover,
+.usa-menu-btn[aria-disabled="true"],
+.usa-menu-btn[aria-disabled="true"].usa-button--active,
+.usa-menu-btn[aria-disabled="true"].usa-button--hover,
+.usa-menu-btn[aria-disabled="true"].usa-focus,
+.usa-menu-btn[aria-disabled="true"]:active,
+.usa-menu-btn[aria-disabled="true"]:focus,
+.usa-menu-btn[aria-disabled="true"]:hover {
+  background-color: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+.usa-menu-btn.usa-button--hover {
+  color: #1a4480;
+}
+
+.usa-menu-btn.usa-button--active {
+  color: #162e51;
+}
+
+.usa-menu-btn:disabled,
+.usa-menu-btn:disabled:hover,
+.usa-menu-btn[aria-disabled="true"],
+.usa-menu-btn[aria-disabled="true"]:focus,
+.usa-menu-btn[aria-disabled="true"]:hover {
+  color: #757575;
+}
+
+@media (forced-colors: active) {
+  .usa-menu-btn:disabled,
+  .usa-menu-btn:disabled:hover,
+  .usa-menu-btn[aria-disabled="true"],
+  .usa-menu-btn[aria-disabled="true"]:focus,
+  .usa-menu-btn[aria-disabled="true"]:hover {
+    color: GrayText;
+  }
+}
+
+@media all and (min-width: 64em) {
+  .usa-menu-btn {
+    display: none;
+  }
+}
+
+.usa-menu-btn:hover {
+  background-color: #1a4480;
+  color: #fff;
+  text-decoration: none;
+}
+
+.usa-menu-btn:active,
+.usa-menu-btn:visited {
+  color: #fff;
+}

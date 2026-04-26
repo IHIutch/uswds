@@ -1,0 +1,161 @@
+.usa-search {
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+.usa-search::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.usa-search[role="search"],
+.usa-search[role="search"] > div,
+.usa-search [role="search"] {
+  display: flex;
+}
+
+.usa-search [type="submit"] {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 3rem;
+}
+
+@media all and (min-width: 30em) {
+  .usa-search [type="submit"] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: auto;
+  }
+}
+
+@media (forced-colors: active) {
+  .usa-search [type="submit"]::before {
+    background-image: url("../img/usa-icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.5rem 1.5rem;
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    content: "";
+    vertical-align: middle;
+    margin-right: auto;
+  }
+  @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+    .usa-search [type="submit"]::before {
+      background: none;
+      background-color: ButtonText;
+      -webkit-mask-image: url("../img/usa-icons/search.svg"),
+        linear-gradient(transparent, transparent);
+      mask-image: url("../img/usa-icons/search.svg"),
+        linear-gradient(transparent, transparent);
+      -webkit-mask-position: center center;
+      mask-position: center center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 1.5rem 1.5rem;
+      mask-size: 1.5rem 1.5rem;
+    }
+  }
+  .usa-search [type="submit"]:focus {
+    outline-offset: 0;
+  }
+}
+
+@media (forced-colors: active) and (min-width: 30em) {
+  .usa-search [type="submit"]::before {
+    content: none;
+  }
+}
+
+@media all and (min-width: 30em) {
+  .usa-search__submit-icon {
+    display: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .usa-search__submit-icon {
+    display: none;
+  }
+}
+
+@media all and (min-width: 30em) {
+  .usa-search--big [type="search"],
+  .usa-search--big .usa-search__input {
+    font-size: 1.06rem;
+    height: 3rem;
+  }
+}
+
+@media all and (min-width: 30em) {
+  .usa-search--big [type="submit"],
+  .usa-search--big .usa-search__submit {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.46rem;
+    height: 3rem;
+    width: auto;
+  }
+}
+
+.usa-search--small [type="submit"],
+.usa-search--small .usa-search__submit {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  min-width: 3rem;
+}
+
+@media (forced-colors: active) and (min-width: 30em) {
+  .usa-search--small [type="submit"]::before {
+    content: "";
+  }
+}
+
+.usa-search--small .usa-search__submit-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: block;
+}
+
+@media (forced-colors: active) {
+  .usa-search--small .usa-search__submit-icon {
+    display: none;
+  }
+}
+
+[type="search"],
+.usa-search__input {
+  padding-bottom: 0;
+  padding-top: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  border-top-right-radius: 0;
+  box-sizing: border-box;
+  float: left;
+  font-size: 1rem;
+  height: 2rem;
+  margin: 0;
+}
+
+.usa-search__submit-text {
+  display: none;
+}
+
+@media all and (min-width: 30em) {
+  .usa-search__submit-text {
+    display: block;
+  }
+}

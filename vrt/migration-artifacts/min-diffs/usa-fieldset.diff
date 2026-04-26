@@ -1,0 +1,9 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-fieldset.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-fieldset.css	2026-04-14 12:35:23
+@@ -1,5 +1,5 @@
+ .usa-fieldset {
+-  border: 0;
++  border: none;
+   margin: 0;
+   padding: 0;
+ }

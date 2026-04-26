@@ -1,0 +1,14 @@
+.usa-js-no-click {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.usa-js-no-click .usa-modal,
+.usa-js-no-click .usa-modal * {
+  pointer-events: auto;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}

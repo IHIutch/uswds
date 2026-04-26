@@ -1,0 +1,30 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-sign-up.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-sign-up.css	2026-04-14 12:35:23
+@@ -1,14 +1,15 @@
+ .usa-sign-up {
+-  padding-bottom: 2rem;
+   padding-top: 1.5rem;
++  padding-bottom: 2rem;
+ }
+ 
+-.usa-sign-up .usa-button,
+-.usa-sign-up .usa-label {
++.usa-sign-up .usa-label,
++.usa-sign-up .usa-button {
+   margin-top: 0.75rem;
+ }
+ 
+ .usa-sign-up__heading {
++  margin: 0;
+   font-family:
+     Merriweather Web,
+     Georgia,
+@@ -17,7 +18,6 @@
+     Times,
+     serif;
+   font-size: 1.34rem;
+-  line-height: 1.2;
+   font-weight: 700;
+-  margin: 0;
++  line-height: 1.2;
+ }

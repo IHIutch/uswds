@@ -1,0 +1,48 @@
+.usa-form-group--error .usa-file-input__target {
+  border-color: #b50909;
+  border-width: 2px;
+}
+
+.usa-form-group {
+  margin-top: 1.5rem;
+}
+
+.usa-form-group .usa-label:first-child {
+  margin-top: 0;
+}
+
+.usa-form-group--error {
+  border-left-width: 0.25rem;
+  border-left-color: #b50909;
+  border-left-style: solid;
+  padding-left: 1rem;
+  position: relative;
+}
+
+@media all and (min-width: 64em) {
+  .usa-form-group--error {
+    margin-left: -1.25rem;
+  }
+}
+
+.usa-form-group--day,
+.usa-form-group--month,
+.usa-form-group--year {
+  flex: 0 1 auto;
+  margin-right: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.usa-form-group--day input,
+.usa-form-group--month input {
+  width: 3rem;
+}
+
+.usa-form-group--month select {
+  width: 15rem;
+}
+
+.usa-form-group--year input {
+  width: 4.5rem;
+}

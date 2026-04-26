@@ -1,0 +1,9 @@
+.usa-in-page-nav-container {
+  align-items: flex-start;
+  display: flex;
+}
+
+.usa-in-page-nav-container main {
+  width: 100%;
+  max-width: 64rem;
+}

@@ -1,0 +1,2052 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-icon-list.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-icon-list.css	2026-04-14 11:33:47
+@@ -1,4 +1,8 @@
+ .usa-icon-list {
++  max-width: 72ex;
++  margin-top: 0;
++  margin-bottom: 0;
++  padding-left: 0;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -8,16 +12,12 @@
+     sans-serif;
+   font-size: 1.06rem;
+   line-height: 1.5;
+-  margin-bottom: 0;
+-  margin-top: 0;
+   list-style-type: none;
+-  padding-left: 0;
+-  max-width: 72ex;
+ }
+ 
+ .usa-icon-list > li {
+-  margin-bottom: 0;
+   max-width: unset;
++  margin-bottom: 0;
+ }
+ 
+ .usa-icon-list__item {
+@@ -254,15 +254,16 @@
+ }
+ 
+ .usa-icon-list__icon .usa-icon {
+-  display: block;
++  width: 1.5rem;
+   height: 1.5rem;
++  display: block;
+   position: relative;
+-  width: 1.5rem;
+ }
+ 
+ .usa-icon-list__content > p,
+ .usa-icon-list__content > ul,
+ .usa-icon-list__content > ol {
++  max-width: 72ex;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -271,7 +272,6 @@
+     Arial,
+     sans-serif;
+   font-size: 1.06rem;
+-  max-width: 72ex;
+ }
+ 
+ .usa-icon-list[class*="usa-icon-list--size-"] {
+@@ -279,14 +279,14 @@
+ }
+ 
+ .usa-icon-list--size-micro .usa-icon-list__icon .usa-icon {
+-  height: 1.005rem;
+   width: 1.005rem;
++  height: 1.005rem;
+ }
+ 
+ .usa-icon-list--size-micro .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 0.67rem;
+   padding-left: 0.268rem;
++  font-size: 0.67rem;
+ }
+ 
+ .usa-icon-list--size-micro .usa-icon-list__content .usa-icon-list__title {
+@@ -301,14 +301,14 @@
+ }
+ 
+ .usa-icon-list--size-1 .usa-icon-list__icon .usa-icon {
+-  height: 1.2rem;
+   width: 1.2rem;
++  height: 1.2rem;
+ }
+ 
+ .usa-icon-list--size-1 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 0.8rem;
+   padding-left: 0.32rem;
++  font-size: 0.8rem;
+ }
+ 
+ .usa-icon-list--size-1 .usa-icon-list__content .usa-icon-list__title {
+@@ -323,14 +323,14 @@
+ }
+ 
+ .usa-icon-list--size-2 .usa-icon-list__icon .usa-icon {
+-  height: 1.305rem;
+   width: 1.305rem;
++  height: 1.305rem;
+ }
+ 
+ .usa-icon-list--size-2 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 0.87rem;
+   padding-left: 0.348rem;
++  font-size: 0.87rem;
+ }
+ 
+ .usa-icon-list--size-2 .usa-icon-list__content .usa-icon-list__title {
+@@ -345,14 +345,14 @@
+ }
+ 
+ .usa-icon-list--size-3 .usa-icon-list__icon .usa-icon {
+-  height: 1.395rem;
+   width: 1.395rem;
++  height: 1.395rem;
+ }
+ 
+ .usa-icon-list--size-3 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 0.93rem;
+   padding-left: 0.372rem;
++  font-size: 0.93rem;
+ }
+ 
+ .usa-icon-list--size-3 .usa-icon-list__content .usa-icon-list__title {
+@@ -367,14 +367,14 @@
+ }
+ 
+ .usa-icon-list--size-4 .usa-icon-list__icon .usa-icon {
+-  height: 1.5rem;
+   width: 1.5rem;
++  height: 1.5rem;
+ }
+ 
+ .usa-icon-list--size-4 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1rem;
+   padding-left: 0.4rem;
++  font-size: 1rem;
+ }
+ 
+ .usa-icon-list--size-4 .usa-icon-list__content .usa-icon-list__title {
+@@ -389,14 +389,14 @@
+ }
+ 
+ .usa-icon-list--size-5 .usa-icon-list__icon .usa-icon {
+-  height: 1.59rem;
+   width: 1.59rem;
++  height: 1.59rem;
+ }
+ 
+ .usa-icon-list--size-5 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.06rem;
+   padding-left: 0.424rem;
++  font-size: 1.06rem;
+ }
+ 
+ .usa-icon-list--size-5 .usa-icon-list__content .usa-icon-list__title {
+@@ -411,14 +411,14 @@
+ }
+ 
+ .usa-icon-list--size-6 .usa-icon-list__icon .usa-icon {
+-  height: 1.695rem;
+   width: 1.695rem;
++  height: 1.695rem;
+ }
+ 
+ .usa-icon-list--size-6 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.13rem;
+   padding-left: 0.452rem;
++  font-size: 1.13rem;
+ }
+ 
+ .usa-icon-list--size-6 .usa-icon-list__content .usa-icon-list__title {
+@@ -433,14 +433,14 @@
+ }
+ 
+ .usa-icon-list--size-7 .usa-icon-list__icon .usa-icon {
+-  height: 1.8rem;
+   width: 1.8rem;
++  height: 1.8rem;
+ }
+ 
+ .usa-icon-list--size-7 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.2rem;
+   padding-left: 0.48rem;
++  font-size: 1.2rem;
+ }
+ 
+ .usa-icon-list--size-7 .usa-icon-list__content .usa-icon-list__title {
+@@ -455,14 +455,14 @@
+ }
+ 
+ .usa-icon-list--size-8 .usa-icon-list__icon .usa-icon {
+-  height: 1.995rem;
+   width: 1.995rem;
++  height: 1.995rem;
+ }
+ 
+ .usa-icon-list--size-8 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.33rem;
+   padding-left: 0.532rem;
++  font-size: 1.33rem;
+ }
+ 
+ .usa-icon-list--size-8 .usa-icon-list__content .usa-icon-list__title {
+@@ -477,14 +477,14 @@
+ }
+ 
+ .usa-icon-list--size-9 .usa-icon-list__icon .usa-icon {
+-  height: 2.19rem;
+   width: 2.19rem;
++  height: 2.19rem;
+ }
+ 
+ .usa-icon-list--size-9 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.46rem;
+   padding-left: 0.584rem;
++  font-size: 1.46rem;
+ }
+ 
+ .usa-icon-list--size-9 .usa-icon-list__content .usa-icon-list__title {
+@@ -499,14 +499,14 @@
+ }
+ 
+ .usa-icon-list--size-10 .usa-icon-list__icon .usa-icon {
+-  height: 2.4rem;
+   width: 2.4rem;
++  height: 2.4rem;
+ }
+ 
+ .usa-icon-list--size-10 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.6rem;
+   padding-left: 0.64rem;
++  font-size: 1.6rem;
+ }
+ 
+ .usa-icon-list--size-10 .usa-icon-list__content .usa-icon-list__title {
+@@ -521,14 +521,14 @@
+ }
+ 
+ .usa-icon-list--size-11 .usa-icon-list__icon .usa-icon {
+-  height: 2.79rem;
+   width: 2.79rem;
++  height: 2.79rem;
+ }
+ 
+ .usa-icon-list--size-11 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.86rem;
+   padding-left: 0.744rem;
++  font-size: 1.86rem;
+ }
+ 
+ .usa-icon-list--size-11 .usa-icon-list__content .usa-icon-list__title {
+@@ -543,14 +543,14 @@
+ }
+ 
+ .usa-icon-list--size-12 .usa-icon-list__icon .usa-icon {
+-  height: 3.195rem;
+   width: 3.195rem;
++  height: 3.195rem;
+ }
+ 
+ .usa-icon-list--size-12 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 2.13rem;
+   padding-left: 0.852rem;
++  font-size: 2.13rem;
+ }
+ 
+ .usa-icon-list--size-12 .usa-icon-list__content .usa-icon-list__title {
+@@ -565,14 +565,14 @@
+ }
+ 
+ .usa-icon-list--size-13 .usa-icon-list__icon .usa-icon {
+-  height: 3.6rem;
+   width: 3.6rem;
++  height: 3.6rem;
+ }
+ 
+ .usa-icon-list--size-13 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 2.4rem;
+   padding-left: 0.96rem;
++  font-size: 2.4rem;
+ }
+ 
+ .usa-icon-list--size-13 .usa-icon-list__content .usa-icon-list__title {
+@@ -587,14 +587,14 @@
+ }
+ 
+ .usa-icon-list--size-14 .usa-icon-list__icon .usa-icon {
+-  height: 3.99rem;
+   width: 3.99rem;
++  height: 3.99rem;
+ }
+ 
+ .usa-icon-list--size-14 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 2.66rem;
+   padding-left: 1.064rem;
++  font-size: 2.66rem;
+ }
+ 
+ .usa-icon-list--size-14 .usa-icon-list__content .usa-icon-list__title {
+@@ -609,14 +609,14 @@
+ }
+ 
+ .usa-icon-list--size-15 .usa-icon-list__icon .usa-icon {
+-  height: 4.785rem;
+   width: 4.785rem;
++  height: 4.785rem;
+ }
+ 
+ .usa-icon-list--size-15 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 3.19rem;
+   padding-left: 1.276rem;
++  font-size: 3.19rem;
+ }
+ 
+ .usa-icon-list--size-15 .usa-icon-list__content .usa-icon-list__title {
+@@ -631,14 +631,14 @@
+ }
+ 
+ .usa-icon-list--size-16 .usa-icon-list__icon .usa-icon {
+-  height: 5.595rem;
+   width: 5.595rem;
++  height: 5.595rem;
+ }
+ 
+ .usa-icon-list--size-16 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 3.73rem;
+   padding-left: 1.492rem;
++  font-size: 3.73rem;
+ }
+ 
+ .usa-icon-list--size-16 .usa-icon-list__content .usa-icon-list__title {
+@@ -653,14 +653,14 @@
+ }
+ 
+ .usa-icon-list--size-17 .usa-icon-list__icon .usa-icon {
+-  height: 6.39rem;
+   width: 6.39rem;
++  height: 6.39rem;
+ }
+ 
+ .usa-icon-list--size-17 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 4.26rem;
+   padding-left: 1.704rem;
++  font-size: 4.26rem;
+ }
+ 
+ .usa-icon-list--size-17 .usa-icon-list__content .usa-icon-list__title {
+@@ -675,14 +675,14 @@
+ }
+ 
+ .usa-icon-list--size-18 .usa-icon-list__icon .usa-icon {
+-  height: 7.98rem;
+   width: 7.98rem;
++  height: 7.98rem;
+ }
+ 
+ .usa-icon-list--size-18 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 5.32rem;
+   padding-left: 2.128rem;
++  font-size: 5.32rem;
+ }
+ 
+ .usa-icon-list--size-18 .usa-icon-list__content .usa-icon-list__title {
+@@ -697,14 +697,14 @@
+ }
+ 
+ .usa-icon-list--size-19 .usa-icon-list__icon .usa-icon {
+-  height: 11.985rem;
+   width: 11.985rem;
++  height: 11.985rem;
+ }
+ 
+ .usa-icon-list--size-19 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 7.99rem;
+   padding-left: 3.196rem;
++  font-size: 7.99rem;
+ }
+ 
+ .usa-icon-list--size-19 .usa-icon-list__content .usa-icon-list__title {
+@@ -719,14 +719,14 @@
+ }
+ 
+ .usa-icon-list--size-20 .usa-icon-list__icon .usa-icon {
+-  height: 13.98rem;
+   width: 13.98rem;
++  height: 13.98rem;
+ }
+ 
+ .usa-icon-list--size-20 .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 9.32rem;
+   padding-left: 3.728rem;
++  font-size: 9.32rem;
+ }
+ 
+ .usa-icon-list--size-20 .usa-icon-list__content .usa-icon-list__title {
+@@ -741,14 +741,14 @@
+ }
+ 
+ .usa-icon-list--size-3xs .usa-icon-list__icon .usa-icon {
+-  height: 1.305rem;
+   width: 1.305rem;
++  height: 1.305rem;
+ }
+ 
+ .usa-icon-list--size-3xs .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 0.87rem;
+   padding-left: 0.348rem;
++  font-size: 0.87rem;
+ }
+ 
+ .usa-icon-list--size-3xs .usa-icon-list__content .usa-icon-list__title {
+@@ -763,14 +763,14 @@
+ }
+ 
+ .usa-icon-list--size-2xs .usa-icon-list__icon .usa-icon {
+-  height: 1.395rem;
+   width: 1.395rem;
++  height: 1.395rem;
+ }
+ 
+ .usa-icon-list--size-2xs .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 0.93rem;
+   padding-left: 0.372rem;
++  font-size: 0.93rem;
+ }
+ 
+ .usa-icon-list--size-2xs .usa-icon-list__content .usa-icon-list__title {
+@@ -785,14 +785,14 @@
+ }
+ 
+ .usa-icon-list--size-xs .usa-icon-list__icon .usa-icon {
+-  height: 1.5rem;
+   width: 1.5rem;
++  height: 1.5rem;
+ }
+ 
+ .usa-icon-list--size-xs .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1rem;
+   padding-left: 0.4rem;
++  font-size: 1rem;
+ }
+ 
+ .usa-icon-list--size-xs .usa-icon-list__content .usa-icon-list__title {
+@@ -807,14 +807,14 @@
+ }
+ 
+ .usa-icon-list--size-sm .usa-icon-list__icon .usa-icon {
+-  height: 1.59rem;
+   width: 1.59rem;
++  height: 1.59rem;
+ }
+ 
+ .usa-icon-list--size-sm .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.06rem;
+   padding-left: 0.424rem;
++  font-size: 1.06rem;
+ }
+ 
+ .usa-icon-list--size-sm .usa-icon-list__content .usa-icon-list__title {
+@@ -829,14 +829,14 @@
+ }
+ 
+ .usa-icon-list--size-md .usa-icon-list__icon .usa-icon {
+-  height: 1.695rem;
+   width: 1.695rem;
++  height: 1.695rem;
+ }
+ 
+ .usa-icon-list--size-md .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.13rem;
+   padding-left: 0.452rem;
++  font-size: 1.13rem;
+ }
+ 
+ .usa-icon-list--size-md .usa-icon-list__content .usa-icon-list__title {
+@@ -851,14 +851,14 @@
+ }
+ 
+ .usa-icon-list--size-lg .usa-icon-list__icon .usa-icon {
+-  height: 2.19rem;
+   width: 2.19rem;
++  height: 2.19rem;
+ }
+ 
+ .usa-icon-list--size-lg .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 1.46rem;
+   padding-left: 0.584rem;
++  font-size: 1.46rem;
+ }
+ 
+ .usa-icon-list--size-lg .usa-icon-list__content .usa-icon-list__title {
+@@ -873,14 +873,14 @@
+ }
+ 
+ .usa-icon-list--size-xl .usa-icon-list__icon .usa-icon {
+-  height: 3.195rem;
+   width: 3.195rem;
++  height: 3.195rem;
+ }
+ 
+ .usa-icon-list--size-xl .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 2.13rem;
+   padding-left: 0.852rem;
++  font-size: 2.13rem;
+ }
+ 
+ .usa-icon-list--size-xl .usa-icon-list__content .usa-icon-list__title {
+@@ -895,14 +895,14 @@
+ }
+ 
+ .usa-icon-list--size-2xl .usa-icon-list__icon .usa-icon {
+-  height: 3.99rem;
+   width: 3.99rem;
++  height: 3.99rem;
+ }
+ 
+ .usa-icon-list--size-2xl .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 2.66rem;
+   padding-left: 1.064rem;
++  font-size: 2.66rem;
+ }
+ 
+ .usa-icon-list--size-2xl .usa-icon-list__content .usa-icon-list__title {
+@@ -917,14 +917,14 @@
+ }
+ 
+ .usa-icon-list--size-3xl .usa-icon-list__icon .usa-icon {
+-  height: 4.785rem;
+   width: 4.785rem;
++  height: 4.785rem;
+ }
+ 
+ .usa-icon-list--size-3xl .usa-icon-list__content {
+   max-width: 72ex;
+-  font-size: 3.19rem;
+   padding-left: 1.276rem;
++  font-size: 3.19rem;
+ }
+ 
+ .usa-icon-list--size-3xl .usa-icon-list__content .usa-icon-list__title {
+@@ -938,15 +938,16 @@
+   font-size: 2.93rem;
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width >= 30em) {
+   .mobile-lg\:usa-icon-list--size-micro .usa-icon-list__icon .usa-icon {
+-    height: 1.005rem;
+     width: 1.005rem;
++    height: 1.005rem;
+   }
+   .mobile-lg\:usa-icon-list--size-micro .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.67rem;
+     padding-left: 0.268rem;
++    font-size: 0.67rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-micro
+@@ -961,13 +964,14 @@
+     font-size: 0.61rem;
+   }
+   .mobile-lg\:usa-icon-list--size-1 .usa-icon-list__icon .usa-icon {
+-    height: 1.2rem;
+     width: 1.2rem;
++    height: 1.2rem;
+   }
+   .mobile-lg\:usa-icon-list--size-1 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.8rem;
+     padding-left: 0.32rem;
++    font-size: 0.8rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-1
+@@ -982,13 +988,14 @@
+     font-size: 0.73rem;
+   }
+   .mobile-lg\:usa-icon-list--size-2 .usa-icon-list__icon .usa-icon {
+-    height: 1.305rem;
+     width: 1.305rem;
++    height: 1.305rem;
+   }
+   .mobile-lg\:usa-icon-list--size-2 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.87rem;
+     padding-left: 0.348rem;
++    font-size: 0.87rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-2
+@@ -1003,13 +1012,14 @@
+     font-size: 0.79rem;
+   }
+   .mobile-lg\:usa-icon-list--size-3 .usa-icon-list__icon .usa-icon {
+-    height: 1.395rem;
+     width: 1.395rem;
++    height: 1.395rem;
+   }
+   .mobile-lg\:usa-icon-list--size-3 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.93rem;
+     padding-left: 0.372rem;
++    font-size: 0.93rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-3
+@@ -1024,13 +1036,14 @@
+     font-size: 0.85rem;
+   }
+   .mobile-lg\:usa-icon-list--size-4 .usa-icon-list__icon .usa-icon {
+-    height: 1.5rem;
+     width: 1.5rem;
++    height: 1.5rem;
+   }
+   .mobile-lg\:usa-icon-list--size-4 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1rem;
+     padding-left: 0.4rem;
++    font-size: 1rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-4
+@@ -1045,13 +1060,14 @@
+     font-size: 0.91rem;
+   }
+   .mobile-lg\:usa-icon-list--size-5 .usa-icon-list__icon .usa-icon {
+-    height: 1.59rem;
+     width: 1.59rem;
++    height: 1.59rem;
+   }
+   .mobile-lg\:usa-icon-list--size-5 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.06rem;
+     padding-left: 0.424rem;
++    font-size: 1.06rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-5
+@@ -1066,13 +1084,14 @@
+     font-size: 0.98rem;
+   }
+   .mobile-lg\:usa-icon-list--size-6 .usa-icon-list__icon .usa-icon {
+-    height: 1.695rem;
+     width: 1.695rem;
++    height: 1.695rem;
+   }
+   .mobile-lg\:usa-icon-list--size-6 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.13rem;
+     padding-left: 0.452rem;
++    font-size: 1.13rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-6
+@@ -1087,13 +1108,14 @@
+     font-size: 1.04rem;
+   }
+   .mobile-lg\:usa-icon-list--size-7 .usa-icon-list__icon .usa-icon {
+-    height: 1.8rem;
+     width: 1.8rem;
++    height: 1.8rem;
+   }
+   .mobile-lg\:usa-icon-list--size-7 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.2rem;
+     padding-left: 0.48rem;
++    font-size: 1.2rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-7
+@@ -1108,13 +1132,14 @@
+     font-size: 1.1rem;
+   }
+   .mobile-lg\:usa-icon-list--size-8 .usa-icon-list__icon .usa-icon {
+-    height: 1.995rem;
+     width: 1.995rem;
++    height: 1.995rem;
+   }
+   .mobile-lg\:usa-icon-list--size-8 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.33rem;
+     padding-left: 0.532rem;
++    font-size: 1.33rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-8
+@@ -1129,13 +1156,14 @@
+     font-size: 1.22rem;
+   }
+   .mobile-lg\:usa-icon-list--size-9 .usa-icon-list__icon .usa-icon {
+-    height: 2.19rem;
+     width: 2.19rem;
++    height: 2.19rem;
+   }
+   .mobile-lg\:usa-icon-list--size-9 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.46rem;
+     padding-left: 0.584rem;
++    font-size: 1.46rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-9
+@@ -1150,13 +1180,14 @@
+     font-size: 1.34rem;
+   }
+   .mobile-lg\:usa-icon-list--size-10 .usa-icon-list__icon .usa-icon {
+-    height: 2.4rem;
+     width: 2.4rem;
++    height: 2.4rem;
+   }
+   .mobile-lg\:usa-icon-list--size-10 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.6rem;
+     padding-left: 0.64rem;
++    font-size: 1.6rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-10
+@@ -1171,13 +1204,14 @@
+     font-size: 1.46rem;
+   }
+   .mobile-lg\:usa-icon-list--size-11 .usa-icon-list__icon .usa-icon {
+-    height: 2.79rem;
+     width: 2.79rem;
++    height: 2.79rem;
+   }
+   .mobile-lg\:usa-icon-list--size-11 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.86rem;
+     padding-left: 0.744rem;
++    font-size: 1.86rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-11
+@@ -1192,13 +1228,14 @@
+     font-size: 1.71rem;
+   }
+   .mobile-lg\:usa-icon-list--size-12 .usa-icon-list__icon .usa-icon {
+-    height: 3.195rem;
+     width: 3.195rem;
++    height: 3.195rem;
+   }
+   .mobile-lg\:usa-icon-list--size-12 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.13rem;
+     padding-left: 0.852rem;
++    font-size: 2.13rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-12
+@@ -1213,13 +1252,14 @@
+     font-size: 1.95rem;
+   }
+   .mobile-lg\:usa-icon-list--size-13 .usa-icon-list__icon .usa-icon {
+-    height: 3.6rem;
+     width: 3.6rem;
++    height: 3.6rem;
+   }
+   .mobile-lg\:usa-icon-list--size-13 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.4rem;
+     padding-left: 0.96rem;
++    font-size: 2.4rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-13
+@@ -1234,13 +1276,14 @@
+     font-size: 2.2rem;
+   }
+   .mobile-lg\:usa-icon-list--size-14 .usa-icon-list__icon .usa-icon {
+-    height: 3.99rem;
+     width: 3.99rem;
++    height: 3.99rem;
+   }
+   .mobile-lg\:usa-icon-list--size-14 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.66rem;
+     padding-left: 1.064rem;
++    font-size: 2.66rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-14
+@@ -1255,13 +1300,14 @@
+     font-size: 2.44rem;
+   }
+   .mobile-lg\:usa-icon-list--size-15 .usa-icon-list__icon .usa-icon {
+-    height: 4.785rem;
+     width: 4.785rem;
++    height: 4.785rem;
+   }
+   .mobile-lg\:usa-icon-list--size-15 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 3.19rem;
+     padding-left: 1.276rem;
++    font-size: 3.19rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-15
+@@ -1276,13 +1324,14 @@
+     font-size: 2.93rem;
+   }
+   .mobile-lg\:usa-icon-list--size-16 .usa-icon-list__icon .usa-icon {
+-    height: 5.595rem;
+     width: 5.595rem;
++    height: 5.595rem;
+   }
+   .mobile-lg\:usa-icon-list--size-16 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 3.73rem;
+     padding-left: 1.492rem;
++    font-size: 3.73rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-16
+@@ -1297,13 +1348,14 @@
+     font-size: 3.42rem;
+   }
+   .mobile-lg\:usa-icon-list--size-17 .usa-icon-list__icon .usa-icon {
+-    height: 6.39rem;
+     width: 6.39rem;
++    height: 6.39rem;
+   }
+   .mobile-lg\:usa-icon-list--size-17 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 4.26rem;
+     padding-left: 1.704rem;
++    font-size: 4.26rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-17
+@@ -1318,13 +1372,14 @@
+     font-size: 3.9rem;
+   }
+   .mobile-lg\:usa-icon-list--size-18 .usa-icon-list__icon .usa-icon {
+-    height: 7.98rem;
+     width: 7.98rem;
++    height: 7.98rem;
+   }
+   .mobile-lg\:usa-icon-list--size-18 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 5.32rem;
+     padding-left: 2.128rem;
++    font-size: 5.32rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-18
+@@ -1339,13 +1396,14 @@
+     font-size: 4.88rem;
+   }
+   .mobile-lg\:usa-icon-list--size-19 .usa-icon-list__icon .usa-icon {
+-    height: 11.985rem;
+     width: 11.985rem;
++    height: 11.985rem;
+   }
+   .mobile-lg\:usa-icon-list--size-19 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 7.99rem;
+     padding-left: 3.196rem;
++    font-size: 7.99rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-19
+@@ -1360,13 +1420,14 @@
+     font-size: 7.32rem;
+   }
+   .mobile-lg\:usa-icon-list--size-20 .usa-icon-list__icon .usa-icon {
+-    height: 13.98rem;
+     width: 13.98rem;
++    height: 13.98rem;
+   }
+   .mobile-lg\:usa-icon-list--size-20 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 9.32rem;
+     padding-left: 3.728rem;
++    font-size: 9.32rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-20
+@@ -1381,13 +1444,14 @@
+     font-size: 8.54rem;
+   }
+   .mobile-lg\:usa-icon-list--size-3xs .usa-icon-list__icon .usa-icon {
+-    height: 1.305rem;
+     width: 1.305rem;
++    height: 1.305rem;
+   }
+   .mobile-lg\:usa-icon-list--size-3xs .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.87rem;
+     padding-left: 0.348rem;
++    font-size: 0.87rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-3xs
+@@ -1402,13 +1468,14 @@
+     font-size: 0.79rem;
+   }
+   .mobile-lg\:usa-icon-list--size-2xs .usa-icon-list__icon .usa-icon {
+-    height: 1.395rem;
+     width: 1.395rem;
++    height: 1.395rem;
+   }
+   .mobile-lg\:usa-icon-list--size-2xs .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.93rem;
+     padding-left: 0.372rem;
++    font-size: 0.93rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-2xs
+@@ -1423,13 +1492,14 @@
+     font-size: 0.85rem;
+   }
+   .mobile-lg\:usa-icon-list--size-xs .usa-icon-list__icon .usa-icon {
+-    height: 1.5rem;
+     width: 1.5rem;
++    height: 1.5rem;
+   }
+   .mobile-lg\:usa-icon-list--size-xs .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1rem;
+     padding-left: 0.4rem;
++    font-size: 1rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-xs
+@@ -1444,13 +1516,14 @@
+     font-size: 0.91rem;
+   }
+   .mobile-lg\:usa-icon-list--size-sm .usa-icon-list__icon .usa-icon {
+-    height: 1.59rem;
+     width: 1.59rem;
++    height: 1.59rem;
+   }
+   .mobile-lg\:usa-icon-list--size-sm .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.06rem;
+     padding-left: 0.424rem;
++    font-size: 1.06rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-sm
+@@ -1465,13 +1540,14 @@
+     font-size: 0.98rem;
+   }
+   .mobile-lg\:usa-icon-list--size-md .usa-icon-list__icon .usa-icon {
+-    height: 1.695rem;
+     width: 1.695rem;
++    height: 1.695rem;
+   }
+   .mobile-lg\:usa-icon-list--size-md .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.13rem;
+     padding-left: 0.452rem;
++    font-size: 1.13rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-md
+@@ -1486,13 +1564,14 @@
+     font-size: 1.04rem;
+   }
+   .mobile-lg\:usa-icon-list--size-lg .usa-icon-list__icon .usa-icon {
+-    height: 2.19rem;
+     width: 2.19rem;
++    height: 2.19rem;
+   }
+   .mobile-lg\:usa-icon-list--size-lg .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.46rem;
+     padding-left: 0.584rem;
++    font-size: 1.46rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-lg
+@@ -1507,13 +1588,14 @@
+     font-size: 1.34rem;
+   }
+   .mobile-lg\:usa-icon-list--size-xl .usa-icon-list__icon .usa-icon {
+-    height: 3.195rem;
+     width: 3.195rem;
++    height: 3.195rem;
+   }
+   .mobile-lg\:usa-icon-list--size-xl .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.13rem;
+     padding-left: 0.852rem;
++    font-size: 2.13rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-xl
+@@ -1528,13 +1612,14 @@
+     font-size: 1.95rem;
+   }
+   .mobile-lg\:usa-icon-list--size-2xl .usa-icon-list__icon .usa-icon {
+-    height: 3.99rem;
+     width: 3.99rem;
++    height: 3.99rem;
+   }
+   .mobile-lg\:usa-icon-list--size-2xl .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.66rem;
+     padding-left: 1.064rem;
++    font-size: 2.66rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-2xl
+@@ -1549,13 +1636,14 @@
+     font-size: 2.44rem;
+   }
+   .mobile-lg\:usa-icon-list--size-3xl .usa-icon-list__icon .usa-icon {
+-    height: 4.785rem;
+     width: 4.785rem;
++    height: 4.785rem;
+   }
+   .mobile-lg\:usa-icon-list--size-3xl .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 3.19rem;
+     padding-left: 1.276rem;
++    font-size: 3.19rem;
+   }
+ 
+   .mobile-lg\:usa-icon-list--size-3xl
+@@ -1571,15 +1660,16 @@
+   }
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width >= 40em) {
+   .tablet\:usa-icon-list--size-micro .usa-icon-list__icon .usa-icon {
+-    height: 1.005rem;
+     width: 1.005rem;
++    height: 1.005rem;
+   }
+   .tablet\:usa-icon-list--size-micro .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.67rem;
+     padding-left: 0.268rem;
++    font-size: 0.67rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-micro
+@@ -1594,13 +1686,14 @@
+     font-size: 0.61rem;
+   }
+   .tablet\:usa-icon-list--size-1 .usa-icon-list__icon .usa-icon {
+-    height: 1.2rem;
+     width: 1.2rem;
++    height: 1.2rem;
+   }
+   .tablet\:usa-icon-list--size-1 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.8rem;
+     padding-left: 0.32rem;
++    font-size: 0.8rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-1 .usa-icon-list__content .usa-icon-list__title {
+@@ -1613,13 +1708,14 @@
+     font-size: 0.73rem;
+   }
+   .tablet\:usa-icon-list--size-2 .usa-icon-list__icon .usa-icon {
+-    height: 1.305rem;
+     width: 1.305rem;
++    height: 1.305rem;
+   }
+   .tablet\:usa-icon-list--size-2 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.87rem;
+     padding-left: 0.348rem;
++    font-size: 0.87rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-2 .usa-icon-list__content .usa-icon-list__title {
+@@ -1632,13 +1730,14 @@
+     font-size: 0.79rem;
+   }
+   .tablet\:usa-icon-list--size-3 .usa-icon-list__icon .usa-icon {
+-    height: 1.395rem;
+     width: 1.395rem;
++    height: 1.395rem;
+   }
+   .tablet\:usa-icon-list--size-3 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.93rem;
+     padding-left: 0.372rem;
++    font-size: 0.93rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-3 .usa-icon-list__content .usa-icon-list__title {
+@@ -1651,13 +1752,14 @@
+     font-size: 0.85rem;
+   }
+   .tablet\:usa-icon-list--size-4 .usa-icon-list__icon .usa-icon {
+-    height: 1.5rem;
+     width: 1.5rem;
++    height: 1.5rem;
+   }
+   .tablet\:usa-icon-list--size-4 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1rem;
+     padding-left: 0.4rem;
++    font-size: 1rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-4 .usa-icon-list__content .usa-icon-list__title {
+@@ -1670,13 +1774,14 @@
+     font-size: 0.91rem;
+   }
+   .tablet\:usa-icon-list--size-5 .usa-icon-list__icon .usa-icon {
+-    height: 1.59rem;
+     width: 1.59rem;
++    height: 1.59rem;
+   }
+   .tablet\:usa-icon-list--size-5 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.06rem;
+     padding-left: 0.424rem;
++    font-size: 1.06rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-5 .usa-icon-list__content .usa-icon-list__title {
+@@ -1689,13 +1796,14 @@
+     font-size: 0.98rem;
+   }
+   .tablet\:usa-icon-list--size-6 .usa-icon-list__icon .usa-icon {
+-    height: 1.695rem;
+     width: 1.695rem;
++    height: 1.695rem;
+   }
+   .tablet\:usa-icon-list--size-6 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.13rem;
+     padding-left: 0.452rem;
++    font-size: 1.13rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-6 .usa-icon-list__content .usa-icon-list__title {
+@@ -1708,13 +1818,14 @@
+     font-size: 1.04rem;
+   }
+   .tablet\:usa-icon-list--size-7 .usa-icon-list__icon .usa-icon {
+-    height: 1.8rem;
+     width: 1.8rem;
++    height: 1.8rem;
+   }
+   .tablet\:usa-icon-list--size-7 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.2rem;
+     padding-left: 0.48rem;
++    font-size: 1.2rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-7 .usa-icon-list__content .usa-icon-list__title {
+@@ -1727,13 +1840,14 @@
+     font-size: 1.1rem;
+   }
+   .tablet\:usa-icon-list--size-8 .usa-icon-list__icon .usa-icon {
+-    height: 1.995rem;
+     width: 1.995rem;
++    height: 1.995rem;
+   }
+   .tablet\:usa-icon-list--size-8 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.33rem;
+     padding-left: 0.532rem;
++    font-size: 1.33rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-8 .usa-icon-list__content .usa-icon-list__title {
+@@ -1746,13 +1862,14 @@
+     font-size: 1.22rem;
+   }
+   .tablet\:usa-icon-list--size-9 .usa-icon-list__icon .usa-icon {
+-    height: 2.19rem;
+     width: 2.19rem;
++    height: 2.19rem;
+   }
+   .tablet\:usa-icon-list--size-9 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.46rem;
+     padding-left: 0.584rem;
++    font-size: 1.46rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-9 .usa-icon-list__content .usa-icon-list__title {
+@@ -1765,13 +1884,14 @@
+     font-size: 1.34rem;
+   }
+   .tablet\:usa-icon-list--size-10 .usa-icon-list__icon .usa-icon {
+-    height: 2.4rem;
+     width: 2.4rem;
++    height: 2.4rem;
+   }
+   .tablet\:usa-icon-list--size-10 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.6rem;
+     padding-left: 0.64rem;
++    font-size: 1.6rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-10
+@@ -1786,13 +1908,14 @@
+     font-size: 1.46rem;
+   }
+   .tablet\:usa-icon-list--size-11 .usa-icon-list__icon .usa-icon {
+-    height: 2.79rem;
+     width: 2.79rem;
++    height: 2.79rem;
+   }
+   .tablet\:usa-icon-list--size-11 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.86rem;
+     padding-left: 0.744rem;
++    font-size: 1.86rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-11
+@@ -1807,13 +1932,14 @@
+     font-size: 1.71rem;
+   }
+   .tablet\:usa-icon-list--size-12 .usa-icon-list__icon .usa-icon {
+-    height: 3.195rem;
+     width: 3.195rem;
++    height: 3.195rem;
+   }
+   .tablet\:usa-icon-list--size-12 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.13rem;
+     padding-left: 0.852rem;
++    font-size: 2.13rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-12
+@@ -1828,13 +1956,14 @@
+     font-size: 1.95rem;
+   }
+   .tablet\:usa-icon-list--size-13 .usa-icon-list__icon .usa-icon {
+-    height: 3.6rem;
+     width: 3.6rem;
++    height: 3.6rem;
+   }
+   .tablet\:usa-icon-list--size-13 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.4rem;
+     padding-left: 0.96rem;
++    font-size: 2.4rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-13
+@@ -1849,13 +1980,14 @@
+     font-size: 2.2rem;
+   }
+   .tablet\:usa-icon-list--size-14 .usa-icon-list__icon .usa-icon {
+-    height: 3.99rem;
+     width: 3.99rem;
++    height: 3.99rem;
+   }
+   .tablet\:usa-icon-list--size-14 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.66rem;
+     padding-left: 1.064rem;
++    font-size: 2.66rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-14
+@@ -1870,13 +2004,14 @@
+     font-size: 2.44rem;
+   }
+   .tablet\:usa-icon-list--size-15 .usa-icon-list__icon .usa-icon {
+-    height: 4.785rem;
+     width: 4.785rem;
++    height: 4.785rem;
+   }
+   .tablet\:usa-icon-list--size-15 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 3.19rem;
+     padding-left: 1.276rem;
++    font-size: 3.19rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-15
+@@ -1891,13 +2028,14 @@
+     font-size: 2.93rem;
+   }
+   .tablet\:usa-icon-list--size-16 .usa-icon-list__icon .usa-icon {
+-    height: 5.595rem;
+     width: 5.595rem;
++    height: 5.595rem;
+   }
+   .tablet\:usa-icon-list--size-16 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 3.73rem;
+     padding-left: 1.492rem;
++    font-size: 3.73rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-16
+@@ -1912,13 +2052,14 @@
+     font-size: 3.42rem;
+   }
+   .tablet\:usa-icon-list--size-17 .usa-icon-list__icon .usa-icon {
+-    height: 6.39rem;
+     width: 6.39rem;
++    height: 6.39rem;
+   }
+   .tablet\:usa-icon-list--size-17 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 4.26rem;
+     padding-left: 1.704rem;
++    font-size: 4.26rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-17
+@@ -1933,13 +2076,14 @@
+     font-size: 3.9rem;
+   }
+   .tablet\:usa-icon-list--size-18 .usa-icon-list__icon .usa-icon {
+-    height: 7.98rem;
+     width: 7.98rem;
++    height: 7.98rem;
+   }
+   .tablet\:usa-icon-list--size-18 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 5.32rem;
+     padding-left: 2.128rem;
++    font-size: 5.32rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-18
+@@ -1954,13 +2100,14 @@
+     font-size: 4.88rem;
+   }
+   .tablet\:usa-icon-list--size-19 .usa-icon-list__icon .usa-icon {
+-    height: 11.985rem;
+     width: 11.985rem;
++    height: 11.985rem;
+   }
+   .tablet\:usa-icon-list--size-19 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 7.99rem;
+     padding-left: 3.196rem;
++    font-size: 7.99rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-19
+@@ -1975,13 +2124,14 @@
+     font-size: 7.32rem;
+   }
+   .tablet\:usa-icon-list--size-20 .usa-icon-list__icon .usa-icon {
+-    height: 13.98rem;
+     width: 13.98rem;
++    height: 13.98rem;
+   }
+   .tablet\:usa-icon-list--size-20 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 9.32rem;
+     padding-left: 3.728rem;
++    font-size: 9.32rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-20
+@@ -1996,13 +2148,14 @@
+     font-size: 8.54rem;
+   }
+   .tablet\:usa-icon-list--size-3xs .usa-icon-list__icon .usa-icon {
+-    height: 1.305rem;
+     width: 1.305rem;
++    height: 1.305rem;
+   }
+   .tablet\:usa-icon-list--size-3xs .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.87rem;
+     padding-left: 0.348rem;
++    font-size: 0.87rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-3xs
+@@ -2017,13 +2172,14 @@
+     font-size: 0.79rem;
+   }
+   .tablet\:usa-icon-list--size-2xs .usa-icon-list__icon .usa-icon {
+-    height: 1.395rem;
+     width: 1.395rem;
++    height: 1.395rem;
+   }
+   .tablet\:usa-icon-list--size-2xs .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.93rem;
+     padding-left: 0.372rem;
++    font-size: 0.93rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-2xs
+@@ -2038,13 +2196,14 @@
+     font-size: 0.85rem;
+   }
+   .tablet\:usa-icon-list--size-xs .usa-icon-list__icon .usa-icon {
+-    height: 1.5rem;
+     width: 1.5rem;
++    height: 1.5rem;
+   }
+   .tablet\:usa-icon-list--size-xs .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1rem;
+     padding-left: 0.4rem;
++    font-size: 1rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-xs
+@@ -2059,13 +2220,14 @@
+     font-size: 0.91rem;
+   }
+   .tablet\:usa-icon-list--size-sm .usa-icon-list__icon .usa-icon {
+-    height: 1.59rem;
+     width: 1.59rem;
++    height: 1.59rem;
+   }
+   .tablet\:usa-icon-list--size-sm .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.06rem;
+     padding-left: 0.424rem;
++    font-size: 1.06rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-sm
+@@ -2080,13 +2244,14 @@
+     font-size: 0.98rem;
+   }
+   .tablet\:usa-icon-list--size-md .usa-icon-list__icon .usa-icon {
+-    height: 1.695rem;
+     width: 1.695rem;
++    height: 1.695rem;
+   }
+   .tablet\:usa-icon-list--size-md .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.13rem;
+     padding-left: 0.452rem;
++    font-size: 1.13rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-md
+@@ -2101,13 +2268,14 @@
+     font-size: 1.04rem;
+   }
+   .tablet\:usa-icon-list--size-lg .usa-icon-list__icon .usa-icon {
+-    height: 2.19rem;
+     width: 2.19rem;
++    height: 2.19rem;
+   }
+   .tablet\:usa-icon-list--size-lg .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.46rem;
+     padding-left: 0.584rem;
++    font-size: 1.46rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-lg
+@@ -2122,13 +2292,14 @@
+     font-size: 1.34rem;
+   }
+   .tablet\:usa-icon-list--size-xl .usa-icon-list__icon .usa-icon {
+-    height: 3.195rem;
+     width: 3.195rem;
++    height: 3.195rem;
+   }
+   .tablet\:usa-icon-list--size-xl .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.13rem;
+     padding-left: 0.852rem;
++    font-size: 2.13rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-xl
+@@ -2143,13 +2316,14 @@
+     font-size: 1.95rem;
+   }
+   .tablet\:usa-icon-list--size-2xl .usa-icon-list__icon .usa-icon {
+-    height: 3.99rem;
+     width: 3.99rem;
++    height: 3.99rem;
+   }
+   .tablet\:usa-icon-list--size-2xl .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.66rem;
+     padding-left: 1.064rem;
++    font-size: 2.66rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-2xl
+@@ -2164,13 +2340,14 @@
+     font-size: 2.44rem;
+   }
+   .tablet\:usa-icon-list--size-3xl .usa-icon-list__icon .usa-icon {
+-    height: 4.785rem;
+     width: 4.785rem;
++    height: 4.785rem;
+   }
+   .tablet\:usa-icon-list--size-3xl .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 3.19rem;
+     padding-left: 1.276rem;
++    font-size: 3.19rem;
+   }
+ 
+   .tablet\:usa-icon-list--size-3xl
+@@ -2186,15 +2364,16 @@
+   }
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .desktop\:usa-icon-list--size-micro .usa-icon-list__icon .usa-icon {
+-    height: 1.005rem;
+     width: 1.005rem;
++    height: 1.005rem;
+   }
+   .desktop\:usa-icon-list--size-micro .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.67rem;
+     padding-left: 0.268rem;
++    font-size: 0.67rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-micro
+@@ -2209,13 +2390,14 @@
+     font-size: 0.61rem;
+   }
+   .desktop\:usa-icon-list--size-1 .usa-icon-list__icon .usa-icon {
+-    height: 1.2rem;
+     width: 1.2rem;
++    height: 1.2rem;
+   }
+   .desktop\:usa-icon-list--size-1 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.8rem;
+     padding-left: 0.32rem;
++    font-size: 0.8rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-1
+@@ -2230,13 +2414,14 @@
+     font-size: 0.73rem;
+   }
+   .desktop\:usa-icon-list--size-2 .usa-icon-list__icon .usa-icon {
+-    height: 1.305rem;
+     width: 1.305rem;
++    height: 1.305rem;
+   }
+   .desktop\:usa-icon-list--size-2 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.87rem;
+     padding-left: 0.348rem;
++    font-size: 0.87rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-2
+@@ -2251,13 +2438,14 @@
+     font-size: 0.79rem;
+   }
+   .desktop\:usa-icon-list--size-3 .usa-icon-list__icon .usa-icon {
+-    height: 1.395rem;
+     width: 1.395rem;
++    height: 1.395rem;
+   }
+   .desktop\:usa-icon-list--size-3 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.93rem;
+     padding-left: 0.372rem;
++    font-size: 0.93rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-3
+@@ -2272,13 +2462,14 @@
+     font-size: 0.85rem;
+   }
+   .desktop\:usa-icon-list--size-4 .usa-icon-list__icon .usa-icon {
+-    height: 1.5rem;
+     width: 1.5rem;
++    height: 1.5rem;
+   }
+   .desktop\:usa-icon-list--size-4 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1rem;
+     padding-left: 0.4rem;
++    font-size: 1rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-4
+@@ -2293,13 +2486,14 @@
+     font-size: 0.91rem;
+   }
+   .desktop\:usa-icon-list--size-5 .usa-icon-list__icon .usa-icon {
+-    height: 1.59rem;
+     width: 1.59rem;
++    height: 1.59rem;
+   }
+   .desktop\:usa-icon-list--size-5 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.06rem;
+     padding-left: 0.424rem;
++    font-size: 1.06rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-5
+@@ -2314,13 +2510,14 @@
+     font-size: 0.98rem;
+   }
+   .desktop\:usa-icon-list--size-6 .usa-icon-list__icon .usa-icon {
+-    height: 1.695rem;
+     width: 1.695rem;
++    height: 1.695rem;
+   }
+   .desktop\:usa-icon-list--size-6 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.13rem;
+     padding-left: 0.452rem;
++    font-size: 1.13rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-6
+@@ -2335,13 +2534,14 @@
+     font-size: 1.04rem;
+   }
+   .desktop\:usa-icon-list--size-7 .usa-icon-list__icon .usa-icon {
+-    height: 1.8rem;
+     width: 1.8rem;
++    height: 1.8rem;
+   }
+   .desktop\:usa-icon-list--size-7 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.2rem;
+     padding-left: 0.48rem;
++    font-size: 1.2rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-7
+@@ -2356,13 +2558,14 @@
+     font-size: 1.1rem;
+   }
+   .desktop\:usa-icon-list--size-8 .usa-icon-list__icon .usa-icon {
+-    height: 1.995rem;
+     width: 1.995rem;
++    height: 1.995rem;
+   }
+   .desktop\:usa-icon-list--size-8 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.33rem;
+     padding-left: 0.532rem;
++    font-size: 1.33rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-8
+@@ -2377,13 +2582,14 @@
+     font-size: 1.22rem;
+   }
+   .desktop\:usa-icon-list--size-9 .usa-icon-list__icon .usa-icon {
+-    height: 2.19rem;
+     width: 2.19rem;
++    height: 2.19rem;
+   }
+   .desktop\:usa-icon-list--size-9 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.46rem;
+     padding-left: 0.584rem;
++    font-size: 1.46rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-9
+@@ -2398,13 +2606,14 @@
+     font-size: 1.34rem;
+   }
+   .desktop\:usa-icon-list--size-10 .usa-icon-list__icon .usa-icon {
+-    height: 2.4rem;
+     width: 2.4rem;
++    height: 2.4rem;
+   }
+   .desktop\:usa-icon-list--size-10 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.6rem;
+     padding-left: 0.64rem;
++    font-size: 1.6rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-10
+@@ -2419,13 +2630,14 @@
+     font-size: 1.46rem;
+   }
+   .desktop\:usa-icon-list--size-11 .usa-icon-list__icon .usa-icon {
+-    height: 2.79rem;
+     width: 2.79rem;
++    height: 2.79rem;
+   }
+   .desktop\:usa-icon-list--size-11 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.86rem;
+     padding-left: 0.744rem;
++    font-size: 1.86rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-11
+@@ -2440,13 +2654,14 @@
+     font-size: 1.71rem;
+   }
+   .desktop\:usa-icon-list--size-12 .usa-icon-list__icon .usa-icon {
+-    height: 3.195rem;
+     width: 3.195rem;
++    height: 3.195rem;
+   }
+   .desktop\:usa-icon-list--size-12 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.13rem;
+     padding-left: 0.852rem;
++    font-size: 2.13rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-12
+@@ -2461,13 +2678,14 @@
+     font-size: 1.95rem;
+   }
+   .desktop\:usa-icon-list--size-13 .usa-icon-list__icon .usa-icon {
+-    height: 3.6rem;
+     width: 3.6rem;
++    height: 3.6rem;
+   }
+   .desktop\:usa-icon-list--size-13 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.4rem;
+     padding-left: 0.96rem;
++    font-size: 2.4rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-13
+@@ -2482,13 +2702,14 @@
+     font-size: 2.2rem;
+   }
+   .desktop\:usa-icon-list--size-14 .usa-icon-list__icon .usa-icon {
+-    height: 3.99rem;
+     width: 3.99rem;
++    height: 3.99rem;
+   }
+   .desktop\:usa-icon-list--size-14 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.66rem;
+     padding-left: 1.064rem;
++    font-size: 2.66rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-14
+@@ -2503,13 +2726,14 @@
+     font-size: 2.44rem;
+   }
+   .desktop\:usa-icon-list--size-15 .usa-icon-list__icon .usa-icon {
+-    height: 4.785rem;
+     width: 4.785rem;
++    height: 4.785rem;
+   }
+   .desktop\:usa-icon-list--size-15 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 3.19rem;
+     padding-left: 1.276rem;
++    font-size: 3.19rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-15
+@@ -2524,13 +2750,14 @@
+     font-size: 2.93rem;
+   }
+   .desktop\:usa-icon-list--size-16 .usa-icon-list__icon .usa-icon {
+-    height: 5.595rem;
+     width: 5.595rem;
++    height: 5.595rem;
+   }
+   .desktop\:usa-icon-list--size-16 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 3.73rem;
+     padding-left: 1.492rem;
++    font-size: 3.73rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-16
+@@ -2545,13 +2774,14 @@
+     font-size: 3.42rem;
+   }
+   .desktop\:usa-icon-list--size-17 .usa-icon-list__icon .usa-icon {
+-    height: 6.39rem;
+     width: 6.39rem;
++    height: 6.39rem;
+   }
+   .desktop\:usa-icon-list--size-17 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 4.26rem;
+     padding-left: 1.704rem;
++    font-size: 4.26rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-17
+@@ -2566,13 +2798,14 @@
+     font-size: 3.9rem;
+   }
+   .desktop\:usa-icon-list--size-18 .usa-icon-list__icon .usa-icon {
+-    height: 7.98rem;
+     width: 7.98rem;
++    height: 7.98rem;
+   }
+   .desktop\:usa-icon-list--size-18 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 5.32rem;
+     padding-left: 2.128rem;
++    font-size: 5.32rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-18
+@@ -2587,13 +2822,14 @@
+     font-size: 4.88rem;
+   }
+   .desktop\:usa-icon-list--size-19 .usa-icon-list__icon .usa-icon {
+-    height: 11.985rem;
+     width: 11.985rem;
++    height: 11.985rem;
+   }
+   .desktop\:usa-icon-list--size-19 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 7.99rem;
+     padding-left: 3.196rem;
++    font-size: 7.99rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-19
+@@ -2608,13 +2846,14 @@
+     font-size: 7.32rem;
+   }
+   .desktop\:usa-icon-list--size-20 .usa-icon-list__icon .usa-icon {
+-    height: 13.98rem;
+     width: 13.98rem;
++    height: 13.98rem;
+   }
+   .desktop\:usa-icon-list--size-20 .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 9.32rem;
+     padding-left: 3.728rem;
++    font-size: 9.32rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-20
+@@ -2629,13 +2870,14 @@
+     font-size: 8.54rem;
+   }
+   .desktop\:usa-icon-list--size-3xs .usa-icon-list__icon .usa-icon {
+-    height: 1.305rem;
+     width: 1.305rem;
++    height: 1.305rem;
+   }
+   .desktop\:usa-icon-list--size-3xs .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.87rem;
+     padding-left: 0.348rem;
++    font-size: 0.87rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-3xs
+@@ -2650,13 +2894,14 @@
+     font-size: 0.79rem;
+   }
+   .desktop\:usa-icon-list--size-2xs .usa-icon-list__icon .usa-icon {
+-    height: 1.395rem;
+     width: 1.395rem;
++    height: 1.395rem;
+   }
+   .desktop\:usa-icon-list--size-2xs .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 0.93rem;
+     padding-left: 0.372rem;
++    font-size: 0.93rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-2xs
+@@ -2671,13 +2918,14 @@
+     font-size: 0.85rem;
+   }
+   .desktop\:usa-icon-list--size-xs .usa-icon-list__icon .usa-icon {
+-    height: 1.5rem;
+     width: 1.5rem;
++    height: 1.5rem;
+   }
+   .desktop\:usa-icon-list--size-xs .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1rem;
+     padding-left: 0.4rem;
++    font-size: 1rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-xs
+@@ -2692,13 +2942,14 @@
+     font-size: 0.91rem;
+   }
+   .desktop\:usa-icon-list--size-sm .usa-icon-list__icon .usa-icon {
+-    height: 1.59rem;
+     width: 1.59rem;
++    height: 1.59rem;
+   }
+   .desktop\:usa-icon-list--size-sm .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.06rem;
+     padding-left: 0.424rem;
++    font-size: 1.06rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-sm
+@@ -2713,13 +2966,14 @@
+     font-size: 0.98rem;
+   }
+   .desktop\:usa-icon-list--size-md .usa-icon-list__icon .usa-icon {
+-    height: 1.695rem;
+     width: 1.695rem;
++    height: 1.695rem;
+   }
+   .desktop\:usa-icon-list--size-md .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.13rem;
+     padding-left: 0.452rem;
++    font-size: 1.13rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-md
+@@ -2734,13 +2990,14 @@
+     font-size: 1.04rem;
+   }
+   .desktop\:usa-icon-list--size-lg .usa-icon-list__icon .usa-icon {
+-    height: 2.19rem;
+     width: 2.19rem;
++    height: 2.19rem;
+   }
+   .desktop\:usa-icon-list--size-lg .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 1.46rem;
+     padding-left: 0.584rem;
++    font-size: 1.46rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-lg
+@@ -2755,13 +3014,14 @@
+     font-size: 1.34rem;
+   }
+   .desktop\:usa-icon-list--size-xl .usa-icon-list__icon .usa-icon {
+-    height: 3.195rem;
+     width: 3.195rem;
++    height: 3.195rem;
+   }
+   .desktop\:usa-icon-list--size-xl .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.13rem;
+     padding-left: 0.852rem;
++    font-size: 2.13rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-xl
+@@ -2776,13 +3038,14 @@
+     font-size: 1.95rem;
+   }
+   .desktop\:usa-icon-list--size-2xl .usa-icon-list__icon .usa-icon {
+-    height: 3.99rem;
+     width: 3.99rem;
++    height: 3.99rem;
+   }
+   .desktop\:usa-icon-list--size-2xl .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 2.66rem;
+     padding-left: 1.064rem;
++    font-size: 2.66rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-2xl
+@@ -2797,13 +3062,14 @@
+     font-size: 2.44rem;
+   }
+   .desktop\:usa-icon-list--size-3xl .usa-icon-list__icon .usa-icon {
+-    height: 4.785rem;
+     width: 4.785rem;
++    height: 4.785rem;
+   }
+   .desktop\:usa-icon-list--size-3xl .usa-icon-list__content {
+     max-width: 72ex;
+-    font-size: 3.19rem;
+     padding-left: 1.276rem;
++    font-size: 3.19rem;
+   }
+ 
+   .desktop\:usa-icon-list--size-3xl
+@@ -2820,6 +3087,8 @@
+ }
+ 
+ .usa-icon-list__title {
++  margin-bottom: 0;
++  padding-top: 0.425ex;
+   font-family:
+     Merriweather Web,
+     Georgia,
+@@ -2829,8 +3098,6 @@
+     serif;
+   font-size: 0.98rem;
+   line-height: 1.2;
+-  margin-bottom: 0rem;
+-  padding-top: 0.425ex;
+ }
+ 
+ .usa-icon-list__title + * {
+@@ -2838,15 +3105,15 @@
+ }
+ 
+ .usa-icon-list__content {
+-  font-size: 1.06rem;
+   padding-left: 0.424rem;
++  font-size: 1.06rem;
+ }
+ 
+-.usa-icon-list__content > *:first-child {
++.usa-icon-list__content > :first-child {
+   margin-top: 0;
+ }
+ 
+-.usa-icon-list__content > *:last-child {
++.usa-icon-list__content > :last-child {
+   margin-bottom: 0;
+ }
+ 

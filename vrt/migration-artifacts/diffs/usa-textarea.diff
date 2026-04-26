@@ -1,0 +1,64 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-textarea.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-textarea.css	2026-04-14 11:33:47
+@@ -27,28 +27,24 @@
+ .usa-combo-box__input,
+ .usa-select,
+ .usa-input {
+-  border-width: 1px;
+-  border-color: #565c65;
+-  border-style: solid;
+-  -webkit-appearance: none;
+-  -moz-appearance: none;
+   appearance: none;
+-  border-radius: 0;
+   color: #1b1b1b;
+-  display: block;
++  border: 1px solid #565c65;
++  border-radius: 0;
++  width: 100%;
++  max-width: 30rem;
+   height: 2.5rem;
+   margin-top: 0.5rem;
+-  max-width: 30rem;
+   padding: 0.5rem;
+-  width: 100%;
++  display: block;
+ }
+ 
+ .usa-textarea:disabled,
+ .usa-textarea[aria-disabled="true"] {
+   color: #454545;
+-  background-color: #c9c9c9;
+   cursor: not-allowed;
+   opacity: 1;
++  background-color: #c9c9c9;
+ }
+ 
+ .usa-textarea:disabled:hover,
+@@ -66,8 +62,8 @@
+ @media (forced-colors: active) {
+   .usa-textarea:disabled,
+   .usa-textarea[aria-disabled="true"] {
++    color: graytext;
+     border: 0;
+-    color: GrayText;
+   }
+ 
+   .usa-textarea:disabled:hover,
+@@ -77,14 +74,12 @@
+   .usa-textarea[aria-disabled="true"]:active,
+   .usa-textarea[aria-disabled="true"]:focus,
+   .usa-textarea[aria-disabled="true"].usa-focus {
+-    color: GrayText;
++    color: graytext;
+   }
+-}
+ 
+-@media (forced-colors: active) {
+   .usa-textarea:disabled,
+   .usa-textarea[aria-disabled="true"] {
+-    border: 2px solid GrayText;
++    border: 2px solid graytext;
+   }
+ }
+ 

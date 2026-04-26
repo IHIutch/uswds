@@ -1,0 +1,39 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-graphic-list.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-graphic-list.css	2026-04-14 11:33:47
+@@ -14,13 +14,11 @@
+   margin-bottom: 2rem;
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width >= 40em) {
+   .usa-graphic-list .usa-graphic-list__row .usa-media-block {
+     margin-bottom: 4rem;
+   }
+-}
+ 
+-@media all and (min-width: 40em) {
+   .usa-graphic-list .usa-graphic-list__row:last-child .usa-media-block {
+     margin-bottom: 0;
+   }
+@@ -41,9 +39,9 @@
+ }
+ 
+ .usa-graphic-list__heading {
+-  margin-bottom: 0;
+-  margin-top: 0;
+   clear: both;
++  margin-top: 0;
++  margin-bottom: 0;
+   font-family:
+     Merriweather Web,
+     Georgia,
+@@ -52,8 +50,8 @@
+     Times,
+     serif;
+   font-size: 1.34rem;
+-  line-height: 1.2;
+   font-weight: 700;
++  line-height: 1.2;
+ }
+ 
+ * + .usa-graphic-list__heading {

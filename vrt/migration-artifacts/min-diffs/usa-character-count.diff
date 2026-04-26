@@ -1,0 +1,10 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-character-count.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-character-count.css	2026-04-14 12:35:23
+@@ -1,6 +1,6 @@
+ .usa-character-count__status {
+-  display: inline-block;
+   padding-top: 0.25rem;
++  display: inline-block;
+ }
+ 
+ .usa-character-count__status.usa-character-count__status--invalid {

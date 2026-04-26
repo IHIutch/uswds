@@ -1,0 +1,12 @@
+.usa-table-container--scrollable {
+  margin: 1.25rem 0;
+  overflow-y: hidden;
+}
+
+.usa-table-container--scrollable .usa-table {
+  margin: 0;
+}
+
+.usa-table-container--scrollable td {
+  white-space: nowrap;
+}

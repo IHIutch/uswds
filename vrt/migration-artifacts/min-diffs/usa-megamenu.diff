@@ -1,0 +1,88 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-megamenu.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-megamenu.css	2026-04-14 12:35:23
+@@ -1,10 +1,10 @@
+ .usa-megamenu .usa-col {
+-  flex: 1 1 auto;
++  flex: auto;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width>=64em) {
+   .usa-megamenu .usa-col {
+-    flex: 4 1 0%;
++    flex: 4;
+   }
+   .usa-megamenu .usa-col .usa-nav__submenu-item a {
+     padding-left: 0.5rem;
+@@ -17,48 +17,49 @@
+     padding-right: 0;
+   }
+   .usa-megamenu.usa-nav__submenu {
+-    padding-left: 0;
+-    padding-right: 0;
+-    padding-bottom: 2rem;
+-    padding-top: 2rem;
++    width: auto;
++    padding: 2rem 0;
+     left: -33%;
+     right: 0;
+-    width: auto;
+   }
+-  .usa-megamenu.usa-nav__submenu::after,
+-  .usa-megamenu.usa-nav__submenu::before {
+-    bottom: 0;
+-    top: 0;
+-    background-color: #162e51;
++  .usa-megamenu.usa-nav__submenu:before {
+     content: "";
++    background-color: #162e51;
++    width: calc(50vw - 30rem);
+     display: block;
+     position: absolute;
+-    width: calc(50vw - 32rem + 2rem);
+-  }
+-  .usa-megamenu.usa-nav__submenu::before {
++    top: 0;
++    bottom: 0;
+     right: 100%;
+   }
+-  .usa-megamenu.usa-nav__submenu::after {
++  .usa-megamenu.usa-nav__submenu:after {
++    content: "";
++    background-color: #162e51;
++    width: calc(50vw - 30rem);
++    display: block;
++    position: absolute;
++    top: 0;
++    bottom: 0;
+     left: 100%;
+   }
+-  .usa-header--extended .usa-megamenu.usa-nav__submenu::after,
+-  .usa-header--extended .usa-megamenu.usa-nav__submenu::before {
+-    bottom: 0;
+-    top: 0;
+-    background-color: #162e51;
++  .usa-header--extended .usa-megamenu.usa-nav__submenu:before,
++  .usa-header--extended .usa-megamenu.usa-nav__submenu:after {
+     content: "";
++    background-color: #162e51;
++    width: calc(50vw - 32rem);
+     display: block;
+     position: absolute;
+-    width: calc(50vw - 32rem);
++    top: 0;
++    bottom: 0;
+   }
+   .usa-nav-container {
++    max-width: 64rem;
+     margin-left: auto;
+     margin-right: auto;
+-    max-width: 64rem;
+     padding-left: 2rem;
+     padding-right: 2rem;
+   }
+-  .usa-nav-container::after {
++  .usa-nav-container:after {
+     clear: both;
+     content: "";
+     display: block;

@@ -1,0 +1,134 @@
+.usa-tooltip {
+  display: inline-block;
+  position: relative;
+}
+
+.usa-tooltip__trigger {
+  cursor: pointer;
+}
+
+.usa-tooltip__trigger > svg {
+  display: block;
+  pointer-events: none;
+}
+
+.usa-tooltip__body,
+.usa-tooltip__body--top {
+  transition: opacity 0.08s ease-in-out;
+  background-color: #1b1b1b;
+  border-radius: 0.25rem;
+  color: #f0f0f0;
+  display: none;
+  font-size: 1rem;
+  opacity: 0;
+  padding: 0.5rem;
+  width: auto;
+  white-space: pre;
+  z-index: 100000;
+  position: absolute;
+}
+
+@media (prefers-reduced-motion) {
+  .usa-tooltip__body,
+  .usa-tooltip__body--top {
+    transition: none;
+  }
+}
+
+.usa-tooltip__body--top::after,
+.usa-tooltip__body::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #1b1b1b;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+}
+
+.usa-tooltip__body--top::before,
+.usa-tooltip__body::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.usa-tooltip__body--wrap {
+  width: 100%;
+  white-space: normal;
+  text-align: center;
+  min-width: 50vw;
+}
+
+.usa-tooltip__body.is-set {
+  display: block;
+}
+
+.usa-tooltip__body.is-visible {
+  opacity: 1;
+}
+
+.usa-tooltip__body--top::before {
+  top: 100%;
+  height: 5px;
+  left: 0;
+  right: 0;
+}
+
+.usa-tooltip__body--bottom::before {
+  bottom: 100%;
+  height: 5px;
+  left: 0;
+  right: 0;
+}
+
+.usa-tooltip__body--bottom::after {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #1b1b1b;
+  border-top: 0;
+  bottom: auto;
+  top: -5px;
+}
+
+.usa-tooltip__body--right::before {
+  right: 100%;
+  bottom: 0;
+  top: 0;
+  width: 5px;
+}
+
+.usa-tooltip__body--right::after {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #1b1b1b;
+  border-left: 0;
+  right: auto;
+  top: 50%;
+  bottom: 0;
+  left: -5px;
+  margin: -5px 0 0;
+}
+
+.usa-tooltip__body--left::before {
+  left: 100%;
+  bottom: 0;
+  top: 0;
+  width: 5px;
+}
+
+.usa-tooltip__body--left::after {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #1b1b1b;
+  border-right: 0;
+  right: -5px;
+  top: 50%;
+  bottom: 0;
+  left: auto;
+  margin: -5px 0 0;
+}

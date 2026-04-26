@@ -1,0 +1,11 @@
+.usa-js-mobile-nav--active {
+  overflow: hidden;
+}
+
+@media (min-width: 63.06rem) {
+  .usa-js-mobile-nav--active.is-safari {
+    overflow-y: scroll;
+    position: fixed;
+    top: var(--scrolltop, 0);
+  }
+}

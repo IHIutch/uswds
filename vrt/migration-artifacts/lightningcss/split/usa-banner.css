@@ -1,0 +1,604 @@
+.usa-banner {
+  background-color: #f0f0f0;
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+}
+
+@media (width >= 40em) {
+  .usa-banner {
+    padding-bottom: 0;
+    font-size: 0.87rem;
+  }
+}
+
+.usa-banner .usa-accordion {
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+}
+
+.usa-banner .grid-row {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.usa-banner .grid-row.grid-gap-lg {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.usa-banner .grid-row.grid-gap-lg > * {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+@media (width >= 40em) {
+  .usa-banner .grid-row .tablet\:grid-col-6 {
+    flex: 0 auto;
+    width: 50%;
+  }
+}
+
+.usa-banner__header,
+.usa-banner__content {
+  color: #1b1b1b;
+}
+
+.usa-banner__content {
+  background-color: #0000;
+  width: 100%;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25rem 1rem 1rem 0.5rem;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+@media (width >= 64em) {
+  .usa-banner__content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (width >= 40em) {
+  .usa-banner__content {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.usa-banner__content p:first-child {
+  margin: 0;
+}
+
+.usa-banner__guidance {
+  align-items: flex-start;
+  max-width: 64ex;
+  padding-top: 1rem;
+  display: flex;
+}
+
+@media (width >= 40em) {
+  .usa-banner__guidance {
+    padding-top: 0;
+  }
+}
+
+.usa-banner__lock-image {
+  width: 1.21875ex;
+  height: 1.5ex;
+}
+
+.usa-banner__lock-image path {
+  fill: currentColor;
+}
+
+@media (forced-colors: active) {
+  .usa-banner__lock-image path {
+    fill: canvastext;
+  }
+}
+
+.usa-banner__inner {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 0;
+  display: flex;
+}
+
+@media (width >= 64em) {
+  .usa-banner__inner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (width >= 40em) {
+  .usa-banner__inner {
+    align-items: center;
+  }
+}
+
+.usa-banner__header {
+  min-height: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+  position: relative;
+}
+
+@media (width >= 40em) {
+  .usa-banner__header {
+    min-height: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.usa-banner__header-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
+.usa-banner__header-action {
+  color: #005ea2;
+  margin-top: 2px;
+  margin-bottom: 0;
+  line-height: 1.1;
+  text-decoration: underline;
+}
+
+.usa-banner__header-action:after {
+  content: "";
+  vertical-align: middle;
+  background-image: url("../img/usa-icons/expand_more.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+  width: 1rem;
+  height: 1rem;
+  margin-left: auto;
+  display: inline-block;
+}
+
+@supports ((-webkit-mask: url("")) or (mask: url(""))) {
+  .usa-banner__header-action:after {
+    background: #005ea2;
+    -webkit-mask-image: url("../img/usa-icons/expand_more.svg"),
+      linear-gradient(#0000, #0000);
+    mask-image: url("../img/usa-icons/expand_more.svg"),
+      linear-gradient(#0000, #0000);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 1rem 1rem;
+    mask-size: 1rem 1rem;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+
+  .usa-banner__header-action:after:hover {
+    background-color: #1a4480;
+  }
+}
+
+.usa-banner__header-action:hover:after {
+  content: "";
+  background-color: #1a4480;
+}
+
+.usa-banner__header-action:visited {
+  color: #54278f;
+}
+
+.usa-banner__header-action:hover,
+.usa-banner__header-action:active {
+  color: #1a4480;
+}
+
+@media (width >= 40em) {
+  .usa-banner__header-action {
+    display: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .usa-banner__header-action {
+    color: linktext;
+  }
+
+  .usa-banner__header-action:after {
+    background-color: buttontext;
+  }
+}
+
+.usa-banner__header-flag {
+  float: left;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+@media (width >= 40em) {
+  .usa-banner__header-flag {
+    margin-right: 0.5rem;
+    padding-top: 0;
+  }
+}
+
+.usa-banner__header--expanded {
+  padding-right: 3.5rem;
+}
+
+@media (width >= 40em) {
+  .usa-banner__header--expanded {
+    background-color: #0000;
+    min-height: 0;
+    padding-right: 0;
+    font-size: 0.8rem;
+    font-weight: normal;
+    display: block;
+  }
+}
+
+.usa-banner__header--expanded .usa-banner__inner {
+  margin-left: 0;
+}
+
+@media (width >= 40em) {
+  .usa-banner__header--expanded .usa-banner__inner {
+    margin-left: auto;
+  }
+}
+
+.usa-banner__header--expanded .usa-banner__header-action {
+  display: none;
+}
+
+.usa-banner__button {
+  color: #005ea2;
+  box-shadow: none;
+  text-align: left;
+  background-color: #0000;
+  border: 0;
+  border-radius: 0;
+  justify-content: normal;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0 0 0 0;
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 1.1;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.usa-banner__button:hover {
+  color: #1a4480;
+}
+
+.usa-banner__button:active {
+  color: #162e51;
+}
+
+.usa-banner__button:focus {
+  outline-offset: 0rem;
+  outline: 0.25rem solid #2491ff;
+}
+
+.usa-banner__button:hover,
+.usa-banner__button.usa-button--hover,
+.usa-banner__button:disabled:hover,
+.usa-banner__button[aria-disabled="true"]:hover,
+.usa-banner__button:disabled.usa-button--hover,
+.usa-banner__button[aria-disabled="true"].usa-button--hover,
+.usa-banner__button:active,
+.usa-banner__button.usa-button--active,
+.usa-banner__button:disabled:active,
+.usa-banner__button[aria-disabled="true"]:active,
+.usa-banner__button:disabled.usa-button--active,
+.usa-banner__button[aria-disabled="true"].usa-button--active,
+.usa-banner__button:disabled:focus,
+.usa-banner__button[aria-disabled="true"]:focus,
+.usa-banner__button:disabled.usa-focus,
+.usa-banner__button[aria-disabled="true"].usa-focus,
+.usa-banner__button:disabled,
+.usa-banner__button[aria-disabled="true"],
+.usa-banner__button.usa-button--disabled {
+  box-shadow: none;
+  background-color: #0000;
+  text-decoration: underline;
+}
+
+.usa-banner__button.usa-button--hover {
+  color: #1a4480;
+}
+
+.usa-banner__button.usa-button--active {
+  color: #162e51;
+}
+
+.usa-banner__button:disabled,
+.usa-banner__button[aria-disabled="true"],
+.usa-banner__button:disabled:hover,
+.usa-banner__button[aria-disabled="true"]:hover,
+.usa-banner__button[aria-disabled="true"]:focus {
+  color: #757575;
+}
+
+@media (forced-colors: active) {
+  .usa-banner__button:disabled,
+  .usa-banner__button[aria-disabled="true"],
+  .usa-banner__button:disabled:hover,
+  .usa-banner__button[aria-disabled="true"]:hover,
+  .usa-banner__button[aria-disabled="true"]:focus {
+    color: graytext;
+  }
+}
+
+.usa-banner__button:visited {
+  color: #54278f;
+}
+
+.usa-banner__button:hover,
+.usa-banner__button:active {
+  color: #1a4480;
+}
+
+@media (width <= 39.99em) {
+  .usa-banner__button {
+    width: 100%;
+  }
+
+  .usa-banner__button:enabled:focus {
+    outline-offset: -0.25rem;
+  }
+}
+
+@media (width >= 40em) {
+  .usa-banner__button {
+    color: #005ea2;
+    margin-left: 0.5rem;
+    display: inline;
+    position: relative;
+    inset: auto;
+  }
+
+  .usa-banner__button:after {
+    content: "";
+    vertical-align: middle;
+    background-image: url("../img/usa-icons/expand_more.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 2px;
+    display: inline-block;
+  }
+
+  @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+    .usa-banner__button:after {
+      background: #005ea2;
+      -webkit-mask-image: url("../img/usa-icons/expand_more.svg"),
+        linear-gradient(#0000, #0000);
+      mask-image: url("../img/usa-icons/expand_more.svg"),
+        linear-gradient(#0000, #0000);
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-size: 1rem 1rem;
+      mask-size: 1rem 1rem;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+    }
+
+    .usa-banner__button:after:hover {
+      background-color: #1a4480;
+    }
+  }
+
+  .usa-banner__button:hover:after {
+    content: "";
+    background-color: #1a4480;
+  }
+
+  .usa-banner__button:visited {
+    color: #54278f;
+  }
+
+  .usa-banner__button:hover,
+  .usa-banner__button:active {
+    color: #1a4480;
+  }
+
+  .usa-banner__button:after,
+  .usa-banner__button:hover:after {
+    position: absolute;
+  }
+}
+
+@media (width >= 40em) and (forced-colors: active) {
+  .usa-banner__button:after,
+  .usa-banner__button:hover:after {
+    background-color: buttontext;
+  }
+}
+
+@media (width >= 40em) {
+  .usa-banner__button:hover {
+    text-decoration: none;
+  }
+}
+
+.usa-banner__button[aria-expanded="false"],
+.usa-banner__button[aria-expanded="false"]:hover,
+.usa-banner__button[aria-expanded="true"],
+.usa-banner__button[aria-expanded="true"]:hover {
+  background-image: none;
+}
+
+@media (forced-colors: active) {
+  .usa-banner__button[aria-expanded="false"]:before,
+  .usa-banner__button[aria-expanded="false"]:hover:before,
+  .usa-banner__button[aria-expanded="true"]:before,
+  .usa-banner__button[aria-expanded="true"]:hover:before {
+    content: none;
+  }
+}
+
+@media (width <= 39.99em) {
+  .usa-banner__button[aria-expanded="true"]:after {
+    content: "";
+    vertical-align: middle;
+    background-image: url("../img/usa-icons/close.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+    .usa-banner__button[aria-expanded="true"]:after {
+      background: #005ea2;
+      -webkit-mask-image: url("../img/usa-icons/close.svg"),
+        linear-gradient(#0000, #0000);
+      mask-image: url("../img/usa-icons/close.svg"),
+        linear-gradient(#0000, #0000);
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-size: 1.5rem 1.5rem;
+      mask-size: 1.5rem 1.5rem;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+    }
+  }
+
+  .usa-banner__button[aria-expanded="true"]:before {
+    content: "";
+    background-color: #dfe1e2;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .usa-banner__button[aria-expanded="true"]:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (width >= 40em) {
+  .usa-banner__button[aria-expanded="true"] {
+    height: auto;
+    padding: 0;
+    position: relative;
+  }
+
+  .usa-banner__button[aria-expanded="true"]:after {
+    content: "";
+    vertical-align: middle;
+    background-image: url("../img/usa-icons/expand_less.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 2px;
+    display: inline-block;
+  }
+
+  @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+    .usa-banner__button[aria-expanded="true"]:after {
+      background: #005ea2;
+      -webkit-mask-image: url("../img/usa-icons/expand_less.svg"),
+        linear-gradient(#0000, #0000);
+      mask-image: url("../img/usa-icons/expand_less.svg"),
+        linear-gradient(#0000, #0000);
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-size: 1rem 1rem;
+      mask-size: 1rem 1rem;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+    }
+
+    .usa-banner__button[aria-expanded="true"]:after:hover {
+      background-color: #1a4480;
+    }
+  }
+
+  .usa-banner__button[aria-expanded="true"]:hover:after {
+    content: "";
+    background-color: #1a4480;
+  }
+
+  .usa-banner__button[aria-expanded="true"]:after,
+  .usa-banner__button[aria-expanded="true"]:hover:after {
+    position: absolute;
+  }
+}
+
+@media (width >= 40em) and (forced-colors: active) {
+  .usa-banner__button[aria-expanded="true"]:after,
+  .usa-banner__button[aria-expanded="true"]:hover:after {
+    background-color: buttontext;
+  }
+}
+
+.usa-banner__button-text {
+  text-decoration: underline;
+  position: absolute;
+  left: -999em;
+  right: auto;
+}
+
+@media (width >= 40em) {
+  .usa-banner__button-text {
+    display: inline;
+    position: static;
+  }
+}
+
+@media (forced-colors: active) {
+  .usa-banner__button-text {
+    color: linktext;
+  }
+}
+
+.usa-banner__icon {
+  width: 2.5rem;
+}

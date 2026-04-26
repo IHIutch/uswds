@@ -1,0 +1,310 @@
+.usa-card {
+  margin-bottom: 2.5rem;
+  max-width: none;
+}
+
+.usa-card:last-child,
+.usa-prose .usa-card:last-child {
+  margin-bottom: 2.5rem;
+}
+
+@media all and (min-width: 40em) {
+  .usa-card {
+    margin-bottom: 2rem;
+  }
+  .usa-card:last-child {
+    margin-bottom: 2rem;
+  }
+}
+
+.usa-card__container {
+  color: #1b1b1b;
+  background-color: #fff;
+  font-family:
+    Source Sans Pro Web,
+    Helvetica Neue,
+    Helvetica,
+    Roboto,
+    Arial,
+    sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.5;
+  border-width: 2px;
+  border-color: #dfe1e2;
+  border-style: solid;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.usa-card:not(.usa-card--flag) .usa-card__container > :only-child {
+  padding: 1.5rem;
+}
+
+.usa-card .usa-card__img {
+  display: block;
+}
+
+.usa-card__header {
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.usa-card__header:last-child {
+  padding-bottom: 1.5rem;
+}
+
+.usa-card__heading {
+  font-family:
+    Merriweather Web,
+    Georgia,
+    Cambria,
+    Times New Roman,
+    Times,
+    serif;
+  font-size: 1.34rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.usa-card__media {
+  order: -1;
+  min-height: 1px;
+}
+
+.usa-card__img {
+  border-top-left-radius: calc(0.5rem - 2px);
+  border-top-right-radius: calc(0.5rem - 2px);
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.usa-card__img img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.usa-card__media--inset {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.usa-card__media--inset .usa-card__img {
+  border-radius: 0;
+}
+
+.usa-card__body {
+  flex: 1 1 0%;
+  padding: 0.5rem 1.5rem;
+  flex-basis: auto;
+}
+
+.usa-card__body:last-child {
+  padding-bottom: 1.5rem;
+}
+
+.usa-card__body:first-child {
+  padding-top: 1.5rem;
+}
+
+.usa-card__body:only-child {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.usa-card__footer {
+  padding: 0.5rem 1.5rem 1.5rem;
+}
+
+.usa-card__footer .usa-button:only-of-type {
+  margin-right: 0;
+}
+
+.usa-card__body > :last-child,
+.usa-card__header > :last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.usa-card__body > :first-child,
+.usa-card__header > :first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.usa-card__body > :only-child,
+.usa-card__header > :only-child {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.usa-card__body--exdent,
+.usa-card__footer--exdent,
+.usa-card__header--exdent,
+.usa-card__media--exdent {
+  margin-inline: -2px;
+}
+
+.usa-card__body--exdent > *,
+.usa-card__footer--exdent > *,
+.usa-card__header--exdent > * {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.usa-card__media--exdent {
+  margin-top: -2px;
+}
+
+.usa-card__media--exdent .usa-card__img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.usa-card--header-first .usa-card__header {
+  border-top-left-radius: calc(0.5rem - 2px);
+  border-top-right-radius: calc(0.5rem - 2px);
+  padding-bottom: 1rem;
+}
+
+.usa-card--header-first .usa-card__header--exdent {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  margin-top: -2px;
+}
+
+.usa-card--header-first .usa-card__media--inset {
+  padding-top: 0;
+}
+
+.usa-card--header-first .usa-card__media {
+  order: 0;
+}
+
+.usa-card--header-first .usa-card__media--exdent {
+  margin-top: 0;
+}
+
+.usa-card--header-first .usa-card__img {
+  border-radius: 0;
+}
+
+.usa-card--header-first .usa-card__body {
+  padding-top: 1rem;
+}
+
+@media all and (min-width: 40em) {
+  .usa-card--flag .usa-card__media {
+    display: flex;
+    overflow: hidden;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 15rem;
+  }
+  .usa-card--flag .usa-card__img {
+    border-radius: 0;
+    border-top-left-radius: calc(0.5rem - 2px);
+    border-bottom-left-radius: calc(0.5rem - 2px);
+  }
+  .usa-card--flag .usa-card__body,
+  .usa-card--flag .usa-card__footer,
+  .usa-card--flag .usa-card__header {
+    margin-left: 15rem;
+  }
+  .usa-card--flag .usa-card__media--exdent {
+    margin: -2px;
+  }
+  .usa-card--flag .usa-card__media--exdent .usa-card__img {
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+  }
+  .usa-card--flag .usa-card__media--inset {
+    padding-right: 0;
+    padding-bottom: 1.5rem;
+  }
+  .usa-card--flag .usa-card__media--inset .usa-card__img,
+  .usa-card--flag.usa-card--media-right .usa-card__media--inset .usa-card__img {
+    border-radius: 0;
+  }
+  .usa-card--flag.usa-card--header-first .usa-card__header {
+    padding-bottom: 0.5rem;
+  }
+  .usa-card--flag.usa-card--header-first .usa-card__body {
+    padding-top: 0.5rem;
+  }
+  .usa-card--flag.usa-card--header-first .usa-card__media--inset {
+    padding-top: 1.5rem;
+  }
+  .usa-card--flag.usa-card--media-right .usa-card__media {
+    left: auto;
+    right: 0;
+  }
+  .usa-card--flag.usa-card--media-right .usa-card__media--inset {
+    padding-left: 0;
+    padding-right: 1.5rem;
+  }
+  .usa-card--flag.usa-card--media-right .usa-card__img {
+    border-top-right-radius: calc(0.5rem - 2px);
+    border-bottom-right-radius: calc(0.5rem - 2px);
+  }
+  .usa-card--flag.usa-card--media-right .usa-card__body,
+  .usa-card--flag.usa-card--media-right .usa-card__footer,
+  .usa-card--flag.usa-card--media-right .usa-card__header {
+    margin-left: 0;
+    margin-right: 15rem;
+  }
+  .usa-card--flag.usa-card--media-right .usa-card__img {
+    border-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+}
+
+.usa-card:not(.usa-card--flag).usa-card__media--set-aspect {
+  box-sizing: border-box;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+@supports (aspect-ratio: 1) {
+  .usa-card:not(.usa-card--flag).usa-card__media--set-aspect {
+    height: inherit;
+    padding: inherit;
+    aspect-ratio: 1.7777777778;
+    max-width: 100%;
+  }
+  .usa-card:not(.usa-card--flag).usa-card__media--set-aspect > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .usa-card:not(.usa-card--flag).usa-card__media--set-aspect > img,
+  img.usa-card:not(.usa-card--flag).usa-card__media--set-aspect {
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+.usa-card:not(.usa-card--flag).usa-card__media--set-aspect .usa-card__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,19 @@
+.usa-navbar {
+  height: 3rem;
+}
+
+@media (width<=63.99em) {
+  .usa-navbar {
+    border-bottom: 1px solid #dfe1e2;
+    align-items: center;
+    display: flex;
+  }
+}
+
+@media (width>=64em) {
+  .usa-navbar {
+    border-bottom: none;
+    height: auto;
+    display: inline-block;
+  }
+}

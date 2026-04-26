@@ -1,0 +1,886 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-nav.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-nav.css	2026-04-14 11:33:47
+@@ -10,36 +10,35 @@
+   line-height: 0.9;
+ }
+ 
+-@media all and (max-width: 63.99em) {
++@media (width <= 63.99em) {
+   .usa-nav {
+-    position: absolute;
+-    right: 0;
+-    position: absolute;
+-    bottom: 0;
+-    top: 0;
+-    position: fixed;
+-    background: white;
++    z-index: 500;
++    background: #fff;
+     border-right: 0;
+-    display: none;
+     flex-direction: column;
+-    overflow-y: auto;
+-    padding: 1rem;
+     width: 15rem;
+-    z-index: 500;
++    padding: 1rem;
++    display: none;
++    position: fixed;
++    top: 0;
++    bottom: 0;
++    right: 0;
++    overflow-y: auto;
+   }
+   .usa-nav.is-visible {
+-    animation: slidein-left 0.3s ease-in-out;
++    animation: 0.3s ease-in-out slidein-left;
+     display: flex;
+   }
+ }
+ 
+-@media (max-width: 63.99em) and (prefers-reduced-motion) {
++@media (width <= 63.99em) and (prefers-reduced-motion) {
+   .usa-nav.is-visible {
+     animation: none;
+   }
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav {
+     float: right;
+     position: relative;
+@@ -50,10 +49,10 @@
+   margin-top: 1rem;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav .usa-search {
+-    margin-left: 1rem;
+     margin-top: 0;
++    margin-left: 1rem;
+   }
+ }
+ 
+@@ -69,24 +68,27 @@
+   line-height: 0.9;
+ }
+ 
+-@media all and (max-width: 63.99em) {
++@media (width <= 63.99em) {
+   .usa-nav__primary {
+-    margin-bottom: 0;
+     margin-top: 0;
+-    list-style-type: none;
++    margin-bottom: 0;
+     padding-left: 0;
++    list-style-type: none;
+   }
+   .usa-nav__primary > li {
+-    margin-bottom: 0;
+     max-width: unset;
++    margin-bottom: 0;
+   }
+   .usa-nav__primary-item {
+     border-top: 1px solid #dfe1e2;
+   }
+   .usa-nav__primary a:not(.usa-button) {
+-    display: block;
+     padding: 0.5rem 1rem;
+     text-decoration: none;
++    display: block;
+   }
+ 
+   .usa-nav__primary a:not(.usa-button):hover {
+@@ -102,51 +109,53 @@
+     outline-offset: 0;
+   }
+   .usa-nav__primary .usa-current {
+-    position: relative;
+     color: #005ea2;
+     font-weight: 700;
++    position: relative;
+   }
+-  .usa-nav__primary .usa-current::after {
++
++  .usa-nav__primary .usa-current:after {
++    content: "";
+     background-color: #005ea2;
+     border-radius: 99rem;
+-    content: "";
++    width: 0.25rem;
+     display: block;
+     position: absolute;
+-    bottom: 0.25rem;
+     top: 0.25rem;
+-    width: 0.25rem;
++    bottom: 0.25rem;
+     left: 0.25rem;
+   }
+ }
+ 
+-@media all and (max-width: 63.99em) and (min-width: 40em) {
++@media (width <= 63.99em) and (width >= 40em) {
+   .usa-nav__primary .usa-current {
+     position: relative;
+   }
+-  .usa-nav__primary .usa-current::after {
++
++  .usa-nav__primary .usa-current:after {
++    content: "";
+     background-color: #005ea2;
+     border-radius: 99rem;
+-    content: "";
++    width: 0.25rem;
+     display: block;
+     position: absolute;
+-    bottom: 0.25rem;
+     top: 0.25rem;
+-    width: 0.25rem;
+-    left: 0rem;
++    bottom: 0.25rem;
++    left: 0;
+   }
+ }
+ 
+-@media all and (max-width: 63.99em) {
++@media (width <= 63.99em) {
+   .usa-nav__primary a {
+-    padding-bottom: 0.75rem;
+     padding-top: 0.75rem;
++    padding-bottom: 0.75rem;
+   }
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__primary {
+-    display: flex;
+     align-items: stretch;
++    display: flex;
+   }
+ }
+ 
+@@ -158,61 +167,51 @@
+   line-height: 1.1;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__primary > .usa-nav__primary-item {
+     font-size: 0.93rem;
+     line-height: 0.9;
+   }
+-}
+ 
+-@media all and (min-width: 64em) {
+   .usa-nav__primary > .usa-nav__primary-item > a {
+-    line-height: 0.9;
+-    padding: 1rem;
+-    align-items: center;
+     color: #565c65;
+-    display: flex;
++    align-items: center;
++    padding: 1rem;
+     font-weight: 700;
++    line-height: 0.9;
++    display: flex;
+   }
+   .usa-nav__primary > .usa-nav__primary-item > a:hover {
+     color: #005ea2;
+   }
+-}
+ 
+-@media all and (min-width: 64em) {
+   .usa-nav__primary > .usa-nav__primary-item > button,
+   .usa-nav__primary > .usa-nav__primary-item > a {
+     height: 100%;
+   }
+-}
+ 
+-@media all and (min-width: 64em) {
+   .usa-nav__primary a {
+-    padding-bottom: 0.5rem;
+     padding-top: 0.5rem;
++    padding-bottom: 0.5rem;
+   }
+ }
+ 
+ .usa-nav__primary button {
+-  color: #005ea2;
+-  text-decoration: underline;
+-  background-color: transparent;
++  color: #565c65;
++  box-shadow: none;
++  text-align: left;
++  background-color: #0000;
+   border: 0;
+   border-radius: 0;
+-  box-shadow: none;
+-  font-weight: normal;
+   justify-content: normal;
+-  text-align: left;
++  width: 100%;
+   margin: 0;
+-  padding: 0;
+-  width: auto;
+-  position: relative;
+-  color: #565c65;
++  padding: 0.75rem 1rem;
+   font-weight: normal;
+   line-height: 1.1;
+-  padding: 0.75rem 1rem;
+   text-decoration: none;
+-  width: 100%;
++  position: relative;
+ }
+ 
+ .usa-nav__primary button:visited {
+@@ -228,8 +227,8 @@
+ }
+ 
+ .usa-nav__primary button:focus {
+-  outline: 0.25rem solid #2491ff;
+   outline-offset: 0rem;
++  outline: 0.25rem solid #2491ff;
+ }
+ 
+ .usa-nav__primary button:hover,
+@@ -251,8 +250,8 @@
+ .usa-nav__primary button:disabled,
+ .usa-nav__primary button[aria-disabled="true"],
+ .usa-nav__primary button.usa-button--disabled {
+-  background-color: transparent;
+   box-shadow: none;
++  background-color: #0000;
+   text-decoration: underline;
+ }
+ 
+@@ -278,16 +277,16 @@
+   .usa-nav__primary button:disabled:hover,
+   .usa-nav__primary button[aria-disabled="true"]:hover,
+   .usa-nav__primary button[aria-disabled="true"]:focus {
+-    color: GrayText;
++    color: graytext;
+   }
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__primary button {
+-    line-height: 0.9;
+     padding: 1rem;
+     font-size: 0.93rem;
+     font-weight: 700;
++    line-height: 0.9;
+   }
+ }
+ 
+@@ -303,9 +302,9 @@
+   text-decoration: none;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__primary button:hover {
+-    background-color: transparent;
++    background-color: #0000;
+   }
+ }
+ 
+@@ -315,194 +314,191 @@
+ }
+ 
+ @media (forced-colors: active) {
+-  .usa-nav__primary button[aria-expanded]::before,
+-  .usa-nav__primary button[aria-expanded]:hover::before {
++  .usa-nav__primary button[aria-expanded]:before,
++  .usa-nav__primary button[aria-expanded]:hover:before {
+     content: none;
+   }
+ }
+ 
+-.usa-nav__primary button[aria-expanded] span::after {
++.usa-nav__primary button[aria-expanded] span:after {
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+ }
+ 
+-.usa-nav__primary button[aria-expanded="false"] span::after {
++.usa-nav__primary button[aria-expanded="false"] span:after {
++  content: "";
++  vertical-align: middle;
+   background-image: url("../img/usa-icons/add.svg");
++  background-position: center;
+   background-repeat: no-repeat;
+-  background-position: center center;
+   background-size: 1.25rem 1.25rem;
+-  display: inline-block;
+-  height: 1.25rem;
+   width: 1.25rem;
+-  content: "";
+-  vertical-align: middle;
++  height: 1.25rem;
+   margin-left: auto;
++  display: inline-block;
+ }
+ 
+ @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-  .usa-nav__primary button[aria-expanded="false"] span::after {
+-    background: none;
+-    background-color: ButtonText;
++  .usa-nav__primary button[aria-expanded="false"] span:after {
++    background: buttontext;
+     -webkit-mask-image: url("../img/usa-icons/add.svg"),
+-      linear-gradient(transparent, transparent);
+-    mask-image: url("../img/usa-icons/add.svg"),
+-      linear-gradient(transparent, transparent);
+-    -webkit-mask-position: center center;
+-    mask-position: center center;
+-    -webkit-mask-repeat: no-repeat;
+-    mask-repeat: no-repeat;
++      linear-gradient(#0000, #0000);
++    mask-image: url("../img/usa-icons/add.svg"), linear-gradient(#0000, #0000);
++    -webkit-mask-position: center;
++    mask-position: center;
+     -webkit-mask-size: 1.25rem 1.25rem;
+     mask-size: 1.25rem 1.25rem;
++    -webkit-mask-repeat: no-repeat;
++    mask-repeat: no-repeat;
+   }
+ }
+ 
+-.usa-nav__primary button[aria-expanded="false"] span::after:hover {
+-  background-color: buttonText;
++.usa-nav__primary button[aria-expanded="false"] span:after:hover {
++  background-color: buttontext;
+ }
+ 
+-@media all and (min-width: 64em) {
+-  .usa-nav__primary button[aria-expanded="false"] span::after {
++@media (width >= 64em) {
++  .usa-nav__primary button[aria-expanded="false"] span:after {
++    content: "";
++    vertical-align: middle;
+     background-image: url("../img/usa-icons/expand_more.svg");
++    background-position: center;
+     background-repeat: no-repeat;
+-    background-position: center center;
+     background-size: 1rem 1rem;
+-    display: inline-block;
+-    height: 1rem;
+     width: 1rem;
+-    content: "";
+-    vertical-align: middle;
++    height: 1rem;
+     margin-left: auto;
++    display: inline-block;
+   }
+   @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-    .usa-nav__primary button[aria-expanded="false"] span::after {
+-      background: none;
+-      background-color: ButtonText;
++    .usa-nav__primary button[aria-expanded="false"] span:after {
++      background: buttontext;
+       -webkit-mask-image: url("../img/usa-icons/expand_more.svg"),
+-        linear-gradient(transparent, transparent);
++        linear-gradient(#0000, #0000);
+       mask-image: url("../img/usa-icons/expand_more.svg"),
+-        linear-gradient(transparent, transparent);
+-      -webkit-mask-position: center center;
+-      mask-position: center center;
+-      -webkit-mask-repeat: no-repeat;
+-      mask-repeat: no-repeat;
++        linear-gradient(#0000, #0000);
++      -webkit-mask-position: center;
++      mask-position: center;
+       -webkit-mask-size: 1rem 1rem;
+       mask-size: 1rem 1rem;
++      -webkit-mask-repeat: no-repeat;
++      mask-repeat: no-repeat;
+     }
+   }
+-  .usa-nav__primary button[aria-expanded="false"] span::after {
++
++  .usa-nav__primary button[aria-expanded="false"] span:after {
+     right: 0.75rem;
+   }
+-}
+ 
+-@media all and (min-width: 64em) {
+-  .usa-nav__primary button[aria-expanded="false"]:hover span::after {
++  .usa-nav__primary button[aria-expanded="false"]:hover span:after {
+     background-color: #1a4480;
+   }
+ }
+ 
+-@media (min-width: 64em) and (forced-colors: active) {
+-  .usa-nav__primary button[aria-expanded="false"]:hover span::after {
+-    background-color: ButtonText;
++@media (width >= 64em) and (forced-colors: active) {
++  .usa-nav__primary button[aria-expanded="false"]:hover span:after {
++    background-color: buttontext;
+   }
+ }
+ 
+-.usa-nav__primary button[aria-expanded="true"] span::after {
++.usa-nav__primary button[aria-expanded="true"] span:after {
++  content: "";
++  vertical-align: middle;
+   background-image: url("../img/usa-icons/remove.svg");
++  background-position: center;
+   background-repeat: no-repeat;
+-  background-position: center center;
+   background-size: 1.25rem 1.25rem;
+-  display: inline-block;
+-  height: 1.25rem;
+   width: 1.25rem;
+-  content: "";
+-  vertical-align: middle;
++  height: 1.25rem;
+   margin-left: auto;
++  display: inline-block;
+ }
+ 
+ @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-  .usa-nav__primary button[aria-expanded="true"] span::after {
+-    background: none;
+-    background-color: ButtonText;
++  .usa-nav__primary button[aria-expanded="true"] span:after {
++    background: buttontext;
+     -webkit-mask-image: url("../img/usa-icons/remove.svg"),
+-      linear-gradient(transparent, transparent);
++      linear-gradient(#0000, #0000);
+     mask-image: url("../img/usa-icons/remove.svg"),
+-      linear-gradient(transparent, transparent);
+-    -webkit-mask-position: center center;
+-    mask-position: center center;
+-    -webkit-mask-repeat: no-repeat;
+-    mask-repeat: no-repeat;
++      linear-gradient(#0000, #0000);
++    -webkit-mask-position: center;
++    mask-position: center;
+     -webkit-mask-size: 1.25rem 1.25rem;
+     mask-size: 1.25rem 1.25rem;
++    -webkit-mask-repeat: no-repeat;
++    mask-repeat: no-repeat;
+   }
+ }
+ 
+-.usa-nav__primary button[aria-expanded="true"] span::after {
++.usa-nav__primary button[aria-expanded="true"] span:after {
+   position: absolute;
+   right: 0;
+ }
+ 
+ @media (forced-colors: active) {
+-  .usa-nav__primary button[aria-expanded="true"] span::after {
+-    background-color: ButtonText;
++  .usa-nav__primary button[aria-expanded="true"] span:after {
++    background-color: buttontext;
+   }
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__primary button[aria-expanded="true"] {
+-    background-image: none;
++    color: #fff;
+     background-color: #162e51;
+-    color: white;
++    background-image: none;
+   }
+ }
+ 
+-@media all and (min-width: 64em) and (min-width: 64em) {
+-  .usa-nav__primary button[aria-expanded="true"] span::after {
++@media (width >= 64em) and (width >= 64em) {
++  .usa-nav__primary button[aria-expanded="true"] span:after {
++    content: "";
++    vertical-align: middle;
+     background-image: url("../img/usa-icons/expand_less.svg");
++    background-position: center;
+     background-repeat: no-repeat;
+-    background-position: center center;
+     background-size: 1rem 1rem;
+-    display: inline-block;
+-    height: 1rem;
+     width: 1rem;
+-    content: "";
+-    vertical-align: middle;
++    height: 1rem;
+     margin-left: auto;
++    display: inline-block;
+   }
+   @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-    .usa-nav__primary button[aria-expanded="true"] span::after {
+-      background: none;
+-      background-color: ButtonText;
++    .usa-nav__primary button[aria-expanded="true"] span:after {
++      background: buttontext;
+       -webkit-mask-image: url("../img/usa-icons/expand_less.svg"),
+-        linear-gradient(transparent, transparent);
++        linear-gradient(#0000, #0000);
+       mask-image: url("../img/usa-icons/expand_less.svg"),
+-        linear-gradient(transparent, transparent);
+-      -webkit-mask-position: center center;
+-      mask-position: center center;
+-      -webkit-mask-repeat: no-repeat;
+-      mask-repeat: no-repeat;
++        linear-gradient(#0000, #0000);
++      -webkit-mask-position: center;
++      mask-position: center;
+       -webkit-mask-size: 1rem 1rem;
+       mask-size: 1rem 1rem;
++      -webkit-mask-repeat: no-repeat;
++      mask-repeat: no-repeat;
+     }
+   }
+-  .usa-nav__primary button[aria-expanded="true"] span::after {
++
++  .usa-nav__primary button[aria-expanded="true"] span:after {
++    background-color: #fff;
+     right: 0.75rem;
+-    background-color: white;
+   }
+ }
+ 
+-@media (min-width: 64em) and (min-width: 64em) and (forced-colors: active) {
+-  .usa-nav__primary button[aria-expanded="true"] span::after {
+-    background-color: ButtonText;
++@media (width >= 64em) and (width >= 64em) and (forced-colors: active) {
++  .usa-nav__primary button[aria-expanded="true"] span:after {
++    background-color: buttontext;
+   }
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__primary .usa-accordion__button span {
+-    display: inline-block;
+     margin-right: 0;
+     padding-right: 1rem;
++    display: inline-block;
+   }
+ }
+ 
+@@ -510,16 +506,16 @@
+   margin-top: 1rem;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__secondary {
+     flex-direction: column;
+     align-items: flex-end;
+-    bottom: 4rem;
+-    display: flex;
+-    font-size: 0.93rem;
+-    margin-top: 0.5rem;
+     min-width: calc(27ch + 3rem);
++    margin-top: 0.5rem;
++    font-size: 0.93rem;
++    display: flex;
+     position: absolute;
++    bottom: 4rem;
+     right: 2rem;
+   }
+ }
+@@ -528,35 +524,31 @@
+   width: 100%;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__secondary .usa-search {
+-    margin-left: 0;
+     margin-top: 0.5rem;
++    margin-left: 0;
+   }
+ }
+ 
+ .usa-nav__secondary-links {
++  margin-top: 1.5rem;
+   margin-bottom: 0;
+-  margin-top: 0;
+-  list-style-type: none;
+   padding-left: 0;
+   line-height: 1.3;
+-  margin-top: 1.5rem;
++  list-style-type: none;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__secondary-links {
+-    -moz-column-gap: 0.5rem;
++    flex-flow: row;
+     column-gap: 0.5rem;
+-    display: flex;
+-    flex-flow: row nowrap;
+-    line-height: 0.9;
+-    margin-bottom: 0.25rem;
+     margin-top: 0;
++    margin-bottom: 0.25rem;
++    line-height: 0.9;
++    display: flex;
+   }
+-}
+ 
+-@media all and (min-width: 64em) {
+   .usa-nav__secondary-links .usa-nav__secondary-item {
+     padding-left: 0.25rem;
+   }
+@@ -570,9 +563,9 @@
+ 
+ .usa-nav__secondary-links a {
+   color: #71767a;
+-  display: inline-block;
+   font-size: 0.93rem;
+   text-decoration: none;
++  display: inline-block;
+ }
+ 
+ .usa-nav__secondary-links a:hover {
+@@ -580,34 +573,35 @@
+   text-decoration: underline;
+ }
+ 
+-@media all and (max-width: 63.99em) {
++@media (width <= 63.99em) {
+   .usa-nav__submenu {
+-    margin-bottom: 0;
+-    margin-top: 0;
+-    list-style-type: none;
+-    padding-left: 0;
+     margin: 0;
++    padding-left: 0;
++    list-style-type: none;
+   }
+   .usa-nav__submenu > li {
+-    margin-bottom: 0;
+     max-width: unset;
++    margin-bottom: 0;
+   }
+   .usa-nav__submenu-item {
+     border-top: 1px solid #dfe1e2;
+     font-size: 0.93rem;
+   }
+-  .usa-nav__submenu .usa-current::after {
++
++  .usa-nav__submenu .usa-current:after {
+     display: none;
+   }
+ }
+ 
+-@media all and (max-width: 63.99em) and (min-width: 40em) {
+-  .usa-nav__submenu .usa-current::after {
++@media (width <= 63.99em) and (width >= 40em) {
++  .usa-nav__submenu .usa-current:after {
+     display: none;
+   }
+ }
+ 
+-@media all and (max-width: 63.99em) {
++@media (width <= 63.99em) {
+   .usa-nav__submenu a:not(.usa-button) {
+     padding-left: 2rem;
+   }
+@@ -619,18 +615,18 @@
+   }
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__submenu {
+-    margin-bottom: 0;
+-    margin-top: 0;
+-    list-style-type: none;
+-    padding-left: 0;
+-    padding-bottom: 0.5rem;
+-    padding-top: 0.5rem;
++    z-index: 400;
+     background-color: #162e51;
+     width: 15rem;
++    margin-top: 0;
++    margin-bottom: 0;
++    padding-top: 0.5rem;
++    padding-bottom: 0.5rem;
++    padding-left: 0;
++    list-style-type: none;
+     position: absolute;
+-    z-index: 400;
+   }
+ }
+ 
+@@ -638,11 +634,11 @@
+   display: none;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__submenu .usa-nav__submenu-item a {
++    color: #fff;
+     padding-left: 1rem;
+     padding-right: 1rem;
+-    color: white;
+     line-height: 1.3;
+     display: block;
+   }
+@@ -650,21 +648,21 @@
+     outline-offset: -0.25rem;
+   }
+   .usa-nav__submenu .usa-nav__submenu-item a:hover {
+-    color: white;
++    color: #fff;
+     text-decoration: underline;
+   }
+ }
+ 
+ .usa-nav__submenu-list {
+-  margin-bottom: 0;
+   margin-top: 0;
+-  list-style-type: none;
++  margin-bottom: 0;
+   padding-left: 0;
++  list-style-type: none;
+ }
+ 
+ .usa-nav__submenu-list > li {
+-  margin-bottom: 0;
+   max-width: unset;
++  margin-bottom: 0;
+ }
+ 
+ .usa-nav__submenu-list .usa-nav__submenu-list-item {
+@@ -677,26 +675,23 @@
+ }
+ 
+ .usa-nav__close {
+-  color: #005ea2;
+-  text-decoration: underline;
+-  background-color: transparent;
+-  border: 0;
+-  border-radius: 0;
++  color: currentColor;
+   box-shadow: none;
+-  font-weight: normal;
+-  justify-content: normal;
+   text-align: left;
+-  margin: 0;
+-  padding: 0;
+-  width: auto;
+-  height: 3rem;
+-  width: 3rem;
++  float: right;
++  text-align: center;
++  background-color: #0000;
+   background-image: none;
+-  color: currentColor;
++  border: 0;
++  border-radius: 0;
+   flex: none;
+-  float: right;
++  justify-content: normal;
++  width: 3rem;
++  height: 3rem;
+   margin: -0.75rem -1rem 1rem auto;
+-  text-align: center;
++  padding: 0;
++  font-weight: normal;
++  text-decoration: underline;
+ }
+ 
+ .usa-nav__close:visited {
+@@ -712,8 +707,8 @@
+ }
+ 
+ .usa-nav__close:focus {
+-  outline: 0.25rem solid #2491ff;
+   outline-offset: 0rem;
++  outline: 0.25rem solid #2491ff;
+ }
+ 
+ .usa-nav__close:hover,
+@@ -735,8 +730,8 @@
+ .usa-nav__close:disabled,
+ .usa-nav__close[aria-disabled="true"],
+ .usa-nav__close.usa-button--disabled {
+-  background-color: transparent;
+   box-shadow: none;
++  background-color: #0000;
+   text-decoration: underline;
+ }
+ 
+@@ -762,41 +757,40 @@
+   .usa-nav__close:disabled:hover,
+   .usa-nav__close[aria-disabled="true"]:hover,
+   .usa-nav__close[aria-disabled="true"]:focus {
+-    color: GrayText;
++    color: graytext;
+   }
+-}
+ 
+-@media (forced-colors: active) {
+-  .usa-nav__close::before {
++  .usa-nav__close:before {
++    content: "";
++    vertical-align: middle;
+     background-image: url("../img/usa-icons/close.svg");
++    background-position: center;
+     background-repeat: no-repeat;
+-    background-position: center center;
+     background-size: 1.25rem 1.25rem;
+-    display: inline-block;
+-    height: 1.25rem;
+     width: 1.25rem;
+-    content: "";
+-    vertical-align: middle;
++    height: 1.25rem;
+     margin-right: auto;
++    display: inline-block;
+   }
+   @supports ((-webkit-mask: url("")) or (mask: url(""))) {
+-    .usa-nav__close::before {
+-      background: none;
+-      background-color: ButtonText;
++    .usa-nav__close:before {
++      background: buttontext;
+       -webkit-mask-image: url("../img/usa-icons/close.svg"),
+-        linear-gradient(transparent, transparent);
++        linear-gradient(#0000, #0000);
+       mask-image: url("../img/usa-icons/close.svg"),
+-        linear-gradient(transparent, transparent);
+-      -webkit-mask-position: center center;
+-      mask-position: center center;
+-      -webkit-mask-repeat: no-repeat;
+-      mask-repeat: no-repeat;
++        linear-gradient(#0000, #0000);
++      -webkit-mask-position: center;
++      mask-position: center;
+       -webkit-mask-size: 1.25rem 1.25rem;
+       mask-size: 1.25rem 1.25rem;
++      -webkit-mask-repeat: no-repeat;
++      mask-repeat: no-repeat;
+     }
+   }
+-  .usa-nav__close::before {
+-    background-color: buttonText;
++
++  .usa-nav__close:before {
++    background-color: buttontext;
+   }
+ }
+ 
+@@ -805,7 +799,7 @@
+   text-decoration: none;
+ }
+ 
+-@media all and (min-width: 64em) {
++@media (width >= 64em) {
+   .usa-nav__close {
+     display: none;
+   }

@@ -1,0 +1,162 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/_at-font-face.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/_at-font-face.css	2026-04-14 12:35:23
+@@ -1,5 +1,5 @@
+ @font-face {
+-  font-family: "Roboto Mono Web";
++  font-family: Roboto Mono Web;
+   font-style: normal;
+   font-weight: 300;
+   font-display: fallback;
+@@ -7,7 +7,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Roboto Mono Web";
++  font-family: Roboto Mono Web;
+   font-style: normal;
+   font-weight: 400;
+   font-display: fallback;
+@@ -16,7 +16,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Roboto Mono Web";
++  font-family: Roboto Mono Web;
+   font-style: normal;
+   font-weight: 700;
+   font-display: fallback;
+@@ -24,7 +24,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Roboto Mono Web";
++  font-family: Roboto Mono Web;
+   font-style: italic;
+   font-weight: 300;
+   font-display: fallback;
+@@ -33,7 +33,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Roboto Mono Web";
++  font-family: Roboto Mono Web;
+   font-style: italic;
+   font-weight: 400;
+   font-display: fallback;
+@@ -42,7 +42,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Roboto Mono Web";
++  font-family: Roboto Mono Web;
+   font-style: italic;
+   font-weight: 700;
+   font-display: fallback;
+@@ -51,7 +51,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Source Sans Pro Web";
++  font-family: Source Sans Pro Web;
+   font-style: normal;
+   font-weight: 300;
+   font-display: fallback;
+@@ -60,7 +60,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Source Sans Pro Web";
++  font-family: Source Sans Pro Web;
+   font-style: normal;
+   font-weight: 400;
+   font-display: fallback;
+@@ -69,7 +69,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Source Sans Pro Web";
++  font-family: Source Sans Pro Web;
+   font-style: normal;
+   font-weight: 700;
+   font-display: fallback;
+@@ -78,7 +78,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Source Sans Pro Web";
++  font-family: Source Sans Pro Web;
+   font-style: italic;
+   font-weight: 300;
+   font-display: fallback;
+@@ -87,7 +87,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Source Sans Pro Web";
++  font-family: Source Sans Pro Web;
+   font-style: italic;
+   font-weight: 400;
+   font-display: fallback;
+@@ -96,7 +96,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Source Sans Pro Web";
++  font-family: Source Sans Pro Web;
+   font-style: italic;
+   font-weight: 700;
+   font-display: fallback;
+@@ -105,7 +105,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Merriweather Web";
++  font-family: Merriweather Web;
+   font-style: normal;
+   font-weight: 300;
+   font-display: fallback;
+@@ -113,7 +113,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Merriweather Web";
++  font-family: Merriweather Web;
+   font-style: normal;
+   font-weight: 400;
+   font-display: fallback;
+@@ -122,7 +122,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Merriweather Web";
++  font-family: Merriweather Web;
+   font-style: normal;
+   font-weight: 700;
+   font-display: fallback;
+@@ -130,7 +130,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Merriweather Web";
++  font-family: Merriweather Web;
+   font-style: italic;
+   font-weight: 300;
+   font-display: fallback;
+@@ -139,7 +139,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Merriweather Web";
++  font-family: Merriweather Web;
+   font-style: italic;
+   font-weight: 400;
+   font-display: fallback;
+@@ -148,7 +148,7 @@
+ }
+ 
+ @font-face {
+-  font-family: "Merriweather Web";
++  font-family: Merriweather Web;
+   font-style: italic;
+   font-weight: 700;
+   font-display: fallback;

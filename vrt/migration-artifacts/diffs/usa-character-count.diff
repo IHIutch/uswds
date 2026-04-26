@@ -1,0 +1,10 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-character-count.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-character-count.css	2026-04-14 11:33:47
+@@ -1,6 +1,6 @@
+ .usa-character-count__status {
+-  display: inline-block;
+   padding-top: 0.25rem;
++  display: inline-block;
+ }
+ 
+ .usa-character-count__status.usa-character-count__status--invalid {

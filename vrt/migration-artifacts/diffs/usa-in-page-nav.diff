@@ -1,0 +1,196 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-in-page-nav.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-in-page-nav.css	2026-04-14 11:33:47
+@@ -1,16 +1,16 @@
+ .usa-in-page-nav {
+   color: #1b1b1b;
+-  display: none;
+-  margin-left: 2rem;
+-  margin-top: 1.25rem;
+-  max-width: 15rem;
+   order: 2;
++  width: 100%;
++  max-width: 15rem;
++  margin-top: 1.25rem;
++  margin-left: 2rem;
++  display: none;
+   position: sticky;
+   top: 2rem;
+-  width: 100%;
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width >= 40em) {
+   .usa-in-page-nav {
+     display: block;
+   }
+@@ -22,12 +22,15 @@
+ 
+ .usa-in-page-nav__nav {
+   color: #1b1b1b;
+-  background-color: white;
++  background-color: #fff;
+   border-radius: 0.5rem;
+   padding: 1rem;
+ }
+ 
+ .usa-in-page-nav__heading {
++  margin-top: 0;
++  margin-bottom: 1rem;
++  padding: 0;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -36,25 +39,21 @@
+     Arial,
+     sans-serif;
+   font-size: 0.93rem;
+-  line-height: 1.3;
+   font-weight: 700;
+-  margin-bottom: 1rem;
+-  margin-top: 0;
+-  padding: 0;
++  line-height: 1.3;
+ }
+ 
+ .usa-in-page-nav__list {
+-  margin-bottom: 0;
++  border-left: 1px solid #1b1b1b40;
+   margin-top: 0;
+-  list-style-type: none;
+-  padding-left: 0;
+-  border-left: 1px solid rgba(27, 27, 27, 0.25);
++  margin-bottom: 0;
+   padding: 0;
++  list-style-type: none;
+ }
+ 
+ .usa-in-page-nav__list > li {
+-  margin-bottom: 0;
+   max-width: unset;
++  margin-bottom: 0;
+ }
+ 
+ .usa-in-page-nav__list__item {
+@@ -62,20 +61,11 @@
+ }
+ 
+ .usa-in-page-nav__list a:not(.usa-button) {
+-  display: block;
+   padding: 0.5rem 1rem;
+   text-decoration: none;
++  display: block;
+ }
+ 
+-.usa-in-page-nav__list a:not(.usa-button):hover {
+-  background-color: #f0f0f0;
+-  text-decoration: none;
+-}
+-
+-.usa-in-page-nav__list a:not(.usa-button):not(.usa-current) {
+-  color: #565c65;
+-}
+-
+ .usa-in-page-nav__list a:not(.usa-button):not(.usa-current):hover {
+   color: #005ea2;
+ }
+@@ -85,37 +75,38 @@
+ }
+ 
+ .usa-in-page-nav__list .usa-current {
+-  position: relative;
+   color: #005ea2;
+   font-weight: 700;
++  position: relative;
+ }
+ 
+-.usa-in-page-nav__list .usa-current::after {
++.usa-in-page-nav__list .usa-current:after {
++  content: "";
+   background-color: #005ea2;
+   border-radius: 99rem;
+-  content: "";
++  width: 0.25rem;
+   display: block;
+   position: absolute;
+-  bottom: 0.25rem;
+   top: 0.25rem;
+-  width: 0.25rem;
++  bottom: 0.25rem;
+   left: 0.25rem;
+ }
+ 
+-@media all and (min-width: 40em) {
++@media (width >= 40em) {
+   .usa-in-page-nav__list .usa-current {
+     position: relative;
+   }
+-  .usa-in-page-nav__list .usa-current::after {
++
++  .usa-in-page-nav__list .usa-current:after {
++    content: "";
+     background-color: #005ea2;
+     border-radius: 99rem;
+-    content: "";
++    width: 0.25rem;
+     display: block;
+     position: absolute;
+-    bottom: 0.25rem;
+     top: 0.25rem;
+-    width: 0.25rem;
+-    left: 0rem;
++    bottom: 0.25rem;
++    left: 0;
+   }
+ }
+ 
+@@ -123,10 +114,6 @@
+   color: #005ea2;
+ }
+ 
+-.usa-in-page-nav__list a:not(.usa-button):not(.usa-current):visited {
+-  color: #54278f;
+-}
+-
+ .usa-in-page-nav__list a:not(.usa-button):not(.usa-current):hover,
+ .usa-in-page-nav__list a:not(.usa-button):not(.usa-current):active {
+   color: #1a4480;
+@@ -142,25 +129,26 @@
+ }
+ 
+ .usa-in-page-nav__list a:not(.usa-button):hover {
+-  text-decoration: underline;
+   background-color: none;
++  text-decoration: underline;
+ }
+ 
+ .usa-in-page-nav__list a:not(.usa-button).usa-current {
+   position: static;
+ }
+ 
+-.usa-in-page-nav__list a:not(.usa-button).usa-current::after {
++.usa-in-page-nav__list a:not(.usa-button).usa-current:after {
++  z-index: 100;
+   background-color: #1b1b1b;
+   border-radius: 0;
++  width: 0.25rem;
++  top: 0;
+   bottom: -1px;
+   left: 0;
+-  top: 0;
+-  width: 0.25rem;
+-  z-index: 100;
+ }
+ 
+ .usa-in-page-nav__item {
++  border: none;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -170,7 +158,6 @@
+     sans-serif;
+   font-size: 0.93rem;
+   line-height: 1.1;
+-  border: none;
+   position: relative;
+ }
+ 

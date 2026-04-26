@@ -1,0 +1,30 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-memorable-date.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-memorable-date.css	2026-04-14 12:35:23
+@@ -1,6 +1,6 @@
+ .usa-memorable-date {
+-  display: flex;
+   flex-wrap: wrap;
++  display: flex;
+ }
+ 
+ .usa-memorable-date [type="number"] {
+@@ -8,17 +8,16 @@
+ }
+ 
+ .usa-memorable-date [type="number"]::-webkit-inner-spin-button {
+-  -webkit-appearance: none;
+   appearance: none;
+ }
+ 
+ .usa-memorable-date [type="number"]::-webkit-contacts-auto-fill-button {
+   visibility: hidden;
+-  display: none !important;
+   pointer-events: none;
+-  height: 0;
+   width: 0;
++  height: 0;
+   margin: 0;
++  display: none !important;
+ }
+ 
+ .usa-memorable-date .usa-form-group {

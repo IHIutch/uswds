@@ -1,0 +1,51 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-skipnav.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-skipnav.css	2026-04-14 12:35:23
+@@ -1,4 +1,8 @@
+ .usa-skipnav {
++  color: #005ea2;
++  z-index: 100;
++  background: 0 0;
++  padding: 0.5rem 1rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -10,12 +14,9 @@
+   line-height: 1.5;
+   text-decoration: underline;
+   transition: top 0.15s ease-in-out;
+-  background: 0 0;
+-  left: 0;
+-  padding: 0.5rem 1rem;
+   position: absolute;
+   top: -3.8rem;
+-  z-index: 100;
++  left: 0;
+ }
+ 
+ .usa-skipnav:visited {
+@@ -31,8 +32,8 @@
+ }
+ 
+ .usa-skipnav:focus {
++  outline-offset: 0rem;
+   outline: 0.25rem solid #2491ff;
+-  outline-offset: 0;
+ }
+ 
+ @media (prefers-reduced-motion) {
+@@ -41,12 +42,12 @@
+   }
+ }
+ 
+-.usa-skipnav.usa-focus,
+-.usa-skipnav:focus {
++.usa-skipnav:focus,
++.usa-skipnav.usa-focus {
+   background: #fff;
+-  left: 0;
+   position: absolute;
+   top: 0;
++  left: 0;
+ }
+ 
+ .usa-skipnav__container {

@@ -1,0 +1,50 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-embed-container.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-embed-container.css	2026-04-14 11:33:47
+@@ -1,39 +1,40 @@
+ .usa-embed-container iframe,
+ .usa-embed-container object,
+ .usa-embed-container embed {
++  width: 100%;
++  height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+-  width: 100%;
+-  height: 100%;
+ }
+ 
+ .usa-embed-container {
+   box-sizing: border-box;
++  max-width: 100%;
+   height: 0;
+-  overflow: hidden;
+   padding-bottom: 56.25%;
+   position: relative;
+-  max-width: 100%;
++  overflow: hidden;
+ }
+ 
+ @supports (aspect-ratio: 1) {
+   .usa-embed-container {
+     height: inherit;
+     padding: inherit;
+-    aspect-ratio: 1.7777777778;
++    aspect-ratio: 1.77778;
+     max-width: 100%;
+   }
+ 
+   .usa-embed-container > * {
++    width: 100%;
++    height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+-    width: 100%;
+-    height: 100%;
+   }
+   img.usa-embed-container,
+   .usa-embed-container > img {
+-    -o-object-fit: cover;
+     object-fit: cover;
+   }
+ }

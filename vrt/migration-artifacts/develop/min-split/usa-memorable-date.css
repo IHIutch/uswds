@@ -1,0 +1,26 @@
+.usa-memorable-date {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.usa-memorable-date [type="number"] {
+  -moz-appearance: textfield;
+}
+
+.usa-memorable-date [type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.usa-memorable-date [type="number"]::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+
+.usa-memorable-date .usa-form-group {
+  margin-top: 1rem;
+}

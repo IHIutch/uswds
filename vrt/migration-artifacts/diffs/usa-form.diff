@@ -1,0 +1,50 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-form.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-form.css	2026-04-14 11:33:47
+@@ -10,7 +10,7 @@
+   line-height: 1.3;
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width >= 30em) {
+   .usa-form {
+     max-width: 20rem;
+   }
+@@ -28,7 +28,7 @@
+   margin-top: 0.5rem;
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width >= 30em) {
+   .usa-form .usa-button {
+     margin-top: 1.5rem;
+   }
+@@ -52,11 +52,11 @@
+ }
+ 
+ .usa-form a:where(:not(.usa-button)):focus {
+-  outline: 0.25rem solid #2491ff;
+   outline-offset: 0rem;
++  outline: 0.25rem solid #2491ff;
+ }
+ 
+-@media all and (min-width: 30em) {
++@media (width >= 30em) {
+   .usa-form--large {
+     max-width: 30rem;
+   }
+@@ -64,6 +64,8 @@
+ 
+ .usa-form__note,
+ .usa-show-password {
++  float: right;
++  margin: 0.25rem 0 1rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -73,6 +75,4 @@
+     sans-serif;
+   font-size: 0.93rem;
+   line-height: 1.3;
+-  float: right;
+-  margin: 0.25rem 0 1rem;
+ }

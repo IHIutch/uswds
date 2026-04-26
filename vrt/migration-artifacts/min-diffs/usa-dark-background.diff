@@ -1,0 +1,12 @@
+--- /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/develop/min-split/usa-dark-background.css	2026-04-14 12:35:23
++++ /Users/jbhutch/Sites/uswds/lightningcss-migration-artifacts/lightningcss/min-split/usa-dark-background.css	2026-04-14 12:35:23
+@@ -12,7 +12,7 @@
+   color: #dfe1e2;
+ }
+ 
+-.usa-dark-background a:active,
+-.usa-dark-background a:hover {
++.usa-dark-background a:hover,
++.usa-dark-background a:active {
+   color: #f0f0f0;
+ }

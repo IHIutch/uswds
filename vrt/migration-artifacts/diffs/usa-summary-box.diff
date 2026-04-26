@@ -1,0 +1,48 @@
+--- /Users/jbhutch/tmp/uswds-lightningcss-compare/develop/split/usa-summary-box.css	2026-04-14 11:33:47
++++ /Users/jbhutch/tmp/uswds-lightningcss-compare/lightningcss/split/usa-summary-box.css	2026-04-14 11:33:47
+@@ -1,4 +1,9 @@
+ .usa-summary-box {
++  color: #1b1b1b;
++  background-color: #e7f6f8;
++  border: 1px solid #99deea;
++  border-radius: 0.25rem;
++  padding: 1.5rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -8,11 +13,6 @@
+     sans-serif;
+   font-size: 1.06rem;
+   line-height: 1.5;
+-  color: #1b1b1b;
+-  background-color: #e7f6f8;
+-  border-radius: 0.25rem;
+-  border: 1px #99deea solid;
+-  padding: 1.5rem;
+   position: relative;
+ }
+ 
+@@ -25,6 +25,8 @@
+ }
+ 
+ .usa-summary-box__heading {
++  margin-top: 0;
++  margin-bottom: 0.5rem;
+   font-family:
+     Source Sans Pro Web,
+     Helvetica Neue,
+@@ -34,13 +36,11 @@
+     sans-serif;
+   font-size: 1.46rem;
+   line-height: 1.1;
+-  margin-top: 0;
+-  margin-bottom: 0.5rem;
+ }
+ 
+ .usa-summary-box__text {
+-  margin-bottom: 0;
+   margin-top: 0;
++  margin-bottom: 0;
+ }
+ 
+ .usa-summary-box__text:only-child {

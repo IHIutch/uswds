@@ -1,0 +1,22 @@
+.usa-js-loading .usa-banner__content {
+  position: absolute;
+  left: -999em;
+  right: auto;
+}
+
+html.usa-js-loading .usa-nav__submenu,
+html.usa-js-loading .usa-nav__submenu.usa-megamenu {
+  position: absolute;
+  left: -999em;
+  right: auto;
+}
+
+.usa-js-loading .usa-modal-wrapper {
+  position: absolute;
+  left: -999em;
+  right: auto;
+}
+
+.usa-js-loading .usa-modal-wrapper:target {
+  position: static;
+}
