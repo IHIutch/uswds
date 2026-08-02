@@ -1,0 +1,40 @@
+/*
+----------------------------------------
+var-color()
+----------------------------------------
+Resolve a color token like color(), but
+return theme tokens as a CSS custom
+property reference with the resolved
+value as a static fallback:
+
+var-color("primary")
+> var(--usa-color-primary, #005ea2)
+
+System (non-theme) tokens, raw colors,
+and false values return the same value
+as color(). The custom properties
+themselves are emitted on :root by
+theme-custom-properties.
+----------------------------------------
+*/
+
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
+
+@use "../general";
+@use "./color" as *;
+@use "../../tokens/color/assignments-theme-color" as *;
+
+@function var-color($value, $flags...) {
+  $resolved: color($value, $flags...);
+
+  @if meta.type-of($value) != color and $value != false {
+    $token: general.smart-quote(general.unpack($value));
+    @if map.has-key($assignments-theme-color, $token) {
+      @return string.unquote("var(--usa-color-#{$token}, #{$resolved})");
+    }
+  }
+
+  @return $resolved;
+}

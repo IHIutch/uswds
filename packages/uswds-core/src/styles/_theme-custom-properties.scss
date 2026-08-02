@@ -1,0 +1,41 @@
+/*
+========================================
+theme-custom-properties
+----------------------------------------
+Emits theme settings as CSS custom
+properties on :root so compiled
+declarations can reference them with
+var() instead of baked-in values.
+
+Layers:
+- --usa-color-<token>: the theme color
+  palette, from $assignments-theme-color.
+  Tokens set to false are skipped.
+- --usa-<component>-<setting>: component
+  settings. Settings that hold a theme
+  color token chain to the palette layer.
+
+PoC scope: color palette plus usa-banner
+and usa-button settings.
+========================================
+*/
+
+@use "./settings" as *;
+@use "./functions" as *;
+@use "./tokens/color/assignments-theme-color" as *;
+
+:root {
+  @each $token, $value in $assignments-theme-color {
+    @if $value != false {
+      --usa-color-#{$token}: #{color($token)};
+    }
+  }
+
+  // usa-banner
+  --usa-banner-background-color: #{var-color($theme-banner-background-color)};
+
+  // usa-button
+  --usa-button-border-radius: #{radius($theme-button-border-radius)};
+  --usa-button-icon-gap: #{units($theme-button-icon-gap)};
+  --usa-button-stroke-width: #{units($theme-button-stroke-width)};
+}

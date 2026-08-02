@@ -3,7 +3,8 @@
 // Buttons variables
 
 $button-context: "Button";
-$button-stroke: inset 0 0 0 units($theme-button-stroke-width);
+$button-stroke: inset 0 0 0
+  var(--usa-button-stroke-width, #{units($theme-button-stroke-width)});
 
 // Buttons
 .usa-button {
@@ -13,9 +14,12 @@ $button-stroke: inset 0 0 0 units($theme-button-stroke-width);
   appearance: none;
   align-items: center;
   border: 0;
-  border-radius: radius($theme-button-border-radius);
+  border-radius: var(
+    --usa-button-border-radius,
+    #{radius($theme-button-border-radius)}
+  );
   cursor: pointer;
-  column-gap: units($theme-button-icon-gap);
+  column-gap: var(--usa-button-icon-gap, #{units($theme-button-icon-gap)});
   display: inline-flex;
   font-weight: font-weight("bold");
   justify-content: center;
@@ -104,25 +108,25 @@ $button-stroke: inset 0 0 0 units($theme-button-stroke-width);
 
 .usa-button--outline {
   background-color: color("transparent");
-  box-shadow: $button-stroke color("primary");
-  color: color("primary");
+  box-shadow: $button-stroke var-color("primary");
+  color: var-color("primary");
 
   &:visited {
-    color: color("primary");
+    color: var-color("primary");
   }
 
   &:hover,
   &.usa-button--hover {
     background-color: color("transparent");
-    box-shadow: $button-stroke color("primary-dark");
-    color: color("primary-dark");
+    box-shadow: $button-stroke var-color("primary-dark");
+    color: var-color("primary-dark");
   }
 
   &:active,
   &.usa-button--active {
     background-color: color("transparent");
-    box-shadow: $button-stroke color("primary-darker");
-    color: color("primary-darker");
+    box-shadow: $button-stroke var-color("primary-darker");
+    color: var-color("primary-darker");
   }
 
   &.usa-button--inverse {
@@ -130,42 +134,42 @@ $button-stroke: inset 0 0 0 units($theme-button-stroke-width);
     $button-inverse-hover-color: $theme-link-reverse-hover-color;
     $button-inverse-active-color: $theme-link-reverse-active-color;
 
-    box-shadow: $button-stroke color("base-lighter");
-    color: color($button-inverse-color);
+    box-shadow: $button-stroke var-color("base-lighter");
+    color: var-color($button-inverse-color);
 
     &:visited {
-      color: color($button-inverse-color);
+      color: var-color($button-inverse-color);
     }
 
     &:hover,
     &.usa-button--hover {
-      box-shadow: $button-stroke color($button-inverse-hover-color);
-      color: color($button-inverse-hover-color);
+      box-shadow: $button-stroke var-color($button-inverse-hover-color);
+      color: var-color($button-inverse-hover-color);
     }
 
     &:active,
     &.usa-button--active {
       background-color: transparent;
-      box-shadow: $button-stroke color($button-inverse-active-color);
-      color: color($button-inverse-active-color);
+      box-shadow: $button-stroke var-color($button-inverse-active-color);
+      color: var-color($button-inverse-active-color);
     }
 
     &.usa-button--unstyled {
       @include button-unstyled;
-      color: color($button-inverse-color);
+      color: var-color($button-inverse-color);
 
       &:visited {
-        color: color($button-inverse-color);
+        color: var-color($button-inverse-color);
       }
 
       &:hover,
       &.usa-button--hover {
-        color: color($button-inverse-hover-color);
+        color: var-color($button-inverse-hover-color);
       }
 
       &:active,
       &.usa-button--active {
-        color: color($button-inverse-active-color);
+        color: var-color($button-inverse-active-color);
       }
     }
   }
@@ -200,7 +204,10 @@ $button-stroke: inset 0 0 0 units($theme-button-stroke-width);
 }
 
 .usa-button--big {
-  border-radius: radius($theme-button-border-radius);
+  border-radius: var(
+    --usa-button-border-radius,
+    #{radius($theme-button-border-radius)}
+  );
   font-size: font-size($theme-button-font-family, "lg");
   padding: units(2) units(3);
 }
@@ -215,17 +222,17 @@ $button-stroke: inset 0 0 0 units($theme-button-stroke-width);
   &:active,
   &:focus {
     background-color: transparent;
-    color: color("disabled");
+    color: var-color("disabled");
   }
 }
 
 .usa-button--outline:disabled,
 .usa-button--outline[aria-disabled="true"] {
-  box-shadow: $button-stroke color("disabled-lighter");
+  box-shadow: $button-stroke var-color("disabled-lighter");
 
   &.usa-button--inverse {
-    box-shadow: $button-stroke color("disabled-light");
-    color: color("disabled-light");
+    box-shadow: $button-stroke var-color("disabled-light");
+    color: var-color("disabled-light");
 
     @media (forced-colors: active) {
       color: color(GrayText);

@@ -1,5 +1,5 @@
 @use "../../functions/color/get-color-token-from-bg" as *;
-@use "../../functions/utilities/color" as *;
+@use "../../functions/utilities/var-color" as *;
 @use "../../functions/general/get-default" as *;
 
 @mixin set-text-from-bg(
@@ -18,5 +18,5 @@
     $wcag-target,
     $context
   );
-  color: color($accessible-color-token) #{$important};
+  color: var-color($accessible-color-token) #{$important};
 }
